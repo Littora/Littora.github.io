@@ -1,0 +1,60 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% if page.url == "/" %}
+      <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav-menu" aria-expanded="false">
+        <span class="site-nav__toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav-menu" aria-label="Primary">
+        <a class="page-link" href="{{ \"/\" | relative_url }}#features">Features</a>
+        <a class="page-link" href="{{ \"/\" | relative_url }}#faq">FAQ</a>
+      </nav>
+      <script>
+        (function () {
+          var toggle = document.querySelector(".site-nav__toggle");
+          var nav = document.getElementById("site-nav-menu");
+          if (!toggle || !nav) return;
+
+          var isOpen = function () {
+            return toggle.getAttribute("aria-expanded") === "true";
+          };
+
+          var closeNav = function () {
+            toggle.setAttribute("aria-expanded", "false");
+          };
+
+          var openNav = function () {
+            toggle.setAttribute("aria-expanded", "true");
+          };
+
+          toggle.addEventListener("click", function (event) {
+            event.stopPropagation();
+            if (isOpen()) {
+              closeNav();
+            } else {
+              openNav();
+            }
+          });
+
+          nav.addEventListener("click", function (event) {
+            if (event.target && event.target.matches(".page-link")) {
+              closeNav();
+            }
+          });
+
+          document.addEventListener("click", function (event) {
+            if (!isOpen()) return;
+            if (nav.contains(event.target) || toggle.contains(event.target)) return;
+            closeNav();
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+              closeNav();
+            }
+          });
+        })();
+      </script>
+    {% endif %}
+  </div>
+</header>

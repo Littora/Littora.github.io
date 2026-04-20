@@ -1,0 +1,13 @@
+title: Chatura
+description: Warm AI companion, beyond chat
+theme: minima
+
+# User site typically uses baseurl empty.
+baseurl: ""
+url: "https://chaturaapp.github.io"
+
+# Optional (helps accessibility and SEO)
+lang: en-US
+
+# Markdown engine (default is fine, but explicit is clearer)
+markdown: kramdown
