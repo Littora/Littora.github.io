@@ -1,13 +1,18 @@
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% if page.url == "/" %}
+    {% if page.url == "/" or page.url == "/apps/chatura/" %}
       <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav-menu" aria-expanded="false">
         <span class="site-nav__toggle-icon" aria-hidden="true"></span>
       </button>
       <nav class="site-nav" id="site-nav-menu" aria-label="Primary">
-        <a class="page-link" href="{{ \"/\" | relative_url }}#features">Features</a>
-        <a class="page-link" href="{{ \"/\" | relative_url }}#faq">FAQ</a>
+        {% if page.url == "/" %}
+          <a class="page-link" href="{{ "/" | relative_url }}#apps">Apps</a>
+          <a class="page-link" href="{{ "/apps/chatura/" | relative_url }}">Chatura</a>
+        {% elsif page.url == "/apps/chatura/" %}
+          <a class="page-link" href="{{ "/apps/chatura/" | relative_url }}#features">Features</a>
+          <a class="page-link" href="{{ "/apps/chatura/" | relative_url }}#faq">FAQ</a>
+        {% endif %}
       </nav>
       <script>
         (function () {
