@@ -6,20 +6,23 @@ permalink: /apps/chatura/support/
 
 # Support
 
-If you need help with Chatura, please contact us:
+We care deeply about your experience with Chatura and value every piece of feedback.
 
-- **Email:** chaturaapp@gmail.com
+If you have a question, run into a problem, want to share an idea, or simply want to tell us how Chatura feels to use, you can contact us anytime. You do not need to prepare a detailed report. A short message is enough.
 
-## What to include in your message
-To help us respond quickly, please include:
-- App version (e.g., 1.0.1)
-- iOS version (e.g., iOS 17.3)
-- Device model (e.g., iPhone 15 Pro)
-- A short description of the issue (and steps to reproduce, if applicable)
+## Contact us
 
-## Response time
-We typically respond within 1–3 business days.
+- **Email:** littoraart@gmail.com
+- **X:** [@ChaturaApp](https://x.com/ChaturaApp)
+
+We will read your message carefully and reply as soon as we can.
+
+## Helpful, but optional
+
+If you are reporting a bug, it can help to include what happened and what you expected to happen. Screenshots, app version, iOS version, or device model are welcome if they are easy to share, but they are not required.
 
 ## Privacy-related requests
-If you have privacy questions or requests (e.g., data deletion instructions), contact:
-- **Email:** chaturaapp@gmail.com
+
+For privacy questions or requests, you can also contact us at:
+
+- **Email:** littoraart@gmail.com
