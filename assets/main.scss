@@ -278,6 +278,218 @@ body::after {
   opacity: 0;
 }
 
+.post-content:has(.brand-page) {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.post-content:has(.brand-page)::before,
+.post-content:has(.brand-page)::after {
+  display: none;
+}
+
+.brand-page {
+  display: grid;
+  gap: 2rem;
+}
+
+.brand-hero {
+  position: relative;
+  display: grid;
+  align-content: center;
+  min-height: clamp(360px, 52vh, 540px);
+  padding: clamp(2.6rem, 6vw, 5.4rem);
+  overflow: hidden;
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.18);
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(var(--chatura-sky-rgb), 0.13) 44%, rgba(var(--chatura-sun-rgb), 0.18) 100%),
+    linear-gradient(90deg, rgba(var(--chatura-coral-rgb), 0.1), rgba(var(--chatura-accent-rgb), 0.08));
+  box-shadow: 0 34px 78px rgba(33, 49, 80, 0.12);
+  isolation: isolate;
+}
+
+.brand-hero::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  border-radius: 24px;
+  pointer-events: none;
+}
+
+.brand-hero__mark {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 1.6rem;
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.18);
+  border-radius: 20px;
+  background:
+    #ffffff url("/assets/Logo.png") center/72% no-repeat;
+  box-shadow: 0 18px 36px rgba(33, 49, 80, 0.1);
+}
+
+.brand-eyebrow {
+  margin: 0 0 0.85rem;
+  color: var(--chatura-accent-deep);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.brand-hero h1 {
+  max-width: 820px;
+  margin: 0;
+  color: var(--chatura-ink);
+  font-size: clamp(2.55rem, 6vw, 5.15rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.brand-hero__intro {
+  max-width: 620px;
+  margin: 1.35rem 0 0;
+  color: #4f5f78;
+  font-size: 1.16rem;
+  line-height: 1.78;
+}
+
+.brand-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.brand-button,
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.78rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.brand-button,
+.brand-button:visited {
+  color: #ffffff;
+  background: linear-gradient(135deg, #f78c72 0%, #ef6a73 46%, #d85d86 100%);
+  border: 1px solid rgba(var(--chatura-coral-rgb), 0.28);
+  box-shadow: 0 18px 34px rgba(var(--chatura-cta-rgb), 0.26);
+}
+
+.brand-button:hover,
+.brand-button:focus-visible {
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 22px 38px rgba(var(--chatura-cta-rgb), 0.32);
+}
+
+.brand-link,
+.brand-link:visited {
+  color: var(--chatura-accent-deep);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.14);
+}
+
+.brand-link:hover,
+.brand-link:focus-visible {
+  color: var(--chatura-ink);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.brand-apps {
+  padding: clamp(2.2rem, 4vw, 3rem);
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.16);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 52px rgba(33, 49, 80, 0.08);
+}
+
+.brand-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.brand-section-heading .brand-eyebrow {
+  margin-bottom: 0.35rem;
+}
+
+.brand-section-heading h2 {
+  margin: 0;
+  padding: 0;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.brand-section-heading h2::before {
+  display: none;
+}
+
+.brand-app-card {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.35rem;
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.15);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(var(--chatura-accent-rgb), 0.07));
+  box-shadow: 0 16px 34px rgba(33, 49, 80, 0.07);
+}
+
+.brand-app-card:hover,
+.brand-app-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(33, 49, 80, 0.1);
+}
+
+.brand-app-card__icon {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.18);
+  border-radius: 16px;
+  background:
+    #ffffff url("/assets/Logo.png") center/72% no-repeat;
+  box-shadow: 0 14px 28px rgba(33, 49, 80, 0.09);
+}
+
+.brand-app-card__content {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.brand-app-card__content strong {
+  font-size: 1.18rem;
+}
+
+.brand-app-card__content span {
+  color: var(--chatura-muted);
+  line-height: 1.65;
+}
+
+.brand-app-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(var(--chatura-accent-rgb), 0.1);
+  color: var(--chatura-accent-deep);
+  font-weight: 700;
+}
+
 .content-section--links {
   background: transparent;
 }
@@ -1823,6 +2035,67 @@ h3 {
     background: transparent;
   }
 
+  .brand-hero {
+    min-height: auto;
+    padding: 2.7rem 1.6rem;
+    border-radius: 24px;
+  }
+
+  .brand-hero::before {
+    inset: 0.75rem;
+    border-radius: 18px;
+  }
+
+  .brand-hero__mark {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+  }
+
+  .brand-hero h1 {
+    font-size: clamp(2.25rem, 10vw, 3.4rem);
+  }
+
+  .brand-hero__intro {
+    font-size: 1.04rem;
+  }
+
+  .brand-actions {
+    align-items: stretch;
+  }
+
+  .brand-button,
+  .brand-link {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .brand-apps {
+    padding: 1.6rem;
+    border-radius: 22px;
+  }
+
+  .brand-section-heading {
+    display: block;
+  }
+
+  .brand-app-card {
+    grid-template-columns: 52px minmax(0, 1fr);
+    padding: 1.1rem;
+    border-radius: 18px;
+  }
+
+  .brand-app-card__icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+  }
+
+  .brand-app-card__cta {
+    grid-column: 2;
+    justify-self: start;
+  }
+
   .post-content {
     padding: 2rem 1.5rem 2.5rem;
   }
@@ -2082,6 +2355,26 @@ h3 {
 
   .post-content {
     padding: 1.5rem 1rem 2rem;
+  }
+
+  .brand-page {
+    gap: 1.35rem;
+  }
+
+  .brand-hero {
+    padding: 2.2rem 1.25rem;
+  }
+
+  .brand-hero h1 {
+    font-size: clamp(2rem, 11vw, 2.7rem);
+  }
+
+  .brand-apps {
+    padding: 1.25rem;
+  }
+
+  .brand-app-card {
+    gap: 0.9rem;
   }
 
   h1 {

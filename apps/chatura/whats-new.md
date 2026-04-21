@@ -1,7 +1,7 @@
 ---
 layout: default
 title: What’s New
-permalink: /whats-new/
+permalink: /apps/chatura/whats-new/
 ---
 
 # What’s New
