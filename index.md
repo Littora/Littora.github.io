@@ -8,14 +8,10 @@ permalink: /
   <section class="brand-hero" aria-labelledby="brand-title">
     <h1 id="brand-title">Littora</h1>
     <p class="brand-statement">Where feeling is held, explored, and brought into form.</p>
-    <p class="brand-hero__intro">Quiet software for inner life.</p>
   </section>
 
-  <section id="apps" class="brand-apps" aria-labelledby="apps-title">
-    <div class="brand-section-heading">
-      <p class="brand-eyebrow">Apps</p>
-      <h2 id="apps-title">One app, for now.</h2>
-    </div>
+  <section id="apps" class="brand-apps" aria-label="Littora apps">
+    <p class="brand-eyebrow">Apps</p>
 
     <a class="brand-app-card" href="/apps/chatura/">
       <span class="brand-app-card__icon" aria-hidden="true"></span>
@@ -23,7 +19,7 @@ permalink: /
         <strong>Chatura</strong>
         <span>Character-led AI companionship for everyday warmth, gentle support, and conversations worth keeping.</span>
       </span>
-      <span class="brand-app-card__cta">View</span>
+      <span class="brand-app-card__cta">Open</span>
     </a>
   </section>
 </div>
