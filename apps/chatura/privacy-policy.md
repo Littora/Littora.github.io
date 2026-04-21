@@ -123,7 +123,7 @@ Third-party services (for example, AI/generation service providers) may process 
 
 **B) Withdraw consent for AI processing/transmission.** If you do not want your messages and conversation context to be transmitted off-device for AI generation, do not use AI generation features. Because AI generation requires sending context to our backend and third-party AI/generation providers, withdrawing consent for this processing means stopping use of those AI generation features.
 
-**C) Request deletion of backend metadata logs (if any).** We do not store chat content on our backend. If you would like to request deletion of any retained metadata logs (as described in Section 3(B)), contact us at **chaturaapp@gmail.com** with (i) the approximate time window of the issue and (ii) any relevant details that help us locate the applicable logs. We will delete applicable retained logs to the extent we are able to identify them.
+**C) Request deletion of backend metadata logs (if any).** We do not store chat content on our backend. If you would like to request deletion of any retained metadata logs (as described in Section 3(B)), contact us at **littoraart@gmail.com** with (i) the approximate time window of the issue and (ii) any relevant details that help us locate the applicable logs. We will delete applicable retained logs to the extent we are able to identify them.
 
 **D) Third-party providers.** Third-party AI/generation providers may process content transmitted to generate outputs under their own policies. We do not control their retention or deletion practices. You may contact us to obtain the current list of providers and links to their policies so you can review their options and submit any deletion request to the provider(s) directly.
 
@@ -139,4 +139,4 @@ Chatura is **not intended for individuals under 18**, and we do not knowingly co
 
 If you have questions or requests related to privacy, please contact us at:
 
-**Email:** chaturaapp@gmail.com
+**Email:** littoraart@gmail.com
