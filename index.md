@@ -6,20 +6,15 @@ permalink: /
 
 <div class="brand-page">
   <section class="brand-hero" aria-labelledby="brand-title">
-    <div class="brand-hero__mark" aria-hidden="true"></div>
-    <p class="brand-eyebrow">Littora</p>
-    <h1 id="brand-title">Littora — where feeling is held, explored, and brought into form.</h1>
-    <p class="brand-hero__intro">A small home for companion apps that help emotional life become clearer, warmer, and easier to return to.</p>
-    <div class="brand-actions">
-      <a class="brand-button" href="/apps/chatura/">Explore Chatura</a>
-      <a class="brand-link" href="#apps">View apps</a>
-    </div>
+    <h1 id="brand-title">Littora</h1>
+    <p class="brand-statement">Where feeling is held, explored, and brought into form.</p>
+    <p class="brand-hero__intro">Quiet software for inner life.</p>
   </section>
 
   <section id="apps" class="brand-apps" aria-labelledby="apps-title">
     <div class="brand-section-heading">
       <p class="brand-eyebrow">Apps</p>
-      <h2 id="apps-title">Available now</h2>
+      <h2 id="apps-title">One app, for now.</h2>
     </div>
 
     <a class="brand-app-card" href="/apps/chatura/">
@@ -28,7 +23,7 @@ permalink: /
         <strong>Chatura</strong>
         <span>Character-led AI companionship for everyday warmth, gentle support, and conversations worth keeping.</span>
       </span>
-      <span class="brand-app-card__cta">Open</span>
+      <span class="brand-app-card__cta">View</span>
     </a>
   </section>
 </div>
