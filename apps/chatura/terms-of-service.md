@@ -217,4 +217,4 @@ We may update these Terms from time to time. If we make material changes, we may
 
 If you have questions about these Terms, contact us at:
 
-**Email:** chaturaapp@gmail.com
+**Email:** littoraart@gmail.com
