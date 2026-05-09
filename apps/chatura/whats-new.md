@@ -6,6 +6,10 @@ permalink: /apps/chatura/whats-new/
 
 # What’s New
 
+## Version 1.1.3 — A smoother everyday experience
+
+This update improves the overall app experience so Chatura feels a little more fluid, steady, and comfortable in daily use.
+
 ## Version 1.1.2 — A more polished, thoughtful experience
 
 This update refines the product’s design so Chatura feels more comfortable, clear, and pleasant to use in everyday moments.
