@@ -5,7 +5,7 @@ permalink: /apps/chatura/privacy-policy/
 ---
 
 # Chatura Privacy Policy
-Chatura ("**Chatura**," "**we**," "**us**," or "**our**") is an iOS app that provides AI character chat for warm, supportive companionship. This Privacy Policy explains what information is stored on your device, what information may be transmitted to generate AI outputs, and what limited technical metadata our servers may record for reliability.
+Chatura ("**Chatura**," "**we**," "**us**," or "**our**") is an iOS app that provides AI character chat for warm, supportive companionship. This Privacy Policy explains what information is stored on your device, what information may be transmitted to generate AI outputs, and what limited usage and technical metadata our servers may record for analytics, reliability, and diagnostics.
 
 ---
 
@@ -15,6 +15,7 @@ Chatura ("**Chatura**," "**we**," "**us**," or "**our**") is an iOS app that pro
 - **Privacy-minimal by design.** We do not ask for account identifiers like your name, email address, or phone number.
 - **No ads and no cross-app tracking.** We do not serve ads and we do not track you across apps or websites.
 - **No third-party analytics SDKs.** We do not integrate third-party analytics SDKs (for example, Firebase, Amplitude, Adjust).
+- **First-party usage analytics only.** We may collect limited app usage metadata, such as app open/background events, screen or tab names, onboarding and permission prompt outcomes, app version/build, and temporary client session/event IDs. These analytics do **not** include chat text, prompts, generated replies, advertising identifiers, precise location, contacts, photos, or cross-app tracking identifiers.
 - **On-device storage (no cloud sync).** Your chats and preferences are stored locally on your iPhone/iPad. Chatura does not provide cloud sync.
 - **AI generation requires sending context.** When you request AI-generated outputs, Chatura transmits the necessary input to our backend so it can be sent to third-party AI/generation service providers. For chat replies, this includes **your latest message and the character’s full conversation history up to that point**. **Full conversation history may be transmitted for continuity.**
 
@@ -50,16 +51,23 @@ Depending on the feature, the transmitted content may include:
 
 We use this transmitted context only to generate the output you requested and to support continuity. For chat replies, **full conversation history may be transmitted** when you request a response.
 
-### B) Technical metadata for reliability and diagnostics
+### B) First-party usage analytics and technical metadata
 
-Our backend may record limited **metadata logs** for reliability and troubleshooting, such as:
+Our backend may record limited **metadata logs** for analytics, reliability, and troubleshooting, such as:
 
 - timestamps
+- app open/background events
+- screen or tab names
+- onboarding and permission prompt outcomes
+- app version/build
+- temporary client session/event IDs and event sequence
 - status codes
 - latency/performance timing
 - request size / token count (or similar request volume measures)
 
 **We do not log the text content of your chats or prompts** in our backend logs.
+
+We use this metadata to understand app flow, diagnose where users may stop during onboarding or navigation, and maintain reliability. We do not use it for advertising, cross-app tracking, or to build profiles outside Chatura.
 
 **Retention:** We keep these metadata logs only when needed to investigate reliability issues and, if retained, for **no more than 3 days**.
 
@@ -83,7 +91,7 @@ To generate outputs (for example, chat replies and, if available, other generate
 
 ### C) Logging platform (metadata only)
 
-For operational reliability, **metadata logs** (for example, timestamps, status codes, latency, request size/token counts) may be forwarded to **a logging platform**.
+For analytics and operational reliability, **metadata logs** (for example, app usage events, timestamps, status codes, latency, request size/token counts) may be forwarded to **a logging platform**.
 
 We do not send chat content to this logging destination.
 
@@ -93,7 +101,7 @@ If metadata logs are forwarded to a logging platform, they are forwarded only wh
 
 ## 5) How we use information
 
-We use information to (a) provide core functionality (store chats and preferences on-device and generate the AI outputs you request), (b) support continuity by transmitting necessary context for generation (including, for chat replies, the character’s full conversation history up to that point), and (c) maintain reliability and troubleshoot using limited metadata logs.
+We use information to (a) provide core functionality (store chats and preferences on-device and generate the AI outputs you request), (b) support continuity by transmitting necessary context for generation (including, for chat replies, the character’s full conversation history up to that point), and (c) understand app usage flow, maintain reliability, and troubleshoot using limited metadata logs.
 
 We do not use your information for advertising or marketing, and we do not track you across apps or websites.
 
