@@ -273,8 +273,9 @@ body:has(.brand-page) .site-header::after {
 }
 
 body:has(.brand-page) .site-title {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 body:has(.brand-page) .post-content {
@@ -292,7 +293,7 @@ body:has(.brand-page) .post-content::after {
 
 .brand-page {
   color: #16171a;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 
 .brand-hero {
@@ -306,26 +307,27 @@ body:has(.brand-page) .post-content::after {
 .brand-hero h1 {
   max-width: 980px;
   margin: 0;
-  color: #111216;
-  font-family: Georgia, "Times New Roman", serif;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   font-size: clamp(4.4rem, 15vw, 12.5rem);
-  line-height: 0.9;
+  line-height: 0.88;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 .brand-statement {
-  max-width: 780px;
-  margin: clamp(1.7rem, 4vw, 3.1rem) 0 0;
-  color: #1d2028;
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(1.55rem, 3.1vw, 3.05rem);
-  line-height: 1.14;
+  max-width: 820px;
+  margin: clamp(1.6rem, 4vw, 3rem) 0 0;
+  color: #424245;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.2vw, 3.15rem);
+  line-height: 1.08;
   letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 .brand-apps {
@@ -338,12 +340,12 @@ body:has(.brand-page) .post-content::after {
 
 .brand-eyebrow {
   margin: 0;
-  color: #77736c;
-  font-family: "Manrope", "SF Pro Text", "Segoe UI", system-ui, -apple-system, sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  color: #6e6e73;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .brand-app-grid {
@@ -441,12 +443,12 @@ a.brand-app-card:focus-visible {
 
 .brand-app-card__status {
   color: #8b6f57;
-  font-family: "Manrope", "SF Pro Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .brand-app-card--placeholder .brand-app-card__status {
@@ -454,22 +456,26 @@ a.brand-app-card:focus-visible {
 }
 
 .brand-app-card__content strong {
-  color: #18191d;
-  font-family: "Space Grotesk", "Manrope", "SF Pro Display", "Segoe UI", system-ui, -apple-system, sans-serif;
-  font-size: clamp(2.2rem, 5vw, 4.4rem);
-  line-height: 1.2;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2.35rem, 5vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1.05;
   letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 .brand-app-card--featured .brand-app-card__content strong {
-  font-family: "Space Grotesk", "Manrope", "SF Pro Display", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 
 .brand-app-card__description {
-  max-width: 34rem;
-  color: #666b74;
-  font-size: clamp(1.15rem, 2.4vw, 2rem);
-  line-height: 1.6;
+  max-width: 42rem;
+  color: #6e6e73;
+  font-size: clamp(1.1rem, 2.2vw, 1.72rem);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0;
 }
 
 .brand-app-card--featured .brand-app-card__description {
