@@ -1,6 +1,10 @@
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% if page.url contains "/apps/chatura/" and page.url != "/apps/chatura/" %}
+      <a class="site-title" rel="author" href="{{ "/apps/chatura/" | relative_url }}">Chatura</a>
+    {% else %}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% endif %}
     {% if page.url == "/" or page.url == "/apps/chatura/" %}
       <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav-menu" aria-expanded="false">
         <span class="site-nav__toggle-icon" aria-hidden="true"></span>

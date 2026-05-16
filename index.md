@@ -13,13 +13,14 @@ permalink: /
   <section id="apps" class="brand-apps" aria-label="Littora apps">
     <p class="brand-eyebrow">Apps</p>
 
-    <a class="brand-app-card" href="/apps/chatura/">
-      <span class="brand-app-card__icon" aria-hidden="true"></span>
-      <span class="brand-app-card__content">
-        <strong>Chatura</strong>
-        <span>Character-led AI companionship for everyday warmth, gentle support, and conversations worth keeping.</span>
-      </span>
-      <span class="brand-app-card__cta">Open</span>
-    </a>
+    <div class="brand-app-grid">
+      <a class="brand-app-card brand-app-card--featured" href="/apps/chatura/" aria-label="View Chatura app page">
+        <span class="brand-app-card__icon" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Chatura</strong>
+          <span class="brand-app-card__description">Character-led AI companionship for everyday warmth, gentle support, and conversations worth keeping.</span>
+        </span>
+      </a>
+    </div>
   </section>
 </div>
