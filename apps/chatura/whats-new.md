@@ -6,6 +6,20 @@ permalink: /apps/chatura/whats-new/
 
 # What’s New
 
+## Version 1.2.0 — A more welcoming, reliable Chatura
+
+This update brings a refreshed first experience, deeper character improvements, and steadier service reliability so Chatura feels clearer, smoother, and more comfortable to return to.
+
+### What’s improved in 1.2.0
+
+- **A clearer first experience**: we redesigned onboarding to make it easier to understand what Chatura is for and how it can fit into everyday moments.
+- **More natural character interactions**: we made deeper refinements to character behavior so conversations can feel more comfortable, consistent, and responsive.
+- **A smoother app experience**: design refinements across the app help Chatura feel clearer, more polished, and easier to use.
+- **More reliable service**: backend improvements help support steadier, more dependable conversations.
+- **Fixed known issues**: we addressed a set of bugs so the app feels more stable in daily use.
+
+Thank you for being here — we’re continuing to refine Chatura with care, so each visit can feel a little more welcoming, steady, and personal.
+
 ## Version 1.1.3 — A smoother everyday experience
 
 This update improves the overall app experience so Chatura feels a little more fluid, steady, and comfortable in daily use.
