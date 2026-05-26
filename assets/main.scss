@@ -310,9 +310,9 @@ body:has(.brand-page) .post-content::after {
   margin: 0;
   color: #1d1d1f;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(5.4rem, 16vw, 13.2rem);
-  line-height: 0.82;
+  line-height: 0.86;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -320,7 +320,7 @@ body:has(.brand-page) .post-content::after {
 
 .brand-slogan {
   max-width: 760px;
-  margin: clamp(1.25rem, 2.8vw, 2.2rem) 0 0;
+  margin: clamp(1.05rem, 2.2vw, 1.75rem) 0 0;
   color: #242529;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: clamp(1.9rem, 3.9vw, 4.05rem);
@@ -334,7 +334,7 @@ body:has(.brand-page) .post-content::after {
 
 .brand-statement {
   max-width: 640px;
-  margin: clamp(1rem, 2vw, 1.55rem) 0 0;
+  margin: clamp(0.72rem, 1.2vw, 1rem) 0 0;
   color: #5f6267;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
