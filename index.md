@@ -6,8 +6,11 @@ permalink: /
 
 <div class="brand-page">
   <section class="brand-hero" aria-labelledby="brand-title">
-    <h1 id="brand-title">Littora</h1>
-    <p class="brand-statement">Where feeling is held, explored, and brought into form.</p>
+    <div class="brand-hero__copy">
+      <h1 id="brand-title">Littora</h1>
+      <p class="brand-slogan">The Study of Human Feeling</p>
+      <p class="brand-statement">Where feeling is held, explored, and brought into form.</p>
+    </div>
   </section>
 
   <section id="apps" class="brand-apps" aria-label="Littora apps">
