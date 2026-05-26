@@ -28,13 +28,13 @@ permalink: /apps/chatura/
       </button>
       <div class="product-preview__shot">
         <div class="product-preview__shot-track" id="hero-screenshot-track" aria-label="Chatura app screenshots" tabindex="0">
-          <img src="/assets/AppStoreScreenshot/Screenshot1.png" alt="Chatura app screenshot">
-          <img src="/assets/AppStoreScreenshot/Screenshot2.png" alt="Chatura app screenshot">
-          <img src="/assets/AppStoreScreenshot/Screenshot3.png" alt="Chatura app screenshot">
-          <img src="/assets/AppStoreScreenshot/Screenshot4.png" alt="Chatura app screenshot">
-          <img src="/assets/AppStoreScreenshot/Screenshot5.png" alt="Chatura app screenshot">
-          <img src="/assets/AppStoreScreenshot/Screenshot6.png" alt="Chatura app screenshot">
-          <img src="/assets/AppStoreScreenshot/Screenshot7.png" alt="Chatura app screenshot">
+          <img src="/assets/AppStoreScreenshot/Screenshot1.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot2.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot3.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot4.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot5.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot6.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot7.png" alt="Chatura app screenshot" width="1320" height="2868">
         </div>
       </div>
       <button class="product-preview__control product-preview__control--next" type="button" aria-label="Show next screenshot" aria-controls="hero-screenshot-track">
@@ -56,6 +56,7 @@ permalink: /apps/chatura/
     var previous = carousel.querySelector(".product-preview__control--prev");
     var next = carousel.querySelector(".product-preview__control--next");
     if (!track || !previous || !next) return;
+    var images = track.querySelectorAll("img");
 
     var getStep = function () {
       var firstImage = track.querySelector("img");
@@ -84,6 +85,10 @@ permalink: /apps/chatura/
       carousel.classList.toggle("is-at-end", nextHidden);
     };
 
+    var requestSyncControls = function () {
+      window.requestAnimationFrame(syncControls);
+    };
+
     previous.addEventListener("click", function () {
       track.scrollBy({ left: -getStep(), behavior: "smooth" });
     });
@@ -93,8 +98,20 @@ permalink: /apps/chatura/
     });
 
     track.addEventListener("scroll", syncControls, { passive: true });
-    window.addEventListener("resize", syncControls);
-    syncControls();
+    window.addEventListener("resize", requestSyncControls);
+    window.addEventListener("load", requestSyncControls);
+
+    images.forEach(function (image) {
+      if (image.complete) {
+        requestSyncControls();
+        return;
+      }
+
+      image.addEventListener("load", requestSyncControls, { once: true });
+      image.addEventListener("error", requestSyncControls, { once: true });
+    });
+
+    requestSyncControls();
   })();
 </script>
 
