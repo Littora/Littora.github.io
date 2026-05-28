@@ -11,3 +11,25 @@ lang: en-US
 
 # Markdown engine (default is fine, but explicit is clearer)
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      favicon: /assets/icons/littora-icon.png
+      apple_touch_icon: /assets/icons/littora-icon.png
+      share_image: /assets/icons/littora-icon.png
+      share_image_width: 1254
+      share_image_height: 1254
+      share_image_alt: Littora icon
+  - scope:
+      path: "apps/chatura"
+      type: "pages"
+    values:
+      favicon: /assets/icons/chatura-icon.png
+      apple_touch_icon: /assets/icons/chatura-icon.png
+      share_image: /assets/icons/chatura-icon.png
+      share_image_width: 1024
+      share_image_height: 1024
+      share_image_alt: Chatura app icon
