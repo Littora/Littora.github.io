@@ -6,6 +6,18 @@ permalink: /apps/chatura/whats-new/
 
 # What’s New
 
+## Version 1.2.1 — A smoother Moments experience, with more ways to make Chatura yours
+
+This update brings a more fluid Moments experience, refreshed character avatars, and more App Icon options so Chatura feels smoother, clearer, and more personal to return to.
+
+### What’s improved in 1.2.1
+
+- **A smoother Moments experience**: we refined the Moments interface so browsing character updates feels more fluid and comfortable in everyday use.
+- **Refreshed character avatars**: updated character images help each companion feel clearer, more polished, and easier to recognize.
+- **More App Icon choices**: new icon options give you more ways to choose a style that feels right for you.
+
+Thank you for being here — we’re continuing to polish Chatura with care, so each visit can feel a little smoother, warmer, and more personal.
+
 ## Version 1.2.0 — A more welcoming, reliable Chatura
 
 This update brings a refreshed first experience, deeper character improvements, and steadier service reliability so Chatura feels clearer, smoother, and more comfortable to return to.
