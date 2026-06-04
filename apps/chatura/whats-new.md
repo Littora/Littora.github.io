@@ -103,7 +103,7 @@ Whether you want to celebrate a small win, untangle a thought, or simply feel a 
   - **Time Capsule**: leave something for your future self.
   - **Wish Voice**: name a wish so it feels real and return to it later.
   - **Secret Haven**: a dedicated space for what’s hardest to say.
-- **Secret Haven protection**: optional iOS App Lock + **locally encrypted storage** (for Secret Haven).
+- **Secret Haven protection**: content stored on your device, with access protected by optional iOS App Lock.
 - **Privacy and control**: no ads. You can **delete conversations** anytime and **export your chat data** whenever you want.
 
 ### A few good first messages
