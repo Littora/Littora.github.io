@@ -192,7 +192,7 @@ No ads. No third-party sharing for advertising or analytics. You can delete conv
 - **No account required**
 - **Delete conversations** anytime
 - **Export chat data** across characters
-- **Secret Haven** supports optional **App Lock** and **local encrypted storage**
+- **Secret Haven** stores content on your device, with access protected by optional **App Lock**
 </div>
 </article>
 </div>
