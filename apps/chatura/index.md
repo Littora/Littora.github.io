@@ -116,83 +116,71 @@ permalink: /apps/chatura/
 </script>
 
 <section id="features" class="content-section content-section--features" markdown="1">
-## Features
+## More than a chat history.
+
+<p class="features-lede">Chatura keeps the meaningful parts of companion chats close — a memory, a plan, a wish, a message for later, or a secret you want to keep separate.</p>
 
 <div class="feature-grid" markdown="1">
-<article class="feature-card" markdown="1">
+<article class="feature-card feature-card--primary" markdown="1">
 <div class="feature-card__intro" markdown="1">
-## 1) A warm companion you can come back to
-### Gentle support for everyday moments.
-For quick check-ins, quiet breaks, and late-night thoughts, Chatura offers a calm, familiar place to talk.
+<p class="feature-card__eyebrow">Core difference</p>
+
+## Chats you can return to
+### When the useful part appears, give it a place to live.
+A companion chat can be messy, tender, practical, or half-formed. Chatura helps you keep the part that matters without turning the app into a notes system.
 </div>
-<div class="feature-card__body" markdown="1">
-**Why it feels easy to return to:**
-- Text-first chat for everyday support
-- One core character designed for daily warmth
-- No setup, no pressure—just open and talk
+<div class="feature-card__body">
+<div class="keepsake-list">
+  <div class="keepsake-item"><strong>Our Memory</strong><span>Save what mattered.</span></div>
+  <div class="keepsake-item"><strong>Our Plan</strong><span>Turn a thought into a next step.</span></div>
+  <div class="keepsake-item"><strong>Wish Voice</strong><span>Put a wish into words.</span></div>
+  <div class="keepsake-item"><strong>Time Capsule</strong><span>Leave something for your future self.</span></div>
+  <div class="keepsake-item"><strong>Secret Haven</strong><span>Keep harder thoughts separate.</span></div>
+</div>
 </div>
 </article>
 
-<article class="feature-card" markdown="1">
+<article class="feature-card feature-card--compact" markdown="1">
 <div class="feature-card__intro" markdown="1">
-## 2) Chats that become keepsakes
-### Hold onto what matters.
-Meaningful conversations can turn into simple keepsakes you can revisit later.
-</div>
-<div class="feature-card__body" markdown="1">
-**What you can keep:**
-- **Our Memory** — moments worth keeping
-- **Our Plan** — a next step to come back to
-- **Time Capsule** — a message for your future self
-- **Wish Voice** — a hope put into words
-- **Secret Haven** — a more private place for what is hard to say elsewhere
+<p class="feature-card__eyebrow">Everyday companions</p>
 
-*Keepsakes are created and managed through chat—no separate tools to learn.*
+## Purpose-designed, not endless
+### A thoughtful cast for real-life moments.
+Chatura is not built around browsing hundreds of characters. Choose a tone that fits the moment and start talking.
+</div>
+<div class="feature-card__body">
+<div class="tone-panel" aria-label="Chatura companion tones">
+  <span class="tone-chip tone-chip--warm">Warm</span>
+  <span class="tone-chip tone-chip--steady">Steady</span>
+  <span class="tone-chip tone-chip--curious">Curious</span>
+  <span class="tone-chip tone-chip--thoughtful">Thoughtful</span>
+  <span class="tone-chip tone-chip--playful">Playful</span>
+  <span class="tone-chip tone-chip--calming">Calming</span>
+</div>
+<div class="feature-contrast" aria-label="Chatura companion design focus">
+  <span>Less browsing</span>
+  <span>More returning</span>
+</div>
 </div>
 </article>
 
-<article class="feature-card" markdown="1">
+<article class="feature-card feature-card--compact" markdown="1">
 <div class="feature-card__intro" markdown="1">
-## 3) Distinct characters, not one generic assistant
-### Six voices. More than one kind of support.
-Each character has their own tone, perspective, and presence. Over time, they become more informed by what you share while staying true to who they are.
-</div>
-<div class="feature-card__body" markdown="1">
-**What gives them continuity:**
-- **6 characters total** *(1 included, 5 unlocked with subscription)*
-- Each character is anchored by **Info / Status / Interests**
-- They can remember details you’ve shared over time
-- Continuity comes from identity + shared history, not “perfect memory” claims
-</div>
-</article>
+<p class="feature-card__eyebrow">Trust & control</p>
 
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 4) Moments between chats
-### A relationship that stays present.
-Characters share **Moments**—small posts about daily life and thoughts—so Chatura still feels alive even when you are not actively chatting.
+## Start light. Stay in control.
+### Calm by default, clear about your choices.
+Start without setup, chat without ad interruptions, and keep practical controls over your conversations.
 </div>
-<div class="feature-card__body" markdown="1">
-**How Moments work:**
-- Like, comment, and jump straight into chat
-- Posts are generated from each character’s profile
-- Built to keep a gentle sense of presence between conversations
+<div class="feature-card__body">
+<div class="assurance-tags" aria-label="Chatura privacy and control highlights">
+  <span>No account required</span>
+  <span>No ads in chat</span>
+  <span>No cross-app tracking</span>
+  <span>No third-party analytics SDKs</span>
+  <span>Delete anytime</span>
+  <span>Export anytime</span>
 </div>
-</article>
-
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 5) Private, calm, and in your control
-### Respectful by design.
-No ads. No third-party sharing for advertising or analytics. You can delete conversations anytime and export your chat data when you want.
-</div>
-<div class="feature-card__body" markdown="1">
-**Privacy & control:**
-- **No ads**
-- **No account required**
-- **Delete conversations** anytime
-- **Export chat data** across characters
-- **Secret Haven** stores content on your device, with access protected by optional **App Lock**
 </div>
 </article>
 </div>
