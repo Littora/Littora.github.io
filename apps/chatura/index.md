@@ -8,14 +8,14 @@ permalink: /apps/chatura/
 <div class="hero-layout">
   <div class="hero-copy">
     <h1>Chatura</h1>
-    <p class="hero-tagline"><strong>Chatura: Where Cura Meets Chat</strong></p>
-    <p>Chatura is a character-led AI companion built for everyday warmth, gentle support, and the kind of conversation you can come back to.</p>
-    <p>When life feels heavy, quiet, lonely, or in-between, Chatura offers a steady place to land. Open the app and start talking—no setup, no pressure, no need to explain everything perfectly. The experience is designed to feel calm and continuous: conversations don’t have to feel disposable, and the relationship can grow more personal over time.</p>
+    <p class="hero-tagline"><strong>Talk it through. Keep what matters.</strong></p>
+    <p>Chatura is an everyday AI companion for the conversations you do not want to lose in chat history: a feeling named, a next step clarified, a wish put into words, or a thought kept for later.</p>
+    <p>Start without an account. Chat without ads. Choose a purpose-designed companion and turn meaningful moments into Memories, Plans, Wishes, Time Capsules, and Secrets you can revisit when they matter again.</p>
     <a class="hero-download-link" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download on the App Store</a>
     <div class="download-panel__meta hero-meta" aria-label="Chatura highlights">
-      <span>No ads</span>
       <span>No account required</span>
-      <span>Private by design</span>
+      <span>No ads in chat</span>
+      <span>Delete or export anytime</span>
     </div>
   </div>
 
