@@ -123,27 +123,38 @@ permalink: /apps/chatura/
 <div class="feature-grid" markdown="1">
 <article class="feature-card feature-card--primary" markdown="1">
 <div class="feature-card__intro" markdown="1">
-<p class="feature-card__eyebrow">Core difference</p>
-
 ## Chats you can return to
 ### When the useful part appears, give it a place to live.
 A companion chat can be messy, tender, practical, or half-formed. Chatura helps you keep the part that matters without turning the app into a notes system.
 </div>
 <div class="feature-card__body">
 <div class="keepsake-list">
-  <div class="keepsake-item"><strong>Our Memory</strong><span>Save what mattered.</span></div>
-  <div class="keepsake-item"><strong>Our Plan</strong><span>Turn a thought into a next step.</span></div>
-  <div class="keepsake-item"><strong>Wish Voice</strong><span>Put a wish into words.</span></div>
-  <div class="keepsake-item"><strong>Time Capsule</strong><span>Leave something for your future self.</span></div>
-  <div class="keepsake-item"><strong>Secret Haven</strong><span>Keep harder thoughts separate.</span></div>
+  <div class="keepsake-item keepsake-item--memory">
+    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75A2.25 2.25 0 0 1 8.75 2.5h6.5a2.25 2.25 0 0 1 2.25 2.25v16.1l-5.5-3.15-5.5 3.15V4.75Z"/></svg></span>
+    <span class="keepsake-copy"><strong>Our Memory</strong><span>Save what mattered.</span></span>
+  </div>
+  <div class="keepsake-item keepsake-item--plan">
+    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4.5 6.5h7.25v4.25H4.5V6.5Zm7.75 6.75h7.25v4.25h-7.25v-4.25ZM8.1 10.75v2.5h7.8m0 0-1.75-1.75m1.75 1.75-1.75 1.75"/></svg></span>
+    <span class="keepsake-copy"><strong>Our Plan</strong><span>Find the next step.</span></span>
+  </div>
+  <div class="keepsake-item keepsake-item--wish">
+    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 20.25S4.75 16.1 4.75 10.2A3.95 3.95 0 0 1 12 8.05a3.95 3.95 0 0 1 7.25 2.15C19.25 16.1 12 20.25 12 20.25Z"/></svg></span>
+    <span class="keepsake-copy"><strong>Wish Voice</strong><span>Put a wish into words.</span></span>
+  </div>
+  <div class="keepsake-item keepsake-item--capsule">
+    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 5.25a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 3.25v4.05l2.8 1.65"/></svg></span>
+    <span class="keepsake-copy"><strong>Time Capsule</strong><span>Leave it for later.</span></span>
+  </div>
+  <div class="keepsake-item keepsake-item--secret">
+    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
+    <span class="keepsake-copy"><strong>Secret Haven</strong><span>Keep harder thoughts separate.</span></span>
+  </div>
 </div>
 </div>
 </article>
 
 <article class="feature-card feature-card--compact" markdown="1">
 <div class="feature-card__intro" markdown="1">
-<p class="feature-card__eyebrow">Everyday companions</p>
-
 ## Purpose-designed, not endless
 ### A thoughtful cast for real-life moments.
 Chatura is not built around browsing hundreds of characters. Choose a tone that fits the moment and start talking.
@@ -157,17 +168,11 @@ Chatura is not built around browsing hundreds of characters. Choose a tone that 
   <span class="tone-chip tone-chip--playful">Playful</span>
   <span class="tone-chip tone-chip--calming">Calming</span>
 </div>
-<div class="feature-contrast" aria-label="Chatura companion design focus">
-  <span>Less browsing</span>
-  <span>More returning</span>
-</div>
 </div>
 </article>
 
 <article class="feature-card feature-card--compact" markdown="1">
 <div class="feature-card__intro" markdown="1">
-<p class="feature-card__eyebrow">Trust & control</p>
-
 ## Start light. Stay in control.
 ### Calm by default, clear about your choices.
 Start without setup, chat without ad interruptions, and keep practical controls over your conversations.
