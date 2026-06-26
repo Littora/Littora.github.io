@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Placeholder for conversation continuity artwork">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5fbff"/>
+      <stop offset="0.5" stop-color="#e3ecff"/>
+      <stop offset="1" stop-color="#f4fff9"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" rx="56" fill="url(#bg)"/>
+  <path d="M198 300 H762" stroke="#8db6ff" stroke-width="16" stroke-linecap="round" opacity="0.34"/>
+  <path d="M302 232 C388 328 480 334 560 258 C620 202 706 212 766 292" fill="none" stroke="#8194dc" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="210" cy="300" r="72" fill="url(#node)"/>
+  <circle cx="480" cy="300" r="92" fill="url(#node)"/>
+  <circle cx="750" cy="300" r="72" fill="url(#node)"/>
+  <rect x="438" y="266" width="84" height="18" rx="9" fill="#2f3a52" opacity="0.74"/>
+  <rect x="414" y="310" width="132" height="14" rx="7" fill="#6b7a92" opacity="0.38"/>
+  <circle cx="210" cy="300" r="22" fill="#8db6ff" opacity="0.82"/>
+  <circle cx="750" cy="300" r="22" fill="#15b87a" opacity="0.66"/>
+</svg>

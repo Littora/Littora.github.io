@@ -116,15 +116,15 @@ permalink: /apps/chatura/
 </script>
 
 <section id="features" class="content-section content-section--features" markdown="1">
-## The useful part of a conversation should survive the chat.
+## Keep the part of a chat that matters.
 
-<p class="features-lede">Chatura is designed for companion moments that keep giving value after the last message — saved as Memories, Plans, Wishes, Time Capsules, or Secrets you can reopen when life catches up.</p>
+<p class="features-lede">Chatura is an everyday AI companion where meaningful conversations can become Memories, Plans, Wishes, Time Capsules, and Secrets you can return to later.</p>
 
 <div class="feature-stage">
   <article class="feature-card feature-card--keepsakes">
     <div class="feature-card__lead">
-      <h3>Turn a meaningful chat into something you can return to.</h3>
-      <p>A feeling, decision, wish, or future note gets its own shape — visible, organized, and ready to continue.</p>
+      <h3>From chat to something worth returning to.</h3>
+      <p>A feeling, decision, wish, or note for later gets a clear place — visible, organized, and ready to continue.</p>
     </div>
 
     <div class="artifact-stack" aria-label="Things a Chatura chat can become">
@@ -157,8 +157,8 @@ permalink: /apps/chatura/
   </article>
 
   <article class="feature-card feature-card--companion">
-    <h3>Companions for everyday moments, not endless browsing.</h3>
-    <p>A smaller, purpose-designed set keeps choice simple: pick the presence you need, then start talking.</p>
+    <h3>Purpose-designed companions, not an endless marketplace.</h3>
+    <p>A smaller, intentional set keeps choice simple: pick the presence you need, then start talking.</p>
     <div class="tone-rack" aria-label="Chatura companion tones">
       <span>Warm</span>
       <span>Steady</span>
@@ -170,7 +170,7 @@ permalink: /apps/chatura/
   </article>
 
   <article class="feature-card feature-card--control">
-    <h3>Low-friction start. Clear conversation controls.</h3>
+    <h3>Start without setup. Stay in control.</h3>
     <p>Begin without an account, chat without ads, and keep deletion or export choices close to the conversation.</p>
     <div class="trust-rack" aria-label="Chatura privacy and control highlights">
       <span>No account required</span>
@@ -185,52 +185,45 @@ permalink: /apps/chatura/
 
 <div class="feature-subgrid">
   <article class="feature-card feature-card--sub feature-card--moments">
-    <div class="feature-sub-heading">
+    <div class="feature-story-media">
+      <img src="/assets/chatura-placeholders/feature-moments-between-chats.svg" alt="" width="960" height="600" loading="lazy">
+    </div>
+    <div class="feature-story-copy">
+      <span class="feature-story-kicker">Return cues</span>
+      <div class="feature-sub-heading">
       <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 7.5A3.5 3.5 0 0 1 8.5 4h7A3.5 3.5 0 0 1 19 7.5v4A3.5 3.5 0 0 1 15.5 15H11l-4.5 4v-4.25A3.5 3.5 0 0 1 5 12V7.5Z"/></svg></span>
       <strong>Moments between chats</strong>
-    </div>
-    <p>Small companion posts make the app feel alive between full conversations, giving users an easy way to react, comment, or return.</p>
-    <div class="feature-sub-visual moment-post" aria-label="Example companion moment">
-      <span class="moment-post__label">Today</span>
-      <p>I kept that thought from last night. Want to keep going?</p>
-      <div><span>Like</span><span>Comment</span><span>Open chat</span></div>
+      </div>
+      <p>Small companion posts create gentle reasons to return, react, and continue without needing to start a full chat from scratch.</p>
+      <div class="feature-story-tags"><span>Companion posts</span><span>React</span><span>Open chat</span></div>
     </div>
   </article>
   <article class="feature-card feature-card--sub feature-card--continuity">
-    <div class="feature-sub-heading">
+    <div class="feature-story-media">
+      <img src="/assets/chatura-placeholders/feature-conversation-continuity.svg" alt="" width="960" height="600" loading="lazy">
+    </div>
+    <div class="feature-story-copy">
+      <span class="feature-story-kicker">Continuity</span>
+      <div class="feature-sub-heading">
       <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 12a6 6 0 0 1 10.2-4.3L18 9.5m0-4v4h-4m4 2.5a6 6 0 0 1-10.2 4.3L6 14.5m0 4v-4h4"/></svg></span>
       <strong>Conversation continuity</strong>
-    </div>
-    <p>Companions can build on what you share, so a return visit feels familiar instead of blank, repetitive, or reset.</p>
-    <div class="feature-sub-visual continuity-path" aria-label="Conversation continuity flow">
-      <span>Shared once</span>
-      <span>Carried forward</span>
-      <span>Next chat starts warmer</span>
+      </div>
+      <p>Companions can build on what you share, so returning feels familiar instead of blank, repetitive, or reset.</p>
+      <div class="feature-story-tags"><span>Shared context</span><span>Familiar tone</span><span>Pick up later</span></div>
     </div>
   </article>
   <article class="feature-card feature-card--sub feature-card--openings">
-    <div class="feature-sub-heading">
+    <div class="feature-story-media">
+      <img src="/assets/chatura-placeholders/feature-everyday-openings.svg" alt="" width="960" height="600" loading="lazy">
+    </div>
+    <div class="feature-story-copy">
+      <span class="feature-story-kicker">Easy starts</span>
+      <div class="feature-sub-heading">
       <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5.25 8.25h13.5m-11.5-3v6.5m4.75-6.5v13.5m4.75-13.5v6.5m-11.5 4h13.5"/></svg></span>
       <strong>Everyday openings</strong>
-    </div>
-    <p>Useful starts for ordinary emotional moments: not therapy framing, not productivity pressure, just a human way in.</p>
-    <div class="feature-sub-visual opening-grid" aria-label="Everyday chat openings">
-      <span>Late-night thoughts</span>
-      <span>Small wins</span>
-      <span>Quiet check-ins</span>
-      <span>Hard decisions</span>
-    </div>
-  </article>
-  <article class="feature-card feature-card--sub feature-card--haven">
-    <div class="feature-sub-heading">
-      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
-      <strong>Secret Haven + App Lock</strong>
-    </div>
-    <p>A separate space for harder thoughts, with optional App Lock for conversations users want extra friction around.</p>
-    <div class="feature-sub-visual lock-stack" aria-label="Secret Haven and control layers">
-      <span>Secret Haven</span>
-      <span>Optional App Lock</span>
-      <span>Delete or export</span>
+      </div>
+      <p>Quick ways into late-night thoughts, small wins, quiet check-ins, and hard decisions — without therapy framing or productivity pressure.</p>
+      <div class="feature-story-tags"><span>Late night</span><span>Small wins</span><span>Check-ins</span><span>Hard decisions</span></div>
     </div>
   </article>
 </div>
