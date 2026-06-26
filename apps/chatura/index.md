@@ -184,46 +184,46 @@ permalink: /apps/chatura/
 </div>
 
 <div class="feature-subgrid">
+  <article class="feature-card feature-card--sub feature-card--world">
+    <div class="feature-story-media">
+      <img src="/assets/chatura-placeholders/feature-conversation-continuity.svg" alt="" width="960" height="600" loading="lazy">
+    </div>
+    <div class="feature-story-copy">
+      <span class="feature-story-kicker">Inner world</span>
+      <div class="feature-sub-heading">
+      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 7.5 12 4l6 3.5v7L12 18l-6-3.5v-7Zm6-3.5v14m-6-10.5 6 3.5 6-3.5"/></svg></span>
+      <strong>Lifelike characters with a consistent inner world.</strong>
+      </div>
+      <p>Each companion has a stable voice, interests, profile, and rhythm, so the experience feels grounded in a specific presence.</p>
+      <div class="feature-story-tags"><span>Stable voice</span><span>Character profile</span><span>Distinct rhythm</span></div>
+    </div>
+  </article>
   <article class="feature-card feature-card--sub feature-card--moments">
     <div class="feature-story-media">
       <img src="/assets/chatura-placeholders/feature-moments-between-chats.svg" alt="" width="960" height="600" loading="lazy">
     </div>
     <div class="feature-story-copy">
-      <span class="feature-story-kicker">Return cues</span>
+      <span class="feature-story-kicker">Moments feed</span>
       <div class="feature-sub-heading">
       <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 7.5A3.5 3.5 0 0 1 8.5 4h7A3.5 3.5 0 0 1 19 7.5v4A3.5 3.5 0 0 1 15.5 15H11l-4.5 4v-4.25A3.5 3.5 0 0 1 5 12V7.5Z"/></svg></span>
-      <strong>Moments between chats</strong>
+      <strong>Moments keep the relationship present between chats.</strong>
       </div>
-      <p>Small companion posts create gentle reasons to return, react, and continue without needing to start a full chat from scratch.</p>
-      <div class="feature-story-tags"><span>Companion posts</span><span>React</span><span>Open chat</span></div>
+      <p>A dedicated feed where AI characters share daily-life thoughts and small updates. Moment content is grounded in each character's profile and current in-app context, with cadence configurable in the app.</p>
+      <div class="feature-story-tags"><span>Daily thoughts</span><span>Profile grounded</span><span>Configurable cadence</span><span>React or comment</span></div>
     </div>
   </article>
-  <article class="feature-card feature-card--sub feature-card--continuity">
-    <div class="feature-story-media">
-      <img src="/assets/chatura-placeholders/feature-conversation-continuity.svg" alt="" width="960" height="600" loading="lazy">
-    </div>
-    <div class="feature-story-copy">
-      <span class="feature-story-kicker">Continuity</span>
-      <div class="feature-sub-heading">
-      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 12a6 6 0 0 1 10.2-4.3L18 9.5m0-4v4h-4m4 2.5a6 6 0 0 1-10.2 4.3L6 14.5m0 4v-4h4"/></svg></span>
-      <strong>Conversation continuity</strong>
-      </div>
-      <p>Companions can build on what you share, so returning feels familiar instead of blank, repetitive, or reset.</p>
-      <div class="feature-story-tags"><span>Shared context</span><span>Familiar tone</span><span>Pick up later</span></div>
-    </div>
-  </article>
-  <article class="feature-card feature-card--sub feature-card--openings">
+  <article class="feature-card feature-card--sub feature-card--natural">
     <div class="feature-story-media">
       <img src="/assets/chatura-placeholders/feature-everyday-openings.svg" alt="" width="960" height="600" loading="lazy">
     </div>
     <div class="feature-story-copy">
-      <span class="feature-story-kicker">Easy starts</span>
+      <span class="feature-story-kicker">Natural interaction</span>
       <div class="feature-sub-heading">
       <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5.25 8.25h13.5m-11.5-3v6.5m4.75-6.5v13.5m4.75-13.5v6.5m-11.5 4h13.5"/></svg></span>
-      <strong>Everyday openings</strong>
+      <strong>Just talk, and Chatura carries the load.</strong>
       </div>
-      <p>Quick ways into late-night thoughts, small wins, quiet check-ins, and hard decisions — without therapy framing or productivity pressure.</p>
-      <div class="feature-story-tags"><span>Late night</span><span>Small wins</span><span>Check-ins</span><span>Hard decisions</span></div>
+      <p>No extra workflow to learn. Through normal chat, meaningful parts can become Memories, Plans, Wishes, Time Capsules, or Secrets you can return to.</p>
+      <div class="feature-story-tags"><span>Chat-native</span><span>No tool setup</span><span>Shared keepsakes</span></div>
     </div>
   </article>
 </div>
