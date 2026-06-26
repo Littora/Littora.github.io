@@ -131,22 +131,22 @@ permalink: /apps/chatura/
       <div class="artifact-card artifact-card--memory">
         <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75A2.25 2.25 0 0 1 8.75 2.5h6.5a2.25 2.25 0 0 1 2.25 2.25v16.1l-5.5-3.15-5.5 3.15V4.75Z"/></svg></span>
         <strong>Our Memory</strong>
-        <span>Save what mattered.</span>
+        <span>Save the moment that deserves to stay visible.</span>
       </div>
       <div class="artifact-card artifact-card--plan">
         <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4.5 6.5h7.25v4.25H4.5V6.5Zm7.75 6.75h7.25v4.25h-7.25v-4.25ZM8.1 10.75v2.5h7.8m0 0-1.75-1.75m1.75 1.75-1.75 1.75"/></svg></span>
         <strong>Our Plan</strong>
-        <span>Find the next step.</span>
+        <span>Carry the next step out of the chat.</span>
       </div>
       <div class="artifact-card artifact-card--wish">
         <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 20.25S4.75 16.1 4.75 10.2A3.95 3.95 0 0 1 12 8.05a3.95 3.95 0 0 1 7.25 2.15C19.25 16.1 12 20.25 12 20.25Z"/></svg></span>
         <strong>Wish Voice</strong>
-        <span>Put a wish into words.</span>
+        <span>Put a future hope into words.</span>
       </div>
       <div class="artifact-card artifact-card--capsule">
         <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 5.25a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 3.25v4.05l2.8 1.65"/></svg></span>
         <strong>Time Capsule</strong>
-        <span>Leave it for later.</span>
+        <span>Leave a message for later.</span>
       </div>
       <div class="artifact-card artifact-card--secret">
         <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
