@@ -191,11 +191,15 @@ permalink: /apps/chatura/
     <div class="feature-story-copy">
       <span class="feature-story-kicker">Inner world</span>
       <div class="feature-sub-heading">
-      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 7.5 12 4l6 3.5v7L12 18l-6-3.5v-7Zm6-3.5v14m-6-10.5 6 3.5 6-3.5"/></svg></span>
       <strong>Lifelike characters with a consistent inner world.</strong>
       </div>
       <p>Each companion has a stable voice, interests, profile, and rhythm, so the experience feels grounded in a specific presence.</p>
-      <div class="feature-story-tags"><span>Stable voice</span><span>Character profile</span><span>Distinct rhythm</span></div>
+      <div class="feature-world-orbit" aria-label="Character signals">
+        <span>Voice</span>
+        <span>Interests</span>
+        <span>Profile</span>
+        <span>Rhythm</span>
+      </div>
     </div>
   </article>
   <article class="feature-card feature-card--sub feature-card--moments">
@@ -205,11 +209,14 @@ permalink: /apps/chatura/
     <div class="feature-story-copy">
       <span class="feature-story-kicker">Moments feed</span>
       <div class="feature-sub-heading">
-      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 7.5A3.5 3.5 0 0 1 8.5 4h7A3.5 3.5 0 0 1 19 7.5v4A3.5 3.5 0 0 1 15.5 15H11l-4.5 4v-4.25A3.5 3.5 0 0 1 5 12V7.5Z"/></svg></span>
       <strong>Moments keep the relationship present between chats.</strong>
       </div>
       <p>A dedicated feed where AI characters share daily-life thoughts and small updates. Moment content is grounded in each character's profile and current in-app context, with cadence configurable in the app.</p>
-      <div class="feature-story-tags"><span>Daily thoughts</span><span>Profile grounded</span><span>Configurable cadence</span><span>React or comment</span></div>
+      <div class="feature-feed-proof" aria-label="What shapes a Moment">
+        <span>Character profile</span>
+        <span>In-app context</span>
+        <strong>Moment post</strong>
+      </div>
     </div>
   </article>
   <article class="feature-card feature-card--sub feature-card--natural">
@@ -219,11 +226,14 @@ permalink: /apps/chatura/
     <div class="feature-story-copy">
       <span class="feature-story-kicker">Natural interaction</span>
       <div class="feature-sub-heading">
-      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5.25 8.25h13.5m-11.5-3v6.5m4.75-6.5v13.5m4.75-13.5v6.5m-11.5 4h13.5"/></svg></span>
       <strong>Just talk, and Chatura carries the load.</strong>
       </div>
       <p>No extra workflow to learn. Through normal chat, meaningful parts can become Memories, Plans, Wishes, Time Capsules, or Secrets you can return to.</p>
-      <div class="feature-story-tags"><span>Chat-native</span><span>No tool setup</span><span>Shared keepsakes</span></div>
+      <div class="feature-chat-path" aria-label="Natural interaction path">
+        <span>Talk</span>
+        <span>Chatura shapes it</span>
+        <span>Return later</span>
+      </div>
     </div>
   </article>
 </div>
