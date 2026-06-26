@@ -116,78 +116,123 @@ permalink: /apps/chatura/
 </script>
 
 <section id="features" class="content-section content-section--features" markdown="1">
-## More than a chat history.
+## The useful part of a conversation should survive the chat.
 
-<p class="features-lede">Chatura keeps the meaningful parts of companion chats close — a memory, a plan, a wish, a message for later, or a secret you want to keep separate.</p>
+<p class="features-lede">Chatura is designed for companion moments that keep giving value after the last message — saved as Memories, Plans, Wishes, Time Capsules, or Secrets you can reopen when life catches up.</p>
 
-<div class="feature-grid" markdown="1">
-<article class="feature-card feature-card--primary" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## Chats you can return to
-### When the useful part appears, give it a place to live.
-A companion chat can be messy, tender, practical, or half-formed. Chatura helps you keep the part that matters without turning the app into a notes system.
-</div>
-<div class="feature-card__body">
-<div class="keepsake-list">
-  <div class="keepsake-item keepsake-item--memory">
-    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75A2.25 2.25 0 0 1 8.75 2.5h6.5a2.25 2.25 0 0 1 2.25 2.25v16.1l-5.5-3.15-5.5 3.15V4.75Z"/></svg></span>
-    <span class="keepsake-copy"><strong>Our Memory</strong><span>Save what mattered.</span></span>
-  </div>
-  <div class="keepsake-item keepsake-item--plan">
-    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4.5 6.5h7.25v4.25H4.5V6.5Zm7.75 6.75h7.25v4.25h-7.25v-4.25ZM8.1 10.75v2.5h7.8m0 0-1.75-1.75m1.75 1.75-1.75 1.75"/></svg></span>
-    <span class="keepsake-copy"><strong>Our Plan</strong><span>Find the next step.</span></span>
-  </div>
-  <div class="keepsake-item keepsake-item--wish">
-    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 20.25S4.75 16.1 4.75 10.2A3.95 3.95 0 0 1 12 8.05a3.95 3.95 0 0 1 7.25 2.15C19.25 16.1 12 20.25 12 20.25Z"/></svg></span>
-    <span class="keepsake-copy"><strong>Wish Voice</strong><span>Put a wish into words.</span></span>
-  </div>
-  <div class="keepsake-item keepsake-item--capsule">
-    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 5.25a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 3.25v4.05l2.8 1.65"/></svg></span>
-    <span class="keepsake-copy"><strong>Time Capsule</strong><span>Leave it for later.</span></span>
-  </div>
-  <div class="keepsake-item keepsake-item--secret">
-    <span class="keepsake-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
-    <span class="keepsake-copy"><strong>Secret Haven</strong><span>Keep harder thoughts separate.</span></span>
-  </div>
-</div>
-</div>
-</article>
+<div class="feature-stage">
+  <article class="feature-card feature-card--keepsakes">
+    <div class="feature-card__lead">
+      <h3>Turn a meaningful chat into something you can return to.</h3>
+      <p>A feeling, decision, wish, or future note gets its own shape — visible, organized, and ready to continue.</p>
+    </div>
 
-<article class="feature-card feature-card--compact" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## Purpose-designed, not endless
-### A thoughtful cast for real-life moments.
-Chatura is not built around browsing hundreds of characters. Choose a tone that fits the moment and start talking.
-</div>
-<div class="feature-card__body">
-<div class="tone-panel" aria-label="Chatura companion tones">
-  <span class="tone-chip tone-chip--warm">Warm</span>
-  <span class="tone-chip tone-chip--steady">Steady</span>
-  <span class="tone-chip tone-chip--curious">Curious</span>
-  <span class="tone-chip tone-chip--thoughtful">Thoughtful</span>
-  <span class="tone-chip tone-chip--playful">Playful</span>
-  <span class="tone-chip tone-chip--calming">Calming</span>
-</div>
-</div>
-</article>
+    <div class="artifact-stack" aria-label="Things a Chatura chat can become">
+      <div class="artifact-card artifact-card--memory">
+        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75A2.25 2.25 0 0 1 8.75 2.5h6.5a2.25 2.25 0 0 1 2.25 2.25v16.1l-5.5-3.15-5.5 3.15V4.75Z"/></svg></span>
+        <strong>Our Memory</strong>
+        <span>Save what mattered.</span>
+      </div>
+      <div class="artifact-card artifact-card--plan">
+        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4.5 6.5h7.25v4.25H4.5V6.5Zm7.75 6.75h7.25v4.25h-7.25v-4.25ZM8.1 10.75v2.5h7.8m0 0-1.75-1.75m1.75 1.75-1.75 1.75"/></svg></span>
+        <strong>Our Plan</strong>
+        <span>Find the next step.</span>
+      </div>
+      <div class="artifact-card artifact-card--wish">
+        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 20.25S4.75 16.1 4.75 10.2A3.95 3.95 0 0 1 12 8.05a3.95 3.95 0 0 1 7.25 2.15C19.25 16.1 12 20.25 12 20.25Z"/></svg></span>
+        <strong>Wish Voice</strong>
+        <span>Put a wish into words.</span>
+      </div>
+      <div class="artifact-card artifact-card--capsule">
+        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 5.25a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 3.25v4.05l2.8 1.65"/></svg></span>
+        <strong>Time Capsule</strong>
+        <span>Leave it for later.</span>
+      </div>
+      <div class="artifact-card artifact-card--secret">
+        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
+        <strong>Secret Haven</strong>
+        <span>Keep harder thoughts separate.</span>
+      </div>
+    </div>
+  </article>
 
-<article class="feature-card feature-card--compact" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## Start light. Stay in control.
-### Calm by default, clear about your choices.
-Start without setup, chat without ad interruptions, and keep practical controls over your conversations.
+  <article class="feature-card feature-card--companion">
+    <h3>Companions for everyday moments, not endless browsing.</h3>
+    <p>A smaller, purpose-designed set keeps choice simple: pick the presence you need, then start talking.</p>
+    <div class="tone-rack" aria-label="Chatura companion tones">
+      <span>Warm</span>
+      <span>Steady</span>
+      <span>Curious</span>
+      <span>Thoughtful</span>
+      <span>Playful</span>
+      <span>Calming</span>
+    </div>
+  </article>
+
+  <article class="feature-card feature-card--control">
+    <h3>Low-friction start. Clear conversation controls.</h3>
+    <p>Begin without an account, chat without ads, and keep deletion or export choices close to the conversation.</p>
+    <div class="trust-rack" aria-label="Chatura privacy and control highlights">
+      <span>No account required</span>
+      <span>No ads in chat</span>
+      <span>No cross-app tracking</span>
+      <span>No third-party analytics SDKs</span>
+      <span>Delete anytime</span>
+      <span>Export anytime</span>
+    </div>
+  </article>
 </div>
-<div class="feature-card__body">
-<div class="assurance-tags" aria-label="Chatura privacy and control highlights">
-  <span>No account required</span>
-  <span>No ads in chat</span>
-  <span>No cross-app tracking</span>
-  <span>No third-party analytics SDKs</span>
-  <span>Delete anytime</span>
-  <span>Export anytime</span>
-</div>
-</div>
-</article>
+
+<div class="feature-subgrid">
+  <article class="feature-card feature-card--sub feature-card--moments">
+    <div class="feature-sub-heading">
+      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 7.5A3.5 3.5 0 0 1 8.5 4h7A3.5 3.5 0 0 1 19 7.5v4A3.5 3.5 0 0 1 15.5 15H11l-4.5 4v-4.25A3.5 3.5 0 0 1 5 12V7.5Z"/></svg></span>
+      <strong>Moments between chats</strong>
+    </div>
+    <p>Small companion posts make the app feel alive between full conversations, giving users an easy way to react, comment, or return.</p>
+    <div class="feature-sub-visual moment-post" aria-label="Example companion moment">
+      <span class="moment-post__label">Today</span>
+      <p>I kept that thought from last night. Want to keep going?</p>
+      <div><span>Like</span><span>Comment</span><span>Open chat</span></div>
+    </div>
+  </article>
+  <article class="feature-card feature-card--sub feature-card--continuity">
+    <div class="feature-sub-heading">
+      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 12a6 6 0 0 1 10.2-4.3L18 9.5m0-4v4h-4m4 2.5a6 6 0 0 1-10.2 4.3L6 14.5m0 4v-4h4"/></svg></span>
+      <strong>Conversation continuity</strong>
+    </div>
+    <p>Companions can build on what you share, so a return visit feels familiar instead of blank, repetitive, or reset.</p>
+    <div class="feature-sub-visual continuity-path" aria-label="Conversation continuity flow">
+      <span>Shared once</span>
+      <span>Carried forward</span>
+      <span>Next chat starts warmer</span>
+    </div>
+  </article>
+  <article class="feature-card feature-card--sub feature-card--openings">
+    <div class="feature-sub-heading">
+      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5.25 8.25h13.5m-11.5-3v6.5m4.75-6.5v13.5m4.75-13.5v6.5m-11.5 4h13.5"/></svg></span>
+      <strong>Everyday openings</strong>
+    </div>
+    <p>Useful starts for ordinary emotional moments: not therapy framing, not productivity pressure, just a human way in.</p>
+    <div class="feature-sub-visual opening-grid" aria-label="Everyday chat openings">
+      <span>Late-night thoughts</span>
+      <span>Small wins</span>
+      <span>Quiet check-ins</span>
+      <span>Hard decisions</span>
+    </div>
+  </article>
+  <article class="feature-card feature-card--sub feature-card--haven">
+    <div class="feature-sub-heading">
+      <span class="feature-sub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
+      <strong>Secret Haven + App Lock</strong>
+    </div>
+    <p>A separate space for harder thoughts, with optional App Lock for conversations users want extra friction around.</p>
+    <div class="feature-sub-visual lock-stack" aria-label="Secret Haven and control layers">
+      <span>Secret Haven</span>
+      <span>Optional App Lock</span>
+      <span>Delete or export</span>
+    </div>
+  </article>
 </div>
 </section>
 
