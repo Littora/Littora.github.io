@@ -194,12 +194,6 @@ permalink: /apps/chatura/
       <strong>Lifelike characters with a consistent inner world.</strong>
       </div>
       <p>Each companion has a stable voice, interests, profile, and rhythm, so the experience feels grounded in a specific presence.</p>
-      <div class="feature-world-orbit" aria-label="Character signals">
-        <span>Voice</span>
-        <span>Interests</span>
-        <span>Profile</span>
-        <span>Rhythm</span>
-      </div>
     </div>
   </article>
   <article class="feature-card feature-card--sub feature-card--moments">
@@ -212,11 +206,6 @@ permalink: /apps/chatura/
       <strong>Moments keep the relationship present between chats.</strong>
       </div>
       <p>A dedicated feed where AI characters share daily-life thoughts and small updates. Moment content is grounded in each character's profile and current in-app context, with cadence configurable in the app.</p>
-      <div class="feature-feed-proof" aria-label="What shapes a Moment">
-        <span>Character profile</span>
-        <span>In-app context</span>
-        <strong>Moment post</strong>
-      </div>
     </div>
   </article>
   <article class="feature-card feature-card--sub feature-card--natural">
@@ -229,43 +218,63 @@ permalink: /apps/chatura/
       <strong>Just talk, and Chatura carries the load.</strong>
       </div>
       <p>No extra workflow to learn. Through normal chat, meaningful parts can become Memories, Plans, Wishes, Time Capsules, or Secrets you can return to.</p>
-      <div class="feature-chat-path" aria-label="Natural interaction path">
-        <span>Talk</span>
-        <span>Chatura shapes it</span>
-        <span>Return later</span>
-      </div>
     </div>
   </article>
 </div>
 </section>
 
-<section id="faq" class="content-section content-section--faq" markdown="1">
-## FAQ
-<div class="faq-grid" markdown="1">
-  <div class="faq-item" markdown="1">
-  **How is Chatura different from a typical AI chat app?**
-  Chatura is built around distinct characters, ongoing continuity, and shared keepsakes. Instead of feeling like disposable chat, conversations can grow more personal over time and turn into memories, plans, wishes, and more.
+<section id="download" class="conversion-band" aria-labelledby="conversion-title">
+  <div class="conversion-band__mark" aria-hidden="true">
+    <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
   </div>
+  <div class="conversion-band__copy">
+    <p>One conversation is enough to begin.</p>
+    <h2 id="conversion-title">Ready to talk it through?</h2>
+    <p>Download Chatura and start without an account. Keep what matters when the conversation leads somewhere worth returning to.</p>
+  </div>
+  <div class="conversion-band__action">
+    <a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download on the App Store</a>
+    <span>Free to start. No ads in chat.</span>
+  </div>
+</section>
 
-  <div class="faq-item" markdown="1">
-  **What can I keep from my conversations?**
-  Meaningful moments can become revisitable keepsakes like Our Memory, Our Plan, Time Capsule, Wish Voice, and Secret Haven—all created and managed naturally through chat.
-  </div>
+<section id="faq" class="content-section content-section--faq">
+<h2>FAQ</h2>
+<div class="faq-grid">
+  <details class="faq-item">
+    <summary>How is Chatura different from a typical AI chat app?</summary>
+    <div class="faq-item__answer">
+      <p>Chatura is built around distinct characters, ongoing continuity, and shared keepsakes. Instead of feeling like disposable chat, conversations can grow more personal over time and turn into memories, plans, wishes, and more.</p>
+    </div>
+  </details>
 
-  <div class="faq-item" markdown="1">
-  **How do the characters feel more personal over time?**
-  Each character has their own tone, identity, and perspective. As you keep chatting, they can remember details you’ve shared and carry that continuity into later conversations.
-  </div>
+  <details class="faq-item">
+    <summary>What can I keep from my conversations?</summary>
+    <div class="faq-item__answer">
+      <p>Meaningful moments can become revisitable keepsakes like Our Memory, Our Plan, Time Capsule, Wish Voice, and Secret Haven—all created and managed naturally through chat.</p>
+    </div>
+  </details>
 
-  <div class="faq-item" markdown="1">
-  **Can I start using Chatura for free?**
-  Yes. You can start with Chatura’s core character for free. Optional subscription features are available in the app.
-  </div>
+  <details class="faq-item">
+    <summary>How do the characters feel more personal over time?</summary>
+    <div class="faq-item__answer">
+      <p>Each character has their own tone, identity, and perspective. As you keep chatting, they can remember details you’ve shared and carry that continuity into later conversations.</p>
+    </div>
+  </details>
 
-  <div class="faq-item" markdown="1">
-  **Is Chatura private and easy to start using?**
-  Yes. You can start without creating an account. Chatura has no ads, does not share your data for advertising or analytics, and lets you delete conversations or export your chat data whenever you want.
-  </div>
+  <details class="faq-item">
+    <summary>Can I start using Chatura for free?</summary>
+    <div class="faq-item__answer">
+      <p>Yes. You can start with Chatura’s core character for free. Optional subscription features are available in the app.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Is Chatura private and easy to start using?</summary>
+    <div class="faq-item__answer">
+      <p>Yes. You can start without creating an account. Chatura has no ads, does not share your data for advertising or analytics, and lets you delete conversations or export your chat data whenever you want.</p>
+    </div>
+  </details>
 </div>
 </section>
 
