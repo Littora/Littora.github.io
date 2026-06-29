@@ -224,17 +224,17 @@ permalink: /apps/chatura/
 </section>
 
 <section id="download" class="conversion-band" aria-labelledby="conversion-title">
-  <div class="conversion-band__mark" aria-hidden="true">
-    <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
-  </div>
-  <div class="conversion-band__copy">
-    <p>One conversation is enough to begin.</p>
-    <h2 id="conversion-title">Ready to talk it through?</h2>
-    <p>Download Chatura and start without an account. Keep what matters when the conversation leads somewhere worth returning to.</p>
-  </div>
-  <div class="conversion-band__action">
-    <a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download on the App Store</a>
-    <span>Free to start. No ads in chat.</span>
+  <div class="conversion-band__inner">
+    <div class="conversion-band__mark" aria-hidden="true">
+      <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
+    </div>
+    <div class="conversion-band__copy">
+      <h2 id="conversion-title">Ready to talk it through?</h2>
+      <p>Start free. No account required. No ads in chat.</p>
+    </div>
+    <div class="conversion-band__action">
+      <a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download on the App Store</a>
+    </div>
   </div>
 </section>
 
