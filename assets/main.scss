@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap");
 @import "minima";
 
 :root {
@@ -2145,16 +2145,19 @@ h3 {
 .feature-chapter h3,
 .feature-supporting__intro h3 {
   margin: 1rem 0 0;
-  color: #1d2433;
-  font-family: "Space Grotesk", "Manrope", "SF Pro Display", "Segoe UI", system-ui, -apple-system, sans-serif;
-  font-weight: 700;
+  color: #202941;
+  font-family: "Manrope", "SF Pro Display", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-weight: 800;
   letter-spacing: 0;
   text-wrap: balance;
 }
 
 .feature-chapter h3 {
-  font-size: clamp(2.2rem, 4.4vw, 3.55rem);
-  line-height: 1.02;
+  max-width: 10.8em;
+  color: #1b243a;
+  font-size: 3.35rem;
+  line-height: 1.04;
+  text-shadow: 0 12px 34px rgba(83, 101, 154, 0.11);
 }
 
 .feature-chapter p {
@@ -2210,60 +2213,84 @@ h3 {
 }
 
 .keepsake-object {
+  --keepsake-accent: rgba(var(--chatura-primary-rgb), 0.62);
+  position: relative;
   display: grid;
   align-content: center;
   min-height: 116px;
-  padding: 1.05rem;
+  overflow: hidden;
+  padding: 1.16rem;
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.72);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.74),
-    0 16px 30px rgba(37, 48, 71, 0.065);
+    0 18px 34px rgba(37, 48, 71, 0.08);
+}
+
+.keepsake-object::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1.05rem;
+  left: 1.05rem;
+  height: 4px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--keepsake-accent), rgba(255, 255, 255, 0));
 }
 
 .keepsake-object span,
 .companion-profile span,
 .supporting-feature span {
   color: #6a7890;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .keepsake-object strong {
-  margin-top: 0.5rem;
-  color: #222c40;
-  font-size: 0.98rem;
-  line-height: 1.22;
+  margin-top: 0.62rem;
+  color: #20283c;
+  font-size: 1.08rem;
+  line-height: 1.18;
 }
 
 .keepsake-object--memory {
+  --keepsake-accent: rgba(var(--chatura-primary-rgb), 0.72);
   grid-row: span 2;
   min-height: 248px;
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.9), rgba(var(--chatura-primary-rgb), 0.18));
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(var(--chatura-primary-rgb), 0.2) 56%, rgba(var(--chatura-sky-rgb), 0.14));
 }
 
 .keepsake-object--memory strong {
-  font-size: 1.28rem;
-  line-height: 1.1;
+  font-size: 1.44rem;
+  line-height: 1.06;
+}
+
+.keepsake-object--memory span {
+  color: #5c6fb2;
+  font-size: 0.94rem;
 }
 
 .keepsake-object--plan {
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.9), rgba(var(--chatura-sun-rgb), 0.3));
+  --keepsake-accent: rgba(var(--chatura-sun-rgb), 0.86);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(var(--chatura-sun-rgb), 0.34) 58%, rgba(var(--chatura-warm-rgb), 0.14));
 }
 
 .keepsake-object--wish {
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.9), rgba(var(--chatura-coral-rgb), 0.18));
+  --keepsake-accent: rgba(var(--chatura-coral-rgb), 0.68);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(var(--chatura-coral-rgb), 0.22) 58%, rgba(var(--chatura-sun-rgb), 0.12));
 }
 
 .keepsake-object--capsule {
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.9), rgba(var(--chatura-sky-rgb), 0.24));
+  --keepsake-accent: rgba(var(--chatura-sky-rgb), 0.76);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(var(--chatura-sky-rgb), 0.28) 58%, rgba(var(--chatura-primary-rgb), 0.12));
 }
 
 .keepsake-object--secret {
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.9), rgba(var(--chatura-success-rgb), 0.16));
+  --keepsake-accent: rgba(var(--chatura-success-rgb), 0.62);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(var(--chatura-success-rgb), 0.18) 58%, rgba(var(--chatura-sky-rgb), 0.13));
 }
 
 .companion-profile {
@@ -2388,10 +2415,12 @@ h3 {
 }
 
 .trust-rail span {
-  min-height: 2.6rem;
-  padding: 0.65rem 0.95rem;
+  min-height: 2.95rem;
+  padding: 0.72rem 1.08rem;
   color: #314155;
   background: rgba(255, 255, 255, 0.66);
+  font-size: 0.94rem;
+  font-weight: 800;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
 
@@ -3690,7 +3719,7 @@ h3 {
   }
 
   .feature-chapter h3 {
-    font-size: clamp(1.95rem, 7vw, 2.75rem);
+    font-size: 2.55rem;
     line-height: 1.04;
   }
 
@@ -3764,7 +3793,7 @@ h3 {
 
   .feature-chapter h3 {
     margin-top: 0.82rem;
-    font-size: clamp(1.72rem, 8.6vw, 2.18rem);
+    font-size: 2.08rem;
   }
 
   .feature-chapter p {
@@ -3799,8 +3828,16 @@ h3 {
 
   .keepsake-object strong,
   .keepsake-object--memory strong {
-    font-size: 0.94rem;
-    line-height: 1.22;
+    font-size: 1.02rem;
+    line-height: 1.18;
+  }
+
+  .keepsake-object--memory span {
+    font-size: 0.82rem;
+  }
+
+  .keepsake-object--memory strong {
+    font-size: 1.08rem;
   }
 
   .companion-profile {
@@ -3841,11 +3878,13 @@ h3 {
   .trust-rail span {
     min-height: 2rem;
     padding: 0.45rem 0.64rem;
-    font-size: 0.73rem;
+    font-size: 0.78rem;
   }
 
   .trust-rail span {
-    min-height: 2.2rem;
+    min-height: 2.42rem;
+    padding: 0.52rem 0.72rem;
+    font-size: 0.84rem;
   }
 
   .feature-supporting {

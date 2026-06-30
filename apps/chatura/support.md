@@ -24,9 +24,3 @@ You can use any of these channels for support, questions, bug reports, ideas, or
 ## Helpful, but optional
 
 If you are reporting a bug, it can help to include what happened and what you expected to happen. Screenshots, app version, iOS version, or device model are welcome if they are easy to share, but they are not required.
-
-## Privacy-related requests
-
-For privacy questions or requests, you can also contact us at:
-
-- **Email:** littoraart@gmail.com
