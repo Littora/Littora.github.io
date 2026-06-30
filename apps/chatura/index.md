@@ -8,14 +8,14 @@ permalink: /apps/chatura/
 <div class="hero-layout">
   <div class="hero-copy">
     <h1>Chatura</h1>
-    <p class="hero-tagline"><strong>Chatura: Where Cura Meets Chat</strong></p>
-    <p>Chatura is a character-led AI companion built for everyday warmth, gentle support, and the kind of conversation you can come back to.</p>
-    <p>When life feels heavy, quiet, lonely, or in-between, Chatura offers a steady place to land. Open the app and start talking—no setup, no pressure, no need to explain everything perfectly. The experience is designed to feel calm and continuous: conversations don’t have to feel disposable, and the relationship can grow more personal over time.</p>
+    <p class="hero-tagline"><strong>Talk it through. Keep what matters.</strong></p>
+    <p>Chatura is an everyday AI companion for the conversations you do not want to lose in chat history: a feeling named, a next step clarified, a wish put into words, or a thought kept for later.</p>
+    <p>Start without an account. Chat without ads. Choose a purpose-designed companion and turn meaningful moments into Memories, Plans, Wishes, Time Capsules, and Secrets you can revisit when they matter again.</p>
     <a class="hero-download-link" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download on the App Store</a>
     <div class="download-panel__meta hero-meta" aria-label="Chatura highlights">
-      <span>No ads</span>
       <span>No account required</span>
-      <span>Private by design</span>
+      <span>No ads in chat</span>
+      <span>Delete or export anytime</span>
     </div>
   </div>
 
@@ -116,115 +116,199 @@ permalink: /apps/chatura/
 </script>
 
 <section id="features" class="content-section content-section--features" markdown="1">
-## Features
+## Conversations that do not disappear.
 
-<div class="feature-grid" markdown="1">
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 1) A warm companion you can come back to
-### Gentle support for everyday moments.
-For quick check-ins, quiet breaks, and late-night thoughts, Chatura offers a calm, familiar place to talk.
-</div>
-<div class="feature-card__body" markdown="1">
-**Why it feels easy to return to:**
-- Text-first chat for everyday support
-- One core character designed for daily warmth
-- No setup, no pressure—just open and talk
-</div>
-</article>
+<p class="features-lede">Chatura turns meaningful companion chats into things you can revisit, continue, and keep under your control.</p>
 
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 2) Chats that become keepsakes
-### Hold onto what matters.
-Meaningful conversations can turn into simple keepsakes you can revisit later.
-</div>
-<div class="feature-card__body" markdown="1">
-**What you can keep:**
-- **Our Memory** — moments worth keeping
-- **Our Plan** — a next step to come back to
-- **Time Capsule** — a message for your future self
-- **Wish Voice** — a hope put into words
-- **Secret Haven** — a more private place for what is hard to say elsewhere
+<div class="feature-narrative">
+  <article class="feature-chapter feature-chapter--keepsakes">
+    <div class="feature-chapter__copy">
+      <span class="feature-kicker">Chats worth keeping</span>
+      <h3>Chat becomes something worth returning to.</h3>
+      <p>A feeling, decision, wish, or note for later can move out of the chat and become a Memory, Plan, Wish, Time Capsule, or Secret you can revisit when it matters again.</p>
+    </div>
 
-*Keepsakes are created and managed through chat—no separate tools to learn.*
-</div>
-</article>
+    <div class="keepsake-flow" aria-label="A Chatura chat becoming revisitable keepsakes">
+      <div class="chat-thread" aria-hidden="true">
+        <div class="chat-bubble chat-bubble--user">I do not want to lose this thought.</div>
+        <div class="chat-bubble chat-bubble--companion">Then let us keep the part that matters.</div>
+        <div class="chat-bubble chat-bubble--user">It felt like more than a message.</div>
+        <div class="chat-bubble chat-bubble--companion">We can turn it into something you can revisit.</div>
+        <div class="chat-bubble chat-bubble--user">Make it something I can return to.</div>
+      </div>
 
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 3) Distinct characters, not one generic assistant
-### Six voices. More than one kind of support.
-Each character has their own tone, perspective, and presence. Over time, they become more informed by what you share while staying true to who they are.
-</div>
-<div class="feature-card__body" markdown="1">
-**What gives them continuity:**
-- **6 characters total** *(1 included, 5 unlocked with subscription)*
-- Each character is anchored by **Info / Status / Interests**
-- They can remember details you’ve shared over time
-- Continuity comes from identity + shared history, not “perfect memory” claims
-</div>
-</article>
+      <div class="keepsake-board">
+        <div class="keepsake-object keepsake-object--memory">
+          <span>Our Memory</span>
+          <strong>Keep the moment visible</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--plan">
+          <span>Our Plan</span>
+          <strong>Carry the next step forward</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--wish">
+          <span>Wish Voice</span>
+          <strong>Give a future hope words</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--capsule">
+          <span>Time Capsule</span>
+          <strong>Leave something for later</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--secret">
+          <span>Secret Haven</span>
+          <strong>Keep harder thoughts separate</strong>
+        </div>
+      </div>
+    </div>
+  </article>
 
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 4) Moments between chats
-### A relationship that stays present.
-Characters share **Moments**—small posts about daily life and thoughts—so Chatura still feels alive even when you are not actively chatting.
-</div>
-<div class="feature-card__body" markdown="1">
-**How Moments work:**
-- Like, comment, and jump straight into chat
-- Posts are generated from each character’s profile
-- Built to keep a gentle sense of presence between conversations
-</div>
-</article>
+  <article class="feature-chapter feature-chapter--companion">
+    <div class="feature-chapter__copy">
+      <span class="feature-kicker">Designed companions</span>
+      <h3>A companion to return to, not a character catalog to browse.</h3>
+      <p>Chatura keeps the companion experience intentional: fewer choices, clearer personalities, and a more natural reason to come back.</p>
+    </div>
 
-<article class="feature-card" markdown="1">
-<div class="feature-card__intro" markdown="1">
-## 5) Private, calm, and in your control
-### Respectful by design.
-No ads. No third-party sharing for advertising or analytics. You can delete conversations anytime and export your chat data when you want.
+    <div class="companion-profile" aria-label="Purpose-designed Chatura companion profile">
+      <div class="companion-profile__header">
+        <div>
+          <span>Companion profile</span>
+          <strong>Consistent inner world</strong>
+        </div>
+        <small>Ready to talk</small>
+      </div>
+      <div class="companion-profile__body">
+        <div>
+          <span>Voice</span>
+          <strong>Warm, steady, direct</strong>
+        </div>
+        <div>
+          <span>Rhythm</span>
+          <strong>Easy to start, easy to return</strong>
+        </div>
+        <div>
+          <span>Context</span>
+          <strong>Builds on what you share</strong>
+        </div>
+      </div>
+      <div class="companion-tone-map" aria-label="Chatura companion tones">
+        <span>Warm</span>
+        <span>Steady</span>
+        <span>Curious</span>
+        <span>Thoughtful</span>
+        <span>Playful</span>
+        <span>Calming</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="feature-chapter feature-chapter--trust">
+    <div class="feature-chapter__copy">
+      <span class="feature-kicker">Low-friction trust</span>
+      <h3>Start light. Stay in control.</h3>
+      <p>Start without an account. Chat without ads. Keep deletion and export choices close to your conversations.</p>
+    </div>
+
+    <div class="trust-rail" aria-label="Chatura privacy and control highlights">
+      <span>No account required</span>
+      <span>No ads in chat</span>
+      <span>No cross-app tracking</span>
+      <span>No third-party analytics SDKs</span>
+      <span>Delete anytime</span>
+      <span>Export anytime</span>
+    </div>
+  </article>
 </div>
-<div class="feature-card__body" markdown="1">
-**Privacy & control:**
-- **No ads**
-- **No account required**
-- **Delete conversations** anytime
-- **Export chat data** across characters
-- **Secret Haven** stores content on your device, with access protected by optional **App Lock**
-</div>
-</article>
+
+<div class="feature-supporting">
+  <div class="feature-supporting__intro">
+    <span class="feature-kicker">More continuity</span>
+    <h3>More reasons the experience feels continuous.</h3>
+  </div>
+
+  <div class="feature-supporting__grid">
+    <article class="supporting-feature supporting-feature--world">
+      <img src="/assets/chatura-placeholders/feature-conversation-continuity.svg" alt="" width="960" height="600" loading="lazy">
+      <div>
+        <span>Inner world</span>
+        <strong>Lifelike characters with a consistent inner world.</strong>
+        <p>Stable voice, interests, profile, and rhythm make the companion feel grounded in a specific presence.</p>
+      </div>
+    </article>
+
+    <article class="supporting-feature supporting-feature--moments">
+      <img src="/assets/chatura-placeholders/feature-moments-between-chats.svg" alt="" width="960" height="600" loading="lazy">
+      <div>
+        <span>Moments feed</span>
+        <strong>Moments keep the relationship present between chats.</strong>
+        <p>Characters can share daily-life thoughts and small updates grounded in their profile and in-app context.</p>
+      </div>
+    </article>
+
+    <article class="supporting-feature supporting-feature--natural">
+      <img src="/assets/chatura-placeholders/feature-everyday-openings.svg" alt="" width="960" height="600" loading="lazy">
+      <div>
+        <span>Natural interaction</span>
+        <strong>Just talk, and Chatura carries the load.</strong>
+        <p>No extra workflow to learn. Meaningful parts can be kept naturally through normal chat.</p>
+      </div>
+    </article>
+  </div>
 </div>
 </section>
 
-<section id="faq" class="content-section content-section--faq" markdown="1">
-## FAQ
-<div class="faq-grid" markdown="1">
-  <div class="faq-item" markdown="1">
-  **How is Chatura different from a typical AI chat app?**
-  Chatura is built around distinct characters, ongoing continuity, and shared keepsakes. Instead of feeling like disposable chat, conversations can grow more personal over time and turn into memories, plans, wishes, and more.
+<section id="download" class="conversion-band" aria-labelledby="conversion-title">
+  <div class="conversion-band__inner">
+    <div class="conversion-band__mark" aria-hidden="true">
+      <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
+    </div>
+    <div class="conversion-band__copy">
+      <h2 id="conversion-title">Ready to talk it through?</h2>
+      <p>Start free. No account required. No ads in chat.</p>
+    </div>
+    <div class="conversion-band__action">
+      <a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download on the App Store</a>
+    </div>
   </div>
+</section>
 
-  <div class="faq-item" markdown="1">
-  **What can I keep from my conversations?**
-  Meaningful moments can become revisitable keepsakes like Our Memory, Our Plan, Time Capsule, Wish Voice, and Secret Haven—all created and managed naturally through chat.
-  </div>
+<section id="faq" class="content-section content-section--faq">
+<h2>FAQ</h2>
+<div class="faq-grid">
+  <details class="faq-item">
+    <summary>How is Chatura different from a typical AI chat app?</summary>
+    <div class="faq-item__answer">
+      <p>Chatura is built for everyday companion conversations that can keep mattering after the chat ends. Meaningful parts of a chat can become Memories, Plans, Wishes, Time Capsules, and Secrets you can return to later.</p>
+    </div>
+  </details>
 
-  <div class="faq-item" markdown="1">
-  **How do the characters feel more personal over time?**
-  Each character has their own tone, identity, and perspective. As you keep chatting, they can remember details you’ve shared and carry that continuity into later conversations.
-  </div>
+  <details class="faq-item">
+    <summary>What can I keep from my conversations?</summary>
+    <div class="faq-item__answer">
+      <p>You can keep moments that feel useful, personal, or worth revisiting, such as Our Memory, Our Plan, Wish Voice, Time Capsule, and Secret Haven. They are created naturally through chat, not through a separate notes or planning workflow.</p>
+    </div>
+  </details>
 
-  <div class="faq-item" markdown="1">
-  **Can I start using Chatura for free?**
-  Yes. You can start with Chatura’s core character for free. Optional subscription features are available in the app.
-  </div>
+  <details class="faq-item">
+    <summary>How do the characters feel more personal over time?</summary>
+    <div class="faq-item__answer">
+      <p>Each companion has a distinct tone, identity, and inner world. As you keep chatting, Chatura can carry useful context forward so later conversations feel more continuous.</p>
+    </div>
+  </details>
 
-  <div class="faq-item" markdown="1">
-  **Is Chatura private and easy to start using?**
-  Yes. You can start without creating an account. Chatura has no ads, does not share your data for advertising or analytics, and lets you delete conversations or export your chat data whenever you want.
-  </div>
+  <details class="faq-item">
+    <summary>Can I start using Chatura for free?</summary>
+    <div class="faq-item__answer">
+      <p>Yes. You can start without creating an account and try Chatura's core character for free. Optional subscription features are available in the app.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Is Chatura private and easy to control?</summary>
+    <div class="faq-item__answer">
+      <p>Chatura has no ads in chat, no cross-app tracking, and no third-party analytics SDKs. You can delete conversations or export your chat data. AI replies are generated through backend and model services, so necessary conversation context may be processed when you ask for a response.</p>
+    </div>
+  </details>
 </div>
 </section>
 
@@ -246,9 +330,15 @@ No ads. No third-party sharing for advertising or analytics. You can delete conv
 - [Support](/apps/chatura/support/)
 </div>
 
-<div class="links-group" markdown="1">
-## X
-- [@ChaturaApp](https://x.com/ChaturaApp)
+<div class="links-group links-group--social">
+<h2>Social</h2>
+<ul class="social-link-list" aria-label="Chatura social channels">
+  <li><a class="social-link social-link--x" href="https://x.com/ChaturaApp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3h-2l13.1 17.3Z"/></svg></span><span>X</span></a></li>
+  <li><a class="social-link social-link--tiktok" href="https://www.tiktok.com/@chaturaapp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M15.8 3.2c.4 2.1 1.7 3.7 3.7 4.3v3.1c-1.4-.1-2.7-.5-3.7-1.2v5.6c0 3.3-2.2 5.5-5.2 5.5-2.7 0-4.7-1.8-4.7-4.3 0-2.7 2.2-4.5 5.3-4.4.3 0 .6 0 .9.1V3.2h3.7Zm-3.7 11.6c-.3-.1-.7-.2-1.1-.2-1.2 0-2 .6-2 1.5s.7 1.5 1.7 1.5c1 0 1.5-.7 1.5-1.9v-.9Z"/></svg></span><span>TikTok</span></a></li>
+  <li><a class="social-link social-link--instagram" href="https://www.instagram.com/chaturaapp/"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.7"/><circle cx="12" cy="12" r="3.7"/><circle cx="16.9" cy="7.1" r="1.1"/></svg></span><span>Instagram</span></a></li>
+  <li><a class="social-link social-link--discord" href="https://discord.gg/q85UEZmER"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8.2 6.4c1.2-.5 2.4-.7 3.8-.7s2.7.2 3.8.7c1.3 1.8 2 4 2.2 6.6-1.2 1-2.5 1.6-3.9 1.9l-.7-1.2c.8-.2 1.5-.5 2.1-1-.7.4-1.9.9-3.5.9s-2.8-.5-3.5-.9c.6.5 1.3.8 2.1 1l-.7 1.2c-1.4-.3-2.7-.9-3.9-1.9.2-2.6.9-4.8 2.2-6.6Zm1.7 5.4c.6 0 1.1-.6 1.1-1.2 0-.7-.5-1.2-1.1-1.2-.7 0-1.1.5-1.1 1.2 0 .6.4 1.2 1.1 1.2Zm4.2 0c.7 0 1.1-.6 1.1-1.2 0-.7-.4-1.2-1.1-1.2-.6 0-1.1.5-1.1 1.2 0 .6.5 1.2 1.1 1.2Z"/></svg></span><span>Discord</span></a></li>
+  <li><a class="social-link social-link--reddit" href="https://www.reddit.com/user/ChaturaApp/"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M16.7 5.2c.7 0 1.3.5 1.3 1.2s-.6 1.2-1.3 1.2c-.4 0-.8-.2-1-.5l-2.8.6-.6 2.4c1.8.1 3.5.7 4.6 1.6.4-.3.8-.4 1.3-.4 1.1 0 2 .8 2 1.9 0 .7-.4 1.3-1 1.7v.4c0 2.8-3.2 5-7.2 5s-7.2-2.2-7.2-5v-.4c-.6-.4-1-1-1-1.7 0-1.1.9-1.9 2-1.9.5 0 .9.1 1.3.4 1-.8 2.5-1.4 4.2-1.6l.8-3.5 3.3-.7c.2-.5.7-.7 1.3-.7ZM8.8 14.8c0 .6.5 1.1 1.1 1.1S11 15.4 11 14.8s-.5-1.1-1.1-1.1-1.1.5-1.1 1.1Zm5.6 3.1c.2-.2.2-.5 0-.7-.2-.2-.5-.2-.7 0-.4.4-1 .6-1.7.6s-1.3-.2-1.7-.6c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7.6.6 1.5.9 2.4.9.9 0 1.8-.3 2.4-.9Zm-1.4-3.1c0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1-.5-1.1-1.1-1.1-1.1.5-1.1 1.1Z"/></svg></span><span>Reddit</span></a></li>
+</ul>
 </div>
 </div>
 </section>

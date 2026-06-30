@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Placeholder for Moments feed artwork">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8f2"/>
+      <stop offset="0.58" stop-color="#ffe3db"/>
+      <stop offset="1" stop-color="#f6ecff"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#fff6ed" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.86"/>
+      <stop offset="1" stop-color="#fff0f6" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" rx="56" fill="url(#bg)"/>
+  <path d="M118 410 C230 282 358 444 488 302 C604 176 738 246 842 138" fill="none" stroke="#f6a79b" stroke-width="18" stroke-linecap="round" opacity="0.34"/>
+  <rect x="158" y="98" width="548" height="132" rx="42" fill="url(#card)" opacity="0.95"/>
+  <circle cx="212" cy="164" r="24" fill="#f58f86" opacity="0.8"/>
+  <rect x="260" y="136" width="174" height="18" rx="9" fill="#2f3a52" opacity="0.76"/>
+  <rect x="260" y="176" width="318" height="14" rx="7" fill="#6b7a92" opacity="0.38"/>
+  <circle cx="628" cy="164" r="14" fill="#ffd27e" opacity="0.9"/>
+  <circle cx="670" cy="164" r="14" fill="#f58f86" opacity="0.56"/>
+  <rect x="264" y="268" width="548" height="142" rx="42" fill="url(#card)" opacity="0.93"/>
+  <circle cx="320" cy="339" r="24" fill="#ffd27e" opacity="0.94"/>
+  <rect x="368" y="310" width="194" height="18" rx="9" fill="#2f3a52" opacity="0.74"/>
+  <rect x="368" y="350" width="340" height="14" rx="7" fill="#6b7a92" opacity="0.38"/>
+  <path d="M690 382 h52" stroke="#f58f86" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="716" cy="382" r="24" fill="#ffffff" opacity="0.72"/>
+  <rect x="166" y="454" width="408" height="104" rx="36" fill="url(#card)" opacity="0.9"/>
+  <circle cx="216" cy="506" r="20" fill="#8db6ff" opacity="0.75"/>
+  <rect x="260" y="488" width="168" height="16" rx="8" fill="#2f3a52" opacity="0.66"/>
+  <rect x="260" y="524" width="238" height="12" rx="6" fill="#6b7a92" opacity="0.32"/>
+  <rect x="724" y="96" width="86" height="352" rx="36" fill="url(#side)" opacity="0.8"/>
+  <circle cx="767" cy="150" r="12" fill="#f58f86" opacity="0.76"/>
+  <circle cx="767" cy="214" r="12" fill="#ffd27e" opacity="0.9"/>
+  <circle cx="767" cy="278" r="12" fill="#8db6ff" opacity="0.72"/>
+  <circle cx="767" cy="342" r="12" fill="#15b87a" opacity="0.58"/>
+</svg>
