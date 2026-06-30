@@ -573,9 +573,9 @@ a.brand-app-card:focus-visible {
 }
 
 .social-link-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.62rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.56rem;
 }
 
 .social-link-list li {
@@ -583,10 +583,11 @@ a.brand-app-card:focus-visible {
 }
 
 .links-group .social-link {
+  width: 100%;
   box-sizing: border-box;
   gap: 0.72rem;
-  min-height: 2.55rem;
-  padding: 0.46rem 0.72rem 0.46rem 0.5rem;
+  min-height: 2.45rem;
+  padding: 0.42rem 0.72rem 0.42rem 0.5rem;
   border-radius: 14px;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.42)),
@@ -1041,23 +1042,6 @@ li::marker {
 blockquote,
 .post-content > p > em {
   color: var(--chatura-muted);
-}
-
-.support-response-note {
-  max-width: 42rem;
-  margin: 1.35rem 0 2rem;
-  padding: 1rem 1.15rem;
-  border: 1px solid rgba(var(--chatura-primary-rgb), 0.18);
-  border-radius: 18px;
-  color: #2e394c;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.38)),
-    linear-gradient(135deg, rgba(var(--chatura-warm-rgb), 0.14), rgba(var(--chatura-sky-rgb), 0.16));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.76),
-    0 16px 34px rgba(33, 49, 80, 0.08);
-  font-weight: 700;
-  line-height: 1.55;
 }
 
 hr + h2,
