@@ -244,35 +244,35 @@ permalink: /apps/chatura/
   <details class="faq-item">
     <summary>How is Chatura different from a typical AI chat app?</summary>
     <div class="faq-item__answer">
-      <p>Chatura is built around distinct characters, ongoing continuity, and shared keepsakes. Instead of feeling like disposable chat, conversations can grow more personal over time and turn into memories, plans, wishes, and more.</p>
+      <p>Chatura is designed for everyday companion conversations that can keep mattering after the chat ends. Instead of letting useful moments disappear into scrollback, meaningful parts can become Memories, Plans, Wishes, Time Capsules, and Secrets you can return to.</p>
     </div>
   </details>
 
   <details class="faq-item">
-    <summary>What can I keep from my conversations?</summary>
+    <summary>Is Chatura a diary, notes app, or planning app?</summary>
     <div class="faq-item__answer">
-      <p>Meaningful moments can become revisitable keepsakes like Our Memory, Our Plan, Time Capsule, Wish Voice, and Secret Haven—all created and managed naturally through chat.</p>
+      <p>No. Chatura starts with natural companion chat. The keepsakes are there for the useful parts of a conversation: a feeling you named, a next step you clarified, a wish you want to remember, or something private you want to keep separate.</p>
     </div>
   </details>
 
   <details class="faq-item">
-    <summary>How do the characters feel more personal over time?</summary>
+    <summary>Why not offer an endless character marketplace?</summary>
     <div class="faq-item__answer">
-      <p>Each character has their own tone, identity, and perspective. As you keep chatting, they can remember details you’ve shared and carry that continuity into later conversations.</p>
+      <p>Chatura focuses on a smaller set of purpose-designed companions so it is easier to choose, start, and come back. Each companion has a consistent inner world, tone, and rhythm instead of feeling like one more character card to browse.</p>
     </div>
   </details>
 
   <details class="faq-item">
-    <summary>Can I start using Chatura for free?</summary>
+    <summary>Can I start without an account?</summary>
     <div class="faq-item__answer">
-      <p>Yes. You can start with Chatura’s core character for free. Optional subscription features are available in the app.</p>
+      <p>Yes. You can start chatting without creating an account. Chatura's core character is free to try, with optional subscription features available in the app.</p>
     </div>
   </details>
 
   <details class="faq-item">
-    <summary>Is Chatura private and easy to start using?</summary>
+    <summary>How does Chatura handle privacy and control?</summary>
     <div class="faq-item__answer">
-      <p>Yes. You can start without creating an account. Chatura has no ads, does not share your data for advertising or analytics, and lets you delete conversations or export your chat data whenever you want.</p>
+      <p>Chatura has no ads in chat, no cross-app tracking, and no third-party analytics SDKs. You can delete conversations or export your chat data. AI replies are generated through backend and model services, so necessary conversation context may be processed when you ask for a response.</p>
     </div>
   </details>
 </div>
@@ -296,13 +296,15 @@ permalink: /apps/chatura/
 - [Support](/apps/chatura/support/)
 </div>
 
-<div class="links-group" markdown="1">
-## Social
-- [X @ChaturaApp](https://x.com/ChaturaApp)
-- [TikTok @chaturaapp](https://www.tiktok.com/@chaturaapp)
-- [Instagram @chaturaapp](https://www.instagram.com/chaturaapp/)
-- [Discord @chaturaapp](https://discord.com/users/chaturaapp)
-- [Reddit @ChaturaApp](https://www.reddit.com/user/ChaturaApp/)
+<div class="links-group links-group--social">
+<h2>Social</h2>
+<ul class="social-link-list" aria-label="Chatura social channels">
+  <li><a class="social-link social-link--x" href="https://x.com/ChaturaApp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3h-2l13.1 17.3Z"/></svg></span><span>X</span></a></li>
+  <li><a class="social-link social-link--tiktok" href="https://www.tiktok.com/@chaturaapp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M15.8 3.2c.4 2.1 1.7 3.7 3.7 4.3v3.1c-1.4-.1-2.7-.5-3.7-1.2v5.6c0 3.3-2.2 5.5-5.2 5.5-2.7 0-4.7-1.8-4.7-4.3 0-2.7 2.2-4.5 5.3-4.4.3 0 .6 0 .9.1V3.2h3.7Zm-3.7 11.6c-.3-.1-.7-.2-1.1-.2-1.2 0-2 .6-2 1.5s.7 1.5 1.7 1.5c1 0 1.5-.7 1.5-1.9v-.9Z"/></svg></span><span>TikTok</span></a></li>
+  <li><a class="social-link social-link--instagram" href="https://www.instagram.com/chaturaapp/"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.7"/><circle cx="12" cy="12" r="3.7"/><circle cx="16.9" cy="7.1" r="1.1"/></svg></span><span>Instagram</span></a></li>
+  <li><a class="social-link social-link--discord" href="https://discord.gg/q85UEZmER"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8.2 6.4c1.2-.5 2.4-.7 3.8-.7s2.7.2 3.8.7c1.3 1.8 2 4 2.2 6.6-1.2 1-2.5 1.6-3.9 1.9l-.7-1.2c.8-.2 1.5-.5 2.1-1-.7.4-1.9.9-3.5.9s-2.8-.5-3.5-.9c.6.5 1.3.8 2.1 1l-.7 1.2c-1.4-.3-2.7-.9-3.9-1.9.2-2.6.9-4.8 2.2-6.6Zm1.7 5.4c.6 0 1.1-.6 1.1-1.2 0-.7-.5-1.2-1.1-1.2-.7 0-1.1.5-1.1 1.2 0 .6.4 1.2 1.1 1.2Zm4.2 0c.7 0 1.1-.6 1.1-1.2 0-.7-.4-1.2-1.1-1.2-.6 0-1.1.5-1.1 1.2 0 .6.5 1.2 1.1 1.2Z"/></svg></span><span>Discord</span></a></li>
+  <li><a class="social-link social-link--reddit" href="https://www.reddit.com/user/ChaturaApp/"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M16.7 5.2c.7 0 1.3.5 1.3 1.2s-.6 1.2-1.3 1.2c-.4 0-.8-.2-1-.5l-2.8.6-.6 2.4c1.8.1 3.5.7 4.6 1.6.4-.3.8-.4 1.3-.4 1.1 0 2 .8 2 1.9 0 .7-.4 1.3-1 1.7v.4c0 2.8-3.2 5-7.2 5s-7.2-2.2-7.2-5v-.4c-.6-.4-1-1-1-1.7 0-1.1.9-1.9 2-1.9.5 0 .9.1 1.3.4 1-.8 2.5-1.4 4.2-1.6l.8-3.5 3.3-.7c.2-.5.7-.7 1.3-.7ZM8.8 14.8c0 .6.5 1.1 1.1 1.1S11 15.4 11 14.8s-.5-1.1-1.1-1.1-1.1.5-1.1 1.1Zm5.6 3.1c.2-.2.2-.5 0-.7-.2-.2-.5-.2-.7 0-.4.4-1 .6-1.7.6s-1.3-.2-1.7-.6c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7.6.6 1.5.9 2.4.9.9 0 1.8-.3 2.4-.9Zm-1.4-3.1c0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1-.5-1.1-1.1-1.1-1.1.5-1.1 1.1Z"/></svg></span><span>Reddit</span></a></li>
+</ul>
 </div>
 </div>
 </section>
