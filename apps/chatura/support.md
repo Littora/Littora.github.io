@@ -19,7 +19,7 @@ If you have a question, run into a problem, want to share an idea, or simply wan
 - **Discord:** [Chatura on Discord](https://discord.gg/q85UEZmER)
 - **Reddit:** [Chatura on Reddit](https://www.reddit.com/user/ChaturaApp/)
 
-You can use any of these channels for support, questions, bug reports, ideas, or feedback. **We will read your message carefully and reply as soon as we can.**
+You can use any of these channels for support, questions, bug reports, ideas, or feedback. <strong class="support-promise">We will read your message carefully and reply as soon as we can.</strong>
 
 ## Helpful, but optional
 

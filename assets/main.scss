@@ -595,7 +595,7 @@ a.brand-app-card:focus-visible {
   color: #29364d;
   font-size: 0.98rem;
   line-height: 1.2;
-  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease;
 }
 
 .links-group .social-link:visited {
@@ -606,7 +606,6 @@ a.brand-app-card:focus-visible {
 .links-group .social-link:focus-visible {
   color: #182237;
   transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(33, 49, 80, 0.08);
 }
 
 .social-link__icon {
@@ -618,9 +617,14 @@ a.brand-app-card:focus-visible {
   border-radius: 50%;
   color: #ffffff;
   background: #15171c;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    0 8px 16px rgba(27, 34, 48, 0.14);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.support-promise {
+  color: var(--chatura-ink);
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .social-link__icon svg {
