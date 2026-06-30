@@ -297,8 +297,12 @@ permalink: /apps/chatura/
 </div>
 
 <div class="links-group" markdown="1">
-## X
-- [@ChaturaApp](https://x.com/ChaturaApp)
+## Social
+- [X @ChaturaApp](https://x.com/ChaturaApp)
+- [TikTok @chaturaapp](https://www.tiktok.com/@chaturaapp)
+- [Instagram @chaturaapp](https://www.instagram.com/chaturaapp/)
+- [Discord @chaturaapp](https://discord.com/users/chaturaapp)
+- [Reddit @ChaturaApp](https://www.reddit.com/user/ChaturaApp/)
 </div>
 </div>
 </section>

@@ -14,8 +14,12 @@ If you have a question, run into a problem, want to share an idea, or simply wan
 
 - **Email:** littoraart@gmail.com
 - **X:** [@ChaturaApp](https://x.com/ChaturaApp)
+- **TikTok:** [@chaturaapp](https://www.tiktok.com/@chaturaapp)
+- **Instagram:** [@chaturaapp](https://www.instagram.com/chaturaapp/)
+- **Discord:** [@chaturaapp](https://discord.com/users/chaturaapp)
+- **Reddit:** [@ChaturaApp](https://www.reddit.com/user/ChaturaApp/)
 
-We will read your message carefully and reply as soon as we can.
+You can use any of these channels for support, questions, bug reports, ideas, or feedback. We will read your message carefully and reply as soon as we can.
 
 ## Helpful, but optional
 
