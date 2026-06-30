@@ -116,63 +116,98 @@ permalink: /apps/chatura/
 </script>
 
 <section id="features" class="content-section content-section--features" markdown="1">
-## Keep the part of a chat that matters.
+## Conversations that do not disappear.
 
-<p class="features-lede">Chatura is an everyday AI companion where meaningful conversations can become Memories, Plans, Wishes, Time Capsules, and Secrets you can return to later.</p>
+<p class="features-lede">Chatura turns meaningful companion chats into things you can revisit, continue, and keep under your control.</p>
 
-<div class="feature-stage">
-  <article class="feature-card feature-card--keepsakes">
-    <div class="feature-card__lead">
-      <h3>From chat to something worth returning to.</h3>
-      <p>A feeling, decision, wish, or note for later gets a clear place — visible, organized, and ready to continue.</p>
+<div class="feature-narrative">
+  <article class="feature-chapter feature-chapter--keepsakes">
+    <div class="feature-chapter__copy">
+      <span class="feature-kicker">Chats worth keeping</span>
+      <h3>Chat becomes something worth returning to.</h3>
+      <p>A feeling, decision, wish, or note for later can move out of the chat and become a Memory, Plan, Wish, Time Capsule, or Secret you can revisit when it matters again.</p>
     </div>
 
-    <div class="artifact-stack" aria-label="Things a Chatura chat can become">
-      <div class="artifact-card artifact-card--memory">
-        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75A2.25 2.25 0 0 1 8.75 2.5h6.5a2.25 2.25 0 0 1 2.25 2.25v16.1l-5.5-3.15-5.5 3.15V4.75Z"/></svg></span>
-        <strong>Our Memory</strong>
-        <span>Save the moment that deserves to stay visible.</span>
+    <div class="keepsake-flow" aria-label="A Chatura chat becoming revisitable keepsakes">
+      <div class="chat-thread" aria-hidden="true">
+        <div class="chat-bubble chat-bubble--user">I do not want to lose this thought.</div>
+        <div class="chat-bubble chat-bubble--companion">Then let us keep the part that matters.</div>
+        <div class="chat-bubble chat-bubble--user">Make it something I can return to.</div>
       </div>
-      <div class="artifact-card artifact-card--plan">
-        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4.5 6.5h7.25v4.25H4.5V6.5Zm7.75 6.75h7.25v4.25h-7.25v-4.25ZM8.1 10.75v2.5h7.8m0 0-1.75-1.75m1.75 1.75-1.75 1.75"/></svg></span>
-        <strong>Our Plan</strong>
-        <span>Carry the next step out of the chat.</span>
+
+      <div class="keepsake-board">
+        <div class="keepsake-object keepsake-object--memory">
+          <span>Our Memory</span>
+          <strong>Keep the moment visible.</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--plan">
+          <span>Our Plan</span>
+          <strong>Carry the next step forward.</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--wish">
+          <span>Wish Voice</span>
+          <strong>Give a future hope words.</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--capsule">
+          <span>Time Capsule</span>
+          <strong>Leave something for later.</strong>
+        </div>
+        <div class="keepsake-object keepsake-object--secret">
+          <span>Secret Haven</span>
+          <strong>Keep harder thoughts separate.</strong>
+        </div>
       </div>
-      <div class="artifact-card artifact-card--wish">
-        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 20.25S4.75 16.1 4.75 10.2A3.95 3.95 0 0 1 12 8.05a3.95 3.95 0 0 1 7.25 2.15C19.25 16.1 12 20.25 12 20.25Z"/></svg></span>
-        <strong>Wish Voice</strong>
-        <span>Put a future hope into words.</span>
+    </div>
+  </article>
+
+  <article class="feature-chapter feature-chapter--companion">
+    <div class="feature-chapter__copy">
+      <span class="feature-kicker">Designed companions</span>
+      <h3>A companion to return to, not a character catalog to browse.</h3>
+      <p>Chatura keeps the companion experience intentional: fewer choices, clearer personalities, and a more natural reason to come back.</p>
+    </div>
+
+    <div class="companion-profile" aria-label="Purpose-designed Chatura companion profile">
+      <div class="companion-profile__header">
+        <div>
+          <span>Companion profile</span>
+          <strong>Consistent inner world</strong>
+        </div>
+        <small>Ready to talk</small>
       </div>
-      <div class="artifact-card artifact-card--capsule">
-        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 5.25a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 3.25v4.05l2.8 1.65"/></svg></span>
-        <strong>Time Capsule</strong>
-        <span>Leave a message for later.</span>
+      <div class="companion-profile__body">
+        <div>
+          <span>Voice</span>
+          <strong>Warm, steady, direct</strong>
+        </div>
+        <div>
+          <span>Rhythm</span>
+          <strong>Easy to start, easy to return</strong>
+        </div>
+        <div>
+          <span>Context</span>
+          <strong>Builds on what you share</strong>
+        </div>
       </div>
-      <div class="artifact-card artifact-card--secret">
-        <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7.25 10.5V8.25a4.75 4.75 0 0 1 9.5 0v2.25m-10.5 0h11.5v8.75H6.25V10.5Zm5.75 3.25v2.1"/></svg></span>
-        <strong>Secret Haven</strong>
-        <span>Keep harder thoughts separate.</span>
+      <div class="companion-tone-map" aria-label="Chatura companion tones">
+        <span>Warm</span>
+        <span>Steady</span>
+        <span>Curious</span>
+        <span>Thoughtful</span>
+        <span>Playful</span>
+        <span>Calming</span>
       </div>
     </div>
   </article>
 
-  <article class="feature-card feature-card--companion">
-    <h3>Purpose-designed companions, not an endless marketplace.</h3>
-    <p>A smaller, intentional set keeps choice simple: pick the presence you need, then start talking.</p>
-    <div class="tone-rack" aria-label="Chatura companion tones">
-      <span>Warm</span>
-      <span>Steady</span>
-      <span>Curious</span>
-      <span>Thoughtful</span>
-      <span>Playful</span>
-      <span>Calming</span>
+  <article class="feature-chapter feature-chapter--trust">
+    <div class="feature-chapter__copy">
+      <span class="feature-kicker">Low-friction trust</span>
+      <h3>Start light. Stay in control.</h3>
+      <p>Start without an account. Chat without ads. Keep deletion and export choices close to your conversations.</p>
     </div>
-  </article>
 
-  <article class="feature-card feature-card--control">
-    <h3>Start without setup. Stay in control.</h3>
-    <p>Begin without an account, chat without ads, and keep deletion or export choices close to the conversation.</p>
-    <div class="trust-rack" aria-label="Chatura privacy and control highlights">
+    <div class="trust-rail" aria-label="Chatura privacy and control highlights">
       <span>No account required</span>
       <span>No ads in chat</span>
       <span>No cross-app tracking</span>
@@ -183,43 +218,40 @@ permalink: /apps/chatura/
   </article>
 </div>
 
-<div class="feature-subgrid">
-  <article class="feature-card feature-card--sub feature-card--world">
-    <div class="feature-story-media">
+<div class="feature-supporting">
+  <div class="feature-supporting__intro">
+    <span class="feature-kicker">More continuity</span>
+    <h3>More reasons the experience feels continuous.</h3>
+  </div>
+
+  <div class="feature-supporting__grid">
+    <article class="supporting-feature supporting-feature--world">
       <img src="/assets/chatura-placeholders/feature-conversation-continuity.svg" alt="" width="960" height="600" loading="lazy">
-    </div>
-    <div class="feature-story-copy">
-      <span class="feature-story-kicker">Inner world</span>
-      <div class="feature-sub-heading">
-      <strong>Lifelike characters with a consistent inner world.</strong>
+      <div>
+        <span>Inner world</span>
+        <strong>Lifelike characters with a consistent inner world.</strong>
+        <p>Stable voice, interests, profile, and rhythm make the companion feel grounded in a specific presence.</p>
       </div>
-      <p>Each companion has a stable voice, interests, profile, and rhythm, so the experience feels grounded in a specific presence.</p>
-    </div>
-  </article>
-  <article class="feature-card feature-card--sub feature-card--moments">
-    <div class="feature-story-media">
+    </article>
+
+    <article class="supporting-feature supporting-feature--moments">
       <img src="/assets/chatura-placeholders/feature-moments-between-chats.svg" alt="" width="960" height="600" loading="lazy">
-    </div>
-    <div class="feature-story-copy">
-      <span class="feature-story-kicker">Moments feed</span>
-      <div class="feature-sub-heading">
-      <strong>Moments keep the relationship present between chats.</strong>
+      <div>
+        <span>Moments feed</span>
+        <strong>Moments keep the relationship present between chats.</strong>
+        <p>Characters can share daily-life thoughts and small updates grounded in their profile and in-app context.</p>
       </div>
-      <p>A dedicated feed where AI characters share daily-life thoughts and small updates. Moment content is grounded in each character's profile and current in-app context, with cadence configurable in the app.</p>
-    </div>
-  </article>
-  <article class="feature-card feature-card--sub feature-card--natural">
-    <div class="feature-story-media">
+    </article>
+
+    <article class="supporting-feature supporting-feature--natural">
       <img src="/assets/chatura-placeholders/feature-everyday-openings.svg" alt="" width="960" height="600" loading="lazy">
-    </div>
-    <div class="feature-story-copy">
-      <span class="feature-story-kicker">Natural interaction</span>
-      <div class="feature-sub-heading">
-      <strong>Just talk, and Chatura carries the load.</strong>
+      <div>
+        <span>Natural interaction</span>
+        <strong>Just talk, and Chatura carries the load.</strong>
+        <p>No extra workflow to learn. Meaningful parts can be kept naturally through normal chat.</p>
       </div>
-      <p>No extra workflow to learn. Through normal chat, meaningful parts can become Memories, Plans, Wishes, Time Capsules, or Secrets you can return to.</p>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 </section>
 
