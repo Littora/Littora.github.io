@@ -132,29 +132,31 @@ permalink: /apps/chatura/
       <div class="chat-thread" aria-hidden="true">
         <div class="chat-bubble chat-bubble--user">I do not want to lose this thought.</div>
         <div class="chat-bubble chat-bubble--companion">Then let us keep the part that matters.</div>
+        <div class="chat-bubble chat-bubble--user">It felt like more than a message.</div>
+        <div class="chat-bubble chat-bubble--companion">We can turn it into something you can revisit.</div>
         <div class="chat-bubble chat-bubble--user">Make it something I can return to.</div>
       </div>
 
       <div class="keepsake-board">
         <div class="keepsake-object keepsake-object--memory">
           <span>Our Memory</span>
-          <strong>Keep the moment visible.</strong>
+          <strong>Keep the moment visible</strong>
         </div>
         <div class="keepsake-object keepsake-object--plan">
           <span>Our Plan</span>
-          <strong>Carry the next step forward.</strong>
+          <strong>Carry the next step forward</strong>
         </div>
         <div class="keepsake-object keepsake-object--wish">
           <span>Wish Voice</span>
-          <strong>Give a future hope words.</strong>
+          <strong>Give a future hope words</strong>
         </div>
         <div class="keepsake-object keepsake-object--capsule">
           <span>Time Capsule</span>
-          <strong>Leave something for later.</strong>
+          <strong>Leave something for later</strong>
         </div>
         <div class="keepsake-object keepsake-object--secret">
           <span>Secret Haven</span>
-          <strong>Keep harder thoughts separate.</strong>
+          <strong>Keep harder thoughts separate</strong>
         </div>
       </div>
     </div>
