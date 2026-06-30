@@ -589,13 +589,11 @@ a.brand-app-card:focus-visible {
   min-height: 2.45rem;
   padding: 0.42rem 0.72rem 0.42rem 0.5rem;
   border-radius: 14px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.42)),
-    var(--social-card-tint);
+  background: transparent;
   color: #29364d;
   font-size: 0.98rem;
   line-height: 1.2;
-  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+  transition: transform 0.18s ease, color 0.18s ease;
 }
 
 .links-group .social-link:visited {

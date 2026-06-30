@@ -244,35 +244,35 @@ permalink: /apps/chatura/
   <details class="faq-item">
     <summary>How is Chatura different from a typical AI chat app?</summary>
     <div class="faq-item__answer">
-      <p>Chatura is built around distinct characters, ongoing continuity, and shared keepsakes. Instead of feeling like disposable chat, conversations can grow more personal over time and turn into memories, plans, wishes, and more.</p>
+      <p>Chatura is built for everyday companion conversations that can keep mattering after the chat ends. Meaningful parts of a chat can become Memories, Plans, Wishes, Time Capsules, and Secrets you can return to later.</p>
     </div>
   </details>
 
   <details class="faq-item">
     <summary>What can I keep from my conversations?</summary>
     <div class="faq-item__answer">
-      <p>Meaningful moments can become revisitable keepsakes like Our Memory, Our Plan, Time Capsule, Wish Voice, and Secret Haven—all created and managed naturally through chat.</p>
+      <p>You can keep moments that feel useful, personal, or worth revisiting, such as Our Memory, Our Plan, Wish Voice, Time Capsule, and Secret Haven. They are created naturally through chat, not through a separate notes or planning workflow.</p>
     </div>
   </details>
 
   <details class="faq-item">
     <summary>How do the characters feel more personal over time?</summary>
     <div class="faq-item__answer">
-      <p>Each character has their own tone, identity, and perspective. As you keep chatting, they can remember details you’ve shared and carry that continuity into later conversations.</p>
+      <p>Each companion has a distinct tone, identity, and inner world. As you keep chatting, Chatura can carry useful context forward so later conversations feel more continuous.</p>
     </div>
   </details>
 
   <details class="faq-item">
     <summary>Can I start using Chatura for free?</summary>
     <div class="faq-item__answer">
-      <p>Yes. You can start with Chatura’s core character for free. Optional subscription features are available in the app.</p>
+      <p>Yes. You can start without creating an account and try Chatura's core character for free. Optional subscription features are available in the app.</p>
     </div>
   </details>
 
   <details class="faq-item">
-    <summary>Is Chatura private and easy to start using?</summary>
+    <summary>Is Chatura private and easy to control?</summary>
     <div class="faq-item__answer">
-      <p>Yes. You can start without creating an account. Chatura has no ads, does not share your data for advertising or analytics, and lets you delete conversations or export your chat data whenever you want.</p>
+      <p>Chatura has no ads in chat, no cross-app tracking, and no third-party analytics SDKs. You can delete conversations or export your chat data. AI replies are generated through backend and model services, so necessary conversation context may be processed when you ask for a response.</p>
     </div>
   </details>
 </div>
