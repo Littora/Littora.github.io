@@ -28,13 +28,13 @@ permalink: /apps/chatura/
       </button>
       <div class="product-preview__shot">
         <div class="product-preview__shot-track" id="hero-screenshot-track" aria-label="Chatura app screenshots" tabindex="0">
-          <img src="/assets/AppStoreScreenshot/Screenshot1.png" alt="Chatura app screenshot" width="1320" height="2868">
-          <img src="/assets/AppStoreScreenshot/Screenshot2.png" alt="Chatura app screenshot" width="1320" height="2868">
-          <img src="/assets/AppStoreScreenshot/Screenshot3.png" alt="Chatura app screenshot" width="1320" height="2868">
-          <img src="/assets/AppStoreScreenshot/Screenshot4.png" alt="Chatura app screenshot" width="1320" height="2868">
-          <img src="/assets/AppStoreScreenshot/Screenshot5.png" alt="Chatura app screenshot" width="1320" height="2868">
-          <img src="/assets/AppStoreScreenshot/Screenshot6.png" alt="Chatura app screenshot" width="1320" height="2868">
-          <img src="/assets/AppStoreScreenshot/Screenshot7.png" alt="Chatura app screenshot" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot1.png" alt="A Chatura companion responds warmly to an everyday check-in" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot2.png" alt="Memories, Plans, Wishes, and Time Capsules created from Chatura chats" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot3.png" alt="Purpose-designed Chatura companions with distinct personalities" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot4.png" alt="A continuous Chatura conversation with a chosen companion" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot5.png" alt="Chatura Moments shared by companions between conversations" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot6.png" alt="A saved Chatura keepsake ready to revisit later" width="1320" height="2868">
+          <img src="/assets/AppStoreScreenshot/Screenshot7.png" alt="Chatura privacy and conversation controls" width="1320" height="2868">
         </div>
       </div>
       <button class="product-preview__control product-preview__control--next" type="button" aria-label="Show next screenshot" aria-controls="hero-screenshot-track">
@@ -42,9 +42,37 @@ permalink: /apps/chatura/
           <path d="M7.25 4.75 12.5 10l-5.25 5.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
         </svg>
       </button>
+      <div class="product-preview__progress" aria-label="Screenshot progress">
+        <div class="product-preview__dots" aria-label="Choose a screenshot"></div>
+      </div>
     </div>
   </div>
 </div>
+</section>
+
+<section class="proof-section" aria-labelledby="proof-title">
+  <div class="proof-section__intro">
+    <span>Made for real moments</span>
+    <h2 id="proof-title">A steadier place for what is on your mind.</h2>
+    <p>Celebrate a small win, untangle a thought, shape a calm message, make a simple plan, or leave something for your future self.</p>
+  </div>
+  <div class="proof-grid">
+    <article class="proof-item proof-item--app-store">
+      <span>On the App Store</span>
+      <strong>Free · In-App Purchases</strong>
+      <p>Designed for iPhone and available in English plus six more languages.</p>
+    </article>
+    <article class="proof-item">
+      <span>Privacy promise</span>
+      <strong>No account. No ads. No cross-app tracking.</strong>
+      <p>No third-party analytics SDKs. Delete conversations or export your chat data anytime.</p>
+    </article>
+    <article class="proof-item">
+      <span>Updated with care</span>
+      <strong>Version 1.2.2</strong>
+      <p>Ten releases since launch, with continuing improvements to everyday flow, design, reliability, and Moments.</p>
+    </article>
+  </div>
 </section>
 
 <script>
@@ -55,8 +83,14 @@ permalink: /apps/chatura/
     var track = carousel.querySelector(".product-preview__shot-track");
     var previous = carousel.querySelector(".product-preview__control--prev");
     var next = carousel.querySelector(".product-preview__control--next");
+    var dots = carousel.querySelector(".product-preview__dots");
     if (!track || !previous || !next) return;
     var images = track.querySelectorAll("img");
+    var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    var getBehavior = function () {
+      return reducedMotion.matches ? "auto" : "smooth";
+    };
 
     var getStep = function () {
       var firstImage = track.querySelector("img");
@@ -83,6 +117,20 @@ permalink: /apps/chatura/
       var nextHidden = syncControl(next, track.scrollLeft >= maxScroll);
       carousel.classList.toggle("is-at-start", previousHidden);
       carousel.classList.toggle("is-at-end", nextHidden);
+
+      var step = getStep();
+      var current = Math.min(Math.max(Math.round(track.scrollLeft / step), 0), images.length - 1);
+      if (dots) {
+        dots.querySelectorAll("button").forEach(function (dot, index) {
+          var isCurrent = index === current;
+          dot.classList.toggle("is-current", isCurrent);
+          if (isCurrent) {
+            dot.setAttribute("aria-current", "true");
+          } else {
+            dot.removeAttribute("aria-current");
+          }
+        });
+      }
     };
 
     var requestSyncControls = function () {
@@ -90,12 +138,24 @@ permalink: /apps/chatura/
     };
 
     previous.addEventListener("click", function () {
-      track.scrollBy({ left: -getStep(), behavior: "smooth" });
+      track.scrollBy({ left: -getStep(), behavior: getBehavior() });
     });
 
     next.addEventListener("click", function () {
-      track.scrollBy({ left: getStep(), behavior: "smooth" });
+      track.scrollBy({ left: getStep(), behavior: getBehavior() });
     });
+
+    if (dots) {
+      images.forEach(function (_, index) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", "Show screenshot " + (index + 1) + " of " + images.length);
+        dot.addEventListener("click", function () {
+          track.scrollTo({ left: getStep() * index, behavior: getBehavior() });
+        });
+        dots.appendChild(dot);
+      });
+    }
 
     track.addEventListener("scroll", syncControls, { passive: true });
     window.addEventListener("resize", requestSyncControls);
@@ -312,25 +372,33 @@ permalink: /apps/chatura/
 </div>
 </section>
 
-<section class="content-section content-section--links" markdown="1">
-<div class="links-grid" markdown="1">
-<div class="links-group" markdown="1">
-## What’s New
-- [What’s New](/apps/chatura/whats-new/)
+<footer class="product-footer" aria-label="Chatura footer">
+<div class="product-footer__brand">
+  <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
+  <div>
+    <strong>Chatura</strong>
+    <span>Talk it through. Keep what matters.</span>
+  </div>
+</div>
+<div class="product-footer__links">
+<div class="product-footer__group">
+<h2>Product</h2>
+<ul>
+  <li><a href="/apps/chatura/whats-new/">What’s New</a></li>
+  <li><a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download</a></li>
+</ul>
 </div>
 
-<div class="links-group" markdown="1">
-## Legal
-- [Privacy Policy](/apps/chatura/privacy-policy/)
-- [Terms of Service](/apps/chatura/terms-of-service/)
+<div class="product-footer__group">
+<h2>Legal &amp; Support</h2>
+<ul>
+  <li><a href="/apps/chatura/privacy-policy/">Privacy Policy</a></li>
+  <li><a href="/apps/chatura/terms-of-service/">Terms of Service</a></li>
+  <li><a href="/apps/chatura/support/">Support</a></li>
+</ul>
 </div>
 
-<div class="links-group" markdown="1">
-## Support
-- [Support](/apps/chatura/support/)
-</div>
-
-<div class="links-group links-group--social">
+<div class="product-footer__group product-footer__group--social">
 <h2>Social</h2>
 <ul class="social-link-list" aria-label="Chatura social channels">
   <li><a class="social-link social-link--x" href="https://x.com/ChaturaApp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3h-2l13.1 17.3Z"/></svg></span><span>X</span></a></li>
@@ -341,4 +409,4 @@ permalink: /apps/chatura/
 </ul>
 </div>
 </div>
-</section>
+</footer>
