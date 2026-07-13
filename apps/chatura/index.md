@@ -56,7 +56,7 @@ permalink: /apps/chatura/
       <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
     </div>
     <span>Made for real moments</span>
-    <h2 id="proof-title">A steadier place for what is on your mind.</h2>
+    <h2 id="proof-title">A <em>steadier place</em> for what is on your mind.</h2>
     <p>Celebrate a small win, untangle a thought, shape a calm message, make a simple plan, or leave something for your future self.</p>
   </div>
   <div class="proof-grid">
@@ -72,8 +72,8 @@ permalink: /apps/chatura/
     </article>
     <article class="proof-item">
       <span>Updated with care</span>
-      <strong>Version 1.2.2</strong>
-      <p>Ten releases since launch, with continuing improvements to everyday flow, design, reliability, and Moments.</p>
+      <strong data-app-version>Regular, thoughtful updates</strong>
+      <p data-app-release>Continuing improvements to everyday flow, design, reliability, and Moments.</p>
     </article>
   </div>
 </section>
@@ -176,7 +176,90 @@ permalink: /apps/chatura/
 
     requestSyncControls();
   })();
+
+  (function () {
+    var version = document.querySelector("[data-app-version]");
+    var release = document.querySelector("[data-app-release]");
+    if (!version || !release || !window.fetch) return;
+
+    fetch("https://itunes.apple.com/lookup?id=6758027835&country=us")
+      .then(function (response) {
+        if (!response.ok) throw new Error("App Store lookup failed");
+        return response.json();
+      })
+      .then(function (data) {
+        var app = data && data.results && data.results[0];
+        if (!app || !app.version) return;
+
+        version.textContent = "Version " + app.version;
+
+        if (app.currentVersionReleaseDate) {
+          var date = new Date(app.currentVersionReleaseDate);
+          if (!Number.isNaN(date.getTime())) {
+            var formatted = new Intl.DateTimeFormat(document.documentElement.lang || "en", {
+              year: "numeric",
+              month: "short",
+              day: "numeric"
+            }).format(date);
+            release.textContent = "Latest update " + formatted + ", with continuing improvements to everyday flow, design, reliability, and Moments.";
+          }
+        }
+      })
+      .catch(function () {
+        // Evergreen fallback copy remains visible if the App Store is unavailable.
+      });
+  })();
 </script>
+
+<section class="use-cases" aria-labelledby="use-cases-title">
+  <header class="use-cases__intro">
+    <span>Four ways in</span>
+    <h2 id="use-cases-title">Begin with what is already on your mind.</h2>
+    <p>You do not need the right prompt. Start with the moment as it is, and let the conversation find its shape.</p>
+  </header>
+
+  <div class="use-cases__grid">
+    <article class="use-case use-case--feeling">
+      <span class="use-case__number" aria-hidden="true">01</span>
+      <div>
+        <span class="use-case__outcome">Name it</span>
+        <h3>Untangle a feeling you cannot quite explain.</h3>
+        <p>Start with the part that feels unclear. Chatura can help you slow it down, notice what is underneath, and put it into words.</p>
+        <blockquote>“Something feels off, but I cannot tell what it is.”</blockquote>
+      </div>
+    </article>
+
+    <article class="use-case use-case--plan">
+      <span class="use-case__number" aria-hidden="true">02</span>
+      <div>
+        <span class="use-case__outcome">Shape it</span>
+        <h3>Turn a thought into a plan you can return to.</h3>
+        <p>Talk through the real constraints, find one useful next step, and keep the result as an Our Plan instead of losing it in chat history.</p>
+        <blockquote>“I know what I want to change. I just do not know where to start.”</blockquote>
+      </div>
+    </article>
+
+    <article class="use-case use-case--message">
+      <span class="use-case__number" aria-hidden="true">03</span>
+      <div>
+        <span class="use-case__outcome">Say it safely</span>
+        <h3>Write the message you are not ready to send.</h3>
+        <p>Find the honest version first. You can refine the words, understand what you want them to carry, and decide what happens next.</p>
+        <blockquote>“Help me say this without making it sharper than I mean.”</blockquote>
+      </div>
+    </article>
+
+    <article class="use-case use-case--future">
+      <span class="use-case__number" aria-hidden="true">04</span>
+      <div>
+        <span class="use-case__outcome">Keep it for later</span>
+        <h3>Leave a Time Capsule for your future self.</h3>
+        <p>Save what today feels like, what you hope will change, or what you do not want your future self to forget.</p>
+        <blockquote>“Open this when I need to remember why I began.”</blockquote>
+      </div>
+    </article>
+  </div>
+</section>
 
 <section id="features" class="content-section content-section--features" markdown="1">
 ## Conversations that do not disappear.
@@ -318,6 +401,95 @@ permalink: /apps/chatura/
     </article>
   </div>
 </div>
+</section>
+
+<section id="companion-spotlight" class="companion-spotlight" aria-labelledby="companion-spotlight-title">
+  <div class="companion-spotlight__copy">
+    <span class="companion-spotlight__eyebrow">Companion spotlight</span>
+    <h2 id="companion-spotlight-title">One core companion, designed to stay present.</h2>
+    <p class="companion-spotlight__lede">Chatura begins with one core companion instead of asking you to browse an endless catalog. The voice is warm without pretending everything is fine, curious without interrogating, and steady enough to help a thought become clearer.</p>
+
+    <dl class="companion-spotlight__principles">
+      <div>
+        <dt>Listens for the real question</dt>
+        <dd>Responds to what your words are carrying, not only the literal sentence.</dd>
+      </div>
+      <div>
+        <dt>Moves at your pace</dt>
+        <dd>Offers one considered next step instead of rushing toward a solution.</dd>
+      </div>
+      <div>
+        <dt>Keeps the useful part</dt>
+        <dd>Helps meaningful moments become something you can revisit later.</dd>
+      </div>
+    </dl>
+
+    <div class="companion-example" aria-label="Example conversation with Chatura">
+      <span>Example conversation</span>
+      <div>
+        <strong>You</strong>
+        <p>“I finished something difficult today, but somehow I still feel behind.”</p>
+      </div>
+      <div>
+        <strong>Chatura</strong>
+        <p>“Then let us not erase the difficult thing you finished. What would feel like enough for today—not forever, just today?”</p>
+      </div>
+    </div>
+  </div>
+
+  <figure class="companion-spotlight__visual">
+    <img src="/assets/AppStoreScreenshot/Screenshot5.png" alt="Chatura companion continuity, including remembering, moving at your pace, and picking up where you left off" width="1320" height="2868" loading="lazy">
+    <figcaption>A calmer companion to come back to.</figcaption>
+  </figure>
+</section>
+
+<section id="app-preview" class="app-preview" aria-labelledby="app-preview-title">
+  <header class="app-preview__intro">
+    <span>App Preview</span>
+    <h2 id="app-preview-title">See a meaningful conversation become something you can keep.</h2>
+    <p>This space is prepared for a 15–30 second App Preview. Replace the storyboard with the final video when it is ready.</p>
+  </header>
+
+  <div class="app-preview__layout">
+    <div class="app-preview__stage" aria-label="Placeholder for a future Chatura App Preview video">
+      <div class="app-preview__frames" aria-hidden="true">
+        <figure>
+          <img src="/assets/AppStoreScreenshot/Screenshot1.png" alt="" width="1320" height="2868" loading="lazy">
+          <figcaption>Talk</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/AppStoreScreenshot/Screenshot2.png" alt="" width="1320" height="2868" loading="lazy">
+          <figcaption>Save</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/AppStoreScreenshot/Screenshot5.png" alt="" width="1320" height="2868" loading="lazy">
+          <figcaption>Return</figcaption>
+        </figure>
+      </div>
+      <div class="app-preview__placeholder">
+        <span>Video placeholder</span>
+        <strong>00:20</strong>
+      </div>
+    </div>
+
+    <ol class="app-preview__sequence" aria-label="Recommended App Preview sequence">
+      <li>
+        <span>00:00–00:05</span>
+        <strong>Open with the feeling.</strong>
+        <p>Show a real, recognisable thought—not a feature list.</p>
+      </li>
+      <li>
+        <span>00:05–00:13</span>
+        <strong>Let the conversation clarify it.</strong>
+        <p>Keep the response calm, specific, and easy to read.</p>
+      </li>
+      <li>
+        <span>00:13–00:20</span>
+        <strong>Save it, then return.</strong>
+        <p>End on the moment the chat becomes a Memory, Plan, Wish, Time Capsule, or Secret.</p>
+      </li>
+    </ol>
+  </div>
 </section>
 
 <section id="download" class="conversion-band" aria-labelledby="conversion-title">
