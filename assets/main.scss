@@ -4181,14 +4181,21 @@ h3 {
   text-transform: uppercase;
 }
 
+.use-cases__intro h2,
+.companion-spotlight h2,
+.app-preview__intro h2 {
+  max-width: 12.5em;
+  font-size: clamp(2.7rem, 4.8vw, 4.05rem);
+  font-weight: 650;
+  line-height: 1.09;
+  letter-spacing: -0.018em;
+  word-spacing: 0.012em;
+}
+
 .use-cases__intro h2 {
   grid-area: title;
-  max-width: 12em;
   margin: 0;
   padding: 0;
-  font-size: clamp(2.75rem, 5.2vw, 4.35rem);
-  line-height: 0.98;
-  letter-spacing: -0.05em;
 }
 
 .use-cases__intro h2::before,
@@ -4323,13 +4330,9 @@ h3 {
 }
 
 .companion-spotlight h2 {
-  max-width: 10.5em;
   margin: 0.85rem 0 0;
   padding: 0;
   color: #2b354b;
-  font-size: clamp(2.8rem, 5vw, 4.35rem);
-  line-height: 0.99;
-  letter-spacing: -0.05em;
 }
 
 .companion-spotlight__lede {
@@ -4458,13 +4461,9 @@ h3 {
 
 .app-preview__intro h2 {
   grid-area: title;
-  max-width: 13em;
   margin: 0;
   padding: 0;
   color: #29344b;
-  font-size: clamp(2.65rem, 5vw, 4.15rem);
-  line-height: 0.99;
-  letter-spacing: -0.05em;
 }
 
 .app-preview__intro p {
@@ -4836,8 +4835,13 @@ body:has(.product-footer) .post-content {
   }
 
   .use-cases__intro h2,
+  .companion-spotlight h2,
   .app-preview__intro h2 {
-    font-size: clamp(2.5rem, 11vw, 3.35rem);
+    max-width: 12em;
+    font-size: clamp(2.35rem, 10.2vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.012em;
+    word-spacing: 0.016em;
   }
 
   .use-cases__intro p,
@@ -4867,10 +4871,6 @@ body:has(.product-footer) .post-content {
   .companion-spotlight {
     margin-bottom: 4.2rem;
     padding: 4rem 1.5rem;
-  }
-
-  .companion-spotlight h2 {
-    font-size: clamp(2.55rem, 11.5vw, 3.45rem);
   }
 
   .companion-spotlight__principles {
