@@ -52,6 +52,9 @@ permalink: /apps/chatura/
 
 <section class="proof-section" aria-labelledby="proof-title">
   <div class="proof-section__intro">
+    <div class="proof-section__mark" aria-hidden="true">
+      <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
+    </div>
     <span>Made for real moments</span>
     <h2 id="proof-title">A steadier place for what is on your mind.</h2>
     <p>Celebrate a small win, untangle a thought, shape a calm message, make a simple plan, or leave something for your future self.</p>

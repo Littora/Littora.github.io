@@ -3931,8 +3931,13 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 80;
+  padding-bottom: 0;
   background: rgba(255, 250, 243, 0.96);
   backdrop-filter: blur(14px);
+}
+
+.site-header--product::after {
+  margin-top: 1rem;
 }
 
 .site-nav .page-link--download {
@@ -3943,7 +3948,7 @@ h3 {
 
 #features,
 #faq {
-  scroll-margin-top: 9.25rem;
+  scroll-margin-top: 7.5rem;
 }
 
 .product-preview {
@@ -3999,31 +4004,82 @@ h3 {
 }
 
 .proof-section {
+  position: relative;
+  left: 50%;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.7fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
-  margin: 0 0 clamp(4.5rem, 7vw, 6.5rem);
-  padding: clamp(2.4rem, 4vw, 3.2rem) clamp(0.2rem, 1.5vw, 1rem);
-  border-top: 1px solid rgba(202, 190, 177, 0.72);
-  border-bottom: 1px solid rgba(202, 190, 177, 0.72);
+  grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(3rem, 7vw, 6rem);
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0 0 clamp(4.8rem, 7vw, 6.8rem) -50vw;
+  padding: clamp(4.5rem, 7vw, 6.5rem) max(calc((100vw - 1080px) / 2), 1.8rem);
+  overflow: hidden;
+  color: #f7f4ef;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  background:
+    radial-gradient(circle at 12% 24%, rgba(226, 132, 143, 0.2), transparent 32%),
+    radial-gradient(circle at 86% 78%, rgba(119, 153, 217, 0.2), transparent 34%),
+    #202738;
+  box-shadow:
+    0 34px 80px rgba(24, 29, 43, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.proof-section__intro {
+  display: grid;
+  align-content: center;
+  max-width: 35rem;
+}
+
+.proof-section__mark {
+  display: grid;
+  place-items: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  margin-bottom: 1.75rem;
+  padding: 0.38rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 19px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow:
+    0 18px 40px rgba(8, 12, 24, 0.24),
+    0 0 0 8px rgba(255, 255, 255, 0.035);
+}
+
+.proof-section__mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .proof-section__intro > span,
 .proof-item > span {
-  color: #6b7180;
-  font-size: 0.7rem;
+  color: #aab4ca;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.13em;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
+.proof-section__intro > span {
+  color: #f0a49f;
+}
+
 .proof-section__intro h2 {
-  margin: 0.7rem 0 0;
+  max-width: 10.5em;
+  margin: 0.9rem 0 0;
   padding: 0;
-  color: #1f293d;
-  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
-  line-height: 1.05;
+  color: #ffffff;
+  font-size: clamp(2.9rem, 5.3vw, 4.35rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  text-shadow: 0 18px 42px rgba(9, 13, 25, 0.22);
 }
 
 .proof-section__intro h2::before {
@@ -4031,37 +4087,44 @@ h3 {
 }
 
 .proof-section__intro p {
-  margin: 1rem 0 0;
-  color: #5b687b;
-  font-size: 0.98rem;
-  line-height: 1.68;
+  max-width: 31rem;
+  margin: 1.35rem 0 0;
+  color: #cbd2df;
+  font-size: 1.08rem;
+  line-height: 1.72;
 }
 
 .proof-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: stretch;
+  grid-template-columns: 1fr;
+  align-content: center;
+  min-width: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
 }
 
 .proof-item {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.72fr) minmax(0, 1.28fr);
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.4rem);
   min-width: 0;
-  padding: 0.1rem clamp(1.2rem, 2.4vw, 2rem);
-  border-left: 1px solid rgba(202, 190, 177, 0.65);
+  padding: 1.45rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
 }
 
 .proof-item strong {
   display: block;
-  margin-top: 0.85rem;
-  color: #273147;
-  font-size: 1.05rem;
-  line-height: 1.34;
+  margin-top: 0.62rem;
+  color: #ffffff;
+  font-size: 1.22rem;
+  line-height: 1.28;
 }
 
 .proof-item p {
-  margin: 0.72rem 0 0;
-  color: #687386;
-  font-size: 0.84rem;
-  line-height: 1.58;
+  margin: 0;
+  color: #bbc4d4;
+  font-size: 0.96rem;
+  line-height: 1.62;
 }
 
 .product-footer {
@@ -4176,11 +4239,12 @@ body:has(.product-footer) .post-content {
 @media (max-width: 860px) {
   .proof-section {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3.2rem;
+    padding-block: 4.6rem;
   }
 
   .proof-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .product-footer {
@@ -4190,6 +4254,16 @@ body:has(.product-footer) .post-content {
 }
 
 @media (max-width: 640px) {
+  .site-header--product .site-nav .page-link--download {
+    min-width: 0;
+    padding-block: 0.56rem;
+    border-radius: 12px;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      0 8px 18px rgba(var(--chatura-cta-rgb), 0.23);
+    font-size: 0.94rem;
+  }
+
   .product-preview {
     padding: 0.75rem 0.75rem 3.25rem;
     border-radius: 16px;
@@ -4201,17 +4275,38 @@ body:has(.product-footer) .post-content {
 
   .proof-section {
     margin-bottom: 4rem;
-    padding: 2.6rem 0;
+    padding: 3.8rem 1.5rem 4.2rem;
+    gap: 2.75rem;
   }
 
-  .proof-grid {
-    grid-template-columns: 1fr;
+  .proof-section__mark {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-bottom: 1.45rem;
+    border-radius: 17px;
+  }
+
+  .proof-section__intro h2 {
+    max-width: 9.5em;
+    font-size: clamp(2.7rem, 13vw, 3.55rem);
+  }
+
+  .proof-section__intro p {
+    font-size: 1.02rem;
   }
 
   .proof-item {
-    padding: 1.35rem 0;
-    border-left: 0;
-    border-top: 1px solid rgba(202, 190, 177, 0.65);
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 1.3rem 0 1.4rem;
+  }
+
+  .proof-item strong {
+    font-size: 1.12rem;
+  }
+
+  .proof-item p {
+    font-size: 0.92rem;
   }
 
   .product-footer {
@@ -4235,7 +4330,83 @@ body:has(.product-footer) .post-content {
 
   #features,
   #faq {
-    scroll-margin-top: 8.75rem;
+    scroll-margin-top: 6.75rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .feature-chapter--keepsakes .keepsake-board {
+    position: relative;
+    display: block;
+    min-height: 430px;
+    margin-top: 0.2rem;
+  }
+
+  .feature-chapter--keepsakes .keepsake-object {
+    position: absolute;
+    box-sizing: border-box;
+    min-height: 0;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow:
+      0 18px 34px rgba(37, 48, 71, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.78);
+  }
+
+  .feature-chapter--keepsakes .keepsake-object--memory {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 70%;
+    min-height: 154px;
+    transform: rotate(-1.35deg);
+  }
+
+  .feature-chapter--keepsakes .keepsake-object--plan {
+    top: 82px;
+    right: 0;
+    z-index: 3;
+    width: 47%;
+    min-height: 118px;
+    transform: rotate(1.6deg);
+  }
+
+  .feature-chapter--keepsakes .keepsake-object--wish {
+    top: 174px;
+    left: 1%;
+    z-index: 1;
+    width: 50%;
+    min-height: 118px;
+    transform: rotate(-0.8deg);
+  }
+
+  .feature-chapter--keepsakes .keepsake-object--capsule {
+    top: 216px;
+    right: 0;
+    z-index: 2;
+    width: 54%;
+    min-height: 124px;
+    transform: rotate(1.1deg);
+  }
+
+  .feature-chapter--keepsakes .keepsake-object--secret {
+    top: 320px;
+    left: 12%;
+    z-index: 4;
+    width: 76%;
+    min-height: 112px;
+    transform: rotate(-0.55deg);
+  }
+
+  .feature-chapter--keepsakes .keepsake-object strong,
+  .feature-chapter--keepsakes .keepsake-object--memory strong {
+    font-size: 1rem;
+    line-height: 1.18;
+  }
+
+  .feature-chapter--keepsakes .keepsake-object--memory strong {
+    font-size: 1.18rem;
   }
 }
 
