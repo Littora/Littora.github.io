@@ -29,6 +29,10 @@
     {% endif %}
     <meta name="twitter:image" content="{{ page_share_image | absolute_url }}">
   {% endif %}
+  {% if page.url == "/apps/chatura/" %}
+    <link rel="preload" href="{{ "/assets/fonts/BricolageGrotesque-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{{ "/assets/fonts/DMSans-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
+  {% endif %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}

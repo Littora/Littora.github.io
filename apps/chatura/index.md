@@ -55,7 +55,6 @@ permalink: /apps/chatura/
     <div class="proof-section__mark" aria-hidden="true">
       <img src="/assets/Logo.png" alt="" width="256" height="256" loading="lazy">
     </div>
-    <span>Made for real moments</span>
     <h2 id="proof-title">A <em>steadier place</em> for what is on your mind.</h2>
     <p>Celebrate a small win, untangle a thought, shape a calm message, make a simple plan, or leave something for your future self.</p>
   </div>
@@ -213,7 +212,6 @@ permalink: /apps/chatura/
 
 <section class="use-cases" aria-labelledby="use-cases-title">
   <header class="use-cases__intro">
-    <span>Four ways in</span>
     <h2 id="use-cases-title">Begin with what is already on your mind.</h2>
     <p>You do not need the right prompt. Start with the moment as it is, and let the conversation find its shape.</p>
   </header>
