@@ -4046,6 +4046,16 @@ h3 {
   margin-top: 0.72rem;
 }
 
+@media (min-width: 861px) {
+  .chatura-home .hero-layout {
+    align-items: start;
+  }
+
+  .chatura-home .hero-copy {
+    margin-top: 0.9rem;
+  }
+}
+
 .site-nav .page-link--download {
   min-width: 6.7rem;
   justify-content: center;
@@ -4823,8 +4833,48 @@ body:has(.product-footer) .post-content {
 }
 
 @media (min-width: 641px) and (max-width: 860px) {
+  .site-header--product .wrapper {
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    padding-inline: 1rem;
+  }
+
+  .site-header--product .site-title {
+    flex: 0 0 auto;
+    font-size: 1.2rem;
+  }
+
   .site-header--product .site-nav {
+    flex: 1 1 auto;
+    min-width: 0;
     width: auto;
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+  }
+
+  .site-header--product .site-nav .page-link {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .site-header--product .site-nav .page-link--download {
+    min-width: 0;
+  }
+
+  .site-header--product .language-selector {
+    flex: 0 1 7.6rem;
+    min-width: 0;
+  }
+
+  .site-header--product .language-selector select {
+    width: 100%;
+    min-height: 2.35rem;
+    max-width: 7.6rem;
+    padding: 0.36rem 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
