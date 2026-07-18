@@ -12,6 +12,10 @@ lang: en-US
 # Markdown engine (default is fine, but explicit is clearer)
 markdown: kramdown
 
+# Generate a canonical XML sitemap for search engine discovery.
+plugins:
+  - jekyll-sitemap
+
 defaults:
   - scope:
       path: ""
