@@ -1,0 +1,339 @@
+{% assign locale = page.locale | default: "en" %}
+{% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
+
+<div class="chatura-home" data-chatura-home data-locale="{{ locale }}">
+  <section class="content-section content-section--hero">
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <h1>Chatura</h1>
+        <p class="hero-tagline"><strong>{{ copy.hero.tagline }}</strong></p>
+        <p>{{ copy.hero.intro }}</p>
+        <p>{{ copy.hero.details }}</p>
+        <a class="hero-download-link" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download_app_store }}</a>
+        <div class="download-panel__meta hero-meta" aria-label="{{ copy.hero.highlights_label }}">
+          {% for highlight in copy.hero.highlights %}
+            <span>{{ highlight }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="product-preview" data-carousel data-dot-label="{{ copy.carousel.dot_label | escape }}">
+          <button class="product-preview__control product-preview__control--prev" type="button" aria-label="{{ copy.carousel.previous }}" aria-controls="hero-screenshot-track" disabled>
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+              <path d="M12.75 4.75 7.5 10l5.25 5.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+            </svg>
+          </button>
+          <div class="product-preview__shot">
+            <div class="product-preview__shot-track" id="hero-screenshot-track" aria-label="{{ copy.carousel.label }}" tabindex="0">
+              {% for image_alt in copy.carousel.image_alts %}
+                <img src="{{ '/assets/AppStoreScreenshot/Screenshot' | append: forloop.index | append: '.png' | relative_url }}" alt="{{ image_alt }}" width="1320" height="2868">
+              {% endfor %}
+            </div>
+          </div>
+          <button class="product-preview__control product-preview__control--next" type="button" aria-label="{{ copy.carousel.next }}" aria-controls="hero-screenshot-track">
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+              <path d="M7.25 4.75 12.5 10l-5.25 5.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+            </svg>
+          </button>
+          <div class="product-preview__progress" aria-label="{{ copy.carousel.progress }}">
+            <div class="product-preview__dots" aria-label="{{ copy.carousel.choose }}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-section" aria-labelledby="proof-title">
+    <div class="proof-section__intro">
+      <div class="proof-section__mark" aria-hidden="true">
+        <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256" loading="lazy">
+      </div>
+      <h2 id="proof-title">{{ copy.proof.title_before }}<em>{{ copy.proof.title_emphasis }}</em>{{ copy.proof.title_after }}</h2>
+      <p>{{ copy.proof.body }}</p>
+    </div>
+    <div class="proof-grid">
+      <article class="proof-item proof-item--app-store">
+        <span>{{ copy.proof.app_store.label }}</span>
+        <strong>{{ copy.proof.app_store.title }}</strong>
+        <p>{{ copy.proof.app_store.body }}</p>
+      </article>
+      <article class="proof-item">
+        <span>{{ copy.proof.privacy.label }}</span>
+        <strong>{{ copy.proof.privacy.title }}</strong>
+        <p>{{ copy.proof.privacy.body }}</p>
+      </article>
+      <article class="proof-item">
+        <span>{{ copy.proof.updates.label }}</span>
+        <strong data-app-version>{{ copy.proof.updates.title }}</strong>
+        <p data-app-release>{{ copy.proof.updates.body }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="use-cases" aria-labelledby="use-cases-title">
+    <header class="use-cases__intro">
+      <h2 id="use-cases-title">{{ copy.use_cases.title }}</h2>
+      <p>{{ copy.use_cases.body }}</p>
+    </header>
+
+    <div class="use-cases__grid">
+      {% assign use_case_classes = "feeling,plan,message,future" | split: "," %}
+      {% for item in copy.use_cases.items %}
+        <article class="use-case use-case--{{ use_case_classes[forloop.index0] }}">
+          <span class="use-case__number" aria-hidden="true">0{{ forloop.index }}</span>
+          <div>
+            <span class="use-case__outcome">{{ item.outcome }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.body }}</p>
+            <blockquote>{{ item.quote }}</blockquote>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="features" class="content-section content-section--features">
+    <h2 id="conversations-that-do-not-disappear">{{ copy.features.title }}</h2>
+    <p class="features-lede">{{ copy.features.lede }}</p>
+
+    <div class="feature-narrative">
+      <article class="feature-chapter feature-chapter--keepsakes">
+        <div class="feature-chapter__copy">
+          <span class="feature-kicker">{{ copy.features.keepsakes.kicker }}</span>
+          <h3>{{ copy.features.keepsakes.title }}</h3>
+          <p>{{ copy.features.keepsakes.body }}</p>
+        </div>
+
+        <div class="keepsake-flow" aria-label="{{ copy.features.keepsakes.label }}">
+          <div class="chat-thread" aria-hidden="true">
+            {% for message in copy.features.keepsakes.chat %}
+              <div class="chat-bubble chat-bubble--{{ message.speaker }}">{{ message.text }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="keepsake-board">
+            {% for item in copy.features.keepsakes.items %}
+              <div class="keepsake-object keepsake-object--{{ item.kind }}">
+                <span>{{ item.name }}</span>
+                <strong>{{ item.summary }}</strong>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-chapter feature-chapter--companion">
+        <div class="feature-chapter__copy">
+          <span class="feature-kicker">{{ copy.features.companion.kicker }}</span>
+          <h3>{{ copy.features.companion.title }}</h3>
+          <p>{{ copy.features.companion.body }}</p>
+        </div>
+
+        <div class="companion-profile" aria-label="{{ copy.features.companion.label }}">
+          <div class="companion-profile__header">
+            <div>
+              <span>{{ copy.features.companion.profile_label }}</span>
+              <strong>{{ copy.features.companion.profile_title }}</strong>
+            </div>
+            <small>{{ copy.features.companion.status }}</small>
+          </div>
+          <div class="companion-profile__body">
+            {% for detail in copy.features.companion.details %}
+              <div>
+                <span>{{ detail.label }}</span>
+                <strong>{{ detail.value }}</strong>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="companion-tone-map" aria-label="{{ copy.features.companion.tones_label }}">
+            {% for tone in copy.features.companion.tones %}
+              <span>{{ tone }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-chapter feature-chapter--trust">
+        <div class="feature-chapter__copy">
+          <span class="feature-kicker">{{ copy.features.trust.kicker }}</span>
+          <h3>{{ copy.features.trust.title }}</h3>
+          <p>{{ copy.features.trust.body }}</p>
+        </div>
+
+        <div class="trust-rail" aria-label="{{ copy.features.trust.label }}">
+          {% for item in copy.features.trust.items %}
+            <span>{{ item }}</span>
+          {% endfor %}
+        </div>
+      </article>
+    </div>
+
+    <div class="feature-supporting">
+      <div class="feature-supporting__intro">
+        <span class="feature-kicker">{{ copy.features.supporting.kicker }}</span>
+        <h3>{{ copy.features.supporting.title }}</h3>
+      </div>
+
+      <div class="feature-supporting__grid">
+        {% assign supporting_images = "conversation-continuity,moments-between-chats,everyday-openings" | split: "," %}
+        {% assign supporting_classes = "world,moments,natural" | split: "," %}
+        {% for card in copy.features.supporting.cards %}
+          <article class="supporting-feature supporting-feature--{{ supporting_classes[forloop.index0] }}">
+            <img src="{{ '/assets/chatura-placeholders/feature-' | append: supporting_images[forloop.index0] | append: '.svg' | relative_url }}" alt="" width="960" height="600" loading="lazy">
+            <div>
+              <span>{{ card.label }}</span>
+              <strong>{{ card.title }}</strong>
+              <p>{{ card.body }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="companion-spotlight" class="companion-spotlight" aria-labelledby="companion-spotlight-title">
+    <div class="companion-spotlight__copy">
+      <span class="companion-spotlight__eyebrow">{{ copy.spotlight.eyebrow }}</span>
+      <h2 id="companion-spotlight-title">{{ copy.spotlight.title }}</h2>
+      <p class="companion-spotlight__lede">{{ copy.spotlight.lede }}</p>
+
+      <dl class="companion-spotlight__principles">
+        {% for principle in copy.spotlight.principles %}
+          <div>
+            <dt>{{ principle.title }}</dt>
+            <dd>{{ principle.body }}</dd>
+          </div>
+        {% endfor %}
+      </dl>
+
+      <div class="companion-example" aria-label="{{ copy.spotlight.example_label }}">
+        <span>{{ copy.spotlight.example_title }}</span>
+        <div>
+          <strong>{{ copy.spotlight.you }}</strong>
+          <p>{{ copy.spotlight.user_message }}</p>
+        </div>
+        <div>
+          <strong>Chatura</strong>
+          <p>{{ copy.spotlight.reply }}</p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="companion-spotlight__visual">
+      <img src="{{ '/assets/AppStoreScreenshot/Screenshot5.png' | relative_url }}" alt="{{ copy.spotlight.image_alt }}" width="1320" height="2868" loading="lazy">
+      <figcaption>{{ copy.spotlight.caption }}</figcaption>
+    </figure>
+  </section>
+
+  <section id="app-preview" class="app-preview" aria-labelledby="app-preview-title">
+    <header class="app-preview__intro">
+      <span>{{ copy.preview.eyebrow }}</span>
+      <h2 id="app-preview-title">{{ copy.preview.title }}</h2>
+      <p>{{ copy.preview.body }}</p>
+    </header>
+
+    <div class="app-preview__layout">
+      <div class="app-preview__stage" aria-label="{{ copy.preview.stage_label }}">
+        <div class="app-preview__frames" aria-hidden="true">
+          {% assign preview_images = "1,2,5" | split: "," %}
+          {% for frame in copy.preview.frames %}
+            <figure>
+              <img src="{{ '/assets/AppStoreScreenshot/Screenshot' | append: preview_images[forloop.index0] | append: '.png' | relative_url }}" alt="" width="1320" height="2868" loading="lazy">
+              <figcaption>{{ frame }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+        <div class="app-preview__placeholder">
+          <span>{{ copy.preview.placeholder }}</span>
+          <strong>00:20</strong>
+        </div>
+      </div>
+
+      <ol class="app-preview__sequence" aria-label="{{ copy.preview.sequence_label }}">
+        {% for step in copy.preview.steps %}
+          <li>
+            <span>{{ step.time }}</span>
+            <strong>{{ step.title }}</strong>
+            <p>{{ step.body }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section id="download" class="conversion-band" aria-labelledby="conversion-title">
+    <div class="conversion-band__inner">
+      <div class="conversion-band__mark" aria-hidden="true">
+        <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256" loading="lazy">
+      </div>
+      <div class="conversion-band__copy">
+        <h2 id="conversion-title">{{ copy.conversion.title }}</h2>
+        <p>{{ copy.conversion.body }}</p>
+      </div>
+      <div class="conversion-band__action">
+        <a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download_app_store }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="content-section content-section--faq">
+    <h2>{{ copy.faq.title }}</h2>
+    <div class="faq-grid">
+      {% for item in copy.faq.items %}
+        <details class="faq-item">
+          <summary>{{ item.question }}</summary>
+          <div class="faq-item__answer">
+            <p>{{ item.answer }}</p>
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  </section>
+
+  <footer class="product-footer" aria-label="{{ copy.footer.label }}">
+    <div class="product-footer__brand">
+      <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256" loading="lazy">
+      <div>
+        <strong>Chatura</strong>
+        <span>{{ copy.hero.tagline }}</span>
+      </div>
+    </div>
+    <div class="product-footer__links">
+      <div class="product-footer__group">
+        <h2>{{ copy.footer.product }}</h2>
+        <ul>
+          <li><a href="{{ '/apps/chatura/whats-new/' | relative_url }}" hreflang="en">{{ copy.footer.whats_new }}</a></li>
+          <li><a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download }}</a></li>
+        </ul>
+      </div>
+
+      <div class="product-footer__group">
+        <h2>{{ copy.footer.legal_support }}</h2>
+        <ul>
+          <li><a href="{{ '/apps/chatura/privacy-policy/' | relative_url }}" hreflang="en">{{ copy.footer.privacy }}</a></li>
+          <li><a href="{{ '/apps/chatura/terms-of-service/' | relative_url }}" hreflang="en">{{ copy.footer.terms }}</a></li>
+          <li><a href="{{ '/apps/chatura/support/' | relative_url }}" hreflang="en">{{ copy.footer.support }}</a></li>
+        </ul>
+      </div>
+
+      <div class="product-footer__group product-footer__group--social">
+        <h2>{{ copy.footer.social }}</h2>
+        <ul class="social-link-list" aria-label="{{ copy.footer.social_label }}">
+          <li><a class="social-link social-link--x" href="https://x.com/ChaturaApp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3h-2l13.1 17.3Z"/></svg></span><span>X</span></a></li>
+          <li><a class="social-link social-link--tiktok" href="https://www.tiktok.com/@chaturaapp"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M15.8 3.2c.4 2.1 1.7 3.7 3.7 4.3v3.1c-1.4-.1-2.7-.5-3.7-1.2v5.6c0 3.3-2.2 5.5-5.2 5.5-2.7 0-4.7-1.8-4.7-4.3 0-2.7 2.2-4.5 5.3-4.4.3 0 .6 0 .9.1V3.2h3.7Zm-3.7 11.6c-.3-.1-.7-.2-1.1-.2-1.2 0-2 .6-2 1.5s.7 1.5 1.7 1.5c1 0 1.5-.7 1.5-1.9v-.9Z"/></svg></span><span>TikTok</span></a></li>
+          <li><a class="social-link social-link--instagram" href="https://www.instagram.com/chaturaapp/"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.7"/><circle cx="12" cy="12" r="3.7"/><circle cx="16.9" cy="7.1" r="1.1"/></svg></span><span>Instagram</span></a></li>
+          <li><a class="social-link social-link--discord" href="https://discord.gg/q85UEZmER"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8.2 6.4c1.2-.5 2.4-.7 3.8-.7s2.7.2 3.8.7c1.3 1.8 2 4 2.2 6.6-1.2 1-2.5 1.6-3.9 1.9l-.7-1.2c.8-.2 1.5-.5 2.1-1-.7.4-1.9.9-3.5.9s-2.8-.5-3.5-.9c.6.5 1.3.8 2.1 1l-.7 1.2c-1.4-.3-2.7-.9-3.9-1.9.2-2.6.9-4.8 2.2-6.6Zm1.7 5.4c.6 0 1.1-.6 1.1-1.2 0-.7-.5-1.2-1.1-1.2-.7 0-1.1.5-1.1 1.2 0 .6.4 1.2 1.1 1.2Zm4.2 0c.7 0 1.1-.6 1.1-1.2 0-.7-.4-1.2-1.1-1.2-.6 0-1.1.5-1.1 1.2 0 .6.5 1.2 1.1 1.2Z"/></svg></span><span>Discord</span></a></li>
+          <li><a class="social-link social-link--reddit" href="https://www.reddit.com/user/ChaturaApp/"><span class="social-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M16.7 5.2c.7 0 1.3.5 1.3 1.2s-.6 1.2-1.3 1.2c-.4 0-.8-.2-1-.5l-2.8.6-.6 2.4c1.8.1 3.5.7 4.6 1.6.4-.3.8-.4 1.3-.4 1.1 0 2 .8 2 1.9 0 .7-.4 1.3-1 1.7v.4c0 2.8-3.2 5-7.2 5s-7.2-2.2-7.2-5v-.4c-.6-.4-1-1-1-1.7 0-1.1.9-1.9 2-1.9.5 0 .9.1 1.3.4 1-.8 2.5-1.4 4.2-1.6l.8-3.5 3.3-.7c.2-.5.7-.7 1.3-.7ZM8.8 14.8c0 .6.5 1.1 1.1 1.1S11 15.4 11 14.8s-.5-1.1-1.1-1.1-1.1.5-1.1 1.1Zm5.6 3.1c.2-.2.2-.5 0-.7-.2-.2-.5-.2-.7 0-.4.4-1 .6-1.7.6s-1.3-.2-1.7-.6c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7.6.6 1.5.9 2.4.9.9 0 1.8-.3 2.4-.9Zm-1.4-3.1c0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1-.5-1.1-1.1-1.1-1.1.5-1.1 1.1Z"/></svg></span><span>Reddit</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script
+  src="{{ '/assets/chatura-home.js' | relative_url }}"
+  data-version-template="{{ copy.proof.updates.version_template | escape }}"
+  data-release-template="{{ copy.proof.updates.release_template | escape }}"
+  defer
+></script>

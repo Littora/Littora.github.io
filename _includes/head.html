@@ -2,6 +2,100 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.app_home %}
+    <link rel="alternate" hreflang="en" href="{{ '/apps/chatura/' | absolute_url }}">
+    <link rel="alternate" hreflang="fr" href="{{ '/apps/chatura/fr/' | absolute_url }}">
+    <link rel="alternate" hreflang="fr-CA" href="{{ '/apps/chatura/fr/' | absolute_url }}">
+    <link rel="alternate" hreflang="fr-CH" href="{{ '/apps/chatura/fr/' | absolute_url }}">
+    <link rel="alternate" hreflang="de" href="{{ '/apps/chatura/de/' | absolute_url }}">
+    <link rel="alternate" hreflang="de-CH" href="{{ '/apps/chatura/de/' | absolute_url }}">
+    <link rel="alternate" hreflang="it" href="{{ '/apps/chatura/it/' | absolute_url }}">
+    <link rel="alternate" hreflang="it-CH" href="{{ '/apps/chatura/it/' | absolute_url }}">
+    <link rel="alternate" hreflang="nb" href="{{ '/apps/chatura/nb/' | absolute_url }}">
+    <link rel="alternate" hreflang="nb-NO" href="{{ '/apps/chatura/nb/' | absolute_url }}">
+    <link rel="alternate" hreflang="ja" href="{{ '/apps/chatura/ja/' | absolute_url }}">
+    <link rel="alternate" hreflang="ko" href="{{ '/apps/chatura/ko/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/apps/chatura/' | absolute_url }}">
+  {% endif %}
+  {% if page.app_home and page.locale == "en" %}
+    <script>
+      (function () {
+        var routes = {
+          fr: "{{ '/apps/chatura/fr/' | relative_url }}",
+          de: "{{ '/apps/chatura/de/' | relative_url }}",
+          it: "{{ '/apps/chatura/it/' | relative_url }}",
+          nb: "{{ '/apps/chatura/nb/' | relative_url }}",
+          ja: "{{ '/apps/chatura/ja/' | relative_url }}",
+          ko: "{{ '/apps/chatura/ko/' | relative_url }}"
+        };
+        var normalizeLanguage = function (value) {
+          var language = String(value || "").toLowerCase().split("-")[0];
+          return language === "no" ? "nb" : language;
+        };
+        var preferredLanguage = null;
+        var requestedLanguage = null;
+
+        try {
+          requestedLanguage = normalizeLanguage(
+            new URLSearchParams(window.location.search).get("lang")
+          );
+        } catch (error) {
+          requestedLanguage = null;
+        }
+
+        if (requestedLanguage === "en") {
+          try {
+            window.localStorage.setItem("chatura-language", "en");
+          } catch (error) {
+            // The URL still preserves the user's manual English choice.
+          }
+          return;
+        }
+
+        if (routes[requestedLanguage]) {
+          preferredLanguage = requestedLanguage;
+          try {
+            window.localStorage.setItem("chatura-language", requestedLanguage);
+          } catch (error) {
+            // Continue with the requested language even without browser storage.
+          }
+        }
+
+        if (!preferredLanguage) {
+          try {
+            preferredLanguage = normalizeLanguage(
+              window.localStorage.getItem("chatura-language")
+            );
+          } catch (error) {
+            preferredLanguage = null;
+          }
+        }
+
+        if (preferredLanguage && preferredLanguage !== "en" && !routes[preferredLanguage]) {
+          preferredLanguage = null;
+        }
+
+        if (!preferredLanguage) {
+          var browserLanguages = navigator.languages && navigator.languages.length
+            ? navigator.languages
+            : [navigator.language || "en"];
+
+          for (var index = 0; index < browserLanguages.length; index += 1) {
+            var language = normalizeLanguage(browserLanguages[index]);
+            if (language === "en") break;
+            if (routes[language]) {
+              preferredLanguage = language;
+              break;
+            }
+          }
+        }
+
+        if (routes[preferredLanguage]) {
+          window.location.replace(routes[preferredLanguage] + window.location.search + window.location.hash);
+        }
+      })();
+    </script>
+  {% endif %}
   {% seo %}
   {% assign page_favicon = page.favicon | default: site.favicon %}
   {% assign page_apple_touch_icon = page.apple_touch_icon | default: page_favicon %}
@@ -29,7 +123,7 @@
     {% endif %}
     <meta name="twitter:image" content="{{ page_share_image | absolute_url }}">
   {% endif %}
-  {% if page.url == "/apps/chatura/" %}
+  {% if page.app_home %}
     <link rel="preload" href="{{ "/assets/fonts/BricolageGrotesque-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="{{ "/assets/fonts/DMSans-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
   {% endif %}

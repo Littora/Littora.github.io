@@ -186,6 +186,53 @@ body::after {
   background: rgba(var(--chatura-accent-rgb), 0.08);
 }
 
+.language-selector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.language-selector select {
+  min-height: 2.55rem;
+  max-width: 9.8rem;
+  padding: 0.44rem 0.68rem;
+  border: 1px solid rgba(var(--chatura-accent-rgb), 0.2);
+  border-radius: 999px;
+  color: var(--chatura-ink);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 18px rgba(33, 49, 80, 0.06);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-selector select:hover {
+  border-color: rgba(var(--chatura-accent-rgb), 0.4);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.language-selector select:focus-visible {
+  outline: 2px solid rgba(var(--chatura-accent-rgb), 0.75);
+  outline-offset: 3px;
+  border-color: rgba(var(--chatura-accent-rgb), 0.5);
+  box-shadow: 0 0 0 4px rgba(var(--chatura-accent-rgb), 0.16);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .site-nav .page-link[target="_blank"],
 .site-nav .page-link[target="_blank"]:visited {
   color: #ffffff;
@@ -901,6 +948,26 @@ h1 {
 
 .hero-copy .hero-download-link {
   margin: 1.85rem 0 1.25rem;
+}
+
+.chatura-home[data-locale="ja"],
+.chatura-home[data-locale="ko"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", "Apple SD Gothic Neo", "Noto Sans CJK JP", "Noto Sans CJK KR", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+.chatura-home[data-locale="ja"] h2,
+.chatura-home[data-locale="ja"] h3,
+.chatura-home[data-locale="ko"] h2,
+.chatura-home[data-locale="ko"] h3 {
+  font-family: inherit;
+  letter-spacing: -0.025em;
+}
+
+.chatura-home[data-locale="ja"] .hero-copy p:not(.hero-tagline),
+.chatura-home[data-locale="ko"] .hero-copy p:not(.hero-tagline) {
+  letter-spacing: 0;
+  line-height: 1.82;
 }
 
 h1 + strong {
@@ -3138,6 +3205,21 @@ h3 {
   .site-nav .page-link:hover,
   .site-nav .page-link:focus-visible {
     background: rgba(var(--chatura-accent-rgb), 0.08);
+  }
+
+  .language-selector {
+    width: 100%;
+    padding: 0.25rem 0.25rem 0.15rem;
+    box-sizing: border-box;
+  }
+
+  .language-selector select {
+    width: 100%;
+    max-width: none;
+    min-height: 2.75rem;
+    border-radius: 14px;
+    background: rgba(247, 244, 239, 0.72);
+    font-size: 0.96rem;
   }
 
   .brand-hero {

@@ -1,22 +1,40 @@
-<header class="site-header{% if page.url == "/apps/chatura/" %} site-header--product{% endif %}">
+<header class="site-header{% if page.app_home %} site-header--product{% endif %}">
+  {% assign chatura_locale = page.locale | default: "en" %}
+  {% assign chatura_copy = site.data.chatura[chatura_locale] | default: site.data.chatura.en %}
   <div class="wrapper">
     {% if page.url contains "/apps/chatura/" and page.url != "/apps/chatura/" %}
-      <a class="site-title" rel="author" href="{{ "/apps/chatura/" | relative_url }}">Chatura</a>
+      {% if page.app_home %}
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      {% else %}
+        <a class="site-title" rel="author" href="{{ "/apps/chatura/" | relative_url }}">Chatura</a>
+      {% endif %}
     {% else %}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {% endif %}
-    {% if page.url == "/" or page.url == "/apps/chatura/" %}
-      <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav-menu" aria-expanded="false">
+    {% if page.url == "/" or page.app_home %}
+      <button class="site-nav__toggle" type="button" aria-label="{% if page.app_home %}{{ chatura_copy.nav.toggle }}{% else %}Toggle navigation{% endif %}" aria-controls="site-nav-menu" aria-expanded="false">
         <span class="site-nav__toggle-icon" aria-hidden="true"></span>
       </button>
-      <nav class="site-nav" id="site-nav-menu" aria-label="Primary">
+      <nav class="site-nav" id="site-nav-menu" aria-label="{% if page.app_home %}{{ chatura_copy.nav.primary }}{% else %}Primary{% endif %}">
         {% if page.url == "/" %}
           <a class="page-link" href="{{ "/" | relative_url }}#apps">Apps</a>
           <a class="page-link" href="{{ "/apps/chatura/" | relative_url }}">Chatura</a>
-        {% elsif page.url == "/apps/chatura/" %}
-          <a class="page-link" href="{{ "/apps/chatura/" | relative_url }}#features">Features</a>
-          <a class="page-link" href="{{ "/apps/chatura/" | relative_url }}#faq">FAQ</a>
-          <a class="page-link page-link--download" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">Download</a>
+        {% elsif page.app_home %}
+          <a class="page-link" href="{{ page.url | relative_url }}#features">{{ chatura_copy.nav.features }}</a>
+          <a class="page-link" href="{{ page.url | relative_url }}#faq">{{ chatura_copy.nav.faq }}</a>
+          <a class="page-link page-link--download" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ chatura_copy.common.download }}</a>
+          <label class="language-selector">
+            <span class="visually-hidden">{{ chatura_copy.nav.language }}</span>
+            <select data-language-selector aria-label="{{ chatura_copy.nav.language }}">
+              <option value="{{ '/apps/chatura/' | relative_url }}?lang=en" data-locale="en"{% if chatura_locale == "en" %} selected{% endif %}>English</option>
+              <option value="{{ '/apps/chatura/fr/' | relative_url }}" data-locale="fr"{% if chatura_locale == "fr" %} selected{% endif %}>Français</option>
+              <option value="{{ '/apps/chatura/de/' | relative_url }}" data-locale="de"{% if chatura_locale == "de" %} selected{% endif %}>Deutsch</option>
+              <option value="{{ '/apps/chatura/it/' | relative_url }}" data-locale="it"{% if chatura_locale == "it" %} selected{% endif %}>Italiano</option>
+              <option value="{{ '/apps/chatura/nb/' | relative_url }}" data-locale="nb"{% if chatura_locale == "nb" %} selected{% endif %}>Norsk bokmål</option>
+              <option value="{{ '/apps/chatura/ja/' | relative_url }}" data-locale="ja"{% if chatura_locale == "ja" %} selected{% endif %}>日本語</option>
+              <option value="{{ '/apps/chatura/ko/' | relative_url }}" data-locale="ko"{% if chatura_locale == "ko" %} selected{% endif %}>한국어</option>
+            </select>
+          </label>
         {% endif %}
       </nav>
       <script>
