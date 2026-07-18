@@ -1,5 +1,6 @@
 {% assign locale = page.locale | default: "en" %}
 {% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
+{% capture localized_chatura_path %}/apps/chatura/{% if locale != "en" %}{{ locale }}/{% endif %}{% endcapture %}
 {% assign current_language = "English" %}
 {% case locale %}
   {% when "fr" %}
@@ -318,7 +319,7 @@
       <div class="product-footer__group">
         <h2>{{ copy.footer.product }}</h2>
         <ul>
-          <li><a href="{{ '/apps/chatura/whats-new/' | relative_url }}" hreflang="en">{{ copy.footer.whats_new }}</a></li>
+          <li><a href="{{ localized_chatura_path | append: 'whats-new/' | relative_url }}" hreflang="{{ locale }}">{{ copy.footer.whats_new }}</a></li>
           <li><a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download }}</a></li>
         </ul>
       </div>
@@ -328,7 +329,7 @@
         <ul>
           <li><a href="{{ '/apps/chatura/privacy-policy/' | relative_url }}" hreflang="en">{{ copy.footer.privacy }}</a></li>
           <li><a href="{{ '/apps/chatura/terms-of-service/' | relative_url }}" hreflang="en">{{ copy.footer.terms }}</a></li>
-          <li><a href="{{ '/apps/chatura/support/' | relative_url }}" hreflang="en">{{ copy.footer.support }}</a></li>
+          <li><a href="{{ localized_chatura_path | append: 'support/' | relative_url }}" hreflang="{{ locale }}">{{ copy.footer.support }}</a></li>
         </ul>
       </div>
 

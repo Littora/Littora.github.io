@@ -1,6 +1,9 @@
 ---
 layout: default
 title: What’s New
+lang: en-US
+locale: en
+chatura_subpage: whats-new
 permalink: /apps/chatura/whats-new/
 ---
 

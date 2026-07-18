@@ -2,20 +2,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if page.app_home %}
-    <link rel="alternate" hreflang="en" href="{{ '/apps/chatura/' | absolute_url }}">
-    <link rel="alternate" hreflang="fr" href="{{ '/apps/chatura/fr/' | absolute_url }}">
-    <link rel="alternate" hreflang="fr-CA" href="{{ '/apps/chatura/fr/' | absolute_url }}">
-    <link rel="alternate" hreflang="fr-CH" href="{{ '/apps/chatura/fr/' | absolute_url }}">
-    <link rel="alternate" hreflang="de" href="{{ '/apps/chatura/de/' | absolute_url }}">
-    <link rel="alternate" hreflang="de-CH" href="{{ '/apps/chatura/de/' | absolute_url }}">
-    <link rel="alternate" hreflang="it" href="{{ '/apps/chatura/it/' | absolute_url }}">
-    <link rel="alternate" hreflang="it-CH" href="{{ '/apps/chatura/it/' | absolute_url }}">
-    <link rel="alternate" hreflang="nb" href="{{ '/apps/chatura/nb/' | absolute_url }}">
-    <link rel="alternate" hreflang="nb-NO" href="{{ '/apps/chatura/nb/' | absolute_url }}">
-    <link rel="alternate" hreflang="ja" href="{{ '/apps/chatura/ja/' | absolute_url }}">
-    <link rel="alternate" hreflang="ko" href="{{ '/apps/chatura/ko/' | absolute_url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ '/apps/chatura/' | absolute_url }}">
+  {% if page.app_home or page.chatura_subpage %}
+    {% capture chatura_i18n_suffix %}{% if page.chatura_subpage %}{{ page.chatura_subpage }}/{% endif %}{% endcapture %}
+    <link rel="alternate" hreflang="en" href="{{ '/apps/chatura/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="fr" href="{{ '/apps/chatura/fr/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="fr-CA" href="{{ '/apps/chatura/fr/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="fr-CH" href="{{ '/apps/chatura/fr/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="de" href="{{ '/apps/chatura/de/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="de-CH" href="{{ '/apps/chatura/de/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="it" href="{{ '/apps/chatura/it/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="it-CH" href="{{ '/apps/chatura/it/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="nb" href="{{ '/apps/chatura/nb/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="nb-NO" href="{{ '/apps/chatura/nb/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="ja" href="{{ '/apps/chatura/ja/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="ko" href="{{ '/apps/chatura/ko/' | append: chatura_i18n_suffix | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/apps/chatura/' | append: chatura_i18n_suffix | absolute_url }}">
   {% endif %}
   {% if page.app_home and page.locale == "en" %}
     <script>

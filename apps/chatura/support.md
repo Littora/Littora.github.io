@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Support
+lang: en-US
+locale: en
+chatura_subpage: support
 permalink: /apps/chatura/support/
 ---
 
