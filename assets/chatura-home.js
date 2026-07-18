@@ -1,19 +1,35 @@
 (function () {
   "use strict";
 
-  var languageSelector = document.querySelector("[data-language-selector]");
-  if (languageSelector) {
-    languageSelector.addEventListener("change", function () {
-      var option = languageSelector.options[languageSelector.selectedIndex];
-      if (!option || !option.value) return;
+  var languageMenu = document.querySelector("[data-language-menu]");
+  if (languageMenu) {
+    var languageTrigger = languageMenu.querySelector(".language-menu__trigger");
+    var languageOptions = languageMenu.querySelectorAll("[data-language-option]");
 
-      try {
-        window.localStorage.setItem("chatura-language", option.dataset.locale || "en");
-      } catch (error) {
-        // Language switching still works when browser storage is unavailable.
+    languageOptions.forEach(function (option) {
+      option.addEventListener("click", function () {
+        try {
+          window.localStorage.setItem("chatura-language", option.dataset.locale || "en");
+        } catch (error) {
+          // Language switching still works when browser storage is unavailable.
+        }
+
+        languageMenu.open = false;
+      });
+    });
+
+    document.addEventListener("click", function (event) {
+      if (languageMenu.open && !languageMenu.contains(event.target)) {
+        languageMenu.open = false;
       }
+    });
 
-      window.location.assign(option.value);
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape" || !languageMenu.open) return;
+      languageMenu.open = false;
+      if (languageTrigger) {
+        languageTrigger.focus();
+      }
     });
   }
 

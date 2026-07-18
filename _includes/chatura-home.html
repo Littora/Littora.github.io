@@ -1,5 +1,20 @@
 {% assign locale = page.locale | default: "en" %}
 {% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
+{% assign current_language = "English" %}
+{% case locale %}
+  {% when "fr" %}
+    {% assign current_language = "Français" %}
+  {% when "de" %}
+    {% assign current_language = "Deutsch" %}
+  {% when "it" %}
+    {% assign current_language = "Italiano" %}
+  {% when "nb" %}
+    {% assign current_language = "Norsk bokmål" %}
+  {% when "ja" %}
+    {% assign current_language = "日本語" %}
+  {% when "ko" %}
+    {% assign current_language = "한국어" %}
+{% endcase %}
 
 <div class="chatura-home" data-chatura-home data-locale="{{ locale }}">
   <section class="content-section content-section--hero">
@@ -294,7 +309,7 @@
   <footer class="product-footer" aria-label="{{ copy.footer.label }}">
     <div class="product-footer__brand">
       <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256" loading="lazy">
-      <div>
+      <div class="product-footer__brand-copy">
         <strong>Chatura</strong>
         <span>{{ copy.hero.tagline }}</span>
       </div>
@@ -328,6 +343,25 @@
         </ul>
       </div>
     </div>
+
+    <details class="language-menu" data-language-menu>
+      <summary class="language-menu__trigger" aria-label="{{ copy.nav.language }}: {{ current_language }}">
+        <span class="language-menu__globe" aria-hidden="true"></span>
+        <span class="language-menu__current">{{ current_language }}</span>
+        <span class="language-menu__chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="language-menu__popover">
+        <ul class="language-menu__list" aria-label="{{ copy.nav.language }}">
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/' | relative_url }}?lang=en" hreflang="en" data-language-option data-locale="en"{% if locale == "en" %} aria-current="page"{% endif %}>English</a></li>
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/fr/' | relative_url }}" hreflang="fr" data-language-option data-locale="fr"{% if locale == "fr" %} aria-current="page"{% endif %}>Français</a></li>
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/de/' | relative_url }}" hreflang="de" data-language-option data-locale="de"{% if locale == "de" %} aria-current="page"{% endif %}>Deutsch</a></li>
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/it/' | relative_url }}" hreflang="it" data-language-option data-locale="it"{% if locale == "it" %} aria-current="page"{% endif %}>Italiano</a></li>
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/nb/' | relative_url }}" hreflang="nb" data-language-option data-locale="nb"{% if locale == "nb" %} aria-current="page"{% endif %}>Norsk bokmål</a></li>
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/ja/' | relative_url }}" hreflang="ja" data-language-option data-locale="ja"{% if locale == "ja" %} aria-current="page"{% endif %}>日本語</a></li>
+          <li><a class="language-menu__option" href="{{ '/apps/chatura/ko/' | relative_url }}" hreflang="ko" data-language-option data-locale="ko"{% if locale == "ko" %} aria-current="page"{% endif %}>한국어</a></li>
+        </ul>
+      </div>
+    </details>
   </footer>
 </div>
 
