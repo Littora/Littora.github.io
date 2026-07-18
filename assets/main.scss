@@ -4689,7 +4689,7 @@ body:has(.product-footer) .post-content {
 
 .language-menu {
   position: absolute;
-  bottom: 0.65rem;
+  bottom: clamp(3.5rem, 6vw, 5.5rem);
   left: max(calc((100vw - 1080px) / 2), 2.2rem);
   z-index: 6;
   width: max-content;
@@ -4916,6 +4916,10 @@ body:has(.product-footer) .post-content {
 
 .product-footer__group li {
   margin: 0 0 0.62rem;
+}
+
+.product-footer__group--social li:last-child {
+  margin-bottom: 0;
 }
 
 .product-footer__group a,
@@ -5167,6 +5171,7 @@ body:has(.product-footer) .post-content {
   }
 
   .language-menu {
+    bottom: 0.65rem;
     left: 1.5rem;
   }
 
