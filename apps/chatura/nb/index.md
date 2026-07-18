@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Chatura
-description: Snakk med en KI-følgesvenn for hverdagen, og ta vare på øyeblikkene som betyr noe.
+title: "Chatura: En varm KI-følgesvenn for iPhone"
+description: "Chatura er en varm KI-følgesvenn for iPhone. Start uten konto eller annonser, og ta vare på viktige chatter som Minner, Planer, Ønsker, Tidskapsler og Hemmeligheter."
 permalink: /apps/chatura/nb/
-lang: nb
-locale: nb
+lang: nb-NO
 app_home: true
 ---
 

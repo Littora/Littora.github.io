@@ -1,8 +1,8 @@
 ---
 layout: default
-title: What’s New
+title: "Chatura App Updates and Release Notes"
+description: "Read Chatura’s latest iOS release notes, including new features, design refinements, reliability improvements, and updates to Moments and companions."
 lang: en-US
-locale: en
 chatura_subpage: whats-new
 permalink: /apps/chatura/whats-new/
 ---

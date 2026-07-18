@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 新機能
-lang: ja
-locale: ja
+title: "Chaturaのアップデートとリリースノート"
+description: "Chaturaの最新iOSリリースノートです。新機能、デザイン、信頼性、Moments、コンパニオンに関する改善内容を確認できます。"
+lang: ja-JP
 chatura_subpage: whats-new
 permalink: /apps/chatura/ja/whats-new/
 ---

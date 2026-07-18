@@ -1,8 +1,8 @@
 ---
 layout: default
-title: サポート
-lang: ja
-locale: ja
+title: "Chaturaのサポートとお問い合わせ"
+description: "Chaturaのサポートページです。Littoraチームへのお問い合わせ、不具合の報告、ご質問、アイデアやフィードバックの送信方法をご案内します。"
+lang: ja-JP
 chatura_subpage: support
 permalink: /apps/chatura/ja/support/
 ---

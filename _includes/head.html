@@ -2,6 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign chatura_language = page.lang | default: site.lang | split: "-" | first %}
   {% if page.app_home or page.chatura_subpage %}
     {% capture chatura_i18n_suffix %}{% if page.chatura_subpage %}{{ page.chatura_subpage }}/{% endif %}{% endcapture %}
     <link rel="alternate" hreflang="en" href="{{ '/apps/chatura/' | append: chatura_i18n_suffix | absolute_url }}">
@@ -18,7 +19,7 @@
     <link rel="alternate" hreflang="ko" href="{{ '/apps/chatura/ko/' | append: chatura_i18n_suffix | absolute_url }}">
     <link rel="alternate" hreflang="x-default" href="{{ '/apps/chatura/' | append: chatura_i18n_suffix | absolute_url }}">
   {% endif %}
-  {% if page.app_home and page.locale == "en" %}
+  {% if page.app_home and chatura_language == "en" %}
     <script>
       (function () {
         var routes = {
@@ -98,6 +99,19 @@
     </script>
   {% endif %}
   {% seo %}
+  {% if page.app_home or page.chatura_subpage %}
+    {% assign chatura_og_locales = "en_US,fr_FR,de_DE,it_IT,nb_NO,ja_JP,ko_KR" | split: "," %}
+    {% assign current_og_locale = page.lang | default: site.lang | replace: "-", "_" %}
+    {% for alternate_og_locale in chatura_og_locales %}
+      {% unless alternate_og_locale == current_og_locale %}
+        <meta property="og:locale:alternate" content="{{ alternate_og_locale }}">
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+  {% assign seo_description = page.description | default: site.description %}
+  {% if seo_description %}
+    <meta name="twitter:description" content="{{ seo_description | escape }}">
+  {% endif %}
   {% assign page_favicon = page.favicon | default: site.favicon %}
   {% assign page_apple_touch_icon = page.apple_touch_icon | default: page_favicon %}
   {% assign page_share_image = page.share_image | default: page_favicon %}

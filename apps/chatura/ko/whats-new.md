@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 새로운 소식
-lang: ko
-locale: ko
+title: "Chatura 업데이트 및 릴리스 노트"
+description: "Chatura의 최신 iOS 릴리스 노트에서 새로운 기능과 디자인, 안정성, Moments 및 동반자 관련 개선 사항을 확인하세요."
+lang: ko-KR
 chatura_subpage: whats-new
 permalink: /apps/chatura/ko/whats-new/
 ---

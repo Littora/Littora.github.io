@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Neuigkeiten
-lang: de
-locale: de
+title: "Chatura Updates und Versionshinweise"
+description: "Lies die neuesten iOS-Versionshinweise zu Chatura mit neuen Funktionen sowie Verbesserungen an Design, Zuverlässigkeit, Moments und Begleitern."
+lang: de-DE
 chatura_subpage: whats-new
 permalink: /apps/chatura/de/whats-new/
 ---

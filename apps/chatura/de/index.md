@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Chatura
-description: Sprich mit einer KI-Begleitung für den Alltag und bewahre die Momente, die zählen.
+title: "Chatura: Ein warmer KI-Begleiter für iPhone"
+description: "Chatura ist ein warmer KI-Begleiter für das iPhone. Starte ohne Konto oder Werbung und bewahre wichtige Chats als Erinnerungen, Pläne, Zeitkapseln und Geheimnisse."
 permalink: /apps/chatura/de/
-lang: de
-locale: de
+lang: de-DE
 app_home: true
 ---
 

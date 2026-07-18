@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Supporto
-lang: it
-locale: it
+title: "Assistenza e contatti Chatura"
+description: "Ricevi assistenza per Chatura, contatta il team Littora, segnala un problema, fai una domanda oppure condividi feedback e idee."
+lang: it-IT
 chatura_subpage: support
 permalink: /apps/chatura/it/support/
 ---

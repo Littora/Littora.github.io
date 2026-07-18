@@ -1,7 +1,7 @@
 <header class="site-header{% if page.app_home %} site-header--product{% endif %}">
-  {% assign chatura_locale = page.locale | default: "en" %}
+  {% assign chatura_locale = page.lang | default: site.lang | split: "-" | first %}
   {% assign chatura_copy = site.data.chatura[chatura_locale] | default: site.data.chatura.en %}
-  {% capture chatura_home_path %}/apps/chatura/{% if page.locale and page.locale != "en" %}{{ page.locale }}/{% endif %}{% endcapture %}
+  {% capture chatura_home_path %}/apps/chatura/{% if chatura_locale != "en" %}{{ chatura_locale }}/{% endif %}{% endcapture %}
   <div class="wrapper">
     {% if page.url contains "/apps/chatura/" and page.url != "/apps/chatura/" %}
       {% if page.app_home %}

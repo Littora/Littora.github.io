@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 지원
-lang: ko
-locale: ko
+title: "Chatura 지원 및 문의"
+description: "Chatura 지원 페이지에서 Littora 팀에 문의하고, 버그를 제보하거나 질문, 아이디어 및 피드백을 보내는 방법을 확인하세요."
+lang: ko-KR
 chatura_subpage: support
 permalink: /apps/chatura/ko/support/
 ---

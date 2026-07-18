@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Privacy Policy
+title: "Chatura Privacy Policy"
+description: "Read Chatura’s Privacy Policy to learn what data the app processes, why it is used, how it is stored and protected, and what choices you have."
 permalink: /apps/chatura/privacy-policy/
 ---
 

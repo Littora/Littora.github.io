@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Littora
+description: "Littora creates thoughtful apps that explore human feeling, including Chatura, an AI companion for conversations worth keeping."
 permalink: /
 ---
 

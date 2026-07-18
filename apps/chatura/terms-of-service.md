@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Terms of Service
+title: "Chatura Terms of Service"
+description: "Read Chatura’s Terms of Service, including eligibility, subscriptions, AI-generated content, acceptable use, privacy, and App Store terms."
 permalink: /apps/chatura/terms-of-service/
 ---
 

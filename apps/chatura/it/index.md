@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Chatura
-description: Parlane con un compagno IA per tutti i giorni e conserva i momenti che contano.
+title: "Chatura: un compagno IA per iPhone"
+description: "Chatura è un compagno IA per iPhone. Inizia senza account né pubblicità e conserva le chat importanti come Ricordi, Progetti, Desideri, Capsule del tempo e Segreti."
 permalink: /apps/chatura/it/
-lang: it
-locale: it
+lang: it-IT
 app_home: true
 ---
 

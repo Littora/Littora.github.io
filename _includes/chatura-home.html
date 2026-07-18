@@ -1,4 +1,4 @@
-{% assign locale = page.locale | default: "en" %}
+{% assign locale = page.lang | default: site.lang | split: "-" | first %}
 {% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
 {% capture localized_chatura_path %}/apps/chatura/{% if locale != "en" %}{{ locale }}/{% endif %}{% endcapture %}
 {% assign current_language = "English" %}

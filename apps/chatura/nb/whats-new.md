@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Hva er nytt
-lang: nb
-locale: nb
+title: "Chatura-oppdateringer og versjonsnotater"
+description: "Les de nyeste versjonsnotatene for Chatura på iOS, med nye funksjoner og forbedringer av design, stabilitet, Moments og følgesvenner."
+lang: nb-NO
 chatura_subpage: whats-new
 permalink: /apps/chatura/nb/whats-new/
 ---

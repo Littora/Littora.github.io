@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Brukerstøtte
-lang: nb
-locale: nb
+title: "Chatura brukerstøtte og kontakt"
+description: "Få hjelp med Chatura, kontakt Littora-teamet, meld fra om en feil, still et spørsmål eller del tilbakemeldinger og ideer."
+lang: nb-NO
 chatura_subpage: support
 permalink: /apps/chatura/nb/support/
 ---
