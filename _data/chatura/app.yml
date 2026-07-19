@@ -1,0 +1,29 @@
+name: Chatura
+app_store_url: "https://apps.apple.com/app/chatura/id6758027835/"
+application_category: EntertainmentApplication
+operating_system: iOS
+available_on_device: iPhone
+price: 0
+price_currency: USD
+
+icon:
+  path: /assets/icons/chatura-icon.png
+  width: 1024
+  height: 1024
+
+publisher:
+  name: Littora
+  url: /
+  logo:
+    path: /assets/icons/littora-icon.png
+    width: 1254
+    height: 1254
+
+screenshots:
+  - /assets/AppStoreScreenshot/Screenshot1.png
+  - /assets/AppStoreScreenshot/Screenshot2.png
+  - /assets/AppStoreScreenshot/Screenshot3.png
+  - /assets/AppStoreScreenshot/Screenshot4.png
+  - /assets/AppStoreScreenshot/Screenshot5.png
+  - /assets/AppStoreScreenshot/Screenshot6.png
+  - /assets/AppStoreScreenshot/Screenshot7.png

@@ -1,0 +1,70 @@
+{% assign app = site.data.chatura.app %}
+{% assign app_language = page.lang | default: site.lang | split: "-" | first %}
+{% assign app_copy = site.data.chatura[app_language] | default: site.data.chatura.en %}
+{% assign app_page_url = page.url | absolute_url %}
+{% assign app_entity_id = app_page_url | append: "#mobile-application" %}
+{% capture app_localized_root %}/apps/chatura/{% unless app_language == "en" %}{{ app_language }}/{% endunless %}{% endcapture %}
+{% assign app_support_url = app_localized_root | append: "support/" | absolute_url %}
+{% assign app_release_notes_url = app_localized_root | append: "whats-new/" | absolute_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": {{ app_entity_id | jsonify }},
+  "name": {{ app.name | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ app_page_url | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ app_page_url | jsonify }}
+  },
+  "inLanguage": {{ page.lang | default: site.lang | jsonify }},
+  "applicationCategory": {{ app.application_category | jsonify }},
+  "operatingSystem": {{ app.operating_system | jsonify }},
+  "availableOnDevice": {{ app.available_on_device | jsonify }},
+  "isAccessibleForFree": true,
+  "downloadUrl": {{ app.app_store_url | jsonify }},
+  "installUrl": {{ app.app_store_url | jsonify }},
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ app.icon.path | absolute_url | jsonify }},
+    "width": {{ app.icon.width | jsonify }},
+    "height": {{ app.icon.height | jsonify }}
+  },
+  "screenshot": [
+    {% for screenshot in app.screenshots %}
+      {{ screenshot | absolute_url | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "featureList": [
+    {{ app_copy.features.keepsakes.title | jsonify }},
+    {{ app_copy.features.companion.title | jsonify }},
+    {{ app_copy.features.trust.title | jsonify }},
+    {{ app_copy.features.supporting.title | jsonify }}
+  ],
+  "releaseNotes": {{ app_release_notes_url | jsonify }},
+  "softwareHelp": {
+    "@type": "WebPage",
+    "url": {{ app_support_url | jsonify }}
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": {{ app.price | jsonify }},
+    "priceCurrency": {{ app.price_currency | jsonify }},
+    "availability": "https://schema.org/InStock",
+    "url": {{ app.app_store_url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": {{ app.publisher.url | absolute_url | append: "#organization" | jsonify }},
+    "name": {{ app.publisher.name | jsonify }},
+    "url": {{ app.publisher.url | absolute_url | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ app.publisher.logo.path | absolute_url | jsonify }},
+      "width": {{ app.publisher.logo.width | jsonify }},
+      "height": {{ app.publisher.logo.height | jsonify }}
+    }
+  }
+}
+</script>

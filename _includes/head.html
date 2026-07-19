@@ -99,6 +99,9 @@
     </script>
   {% endif %}
   {% seo %}
+  {% if page.app_home %}
+    {% include seo/chatura-app-json-ld.html %}
+  {% endif %}
   {% if page.app_home or page.chatura_subpage %}
     {% assign chatura_og_locales = "en_US,fr_FR,de_DE,it_IT,nb_NO,ja_JP,ko_KR" | split: "," %}
     {% assign current_og_locale = page.lang | default: site.lang | replace: "-", "_" %}
