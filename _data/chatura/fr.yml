@@ -182,13 +182,6 @@ spotlight:
 preview:
   eyebrow: "Aperçu de l’app"
   title: "Voyez une conversation importante devenir quelque chose à garder."
-  body: "Cet espace est prévu pour un aperçu vidéo de 15 à 30 secondes. Remplacez le scénarimage par la vidéo finale lorsqu’elle sera prête."
-  stage_label: "Emplacement réservé à un futur aperçu vidéo de Chatura"
-  frames:
-    - "Parler"
-    - "Garder"
-    - "Revenir"
-  placeholder: "Emplacement vidéo"
   sequence_label: "Séquence recommandée pour l’aperçu de l’app"
   steps:
     - time: "00:00–00:05"

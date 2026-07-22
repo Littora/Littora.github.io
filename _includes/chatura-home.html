@@ -246,24 +246,13 @@
     <header class="app-preview__intro">
       <span>{{ copy.preview.eyebrow }}</span>
       <h2 id="app-preview-title">{{ copy.preview.title }}</h2>
-      <p>{{ copy.preview.body }}</p>
     </header>
 
     <div class="app-preview__layout">
-      <div class="app-preview__stage" aria-label="{{ copy.preview.stage_label }}">
-        <div class="app-preview__frames" aria-hidden="true">
-          {% assign preview_images = "1,2,5" | split: "," %}
-          {% for frame in copy.preview.frames %}
-            <figure>
-              <img src="{{ '/assets/AppStoreScreenshot/Screenshot' | append: preview_images[forloop.index0] | append: '.png' | relative_url }}" alt="" width="1320" height="2868" loading="lazy">
-              <figcaption>{{ frame }}</figcaption>
-            </figure>
-          {% endfor %}
-        </div>
-        <div class="app-preview__placeholder">
-          <span>{{ copy.preview.placeholder }}</span>
-          <strong>00:20</strong>
-        </div>
+      <div class="app-preview__stage">
+        <video class="app-preview__video" controls preload="metadata" playsinline width="1080" height="1920" aria-labelledby="app-preview-title">
+          <source src="{{ '/assets/videos/chatura/chatura-app-preview.mp4' | relative_url }}" type="video/mp4">
+        </video>
       </div>
 
       <ol class="app-preview__sequence" aria-label="{{ copy.preview.sequence_label }}">

@@ -182,13 +182,6 @@ spotlight:
 preview:
   eyebrow: "앱 미리보기"
   title: "의미 있는 대화가 간직할 수 있는 무언가로 바뀌는 모습을 확인하세요."
-  body: "이 공간에는 15~30초 길이의 앱 미리보기를 넣을 수 있습니다. 최종 영상이 준비되면 이 스토리보드와 교체하세요."
-  stage_label: "향후 Chatura 앱 미리보기 영상을 위한 자리"
-  frames:
-    - "대화"
-    - "저장"
-    - "돌아보기"
-  placeholder: "영상 자리"
   sequence_label: "권장 앱 미리보기 구성"
   steps:
     - time: "00:00–00:05"

@@ -182,13 +182,6 @@ spotlight:
 preview:
   eyebrow: "App Preview"
   title: "See a meaningful conversation become something you can keep."
-  body: "This space is prepared for a 15–30 second App Preview. Replace the storyboard with the final video when it is ready."
-  stage_label: "Placeholder for a future Chatura App Preview video"
-  frames:
-    - "Talk"
-    - "Save"
-    - "Return"
-  placeholder: "Video placeholder"
   sequence_label: "Recommended App Preview sequence"
   steps:
     - time: "00:00–00:05"

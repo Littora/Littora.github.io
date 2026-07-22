@@ -182,13 +182,6 @@ spotlight:
 preview:
   eyebrow: "Appプレビュー"
   title: "大切な会話が、残しておけるものに変わる様子をご覧ください。"
-  body: "ここには15〜30秒のAppプレビューを掲載できます。完成した動画の準備ができたら、このストーリーボードと差し替えてください。"
-  stage_label: "将来掲載するChatura Appプレビュー動画のプレースホルダー"
-  frames:
-    - "話す"
-    - "残す"
-    - "振り返る"
-  placeholder: "動画プレースホルダー"
   sequence_label: "推奨するAppプレビューの流れ"
   steps:
     - time: "00:00–00:05"

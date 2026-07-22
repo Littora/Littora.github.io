@@ -182,13 +182,6 @@ spotlight:
 preview:
   eyebrow: "Anteprima dell’app"
   title: "Guarda una conversazione significativa diventare qualcosa da conservare."
-  body: "Questo spazio è predisposto per un’anteprima dell’app di 15–30 secondi. Sostituisci lo storyboard con il video finale quando sarà pronto."
-  stage_label: "Segnaposto per una futura anteprima video di Chatura"
-  frames:
-    - "Parla"
-    - "Salva"
-    - "Ritorna"
-  placeholder: "Segnaposto video"
   sequence_label: "Sequenza consigliata per l’anteprima dell’app"
   steps:
     - time: "00:00–00:05"
