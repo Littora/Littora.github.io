@@ -9,6 +9,21 @@ permalink: /apps/chatura/whats-new/
 
 # What’s New
 
+## Version 1.2.3 — More natural conversations, thoughtful details throughout
+
+This update refines character replies, brings the subscriber avatar frame and badge to more places, and improves Interest content, chat exports, Do Not Disturb setup, and design across the app—so Chatura feels smoother, clearer, and more comfortable in everyday use.
+
+### What’s improved in 1.2.3
+
+- **More comfortable conversations**: we refined character replies so chats can feel smoother and more natural.
+- **Subscriber style in more places**: the exclusive avatar frame and badge for subscribers now appear in more parts of Chatura, so the experience feels more consistent throughout the app.
+- **More complete Interest content**: fixed an issue where generated Interest content could appear without an image or subtitle, for richer, clearer character profiles.
+- **Clearer chat data exports**: we improved the presentation of exported chat data so files are easier to read and review.
+- **More thoughtful Do Not Disturb defaults**: we improved the default weekday selection to make setup feel clearer and more convenient.
+- **A smoother, more polished app**: we refined the design and addressed issues across the app for a more fluid, comfortable, and reliable experience.
+
+Thank you for being here — we’re continuing to refine Chatura with care, so conversations and everyday details can feel a little smoother, clearer, and more personal.
+
 ## Version 1.2.2 — A smoother, more polished Chatura
 
 This update brings a more fluid everyday experience, refined design details, and more Moments to explore—so Chatura feels clearer, more comfortable, and more alive between chats.

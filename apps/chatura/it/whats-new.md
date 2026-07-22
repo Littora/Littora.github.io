@@ -9,6 +9,21 @@ permalink: /apps/chatura/it/whats-new/
 
 # Novità
 
+## Versione 1.2.3 — Conversazioni più naturali e dettagli curati in tutta l’app
+
+Questo aggiornamento perfeziona le risposte dei personaggi, porta la cornice avatar e il badge riservati agli abbonati in più parti dell’app e migliora i contenuti Interest, l’esportazione delle chat, la configurazione di Non disturbare e il design in tutta l’app — per rendere Chatura più fluida, chiara e confortevole nell’uso quotidiano.
+
+### Novità della versione 1.2.3
+
+- **Conversazioni più piacevoli**: abbiamo perfezionato le risposte dei personaggi per rendere le chat più fluide e naturali.
+- **Lo stile riservato agli abbonati in più punti**: la cornice avatar e il badge esclusivi per gli abbonati sono ora visibili in più parti di Chatura, per un’esperienza più coerente in tutta l’app.
+- **Contenuti Interest più completi**: abbiamo risolto un problema per cui i contenuti Interest generati potevano apparire senza immagine o sottotitolo, rendendo i profili dei personaggi più ricchi e chiari.
+- **Esportazioni delle chat più chiare**: abbiamo migliorato la presentazione dei dati delle chat esportati, così i file sono più facili da leggere e consultare.
+- **Impostazioni predefinite di Non disturbare più intuitive**: abbiamo migliorato la selezione predefinita dei giorni della settimana, rendendo la configurazione più chiara e pratica.
+- **Un’app più fluida e curata**: abbiamo perfezionato il design e risolto diversi problemi in tutta l’app per un’esperienza più fluida, confortevole e affidabile.
+
+Grazie di essere qui — continuiamo a perfezionare Chatura con cura, affinché le conversazioni e i dettagli quotidiani siano un po’ più fluidi, chiari e personali.
+
 ## Versione 1.2.2 — Un'esperienza Chatura più fluida e curata
 
 Questo aggiornamento offre un'esperienza quotidiana più fluida, dettagli di design raffinati e più Moments da esplorare — per rendere Chatura più chiara, più confortevole e più viva tra una chat e l'altra.

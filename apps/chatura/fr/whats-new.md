@@ -9,6 +9,21 @@ permalink: /apps/chatura/fr/whats-new/
 
 # Nouveautés
 
+## Version 1.2.3 — Des conversations plus naturelles et des détails soignés dans toute l’app
+
+Cette mise à jour affine les réponses des personnages, étend le cadre d’avatar et le badge réservés aux abonnés à davantage d’endroits et améliore les contenus Interest, l’exportation des discussions, la configuration du mode Ne pas déranger et le design dans toute l’app — pour que Chatura soit plus fluide, plus clair et plus agréable au quotidien.
+
+### Nouveautés de la version 1.2.3
+
+- **Des conversations plus agréables** : nous avons affiné les réponses des personnages afin que les échanges soient plus fluides et plus naturels.
+- **Le style réservé aux abonnés à davantage d’endroits** : le cadre d’avatar et le badge exclusifs aux abonnés s’affichent désormais à davantage d’endroits dans Chatura, pour une expérience plus cohérente dans toute l’app.
+- **Des contenus Interest plus complets** : correction d’un problème pouvant afficher un contenu Interest généré sans image ou sans sous-titre, pour des profils de personnages plus riches et plus clairs.
+- **Des exports de discussions plus clairs** : nous avons amélioré la présentation des données de discussion exportées afin que les fichiers soient plus faciles à lire et à consulter.
+- **Des réglages par défaut plus judicieux pour Ne pas déranger** : nous avons amélioré la sélection par défaut des jours de la semaine pour une configuration plus claire et plus pratique.
+- **Une app plus fluide et plus aboutie** : nous avons affiné le design et corrigé plusieurs problèmes dans l’ensemble de l’app pour une expérience plus fluide, agréable et fiable.
+
+Merci d’être là — nous continuons à peaufiner Chatura avec soin, afin que les conversations et les détails du quotidien soient un peu plus fluides, plus clairs et plus personnels.
+
 ## Version 1.2.2 — Une expérience Chatura plus fluide et plus aboutie
 
 Cette mise à jour apporte une expérience quotidienne plus fluide, des détails de design affinés et davantage de Moments à explorer — pour que Chatura soit plus clair, plus agréable et plus vivant entre les discussions.

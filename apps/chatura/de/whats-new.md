@@ -9,6 +9,21 @@ permalink: /apps/chatura/de/whats-new/
 
 # Neuigkeiten
 
+## Version 1.2.3 — Natürlichere Gespräche und durchdachte Details in der ganzen App
+
+Dieses Update verfeinert die Antworten der Charaktere, zeigt den exklusiven Avatarrahmen und das Abzeichen für Abonnenten an mehr Stellen und verbessert Interest-Inhalte, Chat-Exporte, die Einrichtung von „Nicht stören“ sowie das Design in der gesamten App — damit sich Chatura im Alltag flüssiger, klarer und angenehmer anfühlt.
+
+### Verbesserungen in 1.2.3
+
+- **Angenehmere Gespräche**: Wir haben die Antworten der Charaktere verfeinert, damit sich Chats flüssiger und natürlicher anfühlen.
+- **Exklusive Elemente für Abonnenten an mehr Stellen**: Der Avatarrahmen und das Abzeichen für Abonnenten werden jetzt in weiteren Bereichen von Chatura angezeigt, sodass das Erlebnis in der gesamten App einheitlicher wirkt.
+- **Vollständigere Interest-Inhalte**: Ein Problem wurde behoben, durch das generierte Interest-Inhalte ohne Bild oder Untertitel erscheinen konnten — für reichhaltigere und klarere Charakterprofile.
+- **Übersichtlichere Chat-Exporte**: Wir haben die Darstellung exportierter Chatdaten verbessert, damit sich die Dateien leichter lesen und prüfen lassen.
+- **Durchdachtere Standardeinstellungen für „Nicht stören“**: Wir haben die standardmässige Auswahl der Wochentage verbessert, damit die Einrichtung klarer und praktischer wirkt.
+- **Eine flüssigere, ausgefeiltere App**: Wir haben das Design verfeinert und Probleme in der gesamten App behoben, damit die Nutzung flüssiger, angenehmer und zuverlässiger wird.
+
+Danke, dass du hier bist — wir entwickeln Chatura weiterhin mit Sorgfalt weiter, damit sich Gespräche und alltägliche Details ein wenig flüssiger, klarer und persönlicher anfühlen.
+
 ## Version 1.2.2 — Ein flüssigeres, noch ausgefeilteres Chatura
 
 Dieses Update bietet ein flüssigeres Nutzungserlebnis im Alltag, verfeinerte Designdetails und mehr Moments zum Entdecken — damit sich Chatura zwischen Chats klarer, angenehmer und lebendiger anfühlt.

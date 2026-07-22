@@ -9,6 +9,21 @@ permalink: /apps/chatura/nb/whats-new/
 
 # Hva er nytt
 
+## Versjon 1.2.3 — Mer naturlige samtaler og gjennomtenkte detaljer i hele appen
+
+Denne oppdateringen finpusser karakterenes svar, viser den eksklusive avatarrammen og abonnentmerket flere steder og forbedrer Interest-innhold, eksport av chattedata, oppsettet for Ikke forstyrr og designet i hele appen — slik at Chatura føles smidigere, tydeligere og mer behagelig i hverdagen.
+
+### Dette er forbedret i 1.2.3
+
+- **Mer behagelige samtaler**: Vi har finpusset karakterenes svar, slik at samtalene kan føles smidigere og mer naturlige.
+- **Eksklusive abonnentdetaljer flere steder**: Avatarrammen og abonnentmerket vises nå i flere deler av Chatura, slik at opplevelsen fremstår mer helhetlig i hele appen.
+- **Mer komplett Interest-innhold**: Vi har løst et problem der generert Interest-innhold kunne vises uten bilde eller undertittel, for rikere og tydeligere karakterprofiler.
+- **Tydeligere eksport av chattedata**: Vi har forbedret visningen av eksporterte chattedata, slik at filene er enklere å lese og gjennomgå.
+- **Mer gjennomtenkte standardvalg for Ikke forstyrr**: Vi har forbedret standardvalget av ukedager, slik at oppsettet føles tydeligere og mer praktisk.
+- **En smidigere og mer gjennomført app**: Vi har finpusset designet og løst problemer i hele appen for en mer flytende, behagelig og pålitelig opplevelse.
+
+Takk for at du er her — vi fortsetter å finpusse Chatura med omtanke, slik at samtaler og hverdagens detaljer kan føles litt smidigere, tydeligere og mer personlige.
+
 ## Versjon 1.2.2 — En jevnere og mer gjennomført Chatura-opplevelse
 
 Denne oppdateringen gir en mer flytende hverdagsopplevelse, forbedrede designdetaljer og flere Moments å utforske — slik at Chatura føles tydeligere, mer behagelig og mer levende mellom chatter.
