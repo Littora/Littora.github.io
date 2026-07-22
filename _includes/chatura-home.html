@@ -248,22 +248,12 @@
       <h2 id="app-preview-title">{{ copy.preview.title }}</h2>
     </header>
 
-    <div class="app-preview__layout">
+    <div class="app-preview__showcase">
       <div class="app-preview__stage">
         <video class="app-preview__video" controls preload="metadata" playsinline width="1080" height="1920" aria-labelledby="app-preview-title">
           <source src="{{ '/assets/videos/chatura/chatura-app-preview.mp4' | relative_url }}" type="video/mp4">
         </video>
       </div>
-
-      <ol class="app-preview__sequence" aria-label="{{ copy.preview.sequence_label }}">
-        {% for step in copy.preview.steps %}
-          <li>
-            <span>{{ step.time }}</span>
-            <strong>{{ step.title }}</strong>
-            <p>{{ step.body }}</p>
-          </li>
-        {% endfor %}
-      </ol>
     </div>
   </section>
 

@@ -182,17 +182,6 @@ spotlight:
 preview:
   eyebrow: "App-Vorschau"
   title: "Sieh, wie aus einem bedeutungsvollen Gespräch etwas wird, das du bewahren kannst."
-  sequence_label: "Empfohlener Ablauf der App-Vorschau"
-  steps:
-    - time: "00:00–00:05"
-      title: "Beginne mit dem Gefühl."
-      body: "Zeige einen echten, wiedererkennbaren Gedanken – keine Funktionsliste."
-    - time: "00:05–00:13"
-      title: "Lass das Gespräch ihn klären."
-      body: "Halte die Antwort ruhig, konkret und leicht lesbar."
-    - time: "00:13–00:20"
-      title: "Bewahre ihn und kehre zurück."
-      body: "Schliesse mit dem Moment, in dem der Chat zu einer Erinnerung, einem Plan, einem Wunsch, einer Zeitkapsel oder einem Geheimnis wird."
 
 conversion:
   title: "Bereit, darüber zu sprechen?"

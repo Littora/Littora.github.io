@@ -182,17 +182,6 @@ spotlight:
 preview:
   eyebrow: "Anteprima dell’app"
   title: "Guarda una conversazione significativa diventare qualcosa da conservare."
-  sequence_label: "Sequenza consigliata per l’anteprima dell’app"
-  steps:
-    - time: "00:00–00:05"
-      title: "Inizia dall’emozione."
-      body: "Mostra un pensiero reale e riconoscibile, non un elenco di funzionalità."
-    - time: "00:05–00:13"
-      title: "Lascia che la conversazione lo chiarisca."
-      body: "Mantieni la risposta calma, specifica e facile da leggere."
-    - time: "00:13–00:20"
-      title: "Salvalo, poi ritorna."
-      body: "Concludi nel momento in cui la chat diventa un Ricordo, un Piano, un Desiderio, una Capsula del tempo o un Segreto."
 
 conversion:
   title: "Vuoi parlarne?"

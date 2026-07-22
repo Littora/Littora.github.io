@@ -182,17 +182,6 @@ spotlight:
 preview:
   eyebrow: "Appforhåndsvisning"
   title: "Se en meningsfull samtale bli til noe du kan ta vare på."
-  sequence_label: "Anbefalt sekvens for appforhåndsvisningen"
-  steps:
-    - time: "00:00–00:05"
-      title: "Begynn med følelsen."
-      body: "Vis en ekte, gjenkjennelig tanke – ikke en liste over funksjoner."
-    - time: "00:05–00:13"
-      title: "La samtalen gjøre den klarere."
-      body: "Hold svaret rolig, konkret og lett å lese."
-    - time: "00:13–00:20"
-      title: "Lagre det, og vend tilbake."
-      body: "Avslutt i øyeblikket der chatten blir til et Minne, en Plan, et Ønske, en Tidskapsel eller en Hemmelighet."
 
 conversion:
   title: "Klar for å snakke om det?"

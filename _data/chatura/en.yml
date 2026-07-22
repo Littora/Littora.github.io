@@ -182,17 +182,6 @@ spotlight:
 preview:
   eyebrow: "App Preview"
   title: "See a meaningful conversation become something you can keep."
-  sequence_label: "Recommended App Preview sequence"
-  steps:
-    - time: "00:00–00:05"
-      title: "Open with the feeling."
-      body: "Show a real, recognisable thought—not a feature list."
-    - time: "00:05–00:13"
-      title: "Let the conversation clarify it."
-      body: "Keep the response calm, specific, and easy to read."
-    - time: "00:13–00:20"
-      title: "Save it, then return."
-      body: "End on the moment the chat becomes a Memory, Plan, Wish, Time Capsule, or Secret."
 
 conversion:
   title: "Ready to talk it through?"
