@@ -9,6 +9,17 @@ permalink: /apps/chatura/whats-new/
 
 # What’s New
 
+## Version 1.2.4 — Smoother conversations, a more polished experience
+
+This update refines character replies and polishes parts of the app’s interface—so conversations feel more natural and Chatura feels clearer and more comfortable in everyday use.
+
+### What’s improved in 1.2.4
+
+- **More natural character replies**: we refined character responses so conversations can feel smoother and more comfortable.
+- **A more polished app experience**: we improved parts of the app’s interface design so Chatura feels clearer and easier to use.
+
+Thank you for being here — we’re continuing to refine Chatura with care, so conversations and everyday details can feel a little smoother, clearer, and more personal.
+
 ## Version 1.2.3 — More natural conversations, thoughtful details throughout
 
 This update refines character replies, brings the subscriber avatar frame and badge to more places, and improves Interest content, chat exports, Do Not Disturb setup, and design across the app—so Chatura feels smoother, clearer, and more comfortable in everyday use.

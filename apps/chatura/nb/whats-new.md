@@ -9,6 +9,17 @@ permalink: /apps/chatura/nb/whats-new/
 
 # Hva er nytt
 
+## Versjon 1.2.4 — Smidigere samtaler og en mer gjennomført opplevelse
+
+Denne oppdateringen finpusser karakterenes svar og forbedrer deler av appens design — slik at samtalene føles mer naturlige, og Chatura blir tydeligere og mer behagelig å bruke i hverdagen.
+
+### Dette er forbedret i 1.2.4
+
+- **Mer naturlige svar fra karakterene**: Vi har finpusset karakterenes svar, slik at samtalene kan føles smidigere og mer behagelige.
+- **En mer gjennomført appopplevelse**: Vi har forbedret deler av appens design, slik at Chatura føles tydeligere og mer behagelig å bruke.
+
+Takk for at du er her — vi fortsetter å finpusse Chatura med omtanke, slik at samtaler og hverdagens detaljer kan føles litt smidigere, tydeligere og mer personlige.
+
 ## Versjon 1.2.3 — Mer naturlige samtaler og gjennomtenkte detaljer i hele appen
 
 Denne oppdateringen finpusser karakterenes svar, viser den eksklusive avatarrammen og abonnentmerket flere steder og forbedrer Interest-innhold, eksport av chattedata, oppsettet for Ikke forstyrr og designet i hele appen — slik at Chatura føles smidigere, tydeligere og mer behagelig i hverdagen.
