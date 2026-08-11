@@ -42,8 +42,9 @@
           </button>
           <div class="product-preview__shot">
             <div class="product-preview__shot-track" id="hero-screenshot-track" aria-label="{{ copy.carousel.label }}" tabindex="0">
-              {% for image_alt in copy.carousel.image_alts %}
-                <img src="{{ '/assets/AppStoreScreenshot/Screenshot' | append: forloop.index | append: '.png' | relative_url }}" alt="{{ image_alt }}" width="1320" height="2868">
+              {% for screenshot in site.data.chatura.app.screenshots %}
+                {% assign image_alt = copy.carousel.image_alts[forloop.index0] | default: copy.spotlight.image_alt %}
+                <img src="{{ screenshot | relative_url }}" alt="{{ image_alt }}" width="1320" height="2868">
               {% endfor %}
             </div>
           </div>
@@ -237,7 +238,7 @@
     </div>
 
     <figure class="companion-spotlight__visual">
-      <img src="{{ '/assets/AppStoreScreenshot/Screenshot5.png' | relative_url }}" alt="{{ copy.spotlight.image_alt }}" width="1320" height="2868" loading="lazy">
+      <img src="{{ '/assets/AppStoreScreenshot/Screenshot7.png' | relative_url }}" alt="{{ copy.spotlight.image_alt }}" width="1320" height="2868" loading="lazy">
       <figcaption>{{ copy.spotlight.caption }}</figcaption>
     </figure>
   </section>
