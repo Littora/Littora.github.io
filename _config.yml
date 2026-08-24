@@ -38,3 +38,17 @@ defaults:
       share_image_width: 1024
       share_image_height: 1024
       share_image_alt: Chatura app icon
+  - scope:
+      path: "apps/yonderkin"
+      type: "pages"
+    values:
+      layout: yonderkin
+      lang: en-US
+      yonderkin_page: true
+      favicon: /assets/yonderkin/yonderkin-icon.png
+      apple_touch_icon: /assets/yonderkin/yonderkin-icon.png
+      share_image: /assets/yonderkin/universe-hero.jpg
+      share_image_type: image/jpeg
+      share_image_width: 1800
+      share_image_height: 981
+      share_image_alt: Yonderkin universe

@@ -443,6 +443,12 @@ a.brand-app-card:focus-visible {
   box-shadow: 0 16px 34px rgba(18, 20, 25, 0.08);
 }
 
+.brand-app-card__icon--yonderkin {
+  background-color: #191a33;
+  background-image: url("/assets/yonderkin/yonderkin-icon.png");
+  background-size: cover;
+}
+
 .brand-app-placeholder-icon {
   position: relative;
   display: grid;

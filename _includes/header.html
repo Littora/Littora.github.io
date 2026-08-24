@@ -1,3 +1,6 @@
+{% if page.yonderkin_page %}
+  {% include yonderkin-header.html %}
+{% else %}
 <header class="site-header{% if page.app_home or page.chatura_subpage %} site-header--product{% endif %}">
   {% assign chatura_locale = page.lang | default: site.lang | split: "-" | first %}
   {% assign chatura_copy = site.data.chatura[chatura_locale] | default: site.data.chatura.en %}
@@ -73,3 +76,4 @@
     {% endif %}
   </div>
 </header>
+{% endif %}

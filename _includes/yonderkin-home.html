@@ -1,0 +1,277 @@
+{% assign copy = site.data.yonderkin.en %}
+{% assign app = site.data.yonderkin.app %}
+
+<main id="main-content" class="yonderkin-home">
+  <section class="hero section" aria-labelledby="hero-title">
+    <div class="shell hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">{{ copy.hero.eyebrow }}</p>
+        <h1 id="hero-title">
+          <span class="hero__name">Yonderkin</span>
+          {% for line in copy.hero.title_lines %}<span class="hero__line">{{ line }}</span>{% endfor %}
+        </h1>
+        <p class="hero__body">{{ copy.hero.body }}</p>
+        <div class="hero__actions">
+          {% if app.availability == 'released' and app.app_store_url != '' %}
+            <a class="button" href="{{ app.app_store_url }}" rel="external">Download on the App Store</a>
+          {% else %}
+            <a class="button" href="{{ app.launch_updates_url }}">{{ copy.hero.primary }}</a>
+          {% endif %}
+          <a class="text-link" href="#inside">{{ copy.hero.secondary }}</a>
+        </div>
+        <p class="hero__note">
+          {{ copy.hero.note }}
+          {% unless app.availability == 'released' %}<span>{{ app.launch_updates_note }}</span>{% endunless %}
+        </p>
+      </div>
+
+      <div class="hero__visual reveal reveal--late">
+        <figure class="hero__art">
+          <img src="{{ '/assets/yonderkin/universe-hero.jpg' | relative_url }}" alt="An extraterrestrial cartographer, a horse, a living sea, an ocean planet, a robot, and an interstellar library sharing a quiet universe" width="1800" height="981" fetchpriority="high" decoding="async">
+        </figure>
+        <article class="hero-signal" aria-label="A Moment from Nyx of Vela">
+          <p>{{ copy.hero.signal_label }}</p>
+          <blockquote>“{{ copy.hero.signal }}”</blockquote>
+          <span>{{ copy.hero.signal_meta }}</span>
+        </article>
+        <div class="hero-cast" aria-label="Featured Yonderkin">
+          <img src="{{ '/assets/yonderkin/cinderwing.jpg' | relative_url }}" alt="Cinderwing" width="1122" height="1402">
+          <img src="{{ '/assets/yonderkin/vesper-rue.jpg' | relative_url }}" alt="Vesper Rue" width="1122" height="1402">
+          <img src="{{ '/assets/yonderkin/rill.jpg' | relative_url }}" alt="Rill" width="1122" height="1402">
+          <span>+29</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell trust-strip reveal" aria-label="Product highlights">
+      {% for item in copy.trust_chips %}<span>{{ item }}</span>{% endfor %}
+    </div>
+  </section>
+
+  <section class="positioning section" aria-labelledby="positioning-title">
+    <div class="shell">
+      <div class="section-heading section-heading--split reveal">
+        <div>
+          <p class="eyebrow">{{ copy.positioning.eyebrow }}</p>
+          <h2 id="positioning-title">{{ copy.positioning.title }}</h2>
+        </div>
+        <p>{{ copy.positioning.body }}</p>
+      </div>
+      <div class="principle-grid">
+        {% for item in copy.positioning.items %}
+          <article class="principle-card reveal">
+            <span>{{ item.number }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.body }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="inside section" id="inside" aria-labelledby="inside-title">
+    <div class="shell">
+      <div class="section-heading section-heading--split reveal">
+        <div>
+          <p class="eyebrow">{{ copy.product_tour.eyebrow }}</p>
+          <h2 id="inside-title">{{ copy.product_tour.title }}</h2>
+        </div>
+        <p>{{ copy.product_tour.body }}</p>
+      </div>
+
+      <div class="product-tour reveal" data-product-tour>
+        <div class="product-tour__bar">
+          <p>{{ copy.product_tour.note }}</p>
+          <div class="product-tour__tabs" role="tablist" aria-label="Explore the Yonderkin app">
+            {% for tab in copy.product_tour.tabs %}
+              <button type="button" role="tab" id="tour-tab-{{ tab.id }}" aria-controls="tour-panel-{{ tab.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}" data-tour-tab="{{ tab.id }}">{{ tab.label }}</button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <section class="tour-panel" id="tour-panel-meet" role="tabpanel" aria-labelledby="tour-tab-meet" data-tour-panel="meet">
+          <div class="tour-panel__copy">
+            <p class="eyebrow eyebrow--light">{{ copy.product_tour.meet.eyebrow }}</p>
+            <h3>{{ copy.product_tour.meet.title }}</h3>
+            <p>{{ copy.product_tour.meet.body }}</p>
+            <strong>{{ copy.product_tour.meet.stat }}</strong>
+          </div>
+          <div class="app-preview app-preview--meet" aria-label="Yonderkin discovery screen preview">
+            <div class="app-preview__header"><span>Yonderkin</span><small>Featured encounters</small></div>
+            <div class="preview-kin-grid">
+              {% assign preview_kin = copy.encounters.cards | slice: 0, 4 %}
+              {% for kin in preview_kin %}
+                <article>
+                  <img src="{{ kin.image | relative_url }}" alt="" width="320" height="400" loading="lazy" decoding="async">
+                  <div><strong>{{ kin.name }}</strong><span>{{ kin.kind }}</span></div>
+                </article>
+              {% endfor %}
+            </div>
+            <nav class="app-preview__nav" aria-label="App preview navigation"><span aria-current="page">Yonderkin</span><span>Universe</span><span>Messages</span><span>Profile</span></nav>
+          </div>
+        </section>
+
+        <section class="tour-panel" id="tour-panel-talk" role="tabpanel" aria-labelledby="tour-tab-talk" data-tour-panel="talk" hidden>
+          <div class="tour-panel__copy">
+            <p class="eyebrow eyebrow--light">{{ copy.product_tour.talk.eyebrow }}</p>
+            <h3>{{ copy.product_tour.talk.title }}</h3>
+            <p>{{ copy.product_tour.talk.body }}</p>
+          </div>
+          <div class="app-preview app-preview--chat" aria-label="Illustrative character conversation with Orin">
+            <div class="chat-preview__person"><img src="{{ '/assets/yonderkin/orin.jpg' | relative_url }}" alt="" width="160" height="200"><div><strong>Orin</strong><span>The Long Steppe</span></div></div>
+            <p class="chat-preview__label">{{ copy.product_tour.talk.sample_label }}</p>
+            <div class="chat-bubble chat-bubble--user">{{ copy.product_tour.talk.user_line }}</div>
+            <div class="chat-bubble chat-bubble--kin">{{ copy.product_tour.talk.yonderkin_line }}</div>
+            <div class="chat-preview__composer" aria-hidden="true"><span>Message Orin…</span><b>↑</b></div>
+          </div>
+        </section>
+
+        <section class="tour-panel" id="tour-panel-universe" role="tabpanel" aria-labelledby="tour-tab-universe" data-tour-panel="universe" hidden>
+          <div class="tour-panel__copy">
+            <p class="eyebrow eyebrow--light">{{ copy.product_tour.universe.eyebrow }}</p>
+            <h3>{{ copy.product_tour.universe.title }}</h3>
+            <p>{{ copy.product_tour.universe.body }}</p>
+          </div>
+          <div class="app-preview app-preview--moments" aria-label="Universe Moments preview">
+            {% for moment in copy.universe.moments limit: 2 %}
+              <article class="preview-moment">
+                <img src="{{ moment.image | relative_url }}" alt="" width="140" height="140" loading="lazy" decoding="async">
+                <div><strong>{{ moment.name }}</strong><span>{{ moment.meta }}</span><p>{{ moment.text }}</p></div>
+              </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="tour-panel" id="tour-panel-keep" role="tabpanel" aria-labelledby="tour-tab-keep" data-tour-panel="keep" hidden>
+          <div class="tour-panel__copy">
+            <p class="eyebrow eyebrow--light">{{ copy.product_tour.keep.eyebrow }}</p>
+            <h3>{{ copy.product_tour.keep.title }}</h3>
+            <p>{{ copy.product_tour.keep.body }}</p>
+          </div>
+          <div class="app-preview app-preview--keep" aria-label="Relationship spaces preview">
+            <div class="keep-preview__header"><img src="{{ '/assets/yonderkin/nyx-of-vela.jpg' | relative_url }}" alt="" width="120" height="120"><div><strong>You + Nyx</strong><span>Places to return to</span></div></div>
+            {% for module in copy.relationship.modules limit: 4 %}
+              <article><span>0{{ forloop.index }}</span><div><strong>{{ module.title }}</strong><small>{{ module.body }}</small></div><b aria-hidden="true">›</b></article>
+            {% endfor %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="encounters section" id="encounters" aria-labelledby="encounters-title">
+    <div class="shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">{{ copy.encounters.eyebrow }}</p>
+        <h2 id="encounters-title">{{ copy.encounters.title }}</h2>
+        <p>{{ copy.encounters.body }}</p>
+      </div>
+      <div class="encounter-mosaic">
+        {% for kin in copy.encounters.cards %}
+          <article class="encounter-tile encounter-tile--{{ kin.size }} reveal" id="kin-{{ kin.id }}">
+            <img src="{{ kin.image | relative_url }}" alt="{{ kin.alt }}" width="1122" height="1402" loading="lazy" decoding="async">
+            <div class="encounter-tile__content">
+              <p>{{ kin.kind }}</p>
+              <h3>{{ kin.name }}</h3>
+              <blockquote>“{{ kin.quote }}”</blockquote>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <section class="constellation reveal" aria-labelledby="constellation-title" data-character-browser>
+        <div class="constellation__heading">
+          <div><p class="eyebrow">{{ copy.constellation.eyebrow }}</p><h3 id="constellation-title">{{ copy.constellation.title }}</h3></div>
+          <p>{{ copy.constellation.body }}</p>
+        </div>
+        <div class="constellation__filters" role="group" aria-label="Filter Yonderkin by kind">
+          {% for filter in copy.constellation.filters %}<button type="button" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" data-character-filter="{{ filter.id }}">{{ filter.label }}</button>{% endfor %}
+        </div>
+        <ul class="constellation__list" aria-live="polite">
+          {% for person in copy.constellation.people %}<li data-character-kind="{{ person.kind }}"><strong>{{ person.name }}</strong><span>{{ person.label }}</span></li>{% endfor %}
+        </ul>
+      </section>
+
+      {% assign first_match = copy.first_meeting.options | first %}
+      <div class="first-meeting reveal" id="first-meeting" data-first-meeting>
+        <div class="first-meeting__intro">
+          <p class="eyebrow">{{ copy.first_meeting.eyebrow }}</p>
+          <h3>{{ copy.first_meeting.title }}</h3>
+          <p>{{ copy.first_meeting.body }}</p>
+          <p class="first-meeting__prompt" id="first-meeting-prompt">{{ copy.first_meeting.prompt }}</p>
+          <div class="first-meeting__options" role="group" aria-labelledby="first-meeting-prompt">
+            {% for option in copy.first_meeting.options %}
+              <button type="button" data-match-option data-match-id="{{ option.id | escape }}" data-match-name="{{ option.name | escape }}" data-match-kind="{{ option.kind | escape }}" data-match-body="{{ option.body | escape }}" data-match-image="{{ option.image | relative_url }}" data-match-alt="{{ option.alt | escape }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ option.label }}</button>
+            {% endfor %}
+          </div>
+        </div>
+        <article class="first-meeting__result" data-match-result data-match-id="{{ first_match.id }}" aria-live="polite" aria-atomic="true">
+          <img src="{{ first_match.image | relative_url }}" alt="{{ first_match.alt }}" width="1122" height="1402" loading="lazy" decoding="async" data-match-image>
+          <div><p data-match-kind>{{ first_match.kind }}</p><h4 data-match-name>{{ first_match.name }}</h4><p data-match-body>{{ first_match.body }}</p><a class="text-link" href="#kin-{{ first_match.id }}" data-match-link>{{ copy.first_meeting.result_link }}</a></div>
+        </article>
+        <div class="first-meeting__cta"><p><strong>{{ copy.first_meeting.cta_lead }}</strong> {{ app.launch_updates_note }}</p><a class="button button--small" href="{{ app.launch_updates_url }}">{{ copy.first_meeting.cta }}</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="universe section section--ink" id="beyond-chat" aria-labelledby="universe-title">
+    <div class="shell universe__grid">
+      <div class="universe__intro reveal">
+        <p class="eyebrow eyebrow--light">{{ copy.universe.eyebrow }}</p>
+        <h2 id="universe-title">{{ copy.universe.title }}</h2>
+        <p>{{ copy.universe.body }}</p>
+        <ul>{% for principle in copy.universe.principles %}<li>{{ principle }}</li>{% endfor %}</ul>
+      </div>
+      <div class="moment-stack">
+        {% for moment in copy.universe.moments %}
+          <article class="moment-card reveal">
+            <img src="{{ moment.image | relative_url }}" alt="{{ moment.alt }}" width="420" height="420" loading="lazy" decoding="async">
+            <div><p>{{ moment.meta }}</p><h3>{{ moment.name }}</h3><blockquote>“{{ moment.text }}”</blockquote></div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="relationship section" aria-labelledby="relationship-title">
+    <div class="shell">
+      <div class="section-heading section-heading--split reveal">
+        <div><p class="eyebrow">{{ copy.relationship.eyebrow }}</p><h2 id="relationship-title">{{ copy.relationship.title }}</h2></div>
+        <p>{{ copy.relationship.body }}</p>
+      </div>
+      <div class="module-grid">
+        {% for module in copy.relationship.modules %}
+          <article class="module-card module-card--{{ module.accent }} reveal"><span>0{{ forloop.index }}</span><h3>{{ module.title }}</h3><p>{{ module.body }}</p></article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy section" id="privacy" aria-labelledby="privacy-title">
+    <div class="shell privacy__panel reveal">
+      <div class="privacy__copy"><p class="eyebrow">{{ copy.privacy.eyebrow }}</p><h2 id="privacy-title">{{ copy.privacy.title }}</h2><p>{{ copy.privacy.body }}</p><a class="text-link" href="{{ '/apps/yonderkin/privacy-policy/' | relative_url }}">{{ copy.privacy.link }}</a></div>
+      <ul class="privacy__list">{% for point in copy.privacy.points %}<li>{{ point }}</li>{% endfor %}</ul>
+    </div>
+  </section>
+
+  <section class="faq section" id="faq" aria-labelledby="faq-title">
+    <div class="shell faq__grid">
+      <div class="section-heading reveal"><p class="eyebrow">{{ copy.faq.eyebrow }}</p><h2 id="faq-title">{{ copy.faq.title }}</h2></div>
+      <div class="faq__list">{% for item in copy.faq.items %}<details class="faq-item reveal"><summary>{{ item.question }}</summary><p>{{ item.answer }}</p></details>{% endfor %}</div>
+    </div>
+  </section>
+
+  <section class="closing section" aria-labelledby="closing-title">
+    <div class="shell closing__panel reveal">
+      <img class="closing__mark" src="{{ '/assets/yonderkin/yonderkin-icon.png' | relative_url }}" alt="" width="512" height="512" loading="lazy" decoding="async">
+      <p class="eyebrow eyebrow--light">{{ copy.closing.eyebrow }}</p><h2 id="closing-title">{{ copy.closing.title }}</h2><p>{{ copy.closing.body }}</p>
+      <div class="closing__actions">
+        {% if app.availability == 'released' and app.app_store_url != '' %}<a class="button button--light" href="{{ app.app_store_url }}" rel="external">Download on the App Store</a>{% else %}<a class="button button--light" href="{{ app.launch_updates_url }}">{{ copy.closing.primary }}</a>{% endif %}
+        <a class="text-link text-link--light" href="mailto:{{ app.support_email }}">{{ copy.closing.secondary }}</a>
+      </div>
+      {% unless app.availability == 'released' %}<p class="closing__note">{{ app.launch_updates_note }}</p>{% endunless %}
+    </div>
+  </section>
+
+  {% unless app.availability == 'released' %}<aside class="mobile-launch" data-mobile-launch><span>Yonderkin · Coming soon</span><a href="{{ app.launch_updates_url }}">Get updates</a></aside>{% endunless %}
+</main>

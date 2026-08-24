@@ -1,0 +1,46 @@
+{% assign app = site.data.yonderkin.app %}
+{% assign copy = site.data.yonderkin.en %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Yonderkin",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "iOS, iPadOS",
+      "description": {{ page.description | default: site.description | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "image": {{ '/assets/yonderkin/universe-hero.jpg' | absolute_url | jsonify }},
+      "author": {
+        "@type": "Organization",
+        "name": "Littora",
+        "url": "https://littora.art/"
+      },
+      "audience": {
+        "@type": "Audience",
+        "suggestedMinAge": 18
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/PreOrder"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for item in copy.faq.items %}
+          {
+            "@type": "Question",
+            "name": {{ item.question | jsonify }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ item.answer | jsonify }}
+            }
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>
