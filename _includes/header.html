@@ -2,16 +2,14 @@
   {% assign chatura_locale = page.lang | default: site.lang | split: "-" | first %}
   {% assign chatura_copy = site.data.chatura[chatura_locale] | default: site.data.chatura.en %}
   {% capture chatura_home_path %}/apps/chatura/{% if chatura_locale != "en" %}{{ chatura_locale }}/{% endif %}{% endcapture %}
-  <div class="wrapper">
-    {% if page.url contains "/apps/chatura/" and page.url != "/apps/chatura/" %}
-      {% if page.app_home %}
-        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      {% else %}
-        <a class="site-title" rel="author" href="{{ chatura_home_path | relative_url }}">Chatura</a>
-      {% endif %}
-    {% else %}
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% endif %}
+  {% assign header_brand_title = site.title %}
+  {% assign header_brand_path = "/" %}
+  {% if page.chatura_subpage %}
+    {% assign header_brand_title = "Chatura" %}
+    {% assign header_brand_path = chatura_home_path %}
+  {% endif %}
+  <div class="wrapper site-header__inner">
+    <a class="site-title site-header__brand" rel="author" href="{{ header_brand_path | relative_url }}">{{ header_brand_title | escape }}</a>
     {% if page.url == "/" or page.app_home %}
       <button class="site-nav__toggle" type="button" aria-label="{% if page.app_home %}{{ chatura_copy.nav.toggle }}{% else %}Toggle navigation{% endif %}" aria-controls="site-nav-menu" aria-expanded="false">
         <span class="site-nav__toggle-icon" aria-hidden="true"></span>

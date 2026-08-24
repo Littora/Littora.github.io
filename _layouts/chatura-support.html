@@ -29,7 +29,7 @@ layout: default
 
   <section class="support-channels" aria-labelledby="support-channels-title">
     <header class="support-section-heading">
-      <h2 id="support-channels-title">{{ page.support_contact_heading }}</h2>
+      <h2 id="support-channels-title">{{ page.support_social_heading | default: page.support_contact_heading }}</h2>
       <p>{{ page.support_contact_note }}</p>
     </header>
 
@@ -58,18 +58,10 @@ layout: default
   </section>
 
   <section class="support-help" aria-labelledby="support-help-title">
-    <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256" loading="lazy">
     <div>
       <h2 id="support-help-title">{{ page.support_helpful_heading }}</h2>
       <p>{{ page.support_helpful_body }}</p>
     </div>
     <a href="mailto:littoraart@gmail.com">{{ page.support_email_label }}</a>
   </section>
-
-  <nav class="support-footer-nav" aria-label="{{ copy.footer.legal_support }}">
-    <a href="{{ localized_chatura_path | relative_url }}">Chatura</a>
-    <a href="{{ localized_chatura_path | append: 'whats-new/' | relative_url }}">{{ copy.footer.whats_new }}</a>
-    <a href="{{ '/apps/chatura/privacy-policy/' | relative_url }}" hreflang="en">{{ copy.footer.privacy }}</a>
-    <a href="{{ '/apps/chatura/terms-of-service/' | relative_url }}" hreflang="en">{{ copy.footer.terms }}</a>
-  </nav>
 </div>
