@@ -183,6 +183,16 @@ preview:
   eyebrow: "App-Vorschau"
   title: "Sieh, wie aus einem bedeutungsvollen Gespräch etwas wird, das du bewahren kannst."
 
+quick_start:
+  label: "Chatura für iPhone"
+  title: "Ein ruhigeres Gespräch ist nur einen Tipp entfernt."
+  body: "Kostenlos starten. Kein Konto erforderlich. Keine Werbung im Chat."
+
+whats_new:
+  eyebrow: "Chatura für iPhone"
+  latest: "Neueste Version"
+  archive: "Frühere Versionen"
+
 conversion:
   title: "Bereit, darüber zu sprechen?"
   body: "Kostenlos starten. Kein Konto erforderlich. Keine Werbung im Chat."

@@ -183,6 +183,16 @@ preview:
   eyebrow: "Appforhåndsvisning"
   title: "Se en meningsfull samtale bli til noe du kan ta vare på."
 
+quick_start:
+  label: "Chatura for iPhone"
+  title: "En roligere samtale er bare ett trykk unna."
+  body: "Start gratis. Ingen konto nødvendig. Ingen annonser i chatten."
+
+whats_new:
+  eyebrow: "Chatura for iPhone"
+  latest: "Nyeste versjon"
+  archive: "Tidligere versjoner"
+
 conversion:
   title: "Klar for å snakke om det?"
   body: "Start gratis. Ingen konto kreves. Ingen annonser i chatten."

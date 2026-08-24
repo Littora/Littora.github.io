@@ -1,13 +1,24 @@
 ---
-layout: default
+layout: chatura-whats-new
 title: "Mises à jour et notes de version de Chatura"
 description: "Consultez les dernières notes de version iOS de Chatura : nouvelles fonctionnalités, améliorations du design, de la fiabilité, des Moments et des compagnons."
 lang: fr-FR
 chatura_subpage: whats-new
+whats_new_heading: "Nouveautés"
 permalink: /apps/chatura/fr/whats-new/
 ---
 
-# Nouveautés
+## Version 1.2.5 — Revenir à Chatura plus facilement, avec des conversations plus fluides
+
+Cette mise à jour affine les réponses des personnages, ajoute une façon de revoir l’introduction et améliore certains éléments du design de l’app — pour que Chatura soit plus fluide, plus clair et plus agréable à retrouver.
+
+### Améliorations de la version 1.2.5
+
+- **Des réponses plus naturelles** : nous avons affiné les réponses des personnages afin que les conversations soient plus fluides et plus agréables.
+- **Une façon plus claire de revoir l’introduction** : l’option **Show Onboarding** vous permet de revoir l’introduction, afin de retrouver plus facilement vos repères dans Chatura.
+- **Une expérience plus soignée** : nous avons amélioré certains éléments du design de l’app afin que Chatura soit plus clair et plus facile à utiliser.
+
+Merci d’être là — nous continuons à peaufiner Chatura avec soin, afin que les conversations et les détails du quotidien soient un peu plus fluides, plus clairs et plus personnels.
 
 ## Version 1.2.4 — Des conversations plus fluides et une expérience plus soignée
 

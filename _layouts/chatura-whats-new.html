@@ -1,0 +1,39 @@
+---
+layout: default
+---
+{% assign locale = page.lang | default: site.lang | split: "-" | first %}
+{% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
+{% capture localized_chatura_path %}/apps/chatura/{% if locale != "en" %}{{ locale }}/{% endif %}{% endcapture %}
+
+<div class="release-page" data-release-page data-locale="{{ locale }}">
+  <header class="release-hero">
+    <div class="release-hero__copy">
+      <a class="release-hero__brand" href="{{ localized_chatura_path | relative_url }}">
+        <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256">
+        <span>{{ copy.whats_new.eyebrow }}</span>
+      </a>
+      <h1>{{ page.whats_new_heading }}</h1>
+      <p>{{ page.description }}</p>
+      <a class="release-hero__action" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download_app_store }}</a>
+    </div>
+
+    <figure class="release-hero__visual" aria-label="{{ copy.whats_new.latest }}">
+      <img class="release-hero__shot release-hero__shot--primary" src="{{ '/assets/AppStoreScreenshot/Screenshot1.png' | relative_url }}" alt="{{ copy.carousel.image_alts[0] }}" width="1320" height="2868">
+      <img class="release-hero__shot release-hero__shot--secondary" src="{{ '/assets/AppStoreScreenshot/Screenshot5.png' | relative_url }}" alt="" width="1320" height="2868" aria-hidden="true">
+    </figure>
+  </header>
+
+  <div class="release-stream" data-release-stream data-latest-label="{{ copy.whats_new.latest | escape }}" data-archive-label="{{ copy.whats_new.archive | escape }}">
+    {{ content }}
+  </div>
+
+  <aside class="release-download" aria-label="{{ copy.conversion.title }}">
+    <div class="release-download__mark" aria-hidden="true">
+      <img src="{{ '/assets/Logo.png' | relative_url }}" alt="" width="256" height="256" loading="lazy">
+    </div>
+    <strong>{{ copy.conversion.title }}</strong>
+    <a href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download_app_store }}</a>
+  </aside>
+</div>
+
+<script src="{{ '/assets/chatura-whats-new.js' | relative_url }}" defer></script>

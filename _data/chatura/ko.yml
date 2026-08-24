@@ -183,6 +183,16 @@ preview:
   eyebrow: "앱 미리보기"
   title: "의미 있는 대화가 간직할 수 있는 무언가로 바뀌는 모습을 확인하세요."
 
+quick_start:
+  label: "iPhone용 Chatura"
+  title: "한 번의 탭으로 더 차분한 대화를 시작하세요."
+  body: "무료로 시작하세요. 계정 없이, 채팅 광고 없이."
+
+whats_new:
+  eyebrow: "iPhone용 Chatura"
+  latest: "최신 버전"
+  archive: "이전 버전"
+
 conversion:
   title: "함께 이야기해 볼까요?"
   body: "무료로 시작하세요. 계정 필요 없음. 채팅 광고 없음."

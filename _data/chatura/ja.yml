@@ -183,6 +183,16 @@ preview:
   eyebrow: "Appプレビュー"
   title: "大切な会話が、残しておけるものに変わる様子をご覧ください。"
 
+quick_start:
+  label: "iPhone版 Chatura"
+  title: "落ち着いて話せる場所へ、ワンタップで。"
+  body: "無料で開始。アカウント不要。チャット内広告なし。"
+
+whats_new:
+  eyebrow: "iPhone版 Chatura"
+  latest: "最新バージョン"
+  archive: "過去のバージョン"
+
 conversion:
   title: "一緒に話してみませんか？"
   body: "無料で始められます。アカウント不要。チャットに広告はありません。"

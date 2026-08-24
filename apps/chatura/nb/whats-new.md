@@ -1,13 +1,24 @@
 ---
-layout: default
+layout: chatura-whats-new
 title: "Chatura-oppdateringer og versjonsnotater"
 description: "Les de nyeste versjonsnotatene for Chatura på iOS, med nye funksjoner og forbedringer av design, stabilitet, Moments og følgesvenner."
 lang: nb-NO
 chatura_subpage: whats-new
+whats_new_heading: "Hva er nytt"
 permalink: /apps/chatura/nb/whats-new/
 ---
 
-# Hva er nytt
+## Versjon 1.2.5 — En enklere vei tilbake til Chatura, med smidigere samtaler
+
+Denne oppdateringen finpusser karakterenes svar, gir deg mulighet til å vise introduksjonen på nytt og forbedrer deler av appens design — slik at Chatura føles smidigere, tydeligere og mer behagelig å komme tilbake til.
+
+### Forbedringer i versjon 1.2.5
+
+- **Mer naturlige svar fra karakterene**: Vi har finpusset karakterenes svar, slik at samtalene kan føles smidigere og mer behagelige.
+- **En enklere måte å se introduksjonen på nytt**: Med **Show Onboarding** kan du vise introduksjonen på nytt, slik at det blir enklere å finne tilbake til det Chatura tilbyr.
+- **En mer gjennomført appopplevelse**: Vi har forbedret deler av appens design, slik at Chatura føles tydeligere og enklere å bruke.
+
+Takk for at du er her — vi fortsetter å finpusse Chatura med omtanke, slik at samtaler og hverdagens detaljer kan føles litt smidigere, tydeligere og mer personlige.
 
 ## Versjon 1.2.4 — Smidigere samtaler og en mer gjennomført opplevelse
 
