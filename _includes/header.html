@@ -1,4 +1,4 @@
-<header class="site-header{% if page.app_home %} site-header--product{% endif %}">
+<header class="site-header{% if page.app_home or page.chatura_subpage %} site-header--product{% endif %}">
   {% assign chatura_locale = page.lang | default: site.lang | split: "-" | first %}
   {% assign chatura_copy = site.data.chatura[chatura_locale] | default: site.data.chatura.en %}
   {% capture chatura_home_path %}/apps/chatura/{% if chatura_locale != "en" %}{{ chatura_locale }}/{% endif %}{% endcapture %}
