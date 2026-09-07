@@ -8,10 +8,11 @@
       "@type": "SoftwareApplication",
       "name": "Yonderkin",
       "applicationCategory": "EntertainmentApplication",
-      "operatingSystem": "iOS, iPadOS",
+      "operatingSystem": "iOS",
       "description": {{ page.description | default: site.description | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
-      "image": {{ '/assets/yonderkin/universe-hero.jpg' | absolute_url | jsonify }},
+      "image": {{ '/assets/yonderkin/yonderkin-icon-current.png' | absolute_url | jsonify }},
+      "creativeWorkStatus": {% if app.availability == 'released' and app.app_store_url != '' %}"Released"{% else %}"Coming soon"{% endif %},
       "author": {
         "@type": "Organization",
         "name": "Littora",
@@ -20,10 +21,6 @@
       "audience": {
         "@type": "Audience",
         "suggestedMinAge": 18
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/PreOrder"
       }
     },
     {

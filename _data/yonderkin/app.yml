@@ -4,9 +4,9 @@ bundle_id: art.littora.yonderkin
 site_path: /apps/yonderkin/
 availability: prelaunch
 app_store_url: ""
-launch_updates_url: "mailto:littoraart@gmail.com?subject=Yonderkin%20launch%20updates&body=Please%20add%20me%20to%20Yonderkin%20launch%20updates."
-launch_updates_note: "Opens your email app. Send the pre-filled message to join."
+status_label: "Coming soon"
+download_note: "Coming soon on the App Store for iPhone."
 support_email: littoraart@gmail.com
 minimum_age: 18
 character_count: 32
-platform: iPhone and iPad
+platform: iPhone

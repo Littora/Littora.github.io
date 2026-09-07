@@ -1,4 +1,6 @@
 ---
+favicon: /assets/yonderkin/yonderkin-icon-current.png
+apple_touch_icon: /assets/yonderkin/yonderkin-icon-current.png
 layout: yonderkin
 title: "Yonderkin Terms of Service"
 description: "Read Yonderkin’s Terms of Service, including eligibility, subscriptions, AI-generated content, acceptable use, privacy, and App Store terms."

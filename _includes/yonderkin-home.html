@@ -5,23 +5,18 @@
   <section class="hero section" aria-labelledby="hero-title">
     <div class="shell hero__grid">
       <div class="hero__copy reveal">
-        <p class="eyebrow">{{ copy.hero.eyebrow }}</p>
+        <div class="yonderkin-identity"><img src="{{ '/assets/yonderkin/yonderkin-icon-current.png' | relative_url }}" alt="Yonderkin app icon" width="72" height="72"><p class="eyebrow">{{ copy.hero.eyebrow }}<span>{{ app.status_label }}</span></p></div>
         <h1 id="hero-title">
           <span class="hero__name">Yonderkin</span>
           {% for line in copy.hero.title_lines %}<span class="hero__line">{{ line }}</span>{% endfor %}
         </h1>
         <p class="hero__body">{{ copy.hero.body }}</p>
         <div class="hero__actions">
-          {% if app.availability == 'released' and app.app_store_url != '' %}
-            <a class="button" href="{{ app.app_store_url }}" rel="external">Download on the App Store</a>
-          {% else %}
-            <a class="button" href="{{ app.launch_updates_url }}">{{ copy.hero.primary }}</a>
-          {% endif %}
+          {% include yonderkin-download-link.html class="button" %}
           <a class="text-link" href="#inside">{{ copy.hero.secondary }}</a>
         </div>
         <p class="hero__note">
           {{ copy.hero.note }}
-          {% unless app.availability == 'released' %}<span>{{ app.launch_updates_note }}</span>{% endunless %}
         </p>
       </div>
 
@@ -209,7 +204,7 @@
           <img src="{{ first_match.image | relative_url }}" alt="{{ first_match.alt }}" width="1122" height="1402" loading="lazy" decoding="async" data-match-image>
           <div><p data-match-kind>{{ first_match.kind }}</p><h4 data-match-name>{{ first_match.name }}</h4><p data-match-body>{{ first_match.body }}</p><a class="text-link" href="#kin-{{ first_match.id }}" data-match-link>{{ copy.first_meeting.result_link }}</a></div>
         </article>
-        <div class="first-meeting__cta"><p><strong>{{ copy.first_meeting.cta_lead }}</strong> {{ app.launch_updates_note }}</p><a class="button button--small" href="{{ app.launch_updates_url }}">{{ copy.first_meeting.cta }}</a></div>
+        <div class="first-meeting__cta"><p><strong>{{ copy.first_meeting.cta_lead }}</strong> {{ app.download_note }}</p>{% include yonderkin-download-link.html class="button button--small" %}</div>
       </div>
     </div>
   </section>
@@ -263,15 +258,15 @@
 
   <section class="closing section" aria-labelledby="closing-title">
     <div class="shell closing__panel reveal">
-      <img class="closing__mark" src="{{ '/assets/yonderkin/yonderkin-icon.png' | relative_url }}" alt="" width="512" height="512" loading="lazy" decoding="async">
+      <img class="closing__mark" src="{{ '/assets/yonderkin/yonderkin-icon-current.png' | relative_url }}" alt="" width="512" height="512" loading="lazy" decoding="async">
       <p class="eyebrow eyebrow--light">{{ copy.closing.eyebrow }}</p><h2 id="closing-title">{{ copy.closing.title }}</h2><p>{{ copy.closing.body }}</p>
       <div class="closing__actions">
-        {% if app.availability == 'released' and app.app_store_url != '' %}<a class="button button--light" href="{{ app.app_store_url }}" rel="external">Download on the App Store</a>{% else %}<a class="button button--light" href="{{ app.launch_updates_url }}">{{ copy.closing.primary }}</a>{% endif %}
+        {% include yonderkin-download-link.html class="button button--light" %}
         <a class="text-link text-link--light" href="mailto:{{ app.support_email }}">{{ copy.closing.secondary }}</a>
       </div>
-      {% unless app.availability == 'released' %}<p class="closing__note">{{ app.launch_updates_note }}</p>{% endunless %}
+      {% unless app.availability == 'released' %}<p class="closing__note">{{ app.download_note }}</p>{% endunless %}
     </div>
   </section>
 
-  {% unless app.availability == 'released' %}<aside class="mobile-launch" data-mobile-launch><span>Yonderkin · Coming soon</span><a href="{{ app.launch_updates_url }}">Get updates</a></aside>{% endunless %}
+  {% unless app.availability == 'released' %}<aside class="mobile-launch" data-mobile-launch><span>Yonderkin · Coming soon</span>{% include yonderkin-download-link.html class="mobile-launch__link" %}</aside>{% endunless %}
 </main>

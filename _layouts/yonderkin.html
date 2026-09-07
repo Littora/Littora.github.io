@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-  {% include head.html %}
+  {% capture yonderkin_head %}{% include head.html %}{% endcapture %}
+  {{ yonderkin_head | replace: "yonderkin.css?v=20260824-1", "yonderkin.css?v=20260907-2" | replace: "yonderkin-home.js?v=20260824-1", "yonderkin-home.js?v=20260907-2" }}
   <body class="yonderkin-site">
     {% include header.html %}
     {% if page.yonderkin_home %}

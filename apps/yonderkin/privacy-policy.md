@@ -1,4 +1,6 @@
 ---
+favicon: /assets/yonderkin/yonderkin-icon-current.png
+apple_touch_icon: /assets/yonderkin/yonderkin-icon-current.png
 layout: yonderkin
 title: "Yonderkin Privacy Policy"
 description: "Read Yonderkin’s Privacy Policy to learn what data the app processes, why it is used, how it is stored and protected, and what choices you have."

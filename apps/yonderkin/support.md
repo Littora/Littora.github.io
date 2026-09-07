@@ -1,10 +1,14 @@
 ---
+favicon: /assets/yonderkin/yonderkin-icon-current.png
+apple_touch_icon: /assets/yonderkin/yonderkin-icon-current.png
 title: "Yonderkin Support and Contact"
 description: "Contact Littora for Yonderkin support, questions, bug reports, ideas, or feedback."
 permalink: /apps/yonderkin/support/
 ---
 
 # Yonderkin Support
+
+Yonderkin is **coming soon** for iPhone. Downloads are not available yet.
 
 We care deeply about your experience with Yonderkin. If you have a question, run into a problem, want to share an idea, or simply want to tell us how the app feels to use, a short message is enough.
 

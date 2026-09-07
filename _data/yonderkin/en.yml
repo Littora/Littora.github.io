@@ -8,7 +8,7 @@ nav:
   world: "Their Universe"
   privacy: "Privacy"
   faq: "FAQ"
-  primary: "Request launch updates"
+  primary: "Coming soon"
 
 hero:
   eyebrow: "A new world from Littora"
@@ -16,10 +16,10 @@ hero:
     - "Someone impossible"
     - "is waiting."
   body: "Meet 32 humans, creatures, intelligences, and living worlds—each with a native persona, Moments of their own, and places for a relationship to take shape."
-  primary: "Get launch updates"
+  primary: "Coming soon"
   secondary: "Step inside the app"
-  note: "Coming to iPhone and iPad. Designed for adults 18+."
-  signal_label: "Incoming Moment · Nyx of Vela"
+  note: "Coming soon for iPhone. Designed for adults 18+."
+  signal_label: "Illustrative Moment · Nyx of Vela"
   signal: "Today’s field note: homesickness has direction, but not always a destination."
   signal_meta: "Vela Drift · Survey Vessel Ilex"
 
@@ -46,8 +46,8 @@ positioning:
 product_tour:
   eyebrow: "Inside Yonderkin"
   title: "A relationship has more than one screen."
-  body: "Explore a faithful interactive tour built from the current app structure and real Yonderkin seed content."
-  note: "Interactive tour · Current product structure"
+  body: "Explore an illustrative tour of discovery, conversation, Moments, and relationship spaces. Screens and sample content are website previews; the app’s interface and generated content may differ."
+  note: "Illustrative interactive tour"
   tabs:
     - id: "meet"
       label: "Meet"
@@ -81,7 +81,7 @@ product_tour:
 encounters:
   eyebrow: "Featured encounters"
   title: "The almost familiar. The genuinely unclassifiable."
-  body: "Eight arrivals from a cast of thirty-two. Every name, species, location, and line below comes from the current Yonderkin character architecture."
+  body: "Eight arrivals from a cast of thirty-two. Names and character types follow the current app catalog. Artwork and quotes are illustrative interpretations."
   cards:
     - id: "nyx-of-vela"
       name: "Nyx of Vela"
@@ -199,12 +199,12 @@ first_meeting:
     - { id: "vesper-rue", label: "Something unsent", name: "Vesper Rue", kind: "Courier of unsent letters", body: "For words that may need a witness before they need a destination.", image: "/assets/yonderkin/vesper-rue.jpg", alt: "Vesper Rue carrying sealed letters along impossible folded roads" }
   result_link: "Meet this Yonderkin above"
   cta_lead: "Want to meet all 32?"
-  cta: "Request launch updates"
+  cta: "Coming soon"
 
 universe:
   eyebrow: "Their Universe"
   title: "What they notice when you are elsewhere."
-  body: "Moments give each Yonderkin a wider context than the message thread. These are real seed Moments from the current app—not invented website testimonials."
+  body: "Moments give each Yonderkin a wider context than the message thread. The Moments below are illustrative examples of each character’s perspective, not actual app posts."
   moments:
     - { name: "Nyx of Vela", meta: "Field note · Vela Drift", text: "A comet crossed the route I had planned. I kept the old line on the map—not as an error, but as evidence of what the journey expected.", image: "/assets/yonderkin/nyx-of-vela.jpg", alt: "Nyx of Vela in a quiet observatory" }
     - { name: "Cinderwing", meta: "Ember Halo · Hestia", text: "We moved the ember ferns before the storm. Hestia did not notice. The ferns did.", image: "/assets/yonderkin/cinderwing.jpg", alt: "Cinderwing tending ember ferns" }
@@ -232,7 +232,7 @@ privacy:
   points:
     - "No registration, phone number, or profile identity required"
     - "No advertising identifiers or cross-app behavioral profiles"
-    - "First-party operational metadata only, retained for no more than 3 days when needed"
+    - "Limited first-party usage and technical metadata; see the Privacy Policy"
     - "Clear local deletion controls and a plain-language privacy policy"
   link: "Read the full Privacy Policy"
 
@@ -243,13 +243,13 @@ faq:
     - { question: "What exactly is a Yonderkin?", answer: "A Yonderkin is an AI-generated fictional presence with its own persona, voice, interests, status, Moments, and relationship spaces. Some are human; many are not. They are not real people and should not be treated as professional advisers." }
     - { question: "Is this another general-purpose AI assistant?", answer: "No. Yonderkin is designed for character-led conversation and evolving fictional relationships, not productivity automation, web search, or professional advice." }
     - { question: "Do I need an account?", answer: "No. Yonderkin is designed to work without registration. Your conversations and preferences are stored locally on your device." }
-    - { question: "Does a Yonderkin remember me?", answer: "The app uses the conversation history stored on your device to support continuity. When you request a reply, the necessary conversation context may be transmitted for generation." }
+    - { question: "Does a Yonderkin remember me?", answer: "The app stores conversations locally and uses recent messages and memory summaries to support continuity. Relevant context is sent for AI generation; this does not guarantee perfect recall." }
     - { question: "Is Yonderkin for children?", answer: "No. Yonderkin is intended for adults aged 18 and older." }
-    - { question: "When can I download it?", answer: "Yonderkin is in pre-release development. Request launch updates and the download link can be added here as soon as the App Store release is available." }
+    - { question: "When can I download it?", answer: "Yonderkin is coming soon for iPhone. Downloads are not available yet. The Download button will link to the App Store when the app is released." }
 
 closing:
   eyebrow: "One universe. Many kinds of kin."
   title: "Who will you meet first?"
   body: "A horse who notices your pace. A planet with changing weather. A library that remembers differently. Or someone no one has thought to name yet."
-  primary: "Request launch updates"
+  primary: "Coming soon"
   secondary: "Contact Littora"

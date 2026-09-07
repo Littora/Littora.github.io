@@ -410,13 +410,12 @@ p { margin: 0; }
 .mobile-launch { display: none; }
 
 /* Shared footer and legal pages */
-.product-footer { padding: 70px 0 38px; border-top: 1px solid rgba(255, 255, 255, 0.08); color: var(--paper); background: var(--ink); }
-.product-footer__grid { display: grid; grid-template-columns: 1fr auto; gap: 44px; }
+.yonderkin-footer { display: block; width: 100%; margin: 0; padding: 70px 0 38px; border-top: 1px solid rgba(255, 255, 255, 0.08); color: var(--paper); background: var(--ink); }
+.yonderkin-footer__grid { display: grid; grid-template-columns: 1fr auto; gap: 44px; }
 .site-brand--footer { color: var(--paper); }
-.product-footer p { margin-top: 10px; color: #aaa7b7; font-size: 0.86rem; }
-.product-footer nav { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 12px 28px; font-size: 0.88rem; }
-.product-footer nav a { text-decoration: none; }
-.product-footer__legal { grid-column: 1 / -1; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.yonderkin-footer p { margin-top: 10px; color: #aaa7b7; font-size: 0.86rem; }
+.yonderkin-footer nav { display: flex; max-width: 100%; align-items: flex-start; flex-wrap: wrap; gap: 12px 28px; font-size: 0.88rem; }
+.yonderkin-footer nav a { text-decoration: none; }
 
 .page-content { min-height: 60vh; padding: clamp(64px, 9vw, 120px) 0; background: var(--paper); }
 .page-content:has(.yonderkin-home) { padding: 0; background: var(--cream); }
@@ -524,12 +523,12 @@ p { margin: 0; }
   .closing { padding: 12px 0 86px; }
   .closing__panel { width: min(calc(100% - 24px), var(--shell)); padding: 48px 26px 190px; border-radius: 26px; }
   .closing__mark { right: -52px; bottom: -52px; width: 270px; }
-  .mobile-launch { position: fixed; z-index: 90; right: 10px; bottom: 10px; left: 10px; display: flex; min-height: 58px; padding: 8px 9px 8px 16px; border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 18px; align-items: center; justify-content: space-between; gap: 12px; color: var(--paper); background: rgba(25, 26, 51, 0.94); box-shadow: 0 16px 42px rgba(25, 26, 51, 0.28); backdrop-filter: blur(15px); transition: opacity 180ms ease, transform 180ms ease; }
-  .mobile-launch[data-hidden] { opacity: 0; pointer-events: none; transform: translateY(20px); }
+  .mobile-launch { position: fixed; z-index: 90; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); left: 10px; display: flex; min-height: 58px; padding: 8px 9px 8px 16px; border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 18px; align-items: center; justify-content: space-between; gap: 12px; color: var(--paper); background: rgba(25, 26, 51, 0.94); box-shadow: 0 16px 42px rgba(25, 26, 51, 0.28); backdrop-filter: blur(15px); transition: opacity 180ms ease, transform 180ms ease; }
+  .mobile-launch[data-hidden] { visibility: hidden; opacity: 0; pointer-events: none; transform: translateY(20px); }
   .mobile-launch span { font-size: 0.74rem; font-weight: 680; }
-  .mobile-launch a { display: inline-flex; min-height: 40px; padding: 0 14px; border-radius: 12px; align-items: center; color: var(--ink); background: var(--paper); font-size: 0.73rem; font-weight: 750; text-decoration: none; }
-  .product-footer__grid { grid-template-columns: 1fr; }
-  .product-footer__legal { grid-column: 1; }
+  .mobile-launch a, .mobile-launch button { display: inline-flex; min-height: 40px; padding: 0 14px; border-radius: 12px; align-items: center; color: var(--ink); background: var(--paper); font-size: 0.73rem; font-weight: 750; text-decoration: none; }
+  .yonderkin-footer { padding-bottom: calc(108px + env(safe-area-inset-bottom, 0px)); }
+  .yonderkin-footer__grid { grid-template-columns: 1fr; gap: 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -541,3 +540,24 @@ body.yonderkin-site::before,
 body.yonderkin-site::after {
   display: none;
 }
+
+/* Product identity uses the app’s shipping default icon. */
+.yonderkin-identity { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+.yonderkin-identity img { flex: 0 0 72px; border-radius: 18px; }
+.yonderkin-identity .eyebrow { margin: 0; }
+.yonderkin-identity span { display: block; margin-top: 5px; color: var(--ink-soft); font-size: 0.75rem; letter-spacing: 0.06em; }
+.yonderkin-footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.yonderkin-footer__grid > * { min-width: 0; }
+
+body.yonderkin-site .closing h2 { color: var(--paper); }
+body.yonderkin-site .closing h2::after { display: none; }
+
+body.yonderkin-site .yonderkin-footer a,
+body.yonderkin-site .yonderkin-footer a:visited,
+body.yonderkin-site .yonderkin-footer a:hover,
+body.yonderkin-site .yonderkin-footer a:focus-visible {
+  color: var(--paper);
+}
+body.yonderkin-site .yonderkin-footer nav a:hover { text-decoration: underline; }
+[data-coming-soon] { cursor: pointer; }
+.mobile-launch button { border: 0; }

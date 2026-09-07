@@ -19,11 +19,7 @@
       <a href="{{ app.site_path }}#beyond-chat">{{ copy.nav.world }}</a>
       <a href="{{ app.site_path }}#privacy">{{ copy.nav.privacy }}</a>
       <a href="{{ app.site_path }}#faq">{{ copy.nav.faq }}</a>
-      {% if app.availability == 'released' and app.app_store_url != '' %}
-        <a class="button button--small" href="{{ app.app_store_url }}" rel="external">Download</a>
-      {% else %}
-        <a class="button button--small" href="{{ app.launch_updates_url }}">{{ copy.nav.primary }}</a>
-      {% endif %}
+      {% include yonderkin-download-link.html class="button button--small" %}
     </nav>
   </div>
 </header>
