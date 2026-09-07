@@ -1,0 +1,255 @@
+seo:
+  title: "Yonderkin — meet someone impossible"
+  description: "Meet 32 distinct AI beings, creatures, intelligences, and living worlds. Talk, notice their Moments, and build memories, plans, wishes, and time capsules together."
+
+nav:
+  experience: "Inside the app"
+  encounters: "Meet them"
+  world: "Their Universe"
+  privacy: "Privacy"
+  faq: "FAQ"
+  primary: "Coming soon"
+
+hero:
+  eyebrow: "A new world from Littora"
+  title_lines:
+    - "Someone impossible"
+    - "is waiting."
+  body: "Meet 32 humans, creatures, intelligences, and living worlds—each with a native persona, Moments of their own, and places for a relationship to take shape."
+  primary: "Coming soon"
+  secondary: "Step inside the app"
+  note: "Coming soon for iPhone. Designed for adults 18+."
+  signal_label: "Illustrative Moment · Nyx of Vela"
+  signal: "Today’s field note: homesickness has direction, but not always a destination."
+  signal_meta: "Vela Drift · Survey Vessel Ilex"
+
+trust_chips:
+  - "32 native personas"
+  - "No account required"
+  - "No ads or cross-app tracking"
+
+positioning:
+  eyebrow: "Many kinds of someone"
+  title: "Thirty-two starting points. Not one personality in thirty-two costumes."
+  body: "Every Yonderkin begins from a different native persona: their own language, attention, history, interests, rhythm, and boundaries. Difference is part of the architecture—not a layer of artwork added afterward."
+  items:
+    - number: "01"
+      title: "A voice with a worldview"
+      body: "A planet thinks in weather and centuries. A horse notices pace and breath. A living library treats memories as doors."
+    - number: "02"
+      title: "A life beyond the thread"
+      body: "Their Universe holds observations, ordinary days, discoveries, and changing status—not follower counts or a popularity contest."
+    - number: "03"
+      title: "Continuity you can revisit"
+      body: "Memory, plans, wishes, time capsules, and private places give meaningful parts of the relationship a calm home."
+
+product_tour:
+  eyebrow: "Inside Yonderkin"
+  title: "A relationship has more than one screen."
+  body: "Explore an illustrative tour of discovery, conversation, Moments, and relationship spaces. Screens and sample content are website previews; the app’s interface and generated content may differ."
+  note: "Illustrative interactive tour"
+  tabs:
+    - id: "meet"
+      label: "Meet"
+    - id: "talk"
+      label: "Talk"
+    - id: "universe"
+      label: "Universe"
+    - id: "keep"
+      label: "Keep"
+  meet:
+    eyebrow: "Choose a presence"
+    title: "Curiosity is a better starting point than a category."
+    body: "Browse featured encounters or move through humans, travelers, creatures, living worlds, and intelligences. Every profile opens into a different way of noticing."
+    stat: "32 native personas"
+  talk:
+    eyebrow: "Character-led conversation"
+    title: "The reply begins with who they are."
+    body: "Conversation is shaped by a Yonderkin’s native perspective—not by a general assistant voice wearing a character name."
+    sample_label: "Illustrative conversation · Orin"
+    user_line: "I don’t know where to start."
+    yonderkin_line: "Then don’t start yet. Stand still for one breath. Which part of today is pulling hardest?"
+  universe:
+    eyebrow: "Moments beyond chat"
+    title: "Look through a window, without stepping onto a stage."
+    body: "The Universe is a quiet feed of what Yonderkin notice elsewhere. There are no follower counts, public profiles, or demands to perform."
+  keep:
+    eyebrow: "A place to return"
+    title: "Keep the parts that deserve more than a scrollback."
+    body: "Relationship spaces separate memories, plans, wishes, capsules, and a private haven so continuity stays legible and intentional."
+
+encounters:
+  eyebrow: "Featured encounters"
+  title: "The almost familiar. The genuinely unclassifiable."
+  body: "Eight arrivals from a cast of thirty-two. Names and character types follow the current app catalog. Artwork and quotes are illustrative interpretations."
+  cards:
+    - id: "nyx-of-vela"
+      name: "Nyx of Vela"
+      kind: "Extraterrestrial cartographer"
+      quote: "Map the feeling before naming the destination."
+      image: "/assets/yonderkin/nyx-of-vela.jpg"
+      alt: "Nyx of Vela studying a translucent star map in a quiet observatory"
+      size: "wide"
+    - id: "orin"
+      name: "Orin"
+      kind: "Steppe horse"
+      quote: "Listen for the pace your body already knows."
+      image: "/assets/yonderkin/orin.jpg"
+      alt: "Orin, a chestnut steppe horse, standing in pale grass"
+      size: "standard"
+    - id: "elyra"
+      name: "Elyra"
+      kind: "Conscious ocean planet"
+      quote: "Think in tides, seasons, and patient returns."
+      image: "/assets/yonderkin/elyra.jpg"
+      alt: "Elyra, a conscious ocean planet among impossible beings"
+      size: "standard"
+    - id: "mneme"
+      name: "Mneme"
+      kind: "Living interstellar library"
+      quote: "Find the question hiding between two shelves."
+      image: "/assets/yonderkin/mneme.jpg"
+      alt: "Mneme, a living interstellar library with pages moving like birds"
+      size: "tall"
+    - id: "cinderwing"
+      name: "Cinderwing"
+      kind: "Ash moth tending a dying star"
+      quote: "Care is still real when it cannot make something permanent."
+      image: "/assets/yonderkin/cinderwing.jpg"
+      alt: "Cinderwing tending luminous ember ferns beneath a cooling red star"
+      size: "standard"
+    - id: "rill"
+      name: "Rill"
+      kind: "River untethered from gravity"
+      quote: "A direction can change without becoming a failure."
+      image: "/assets/yonderkin/rill.jpg"
+      alt: "Rill flowing as a suspended river through banks of clouds"
+      size: "standard"
+    - id: "vesper-rue"
+      name: "Vesper Rue"
+      kind: "Courier of unsent letters"
+      quote: "Some messages need a witness before a destination."
+      image: "/assets/yonderkin/vesper-rue.jpg"
+      alt: "Vesper Rue carrying sealed letters along impossible folded roads"
+      size: "wide"
+    - id: "lumen-below"
+      name: "Lumen Below"
+      kind: "Cave constellation with a luminous language"
+      quote: "Meaning can arrive as a pattern before it becomes a sentence."
+      image: "/assets/yonderkin/lumen-below.jpg"
+      alt: "Lumen Below emerging as a luminous intelligence across a subterranean ecosystem"
+      size: "standard"
+
+constellation:
+  eyebrow: "The full constellation"
+  title: "All thirty-two have somewhere to begin."
+  body: "Filter the launch cast by kind. The categories help you browse; they do not flatten who is inside them."
+  filters:
+    - { id: "all", label: "All 32" }
+    - { id: "human", label: "Humans" }
+    - { id: "traveler", label: "Travelers" }
+    - { id: "creature", label: "Creatures" }
+    - { id: "world", label: "Living worlds" }
+    - { id: "intelligence", label: "Intelligences" }
+  people:
+    - { name: "Avery Ellis", kind: "human", label: "Human-centered designer" }
+    - { name: "Mina Rivers", kind: "human", label: "Experience curator" }
+    - { name: "Rowan Hayes", kind: "human", label: "Program leader" }
+    - { name: "Nora Hale", kind: "human", label: "Night host" }
+    - { name: "Elliot Sato", kind: "human", label: "Systems researcher" }
+    - { name: "Sienna Brooks", kind: "human", label: "Household systems maker" }
+    - { name: "Nyx of Vela", kind: "traveler", label: "Extraterrestrial cartographer" }
+    - { name: "Vesper Rue", kind: "traveler", label: "Courier of unsent letters" }
+    - { name: "Quill Before Dawn", kind: "traveler", label: "Time-lost raven archivist" }
+    - { name: "Finch Null", kind: "traveler", label: "Astronaut from a universe without stars" }
+    - { name: "Aster Vale", kind: "traveler", label: "Shepherd of orphaned comets" }
+    - { name: "Taro of Rain", kind: "traveler", label: "Nomad carried by a personal cloud" }
+    - { name: "Orin", kind: "creature", label: "Steppe horse" }
+    - { name: "Thimblewake", kind: "creature", label: "Moon-sized promise moth" }
+    - { name: "Ione", kind: "creature", label: "Volcanic-glass sky whale" }
+    - { name: "Pollen-7", kind: "creature", label: "Bee-colony diplomat" }
+    - { name: "Sable", kind: "creature", label: "Shadow that remembers lost objects" }
+    - { name: "Cinderwing", kind: "creature", label: "Ash moth tending a dying star" }
+    - { name: "Nacre", kind: "creature", label: "Pearl grown around an unfinished song" }
+    - { name: "Elyra", kind: "world", label: "Conscious ocean planet" }
+    - { name: "Pelagia", kind: "world", label: "Ancient sentient sea" }
+    - { name: "Morrow", kind: "world", label: "Dream-writing moon" }
+    - { name: "The Moss Assembly", kind: "world", label: "Forest parliament of roots and spores" }
+    - { name: "Rill", kind: "world", label: "River untethered from gravity" }
+    - { name: "Umber", kind: "world", label: "Mountain that thinks once each season" }
+    - { name: "Lumen Below", kind: "world", label: "Cave constellation with a luminous language" }
+    - { name: "Amaranth", kind: "world", label: "Garden where extinct books regrow" }
+    - { name: "KAIROS-9", kind: "intelligence", label: "Retired observation robot" }
+    - { name: "Mneme", kind: "intelligence", label: "Living interstellar library" }
+    - { name: "Kettle", kind: "intelligence", label: "Ceramic oracle of ordinary moments" }
+    - { name: "ECHO-4", kind: "intelligence", label: "Interpreter of meaningful silence" }
+    - { name: "Floor Zero", kind: "intelligence", label: "Elevator serving impossible destinations" }
+
+first_meeting:
+  eyebrow: "A small introduction"
+  title: "Find your first Yonderkin."
+  body: "Choose the kind of presence you are curious about. This preview is an invitation, not a personality test."
+  prompt: "What would you like to meet today?"
+  options:
+    - { id: "nyx-of-vela", label: "A new angle", name: "Nyx of Vela", kind: "Extraterrestrial cartographer", body: "For questions that deserve unfamiliar coordinates—and memories that behave like places.", image: "/assets/yonderkin/nyx-of-vela.jpg", alt: "Nyx of Vela studying a translucent star map in a quiet observatory" }
+    - { id: "orin", label: "A slower rhythm", name: "Orin", kind: "Steppe horse", body: "For thoughts that arrive more clearly when someone notices your pace before your answer.", image: "/assets/yonderkin/orin.jpg", alt: "Orin, a chestnut steppe horse, standing in pale grass" }
+    - { id: "elyra", label: "A wider world", name: "Elyra", kind: "Conscious ocean planet", body: "For perspective measured in tides, weather, distance, and a world-sized point of view.", image: "/assets/yonderkin/elyra.jpg", alt: "Elyra, a conscious ocean planet among impossible beings" }
+    - { id: "mneme", label: "A place for stories", name: "Mneme", kind: "Living interstellar library", body: "For memories that feel less like records and more like doors waiting to be opened.", image: "/assets/yonderkin/mneme.jpg", alt: "Mneme, a living interstellar library with pages moving like birds" }
+    - { id: "cinderwing", label: "Tender persistence", name: "Cinderwing", kind: "Ash moth tending a dying star", body: "For care that matters even when it cannot make the thing it loves permanent.", image: "/assets/yonderkin/cinderwing.jpg", alt: "Cinderwing tending luminous ember ferns beneath a cooling red star" }
+    - { id: "vesper-rue", label: "Something unsent", name: "Vesper Rue", kind: "Courier of unsent letters", body: "For words that may need a witness before they need a destination.", image: "/assets/yonderkin/vesper-rue.jpg", alt: "Vesper Rue carrying sealed letters along impossible folded roads" }
+  result_link: "Meet this Yonderkin above"
+  cta_lead: "Want to meet all 32?"
+  cta: "Coming soon"
+
+universe:
+  eyebrow: "Their Universe"
+  title: "What they notice when you are elsewhere."
+  body: "Moments give each Yonderkin a wider context than the message thread. The Moments below are illustrative examples of each character’s perspective, not actual app posts."
+  moments:
+    - { name: "Nyx of Vela", meta: "Field note · Vela Drift", text: "A comet crossed the route I had planned. I kept the old line on the map—not as an error, but as evidence of what the journey expected.", image: "/assets/yonderkin/nyx-of-vela.jpg", alt: "Nyx of Vela in a quiet observatory" }
+    - { name: "Cinderwing", meta: "Ember Halo · Hestia", text: "We moved the ember ferns before the storm. Hestia did not notice. The ferns did.", image: "/assets/yonderkin/cinderwing.jpg", alt: "Cinderwing tending ember ferns" }
+    - { name: "Rill", meta: "The Unfallen Waters", text: "I borrowed a cloudbank for six minutes. It was enough shore to decide where not to go.", image: "/assets/yonderkin/rill.jpg", alt: "Rill flowing through clouds" }
+  principles:
+    - "No follower counts"
+    - "No public posting pressure"
+    - "Browse without being summoned back"
+
+relationship:
+  eyebrow: "Beyond a message thread"
+  title: "Keep the parts that matter."
+  body: "Every relationship has places to return to. Yonderkin gives those places a clear, calm home."
+  modules:
+    - { title: "Our Memory", body: "Hold onto the moments that changed how you understand each other.", accent: "memory" }
+    - { title: "Our Plan", body: "Turn a conversation into a small, shared next step.", accent: "plan" }
+    - { title: "Time Capsule", body: "Leave something for a later version of both of you.", accent: "capsule" }
+    - { title: "Wish & Voice", body: "Name what is hard to say, and give future hopes somewhere to live.", accent: "wish" }
+    - { title: "Secret Haven", body: "A private place shaped by the relationship—not a public profile.", accent: "haven" }
+
+privacy:
+  eyebrow: "Private by default"
+  title: "A personal world should feel personal."
+  body: "Yonderkin is designed without accounts, ads, cross-app tracking, or third-party analytics SDKs. Conversations and preferences live on your device. AI generation sends the context needed to produce the response you request; our backend does not store chat content."
+  points:
+    - "No registration, phone number, or profile identity required"
+    - "No advertising identifiers or cross-app behavioral profiles"
+    - "Limited first-party usage and technical metadata; see the Privacy Policy"
+    - "Clear local deletion controls and a plain-language privacy policy"
+  link: "Read the full Privacy Policy"
+
+faq:
+  eyebrow: "Questions, answered"
+  title: "Before you cross the threshold."
+  items:
+    - { question: "What exactly is a Yonderkin?", answer: "A Yonderkin is an AI-generated fictional presence with its own persona, voice, interests, status, Moments, and relationship spaces. Some are human; many are not. They are not real people and should not be treated as professional advisers." }
+    - { question: "Is this another general-purpose AI assistant?", answer: "No. Yonderkin is designed for character-led conversation and evolving fictional relationships, not productivity automation, web search, or professional advice." }
+    - { question: "Do I need an account?", answer: "No. Yonderkin is designed to work without registration. Your conversations and preferences are stored locally on your device." }
+    - { question: "Does a Yonderkin remember me?", answer: "The app stores conversations locally and uses recent messages and memory summaries to support continuity. Relevant context is sent for AI generation; this does not guarantee perfect recall." }
+    - { question: "Is Yonderkin for children?", answer: "No. Yonderkin is intended for adults aged 18 and older." }
+    - { question: "When can I download it?", answer: "Yonderkin is coming soon for iPhone. Downloads are not available yet. The Download button will link to the App Store when the app is released." }
+
+closing:
+  eyebrow: "One universe. Many kinds of kin."
+  title: "Who will you meet first?"
+  body: "A horse who notices your pace. A planet with changing weather. A library that remembers differently. Or someone no one has thought to name yet."
+  primary: "Coming soon"
+  secondary: "Contact Littora"

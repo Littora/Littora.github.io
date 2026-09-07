@@ -102,6 +102,9 @@
   {% if page.app_home %}
     {% include seo/chatura-app-json-ld.html %}
   {% endif %}
+  {% if page.yonderkin_home %}
+    {% include seo/yonderkin-app-json-ld.html %}
+  {% endif %}
   {% if page.app_home or page.chatura_subpage %}
     {% assign chatura_og_locales = "en_US,fr_FR,de_DE,it_IT,nb_NO,ja_JP,ko_KR" | split: "," %}
     {% assign current_og_locale = page.lang | default: site.lang | replace: "-", "_" %}
@@ -141,11 +144,15 @@
     {% endif %}
     <meta name="twitter:image" content="{{ page_share_image | absolute_url }}">
   {% endif %}
-  {% if page.app_home %}
+  {% if page.app_home or page.chatura_subpage or page.yonderkin_page %}
     <link rel="preload" href="{{ "/assets/fonts/BricolageGrotesque-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="{{ "/assets/fonts/DMSans-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
   {% endif %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% if page.yonderkin_page %}
+    <link rel="stylesheet" href="{{ "/assets/yonderkin.css?v=20260824-1" | relative_url }}">
+    <script src="{{ '/assets/yonderkin-home.js?v=20260824-1' | relative_url }}" defer></script>
+  {% endif %}
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}

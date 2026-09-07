@@ -1,0 +1,6 @@
+{% assign app = site.data.yonderkin.app %}
+{% if app.availability == 'released' and app.app_store_url != '' %}
+  <a class="{{ include.class | default: 'button' }}" href="{{ app.app_store_url | escape }}" rel="external">Download on the App Store</a>
+{% else %}
+  <button type="button" class="{{ include.class | default: 'button' }}" data-coming-soon aria-label="Download Yonderkin — coming soon">Download</button>
+{% endif %}

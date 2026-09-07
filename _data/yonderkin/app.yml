@@ -1,0 +1,12 @@
+name: Yonderkin
+developer: Littora
+bundle_id: art.littora.yonderkin
+site_path: /apps/yonderkin/
+availability: prelaunch
+app_store_url: ""
+status_label: "Coming soon"
+download_note: "Coming soon on the App Store for iPhone."
+support_email: littoraart@gmail.com
+minimum_age: 18
+character_count: 32
+platform: iPhone
