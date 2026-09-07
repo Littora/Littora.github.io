@@ -6,8 +6,6 @@ permalink: /apps/yonderkin/privacy-policy/
 ---
 
 # Yonderkin Privacy Policy
-**Last updated: August 24, 2026**
-
 Yonderkin ("**Yonderkin**," "**we**," "**us**," or "**our**") is an iOS app that provides AI character chat for warm, supportive companionship. This Privacy Policy explains what information is stored on your device, what information may be transmitted to generate AI outputs, and what limited usage and technical metadata our servers may record for analytics, reliability, and diagnostics.
 
 ---

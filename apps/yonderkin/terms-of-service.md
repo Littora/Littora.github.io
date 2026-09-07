@@ -6,8 +6,6 @@ permalink: /apps/yonderkin/terms-of-service/
 ---
 
 # Yonderkin Terms of Service
-**Last updated: August 24, 2026**
-
 These Terms of Service ("**Terms**") govern your use of the Yonderkin iOS application and related services (collectively, the "**Service**"). If you do not agree to these Terms, do not use the Service.
 
 "Yonderkin," "we," "us," or "our" refers to the operator of the Service.
