@@ -115,8 +115,9 @@
           <div class="app-preview app-preview--chat" aria-label="Illustrative character conversation with Orin">
             <div class="chat-preview__person"><img src="{{ '/assets/yonderkin/orin.jpg' | relative_url }}" alt="" width="160" height="200"><div><strong>Orin</strong><span>The Long Steppe</span></div></div>
             <p class="chat-preview__label">{{ copy.product_tour.talk.sample_label }}</p>
-            <div class="chat-bubble chat-bubble--user">{{ copy.product_tour.talk.user_line }}</div>
-            <div class="chat-bubble chat-bubble--kin">{{ copy.product_tour.talk.yonderkin_line }}</div>
+            {% for message in copy.product_tour.talk.messages %}
+              <div class="chat-bubble chat-bubble--{{ message.role }}">{{ message.text | escape }}</div>
+            {% endfor %}
             <div class="chat-preview__composer" aria-hidden="true"><span>Message Orin…</span><b>↑</b></div>
           </div>
         </section>
@@ -146,7 +147,7 @@
           <div class="app-preview app-preview--keep" aria-label="Relationship spaces preview">
             <div class="keep-preview__header"><img src="{{ '/assets/yonderkin/nyx-of-vela.jpg' | relative_url }}" alt="" width="120" height="120"><div><strong>You + Nyx</strong><span>Places to return to</span></div></div>
             {% for module in copy.relationship.modules limit: 4 %}
-              <article><span>0{{ forloop.index }}</span><div><strong>{{ module.title }}</strong><small>{{ module.body }}</small></div><b aria-hidden="true">›</b></article>
+              <article><span>0{{ forloop.index }}</span><div><strong>{{ module.title }}</strong><small>{{ module.hook }}</small></div><b aria-hidden="true">›</b></article>
             {% endfor %}
           </div>
         </section>
@@ -236,9 +237,18 @@
       </div>
       <div class="module-grid">
         {% for module in copy.relationship.modules %}
-          <article class="module-card module-card--{{ module.accent }} reveal"><span>0{{ forloop.index }}</span><h3>{{ module.title }}</h3><p>{{ module.body }}</p></article>
+          <article class="module-card reveal">
+            <img class="module-card__art" src="{{ module.image | relative_url }}" alt="{{ module.alt }}" width="1536" height="1024" loading="lazy" decoding="async">
+            <div class="module-card__copy">
+              <span class="module-card__number">0{{ forloop.index }}</span>
+              <h3>{{ module.title }}</h3>
+              <p class="module-card__hook">{{ module.hook }}</p>
+              <p>{{ module.body }}</p>
+            </div>
+          </article>
         {% endfor %}
       </div>
+      <p class="relationship__artwork-note">{{ copy.relationship.artwork_note }}</p>
     </div>
   </section>
 

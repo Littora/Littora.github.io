@@ -444,8 +444,11 @@ a.brand-app-card:focus-visible {
 }
 
 .brand-app-card__icon--yonderkin {
-  background-color: #191a33;
+  border: 0;
+  background-color: #c7daf6;
   background-image: url("/assets/yonderkin/yonderkin-icon-current.png");
+  background-origin: border-box;
+  background-clip: border-box;
   background-size: cover;
 }
 
@@ -7476,24 +7479,88 @@ body:has(.product-footer) .post-content {
   object-position: 50% 42%;
 }
 
+.relationship-timeline__step--opening .relationship-timeline__visual img {
+  object-position: 50% 46%;
+}
+
 .relationship-timeline__visual--moment img {
-  object-position: 50% 54%;
+  object-position: 50% 60%;
 }
 
-.relationship-timeline__step:nth-child(2) .relationship-timeline__visual img {
-  object-position: 50% 55%;
+.relationship-timeline__step--keepsake .relationship-timeline__visual img {
+  object-position: 50% 58%;
 }
 
-.relationship-timeline__step:nth-child(3) .relationship-timeline__visual img {
-  object-position: 50% 37%;
+.relationship-timeline__step--return .relationship-timeline__visual img {
+  height: auto;
+  object-fit: contain;
 }
 
-.relationship-timeline__step:nth-child(4) .relationship-timeline__visual img {
-  object-position: 50% 43%;
+.relationship-timeline__conversation-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.3rem 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(73, 64, 103, 0.12);
 }
 
-.relationship-timeline__step:nth-child(5) .relationship-timeline__visual img {
-  object-position: 50% 23%;
+.relationship-timeline__conversation-header strong {
+  color: #31334b;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.relationship-timeline__conversation-header > span {
+  color: #686477;
+  font-size: 0.75rem;
+}
+
+.relationship-timeline__conversation-context {
+  margin: 1.25rem 0 1.5rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid #b4a3db;
+}
+
+.relationship-timeline__conversation-context > span {
+  color: #73618e;
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.relationship-timeline__conversation-context > p {
+  margin: 0.4rem 0 0;
+  color: #635e73;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.relationship-timeline__message {
+  max-width: 94%;
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+  border-radius: 21px 21px 21px 5px;
+  color: #343047;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(63, 51, 93, 0.05);
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.relationship-timeline__message > span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #655875;
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.relationship-timeline__message--you {
+  margin-left: auto;
+  border-radius: 21px 21px 5px;
+  background: #dfd7fa;
 }
 
 .relationship-timeline__closing {
@@ -8181,6 +8248,26 @@ body:has(.product-footer) .post-content {
   }
 }
 
+// Content-led frames preserve complete artwork and allow translated dialogue to grow.
+.relationship-timeline .relationship-timeline__step--opening .relationship-timeline__visual {
+  height: auto;
+  aspect-ratio: 1206 / 1420;
+}
+
+.relationship-timeline .relationship-timeline__step .relationship-timeline__visual--conversation {
+  height: auto;
+  min-height: clamp(28rem, 40vw, 33rem);
+  padding: clamp(1.1rem, 2.2vw, 1.75rem);
+  box-sizing: border-box;
+  background: linear-gradient(155deg, #fffaf6, #f0edf8);
+}
+
+.relationship-timeline .relationship-timeline__step--return .relationship-timeline__visual {
+  width: min(100%, 20rem);
+  height: auto;
+  aspect-ratio: 1320 / 2868;
+}
+
 /* What’s New — release-led information architecture. */
 body:has(.release-page) {
   background:
@@ -8791,15 +8878,15 @@ body:has(.support-page) .site-header.site-header--product::after {
   position: relative;
   isolation: isolate;
   grid-template-columns: 3.5rem minmax(0, 1fr) auto;
-  gap: 1.05rem;
+  gap: clamp(1.25rem, 2.4vw, 2rem);
   width: 100%;
-  min-height: 5.25rem;
+  min-height: 8rem;
   box-sizing: border-box;
   margin-top: clamp(1.5rem, 3vw, 2.1rem);
-  padding: 0.72rem 0.78rem 0.72rem 1rem;
+  padding: clamp(1.4rem, 2.6vw, 2rem);
   overflow: hidden;
   border: 1px solid rgba(151, 146, 158, 0.16);
-  border-radius: 22px;
+  border-radius: 28px;
   background:
     radial-gradient(circle at 6% 0%, rgba(242, 180, 154, 0.17), transparent 31%),
     radial-gradient(circle at 87% 0%, rgba(184, 197, 236, 0.25), transparent 38%),
@@ -8866,8 +8953,8 @@ body:has(.support-page) .site-header.site-header--product::after {
 
 .quick-start__action a {
   min-width: 0;
-  min-height: 3rem;
-  padding: 0.76rem 1.15rem;
+  min-height: 3.25rem;
+  padding: 0.9rem 1.4rem;
   border: 0;
   border-radius: 14px;
   background: linear-gradient(135deg, #dc7579 0%, #cb667f 100%);
@@ -9308,11 +9395,11 @@ body:has(.support-page) .post-content {
 @media (max-width: 720px) {
   .quick-start,
   .quick-start:nth-child(n) {
-    grid-template-columns: 3.15rem minmax(0, 1fr) auto;
-    gap: 0.72rem;
+    grid-template-columns: 3.15rem minmax(0, 1fr);
+    gap: 1.25rem 1rem;
     width: 100%;
-    min-height: 5.2rem;
-    padding: 0.62rem 0.58rem 0.62rem 0.78rem;
+    min-height: 0;
+    padding: 1.5rem;
   }
 
   .quick-start__mark,
@@ -9324,20 +9411,24 @@ body:has(.support-page) .post-content {
   }
 
   .quick-start__action {
-    grid-column: auto;
+    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .quick-start__action-full {
-    display: none;
-  }
-
-  .quick-start__action-short {
     display: inline;
   }
 
+  .quick-start__action-short {
+    display: none;
+  }
+
   .quick-start__action a {
-    min-height: 2.7rem;
-    padding-inline: 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 3.25rem;
+    padding-inline: 1rem;
+    white-space: normal;
   }
 
   .release-hero h1 {

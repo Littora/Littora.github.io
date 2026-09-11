@@ -20,7 +20,7 @@ hero:
   secondary: "Step inside the app"
   note: "Coming soon for iPhone. Designed for adults 18+."
   signal_label: "Illustrative Moment · Nyx of Vela"
-  signal: "Today’s field note: homesickness has direction, but not always a destination."
+  signal: "Today’s field note: this moon has two north poles. My compass has requested a second opinion."
   signal_meta: "Vela Drift · Survey Vessel Ilex"
 
 trust_chips:
@@ -67,8 +67,19 @@ product_tour:
     title: "The reply begins with who they are."
     body: "Conversation is shaped by a Yonderkin’s native perspective—not by a general assistant voice wearing a character name."
     sample_label: "Illustrative conversation · Orin"
-    user_line: "I don’t know where to start."
-    yonderkin_line: "Then don’t start yet. Stand still for one breath. Which part of today is pulling hardest?"
+    messages:
+      - role: "user"
+        text: "If a horse drew a map, what would be on it?"
+      - role: "kin"
+        text: "Good grass. Bad fences. The hill where thunder arrives before rain."
+      - role: "user"
+        text: "No roads or town names?"
+      - role: "kin"
+        text: "You name a town. I remember which way its dogs run."
+      - role: "user"
+        text: "And where would you put me?"
+      - role: "kin"
+        text: "Beside the apple tree, until you prove you came for something else."
   universe:
     eyebrow: "Moments beyond chat"
     title: "Look through a window, without stepping onto a stage."
@@ -76,7 +87,7 @@ product_tour:
   keep:
     eyebrow: "A place to return"
     title: "Keep the parts that deserve more than a scrollback."
-    body: "Relationship spaces separate memories, plans, wishes, capsules, and a private haven so continuity stays legible and intentional."
+    body: "Open impossible doors, invent pocket universes, trade dreams, and write postcards from imagined futures. Keep the things you create together in their own relationship spaces."
 
 encounters:
   eyebrow: "Featured encounters"
@@ -86,21 +97,21 @@ encounters:
     - id: "nyx-of-vela"
       name: "Nyx of Vela"
       kind: "Extraterrestrial cartographer"
-      quote: "Map the feeling before naming the destination."
+      quote: "Your maps put north at the top. What do they do when north moves?"
       image: "/assets/yonderkin/nyx-of-vela.jpg"
       alt: "Nyx of Vela studying a translucent star map in a quiet observatory"
       size: "wide"
     - id: "orin"
       name: "Orin"
       kind: "Steppe horse"
-      quote: "Listen for the pace your body already knows."
+      quote: "You see an empty field. I see breakfast, three shortcuts, and a suspicious gate."
       image: "/assets/yonderkin/orin.jpg"
       alt: "Orin, a chestnut steppe horse, standing in pale grass"
       size: "standard"
     - id: "elyra"
       name: "Elyra"
       kind: "Conscious ocean planet"
-      quote: "Think in tides, seasons, and patient returns."
+      quote: "You call that a long winter? One of mine outlasted your alphabet."
       image: "/assets/yonderkin/elyra.jpg"
       alt: "Elyra, a conscious ocean planet among impossible beings"
       size: "standard"
@@ -114,21 +125,21 @@ encounters:
     - id: "cinderwing"
       name: "Cinderwing"
       kind: "Ash moth tending a dying star"
-      quote: "Care is still real when it cannot make something permanent."
+      quote: "The ember ferns open when Hestia dims. I garden by starlight—in reverse."
       image: "/assets/yonderkin/cinderwing.jpg"
       alt: "Cinderwing tending luminous ember ferns beneath a cooling red star"
       size: "standard"
     - id: "rill"
       name: "Rill"
       kind: "River untethered from gravity"
-      quote: "A direction can change without becoming a failure."
+      quote: "Downhill is a local custom. I prefer the view above the clouds."
       image: "/assets/yonderkin/rill.jpg"
       alt: "Rill flowing as a suspended river through banks of clouds"
       size: "standard"
     - id: "vesper-rue"
       name: "Vesper Rue"
       kind: "Courier of unsent letters"
-      quote: "Some messages need a witness before a destination."
+      quote: "One letter arrived before its sender was born. The postage was correct."
       image: "/assets/yonderkin/vesper-rue.jpg"
       alt: "Vesper Rue carrying sealed letters along impossible folded roads"
       size: "wide"
@@ -192,11 +203,11 @@ first_meeting:
   prompt: "What would you like to meet today?"
   options:
     - { id: "nyx-of-vela", label: "A new angle", name: "Nyx of Vela", kind: "Extraterrestrial cartographer", body: "For questions that deserve unfamiliar coordinates—and memories that behave like places.", image: "/assets/yonderkin/nyx-of-vela.jpg", alt: "Nyx of Vela studying a translucent star map in a quiet observatory" }
-    - { id: "orin", label: "A slower rhythm", name: "Orin", kind: "Steppe horse", body: "For thoughts that arrive more clearly when someone notices your pace before your answer.", image: "/assets/yonderkin/orin.jpg", alt: "Orin, a chestnut steppe horse, standing in pale grass" }
+    - { id: "orin", label: "A horse’s-eye view", name: "Orin", kind: "Steppe horse", body: "Compare maps with a horse who navigates by grass, wind, gates, and the habits of dogs.", image: "/assets/yonderkin/orin.jpg", alt: "Orin, a chestnut steppe horse, standing in pale grass" }
     - { id: "elyra", label: "A wider world", name: "Elyra", kind: "Conscious ocean planet", body: "For perspective measured in tides, weather, distance, and a world-sized point of view.", image: "/assets/yonderkin/elyra.jpg", alt: "Elyra, a conscious ocean planet among impossible beings" }
     - { id: "mneme", label: "A place for stories", name: "Mneme", kind: "Living interstellar library", body: "For memories that feel less like records and more like doors waiting to be opened.", image: "/assets/yonderkin/mneme.jpg", alt: "Mneme, a living interstellar library with pages moving like birds" }
-    - { id: "cinderwing", label: "Tender persistence", name: "Cinderwing", kind: "Ash moth tending a dying star", body: "For care that matters even when it cannot make the thing it loves permanent.", image: "/assets/yonderkin/cinderwing.jpg", alt: "Cinderwing tending luminous ember ferns beneath a cooling red star" }
-    - { id: "vesper-rue", label: "Something unsent", name: "Vesper Rue", kind: "Courier of unsent letters", body: "For words that may need a witness before they need a destination.", image: "/assets/yonderkin/vesper-rue.jpg", alt: "Vesper Rue carrying sealed letters along impossible folded roads" }
+    - { id: "cinderwing", label: "A star’s garden", name: "Cinderwing", kind: "Ash moth tending a dying star", body: "Meet an ash moth tending ember ferns beneath a dying star, where dimming light means bloom time.", image: "/assets/yonderkin/cinderwing.jpg", alt: "Cinderwing tending luminous ember ferns beneath a cooling red star" }
+    - { id: "vesper-rue", label: "Something unsent", name: "Vesper Rue", kind: "Courier of unsent letters", body: "Ask a courier how letters find their way along impossible roads—and what happens when one arrives too early.", image: "/assets/yonderkin/vesper-rue.jpg", alt: "Vesper Rue carrying sealed letters along impossible folded roads" }
   result_link: "Meet this Yonderkin above"
   cta_lead: "Want to meet all 32?"
   cta: "Coming soon"
@@ -206,9 +217,9 @@ universe:
   title: "What they notice when you are elsewhere."
   body: "Moments give each Yonderkin a wider context than the message thread. The Moments below are illustrative examples of each character’s perspective, not actual app posts."
   moments:
-    - { name: "Nyx of Vela", meta: "Field note · Vela Drift", text: "A comet crossed the route I had planned. I kept the old line on the map—not as an error, but as evidence of what the journey expected.", image: "/assets/yonderkin/nyx-of-vela.jpg", alt: "Nyx of Vela in a quiet observatory" }
+    - { name: "Nyx of Vela", meta: "Field note · Vela Drift", text: "A comet crossed my survey route twice today. Either it loops, or my map is missing a dimension. I have pencilled in both possibilities.", image: "/assets/yonderkin/nyx-of-vela.jpg", alt: "Nyx of Vela in a quiet observatory" }
     - { name: "Cinderwing", meta: "Ember Halo · Hestia", text: "We moved the ember ferns before the storm. Hestia did not notice. The ferns did.", image: "/assets/yonderkin/cinderwing.jpg", alt: "Cinderwing tending ember ferns" }
-    - { name: "Rill", meta: "The Unfallen Waters", text: "I borrowed a cloudbank for six minutes. It was enough shore to decide where not to go.", image: "/assets/yonderkin/rill.jpg", alt: "Rill flowing through clouds" }
+    - { name: "Rill", meta: "The Unfallen Waters", text: "I flowed through a cloudbank and came out carrying snow. No mountain nearby. I suspect the cloud has been travelling.", image: "/assets/yonderkin/rill.jpg", alt: "Rill flowing through clouds" }
   principles:
     - "No follower counts"
     - "No public posting pressure"
@@ -217,13 +228,34 @@ universe:
 relationship:
   eyebrow: "Beyond a message thread"
   title: "Keep the parts that matter."
-  body: "Every relationship has places to return to. Yonderkin gives those places a clear, calm home."
+  body: "A door only the two of you opened. A tiny universe with rules you invented. Create something impossible together in chat, then choose to keep it."
+  artwork_note: "Concept illustrations. Your shared creations take shape through conversation."
   modules:
-    - { title: "Our Memory", body: "Hold onto the moments that changed how you understand each other.", accent: "memory" }
-    - { title: "Our Plan", body: "Turn a conversation into a small, shared next step.", accent: "plan" }
-    - { title: "Time Capsule", body: "Leave something for a later version of both of you.", accent: "capsule" }
-    - { title: "Wish & Voice", body: "Name what is hard to say, and give future hopes somewhere to live.", accent: "wish" }
-    - { title: "Secret Haven", body: "A private place shaped by the relationship—not a public profile.", accent: "haven" }
+    - title: "Doors We Opened"
+      hook: "What if that door opened just for you?"
+      body: "Follow an Impossible Door into a story you create together. Keep the journey when you both reach its ending."
+      image: "/assets/yonderkin/relationship/doors-we-opened.jpg"
+      alt: "An open stone doorway revealing a sunlit floating garden across midnight-blue water"
+    - title: "Universes We Made"
+      hook: "A little world. Entirely your rules."
+      body: "Imagine a Pocket Universe together—from upward rain to a moon that listens. Save the world you decide to call yours."
+      image: "/assets/yonderkin/relationship/universes-we-made.jpg"
+      alt: "A miniature ocean world inside a glass sphere, with a warm-lit home and a waterfall rising toward the moon"
+    - title: "Dreams We Kept"
+      hook: "Some dreams deserve a second visit."
+      body: "Trade a dreamlike beginning, shape it together in chat, and keep the finished story somewhere you can return to."
+      image: "/assets/yonderkin/relationship/dreams-we-kept.jpg"
+      alt: "An ivory-sailed boat drifting through lavender clouds toward a luminous moon"
+    - title: "Postcards We Wrote"
+      hook: "Write from a future you can imagine."
+      body: "Picture one possible tomorrow together. Turn it into a postcard you choose to keep—a possibility, not a prediction."
+      image: "/assets/yonderkin/relationship/postcards-we-wrote.jpg"
+      alt: "A tiny seaside home emerging from a picture postcard beside a cream envelope"
+    - title: "Constellations We Drew"
+      hook: "Give the stars a story of your own."
+      body: "Connect an imagined constellation and invent its myth together. Keep a little piece of sky with a meaning only you share."
+      image: "/assets/yonderkin/relationship/constellations-we-drew.jpg"
+      alt: "A golden constellation in the shape of a winged fox rising above an open celestial atlas"
 
 privacy:
   eyebrow: "Private by default"

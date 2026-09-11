@@ -1,0 +1,16 @@
+opening:
+  src: "/assets/chatura-timeline/avery-conversation-reclaimed-night.png"
+  width: 1206
+  height: 2622
+moment:
+  src: "/assets/chatura-timeline/avery-moment-reclaimed-night.jpg"
+  width: 1122
+  height: 1402
+keepsake:
+  src: "/assets/AppStoreScreenshot/Screenshot2.png"
+  width: 1320
+  height: 2868
+return:
+  src: "/assets/AppStoreScreenshot/Screenshot3.png"
+  width: 1320
+  height: 2868
