@@ -444,8 +444,11 @@ a.brand-app-card:focus-visible {
 }
 
 .brand-app-card__icon--yonderkin {
-  background-color: #191a33;
+  border: 0;
+  background-color: #c7daf6;
   background-image: url("/assets/yonderkin/yonderkin-icon-current.png");
+  background-origin: border-box;
+  background-clip: border-box;
   background-size: cover;
 }
 
@@ -8875,15 +8878,15 @@ body:has(.support-page) .site-header.site-header--product::after {
   position: relative;
   isolation: isolate;
   grid-template-columns: 3.5rem minmax(0, 1fr) auto;
-  gap: 1.05rem;
+  gap: clamp(1.25rem, 2.4vw, 2rem);
   width: 100%;
-  min-height: 5.25rem;
+  min-height: 8rem;
   box-sizing: border-box;
   margin-top: clamp(1.5rem, 3vw, 2.1rem);
-  padding: 0.72rem 0.78rem 0.72rem 1rem;
+  padding: clamp(1.4rem, 2.6vw, 2rem);
   overflow: hidden;
   border: 1px solid rgba(151, 146, 158, 0.16);
-  border-radius: 22px;
+  border-radius: 28px;
   background:
     radial-gradient(circle at 6% 0%, rgba(242, 180, 154, 0.17), transparent 31%),
     radial-gradient(circle at 87% 0%, rgba(184, 197, 236, 0.25), transparent 38%),
@@ -8950,8 +8953,8 @@ body:has(.support-page) .site-header.site-header--product::after {
 
 .quick-start__action a {
   min-width: 0;
-  min-height: 3rem;
-  padding: 0.76rem 1.15rem;
+  min-height: 3.25rem;
+  padding: 0.9rem 1.4rem;
   border: 0;
   border-radius: 14px;
   background: linear-gradient(135deg, #dc7579 0%, #cb667f 100%);
@@ -9392,11 +9395,11 @@ body:has(.support-page) .post-content {
 @media (max-width: 720px) {
   .quick-start,
   .quick-start:nth-child(n) {
-    grid-template-columns: 3.15rem minmax(0, 1fr) auto;
-    gap: 0.72rem;
+    grid-template-columns: 3.15rem minmax(0, 1fr);
+    gap: 1.25rem 1rem;
     width: 100%;
-    min-height: 5.2rem;
-    padding: 0.62rem 0.58rem 0.62rem 0.78rem;
+    min-height: 0;
+    padding: 1.5rem;
   }
 
   .quick-start__mark,
@@ -9408,20 +9411,24 @@ body:has(.support-page) .post-content {
   }
 
   .quick-start__action {
-    grid-column: auto;
+    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .quick-start__action-full {
-    display: none;
-  }
-
-  .quick-start__action-short {
     display: inline;
   }
 
+  .quick-start__action-short {
+    display: none;
+  }
+
   .quick-start__action a {
-    min-height: 2.7rem;
-    padding-inline: 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 3.25rem;
+    padding-inline: 1rem;
+    white-space: normal;
   }
 
   .release-hero h1 {
