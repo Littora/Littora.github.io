@@ -144,7 +144,6 @@
       </nav>
 
       <div class="relationship-timeline__story">
-        {% assign timeline_images = "/assets/AppStoreScreenshot/Screenshot1.png,/assets/chatura-timeline/avery-moment-day-3.jpg,/assets/AppStoreScreenshot/Screenshot7.png,/assets/AppStoreScreenshot/Screenshot2.png,/assets/AppStoreScreenshot/Screenshot3.png" | split: "," %}
         {% for step in timeline_copy.steps %}
           <article id="relationship-step-{{ forloop.index }}" class="relationship-timeline__step relationship-timeline__step--{{ step.kind }}{% if forloop.first %} is-current{% endif %}" data-timeline-step="{{ forloop.index0 }}">
             <div class="relationship-timeline__copy">
@@ -155,13 +154,23 @@
 
             <div class="relationship-timeline__media">
               {% assign timeline_image_alt = step.image_alt | default: step.media_caption %}
-              {% if forloop.index == 2 %}
-                <figure class="relationship-timeline__visual relationship-timeline__visual--moment">
-                  <img src="{{ timeline_images[forloop.index0] | relative_url }}" alt="{{ timeline_image_alt }}" width="1200" height="1499" loading="lazy">
+              {% if step.kind == "continuation" %}
+                <figure class="relationship-timeline__visual relationship-timeline__visual--conversation">
+                  <figcaption class="relationship-timeline__conversation-header">
+                    <strong>{{ step.dialogue_name }}</strong>
+                    <span>{{ step.dialogue_status }}</span>
+                  </figcaption>
+                  <div class="relationship-timeline__conversation-context">
+                    <span>{{ step.context_label }}</span>
+                    <p>{{ step.context_text }}</p>
+                  </div>
+                  <p class="relationship-timeline__message relationship-timeline__message--you"><span>{{ step.you }}</span>{{ step.user_message }}</p>
+                  <p class="relationship-timeline__message"><span>{{ step.dialogue_name }}</span>{{ step.reply }}</p>
                 </figure>
               {% else %}
-                <figure class="relationship-timeline__visual">
-                  <img src="{{ timeline_images[forloop.index0] | relative_url }}" alt="{{ timeline_image_alt }}" width="1320" height="2868" loading="lazy">
+                {% assign timeline_image = site.data.chatura.timeline_media[step.kind] %}
+                <figure class="relationship-timeline__visual{% if step.kind == 'moment' %} relationship-timeline__visual--moment{% endif %}">
+                  <img src="{{ timeline_image.src | relative_url }}" alt="{{ timeline_image_alt }}" width="{{ timeline_image.width }}" height="{{ timeline_image.height }}" loading="lazy">
                 </figure>
               {% endif %}
             </div>

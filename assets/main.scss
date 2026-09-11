@@ -7476,24 +7476,88 @@ body:has(.product-footer) .post-content {
   object-position: 50% 42%;
 }
 
+.relationship-timeline__step--opening .relationship-timeline__visual img {
+  object-position: 50% 46%;
+}
+
 .relationship-timeline__visual--moment img {
-  object-position: 50% 54%;
+  object-position: 50% 60%;
 }
 
-.relationship-timeline__step:nth-child(2) .relationship-timeline__visual img {
-  object-position: 50% 55%;
+.relationship-timeline__step--keepsake .relationship-timeline__visual img {
+  object-position: 50% 58%;
 }
 
-.relationship-timeline__step:nth-child(3) .relationship-timeline__visual img {
-  object-position: 50% 37%;
+.relationship-timeline__step--return .relationship-timeline__visual img {
+  height: auto;
+  object-fit: contain;
 }
 
-.relationship-timeline__step:nth-child(4) .relationship-timeline__visual img {
-  object-position: 50% 43%;
+.relationship-timeline__conversation-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.3rem 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(73, 64, 103, 0.12);
 }
 
-.relationship-timeline__step:nth-child(5) .relationship-timeline__visual img {
-  object-position: 50% 23%;
+.relationship-timeline__conversation-header strong {
+  color: #31334b;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.relationship-timeline__conversation-header > span {
+  color: #686477;
+  font-size: 0.75rem;
+}
+
+.relationship-timeline__conversation-context {
+  margin: 1.25rem 0 1.5rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid #b4a3db;
+}
+
+.relationship-timeline__conversation-context > span {
+  color: #73618e;
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.relationship-timeline__conversation-context > p {
+  margin: 0.4rem 0 0;
+  color: #635e73;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.relationship-timeline__message {
+  max-width: 94%;
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+  border-radius: 21px 21px 21px 5px;
+  color: #343047;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(63, 51, 93, 0.05);
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.relationship-timeline__message > span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #655875;
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.relationship-timeline__message--you {
+  margin-left: auto;
+  border-radius: 21px 21px 5px;
+  background: #dfd7fa;
 }
 
 .relationship-timeline__closing {
@@ -8179,6 +8243,26 @@ body:has(.product-footer) .post-content {
   .relationship-timeline__step::before {
     transition: none;
   }
+}
+
+// Content-led frames preserve complete artwork and allow translated dialogue to grow.
+.relationship-timeline .relationship-timeline__step--opening .relationship-timeline__visual {
+  height: auto;
+  aspect-ratio: 1206 / 1420;
+}
+
+.relationship-timeline .relationship-timeline__step .relationship-timeline__visual--conversation {
+  height: auto;
+  min-height: clamp(28rem, 40vw, 33rem);
+  padding: clamp(1.1rem, 2.2vw, 1.75rem);
+  box-sizing: border-box;
+  background: linear-gradient(155deg, #fffaf6, #f0edf8);
+}
+
+.relationship-timeline .relationship-timeline__step--return .relationship-timeline__visual {
+  width: min(100%, 20rem);
+  height: auto;
+  aspect-ratio: 1320 / 2868;
 }
 
 /* What’s New — release-led information architecture. */
