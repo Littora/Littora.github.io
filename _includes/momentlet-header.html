@@ -1,0 +1,32 @@
+{% assign copy = site.data.momentlet.en %}
+{% assign app = site.data.momentlet.app %}
+<header class="momentlet-header" data-momentlet-header>
+  <div class="momentlet-shell momentlet-header__inner">
+    <a class="momentlet-brand" href="{{ app.site_path | relative_url }}" aria-label="Momentlet home">
+      <img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="42" height="42" alt="">
+      <span class="momentlet-brand__lockup">
+        <span class="momentlet-brand__maker">Littora</span>
+        <span class="momentlet-brand__name">Momentlet</span>
+      </span>
+    </a>
+
+    <button class="momentlet-menu" type="button" aria-expanded="false" aria-controls="momentlet-navigation" data-momentlet-menu>
+      <span>Menu</span>
+    </button>
+
+    <nav class="momentlet-nav" id="momentlet-navigation" aria-label="Primary navigation" data-momentlet-nav>
+      {% if page.momentlet_home %}
+        <a href="{{ app.site_path }}#how-it-works">{{ copy.nav.how }}</a>
+        <a href="{{ app.site_path }}#styles">{{ copy.nav.styles }}</a>
+        <a href="{{ app.site_path }}#library">{{ copy.nav.library }}</a>
+        <a href="{{ app.site_path }}#premium">{{ copy.nav.premium }}</a>
+        <a href="{{ app.site_path }}#faq">{{ copy.nav.faq }}</a>
+      {% else %}
+        <a href="{{ app.site_path | relative_url }}">Momentlet home</a>
+        <a href="{{ '/apps/momentlet/support/' | relative_url }}">Support</a>
+      {% endif %}
+      {% include momentlet-download-button.html class="momentlet-button momentlet-button--small" label=copy.nav.download %}
+    </nav>
+  </div>
+</header>
+

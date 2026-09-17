@@ -1,0 +1,194 @@
+{% assign copy = site.data.momentlet.en %}
+{% assign app = site.data.momentlet.app %}
+<main id="main-content" class="momentlet-main">
+  <section class="momentlet-hero" aria-labelledby="momentlet-hero-title">
+    <div class="momentlet-shell momentlet-hero__grid">
+      <div class="momentlet-hero__copy reveal">
+        <p class="momentlet-eyebrow">{{ copy.hero.eyebrow }}</p>
+        <h1 id="momentlet-hero-title">{{ copy.hero.title }}</h1>
+        <p class="momentlet-hero__body">{{ copy.hero.body }}</p>
+        <div class="momentlet-actions">
+          {% include momentlet-download-button.html label=copy.hero.primary %}
+          <a class="momentlet-button momentlet-button--quiet" href="#how-it-works">{{ copy.hero.secondary }}</a>
+        </div>
+        <p class="momentlet-hero__note">{{ copy.hero.note }}</p>
+      </div>
+
+      <div class="momentlet-hero__visual reveal" aria-label="Illustrative Momentlet creation preview">
+        <div class="momentlet-composer">
+          <div class="momentlet-composer__topline">
+            <span class="momentlet-composer__brand"><img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="30" height="30" alt="">Momentlet</span>
+            <span>1 of 3</span>
+          </div>
+          <p class="momentlet-composer__question">What would you like to keep?</p>
+          <p class="momentlet-composer__answer">{{ copy.hero.preview_description }}</p>
+          <div class="momentlet-composer__styles" aria-label="Selected visual feeling">
+            <span data-active>Natural</span><span>Cinematic</span><span>Editorial</span>
+          </div>
+          <figure class="momentlet-composer__result">
+            <img src="{{ '/assets/momentlet/moment-natural.jpg' | relative_url }}" alt="A quiet coastal table with two cups after rain at sunset" width="1200" height="900">
+            <figcaption><span>{{ copy.hero.preview_label }}</span><span>Today</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-opening" aria-labelledby="momentlet-opening-title">
+    <div class="momentlet-shell momentlet-opening__grid">
+      <div class="momentlet-section-heading reveal">
+        <p class="momentlet-eyebrow">{{ copy.opening.eyebrow }}</p>
+        <h2 id="momentlet-opening-title">{{ copy.opening.title }}</h2>
+        <p>{{ copy.opening.body }}</p>
+      </div>
+      <div class="momentlet-transformation reveal">
+        <figure>
+          <img src="{{ '/assets/momentlet/moment-natural.jpg' | relative_url }}" alt="Natural interpretation of a quiet coastal morning" loading="lazy" width="1200" height="900">
+          <figcaption><strong>Natural</strong><span>True to life</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ '/assets/momentlet/moment-watercolor.jpg' | relative_url }}" alt="Watercolor interpretation of the same quiet coastal morning" loading="lazy" width="1448" height="1086">
+          <figcaption><strong>Watercolor</strong><span>Soft and painted</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-how" id="how-it-works" aria-labelledby="momentlet-how-title">
+    <div class="momentlet-shell">
+      <div class="momentlet-section-heading momentlet-section-heading--center reveal">
+        <p class="momentlet-eyebrow">{{ copy.how.eyebrow }}</p>
+        <h2 id="momentlet-how-title">{{ copy.how.title }}</h2>
+        <p>{{ copy.how.body }}</p>
+      </div>
+      <ol class="momentlet-steps">
+        {% for step in copy.how.steps %}
+          <li class="reveal">
+            <span>{{ step.number }}</span>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.body }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="momentlet-styles" id="styles" aria-labelledby="momentlet-styles-title">
+    <div class="momentlet-shell">
+      <div class="momentlet-section-heading reveal">
+        <p class="momentlet-eyebrow">{{ copy.styles.eyebrow }}</p>
+        <h2 id="momentlet-styles-title">{{ copy.styles.title }}</h2>
+        <p>{{ copy.styles.body }}</p>
+      </div>
+      <div class="momentlet-style-grid">
+        {% for style in copy.styles.items %}
+          <article class="momentlet-style-card momentlet-style-card--{{ style.id }} reveal">
+            <div class="momentlet-style-card__sample" aria-hidden="true"><span></span></div>
+            <div>
+              <h3>{{ style.name }}</h3>
+              <p>{{ style.note }}</p>
+            </div>
+            <span class="momentlet-style-card__access{% if style.access == 'Premium' %} momentlet-style-card__access--premium{% endif %}">{{ style.access }}</span>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-library" id="library" aria-labelledby="momentlet-library-title">
+    <div class="momentlet-shell momentlet-library__grid">
+      <div class="momentlet-library__visual reveal">
+        <div class="momentlet-phone" aria-label="Illustrative Moment library preview">
+          <div class="momentlet-phone__bar"><span>Moments</span><span>•••</span></div>
+          <div class="momentlet-phone__grid">
+            <figure class="momentlet-phone__feature">
+              <img src="{{ '/assets/momentlet/moment-natural.jpg' | relative_url }}" alt="" loading="lazy">
+              <figcaption>Natural · Today</figcaption>
+            </figure>
+            <figure><img src="{{ '/assets/momentlet/moment-watercolor.jpg' | relative_url }}" alt="" loading="lazy"><figcaption>Watercolor</figcaption></figure>
+            <figure><img src="{{ '/assets/momentlet/moment-keepsake.jpg' | relative_url }}" alt="" loading="lazy"><figcaption>Favorite</figcaption></figure>
+          </div>
+        </div>
+      </div>
+      <div class="momentlet-section-heading reveal">
+        <p class="momentlet-eyebrow">{{ copy.library.eyebrow }}</p>
+        <h2 id="momentlet-library-title">{{ copy.library.title }}</h2>
+        <p>{{ copy.library.body }}</p>
+        <ul class="momentlet-check-list">
+          {% for point in copy.library.points %}<li>{{ point }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-premium" id="premium" aria-labelledby="momentlet-premium-title">
+    <div class="momentlet-shell momentlet-premium__panel reveal">
+      <div class="momentlet-section-heading">
+        <p class="momentlet-eyebrow">{{ copy.premium.eyebrow }}</p>
+        <h2 id="momentlet-premium-title">{{ copy.premium.title }}</h2>
+        <p>{{ copy.premium.body }}</p>
+      </div>
+      <div class="momentlet-plan-grid">
+        <article class="momentlet-plan">
+          <span>Free</span>
+          <h3>{{ copy.premium.free_title }}</h3>
+          <strong>{{ copy.premium.free_body }}</strong>
+          <p>{{ copy.premium.free_note }}</p>
+        </article>
+        <article class="momentlet-plan momentlet-plan--premium">
+          <span>Premium</span>
+          <h3>{{ copy.premium.paid_title }}</h3>
+          <strong>{{ copy.premium.paid_body }}</strong>
+          <p>{{ copy.premium.paid_note }}</p>
+        </article>
+      </div>
+      <p class="momentlet-premium__price-note">{{ copy.premium.price_note }}</p>
+      {% include momentlet-download-button.html label="Download Momentlet" %}
+    </div>
+  </section>
+
+  <section class="momentlet-privacy" aria-labelledby="momentlet-privacy-title">
+    <div class="momentlet-shell momentlet-privacy__grid">
+      <div class="momentlet-privacy__mark reveal" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="momentlet-section-heading reveal">
+        <p class="momentlet-eyebrow">{{ copy.privacy.eyebrow }}</p>
+        <h2 id="momentlet-privacy-title">{{ copy.privacy.title }}</h2>
+        <p>{{ copy.privacy.body }}</p>
+        <p class="momentlet-privacy__note">{{ copy.privacy.note }}</p>
+        <a class="momentlet-text-link" href="{{ '/apps/momentlet/privacy-policy/' | relative_url }}">Read the Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-faq" id="faq" aria-labelledby="momentlet-faq-title">
+    <div class="momentlet-shell momentlet-faq__grid">
+      <div class="momentlet-section-heading reveal">
+        <p class="momentlet-eyebrow">{{ copy.faq.eyebrow }}</p>
+        <h2 id="momentlet-faq-title">{{ copy.faq.title }}</h2>
+      </div>
+      <div class="momentlet-faq__items reveal">
+        {% for item in copy.faq.items %}
+          <details>
+            <summary>{{ item.question }}<span aria-hidden="true">+</span></summary>
+            <p>{{ item.answer }}</p>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-closing" aria-labelledby="momentlet-closing-title">
+    <div class="momentlet-shell momentlet-closing__panel reveal">
+      <img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="92" height="92" alt="Momentlet app icon" loading="lazy">
+      <p class="momentlet-eyebrow">{{ copy.closing.eyebrow }}</p>
+      <h2 id="momentlet-closing-title">{{ copy.closing.title }}</h2>
+      <p>{{ copy.closing.body }}</p>
+      <div class="momentlet-actions">
+        {% include momentlet-download-button.html label=copy.closing.primary %}
+        <a class="momentlet-button momentlet-button--quiet" href="mailto:littoraart@gmail.com?subject=Momentlet">{{ copy.closing.secondary }}</a>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,14 @@
+name: Momentlet
+developer: Littora
+bundle_id: art.littora.momentlet
+site_path: /apps/momentlet/
+availability: pre_review
+app_store_url: ""
+support_email: littoraart@gmail.com
+platform: iPhone
+minimum_ios: "17.0"
+free_creation_limit: 3
+premium_monthly_creation_limit: 100
+monthly_us_price: "$6.99"
+yearly_us_price: "$39.99"
+
