@@ -38,14 +38,13 @@
         <h2 id="momentlet-opening-title">{{ copy.opening.title }}</h2>
         <p>{{ copy.opening.body }}</p>
       </div>
-      <div class="momentlet-transformation reveal">
+      <div class="momentlet-keepsake reveal">
         <figure>
-          <img src="{{ '/assets/momentlet/moment-natural.jpg' | relative_url }}" alt="Natural interpretation of a quiet coastal morning" loading="lazy" width="1200" height="900">
-          <figcaption><strong>Natural</strong><span>True to life</span></figcaption>
-        </figure>
-        <figure>
-          <img src="{{ '/assets/momentlet/moment-watercolor.jpg' | relative_url }}" alt="Watercolor interpretation of the same quiet coastal morning" loading="lazy" width="1448" height="1086">
-          <figcaption><strong>Watercolor</strong><span>Soft and painted</span></figcaption>
+          <img src="{{ '/assets/momentlet/moment-keepsake.jpg' | relative_url }}" alt="A finished Momentlet keepsake showing two cups beside the sea after rain" loading="lazy" width="1448" height="1086">
+          <figcaption>
+            <strong>{{ copy.opening.artwork_title }}</strong>
+            <small>{{ copy.opening.artwork_note }}</small>
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -120,23 +119,34 @@
       <div class="momentlet-section-heading">
         <h2 id="momentlet-premium-title">{{ copy.premium.title }}</h2>
         <p>{{ copy.premium.body }}</p>
-      </div>
-      <div class="momentlet-plan-grid">
-        <article class="momentlet-plan">
-          <span>Free</span>
-          <h3>{{ copy.premium.free_title }}</h3>
-          <strong>{{ copy.premium.free_body }}</strong>
-          <p>{{ copy.premium.free_note }}</p>
+        <article class="momentlet-plan momentlet-plan--free">
+          <span class="momentlet-plan__label">Free</span>
+          <div>
+            <h3>{{ copy.premium.free_title }}</h3>
+            <p>{{ copy.premium.free_note }}</p>
+          </div>
         </article>
+      </div>
+      <div class="momentlet-offer">
         <article class="momentlet-plan momentlet-plan--premium">
-          <span>Best value</span>
+          <div class="momentlet-plan__topline">
+            <span class="momentlet-plan__label">Premium</span>
+            <strong class="momentlet-plan__saving">{{ copy.premium.saving }}</strong>
+          </div>
           <h3>{{ copy.premium.paid_title }}</h3>
-          <strong>{{ copy.premium.paid_body }}</strong>
-          <p>{{ copy.premium.paid_note }}</p>
+          <div class="momentlet-plan__price">
+            <strong>{{ copy.premium.yearly_price }}</strong>
+            <span>{{ copy.premium.yearly_term }}</span>
+          </div>
+          <p class="momentlet-plan__equivalent">{{ copy.premium.yearly_equivalent }}</p>
+          <ul>
+            {% for feature in copy.premium.features %}<li>{{ feature }}</li>{% endfor %}
+          </ul>
+          <p class="momentlet-plan__monthly">{{ copy.premium.monthly_note }}</p>
+          {% include momentlet-download-button.html label=copy.premium.cta %}
+          <small>{{ copy.premium.price_note }}</small>
         </article>
       </div>
-      <p class="momentlet-premium__price-note">{{ copy.premium.price_note }}</p>
-      {% include momentlet-download-button.html label="Download Momentlet" %}
     </div>
   </section>
 
@@ -163,7 +173,6 @@
       <p>{{ copy.closing.body }}</p>
       <div class="momentlet-actions">
         {% include momentlet-download-button.html label=copy.closing.primary %}
-        <a class="momentlet-button momentlet-button--quiet" href="mailto:littoraart@gmail.com?subject=Momentlet">{{ copy.closing.secondary }}</a>
       </div>
     </div>
   </section>

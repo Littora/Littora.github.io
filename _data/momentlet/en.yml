@@ -20,6 +20,8 @@ hero:
 opening:
   title: "Some things are remembered as a feeling before they become a picture."
   body: "Momentlet begins there. You bring the detail that matters—the weather, the light, who was beside you, or the part you cannot quite photograph. Momentlet gives it visual form without asking you to learn prompt language."
+  artwork_title: "Coffee after the rain"
+  artwork_note: "Natural · Ready to keep, save, or share"
 
 how:
   title: "From a few words to a Moment."
@@ -75,13 +77,20 @@ library:
 premium:
   title: "Make more of what matters."
   body: "Begin with the complete creative flow for free. Upgrade when Momentlet becomes part of how you keep the moments you care about."
-  free_title: "Try the full flow"
-  free_body: "3 creations, free"
-  free_note: "Natural, Cinematic, and Editorial · no account required"
-  paid_title: "Momentlet Premium"
-  paid_body: "100 creations every month"
-  paid_note: "All 6 visual feelings · new Premium styles · $39.99/year or $6.99/month"
-  price_note: "Yearly saves 52% compared with 12 monthly payments. Final local price is shown in the App Store before purchase."
+  free_title: "Start with 3 free Moments"
+  free_note: "Natural, Cinematic, and Editorial · no account required · no ads"
+  saving: "Save 52% yearly"
+  paid_title: "Keep creating with Premium"
+  yearly_price: "$39.99"
+  yearly_term: "/ year"
+  yearly_equivalent: "About $3.33 a month"
+  features:
+    - "100 creations every subscription month"
+    - "All 6 visual feelings"
+    - "New Premium styles as they arrive"
+  monthly_note: "Prefer monthly? $6.99 per month."
+  cta: "Download Momentlet"
+  price_note: "Final local price is shown in the App Store before purchase."
 
 faq:
   title: "Before you make your first Moment."
@@ -103,7 +112,6 @@ closing:
   title: "What would you keep?"
   body: "A quiet morning. A road after rain. The last light of a trip. Start with what happened—Momentlet will help make it visible."
   primary: "Download for iPhone"
-  secondary: "Contact Littora"
 
 download_modal:
   title: "Almost ready for the App Store."
