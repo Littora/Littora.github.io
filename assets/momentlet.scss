@@ -115,25 +115,35 @@ body.momentlet-site {
 
 .momentlet-brand__lockup {
   display: flex;
-  align-items: baseline;
-  gap: 0.62rem;
+  align-items: center;
+  gap: 0;
 }
 
 .momentlet-brand__maker {
-  color: var(--momentlet-muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  color: #4f5062;
+  font-family: var(--momentlet-display);
+  font-size: 1.12rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .momentlet-brand__name {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--momentlet-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.12rem;
+  font-weight: 750;
+  letter-spacing: -0.025em;
   text-decoration: none;
+}
+
+.momentlet-brand__name::before {
+  content: "";
+  width: 1px;
+  height: 1.05rem;
+  margin: 0 0.72rem;
+  background: rgba(54, 51, 79, 0.22);
 }
 
 .momentlet-brand__maker:hover,
@@ -777,11 +787,7 @@ body.momentlet-site {
 }
 
 .momentlet-premium__panel {
-  display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
-  column-gap: clamp(2.5rem, 6vw, 6rem);
-  row-gap: 1.1rem;
-  align-items: start;
+  display: block;
   padding: clamp(2rem, 5vw, 4rem);
   border: 1px solid rgba(76, 71, 121, 0.14);
   border-radius: 36px;
@@ -790,13 +796,21 @@ body.momentlet-site {
   backdrop-filter: blur(20px);
 }
 
+.momentlet-premium__heading {
+  max-width: 760px;
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+}
+
 .momentlet-offer {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+  align-items: stretch;
 }
 
 .momentlet-plan {
+  display: flex;
+  flex-direction: column;
   padding: clamp(1.3rem, 2vw, 1.4rem);
   border: 1px solid var(--momentlet-line);
   border-radius: 24px;
@@ -804,12 +818,9 @@ body.momentlet-site {
 }
 
 .momentlet-plan--free {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 1.1rem;
-  margin-top: 2rem;
-  padding-block: 1.1rem;
+  border-color: rgba(95, 103, 217, 0.2);
+  background: linear-gradient(155deg, #fffefa 0%, #f4f3ff 100%);
+  box-shadow: 0 16px 36px rgba(72, 81, 189, 0.08);
 }
 
 .momentlet-plan--premium {
@@ -846,7 +857,8 @@ body.momentlet-site {
 }
 
 .momentlet-plan__label,
-.momentlet-plan__saving {
+.momentlet-plan__saving,
+.momentlet-plan__detail {
   display: inline-block;
   padding: 0.32rem 0.55rem;
   border-radius: 999px;
@@ -874,6 +886,13 @@ body.momentlet-site {
   letter-spacing: 0.04em;
 }
 
+.momentlet-plan__detail {
+  color: #5d5e70;
+  background: rgba(32, 33, 52, 0.055);
+  font-size: 0.69rem;
+  letter-spacing: 0.03em;
+}
+
 .momentlet-plan h3 {
   margin: 1.1rem 0 0.45rem;
   font-size: clamp(1.45rem, 2.5vw, 1.9rem);
@@ -888,8 +907,7 @@ body.momentlet-site {
 }
 
 .momentlet-plan--free h3 {
-  margin: 0 0 0.2rem;
-  font-size: 1.16rem;
+  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
 }
 
 .momentlet-plan__price {
@@ -902,7 +920,7 @@ body.momentlet-site {
 .momentlet-plan__price strong {
   color: var(--momentlet-ink);
   font-family: var(--momentlet-display);
-  font-size: clamp(3.25rem, 6vw, 4.8rem);
+  font-size: clamp(2.8rem, 5vw, 4rem);
   line-height: 0.9;
   letter-spacing: -0.055em;
 }
@@ -912,12 +930,17 @@ body.momentlet-site {
   font-weight: 700;
 }
 
-.momentlet-plan__equivalent {
-  color: var(--momentlet-indigo-deep) !important;
-  font-weight: 800;
+.momentlet-plan__price--free strong {
+  color: var(--momentlet-indigo-deep);
 }
 
-.momentlet-plan--premium ul {
+.momentlet-plan__equivalent {
+  color: #626376 !important;
+  font-size: 0.8rem !important;
+  font-weight: 650;
+}
+
+.momentlet-plan ul {
   display: grid;
   gap: 0.4rem;
   margin: 1rem 0 0;
@@ -925,7 +948,7 @@ body.momentlet-site {
   list-style: none;
 }
 
-.momentlet-plan--premium li {
+.momentlet-plan li {
   position: relative;
   padding-left: 1.65rem;
   color: #45465a;
@@ -933,7 +956,7 @@ body.momentlet-site {
   font-weight: 650;
 }
 
-.momentlet-plan--premium li::before {
+.momentlet-plan li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -952,18 +975,30 @@ body.momentlet-site {
   margin-top: 0.85rem !important;
 }
 
-.momentlet-plan--premium > .momentlet-button {
+.momentlet-plan > .momentlet-button {
   width: 100%;
-  margin-top: 0.85rem;
+  margin-top: 1.1rem;
 }
 
-.momentlet-plan--premium > small {
+.momentlet-plan > small {
   display: block;
-  margin-top: 0.85rem;
+  margin-top: 0.8rem;
   color: var(--momentlet-muted);
   font-size: 0.68rem;
   line-height: 1.45;
   text-align: center;
+}
+
+.momentlet-plan--free .momentlet-button--secondary {
+  border: 1px solid rgba(72, 81, 189, 0.22);
+  color: var(--momentlet-indigo-deep);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: none;
+}
+
+.momentlet-plan--free .momentlet-button--secondary:hover {
+  border-color: rgba(72, 81, 189, 0.4);
+  background: #fff;
 }
 
 .momentlet-text-link {
@@ -1280,8 +1315,11 @@ body.momentlet-site {
   .momentlet-hero__grid,
   .momentlet-opening__grid,
   .momentlet-library__grid,
-  .momentlet-faq__grid,
-  .momentlet-premium__panel {
+  .momentlet-faq__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .momentlet-offer {
     grid-template-columns: 1fr;
   }
 
@@ -1380,14 +1418,9 @@ body.momentlet-site {
     border-radius: 36px;
   }
 
-  .momentlet-plan--free {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-
   .momentlet-plan__topline {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
   }
 
   .momentlet-plan__price strong {

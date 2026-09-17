@@ -76,14 +76,23 @@ library:
 
 premium:
   title: "Make more of what matters."
-  body: "Begin with the complete creative flow for free. Upgrade when Momentlet becomes part of how you keep the moments you care about."
+  body: "Start free and make your first Moments. When you want more room to create, Premium is ready."
+  free_badge: "No payment"
   free_title: "Start with 3 free Moments"
-  free_note: "Natural, Cinematic, and Editorial · no account required · no ads"
+  free_price: "$0"
+  free_price_term: "to start"
+  free_note: "Everything you need to see what Momentlet can make from a memory."
+  free_features:
+    - "3 successful creations"
+    - "Natural, Cinematic, and Editorial"
+    - "Save and share every finished Moment"
+  free_cta: "Start free"
+  free_reassurance: "No account · No card · No ads"
   saving: "Save 52% yearly"
   paid_title: "Keep creating with Premium"
-  yearly_price: "$39.99"
-  yearly_term: "/ year"
-  yearly_equivalent: "About $3.33 a month"
+  monthly_equivalent_price: "$3.33"
+  monthly_equivalent_term: "/ month"
+  yearly_billing_note: "Billed yearly at $39.99"
   features:
     - "100 creations every subscription month"
     - "All 6 visual feelings"

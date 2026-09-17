@@ -116,18 +116,28 @@
 
   <section class="momentlet-premium" id="premium" aria-labelledby="momentlet-premium-title">
     <div class="momentlet-shell momentlet-premium__panel reveal">
-      <div class="momentlet-section-heading">
+      <div class="momentlet-section-heading momentlet-premium__heading">
         <h2 id="momentlet-premium-title">{{ copy.premium.title }}</h2>
         <p>{{ copy.premium.body }}</p>
-        <article class="momentlet-plan momentlet-plan--free">
-          <span class="momentlet-plan__label">Free</span>
-          <div>
-            <h3>{{ copy.premium.free_title }}</h3>
-            <p>{{ copy.premium.free_note }}</p>
-          </div>
-        </article>
       </div>
       <div class="momentlet-offer">
+        <article class="momentlet-plan momentlet-plan--free">
+          <div class="momentlet-plan__topline">
+            <span class="momentlet-plan__label">Free</span>
+            <strong class="momentlet-plan__detail">{{ copy.premium.free_badge }}</strong>
+          </div>
+          <h3>{{ copy.premium.free_title }}</h3>
+          <div class="momentlet-plan__price momentlet-plan__price--free">
+            <strong>{{ copy.premium.free_price }}</strong>
+            <span>{{ copy.premium.free_price_term }}</span>
+          </div>
+          <p>{{ copy.premium.free_note }}</p>
+          <ul>
+            {% for feature in copy.premium.free_features %}<li>{{ feature }}</li>{% endfor %}
+          </ul>
+          {% include momentlet-download-button.html class="momentlet-button momentlet-button--secondary" label=copy.premium.free_cta %}
+          <small>{{ copy.premium.free_reassurance }}</small>
+        </article>
         <article class="momentlet-plan momentlet-plan--premium">
           <div class="momentlet-plan__topline">
             <span class="momentlet-plan__label">Premium</span>
@@ -135,10 +145,10 @@
           </div>
           <h3>{{ copy.premium.paid_title }}</h3>
           <div class="momentlet-plan__price">
-            <strong>{{ copy.premium.yearly_price }}</strong>
-            <span>{{ copy.premium.yearly_term }}</span>
+            <strong>{{ copy.premium.monthly_equivalent_price }}</strong>
+            <span>{{ copy.premium.monthly_equivalent_term }}</span>
           </div>
-          <p class="momentlet-plan__equivalent">{{ copy.premium.yearly_equivalent }}</p>
+          <p class="momentlet-plan__equivalent">{{ copy.premium.yearly_billing_note }}</p>
           <ul>
             {% for feature in copy.premium.features %}<li>{{ feature }}</li>{% endfor %}
           </ul>
