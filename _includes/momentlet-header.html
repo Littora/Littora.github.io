@@ -2,13 +2,15 @@
 {% assign app = site.data.momentlet.app %}
 <header class="momentlet-header" data-momentlet-header>
   <div class="momentlet-shell momentlet-header__inner">
-    <a class="momentlet-brand" href="{{ app.site_path | relative_url }}" aria-label="Momentlet home">
-      <img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="42" height="42" alt="">
+    <div class="momentlet-brand">
+      <a class="momentlet-brand__icon" href="{{ app.site_path | relative_url }}" aria-label="Momentlet home">
+        <img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="42" height="42" alt="">
+      </a>
       <span class="momentlet-brand__lockup">
-        <span class="momentlet-brand__maker">Littora</span>
-        <span class="momentlet-brand__name">Momentlet</span>
+        <a class="momentlet-brand__maker" href="{{ '/' | relative_url }}">Littora</a>
+        <a class="momentlet-brand__name" href="{{ app.site_path | relative_url }}">Momentlet</a>
       </span>
-    </a>
+    </div>
 
     <button class="momentlet-menu" type="button" aria-expanded="false" aria-controls="momentlet-navigation" data-momentlet-menu>
       <span>Menu</span>
@@ -18,9 +20,7 @@
       {% if page.momentlet_home %}
         <a href="{{ app.site_path }}#how-it-works">{{ copy.nav.how }}</a>
         <a href="{{ app.site_path }}#styles">{{ copy.nav.styles }}</a>
-        <a href="{{ app.site_path }}#library">{{ copy.nav.library }}</a>
         <a href="{{ app.site_path }}#premium">{{ copy.nav.premium }}</a>
-        <a href="{{ app.site_path }}#faq">{{ copy.nav.faq }}</a>
       {% else %}
         <a href="{{ app.site_path | relative_url }}">Momentlet home</a>
         <a href="{{ '/apps/momentlet/support/' | relative_url }}">Support</a>
@@ -29,4 +29,3 @@
     </nav>
   </div>
 </header>
-

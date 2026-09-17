@@ -4,29 +4,24 @@ seo:
 
 nav:
   how: "How it works"
-  styles: "Visual feelings"
-  library: "Your Moments"
+  styles: "Styles"
   premium: "Premium"
-  faq: "FAQ"
   download: "Download"
 
 hero:
-  eyebrow: "A new way to keep a moment"
   title: "Keep how it felt."
   body: "Describe a moment in your own words. Choose a visual feeling. Momentlet turns it into one image worth keeping."
   primary: "Download for iPhone"
   secondary: "See how it works"
-  note: "Start with 3 creations · No account required · Designed for iOS 17+"
+  note: "Start free · No account required · No ads"
   preview_label: "Illustrative Moment · Natural"
   preview_description: "Coffee after the rain, when the clouds opened just enough for the sea to catch the light."
 
 opening:
-  eyebrow: "For the moments the camera missed"
   title: "Some things are remembered as a feeling before they become a picture."
   body: "Momentlet begins there. You bring the detail that matters—the weather, the light, who was beside you, or the part you cannot quite photograph. Momentlet gives it visual form without asking you to learn prompt language."
 
 how:
-  eyebrow: "A simple creative rhythm"
   title: "From a few words to a Moment."
   body: "One focused path keeps the experience light, clear, and personal."
   steps:
@@ -41,8 +36,7 @@ how:
       body: "Your finished Moment joins a local library with its original description, visual feeling, and date."
 
 styles:
-  eyebrow: "Visual feelings"
-  title: "Direction without a control panel."
+  title: "Choose the feeling, not the settings."
   body: "Each feeling gives your Moment a distinct visual language while keeping the choice understandable."
   items:
     - id: natural
@@ -71,7 +65,6 @@ styles:
       access: "Premium"
 
 library:
-  eyebrow: "A place to return"
   title: "Not a stream of outputs. A library of your Moments."
   body: "Every successful creation keeps the picture together with the words and feeling that shaped it. Return to it later, mark a favorite, save it to Photos, or share it your way."
   points:
@@ -80,25 +73,17 @@ library:
     - "Favorite, save, share, or delete an individual Moment"
 
 premium:
-  eyebrow: "Momentlet Premium"
-  title: "More room for the moments that matter."
-  body: "The complete creative rhythm for people who want to keep making—not a maze of credits or hidden limits."
-  free_title: "Start free"
-  free_body: "3 successful creations"
-  free_note: "Natural, Cinematic, and Editorial"
-  paid_title: "Create with Premium"
-  paid_body: "100 successful creations each subscription month"
-  paid_note: "Every current visual feeling and new Premium styles as they arrive"
-  price_note: "Current U.S. reference prices: $6.99 monthly or $39.99 yearly. Your App Store shows the final local price before purchase."
-
-privacy:
-  eyebrow: "Clear before you create"
-  title: "Your words shape the image. You decide when they are sent."
-  body: "Before the first real generation, Momentlet explains that your description and chosen style are sent to the image service and its AI providers. You can allow or withdraw image processing in More. Finished Moments stay in the local library on your device."
-  note: "Momentlet does not currently provide cloud sync or cross-device recovery for your Moment library."
+  title: "Make more of what matters."
+  body: "Begin with the complete creative flow for free. Upgrade when Momentlet becomes part of how you keep the moments you care about."
+  free_title: "Try the full flow"
+  free_body: "3 creations, free"
+  free_note: "Natural, Cinematic, and Editorial · no account required"
+  paid_title: "Momentlet Premium"
+  paid_body: "100 creations every month"
+  paid_note: "All 6 visual feelings · new Premium styles · $39.99/year or $6.99/month"
+  price_note: "Yearly saves 52% compared with 12 monthly payments. Final local price is shown in the App Store before purchase."
 
 faq:
-  eyebrow: "Questions, answered"
   title: "Before you make your first Moment."
   items:
     - question: "Do I need to know how to write an AI prompt?"
@@ -115,14 +100,12 @@ faq:
       answer: "Your finished Moment library is stored locally on this device. Momentlet does not currently provide cloud sync, backup, or cross-device recovery."
 
 closing:
-  eyebrow: "Your next Moment"
   title: "What would you keep?"
   body: "A quiet morning. A road after rain. The last light of a trip. Start with what happened—Momentlet will help make it visible."
   primary: "Download for iPhone"
   secondary: "Contact Littora"
 
 download_modal:
-  eyebrow: "Momentlet for iPhone"
   title: "Almost ready for the App Store."
   body: "Momentlet is being prepared for App Store review. Downloads will open here as soon as the release is available."
   close: "Got it"
