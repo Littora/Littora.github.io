@@ -5,25 +5,18 @@ permalink: /apps/momentlet/whats-new/
 ---
 
 # What’s New
+## Version 1.0.0 — Introducing Momentlet
 
-## Version 1.0 — Turn your moments into art
+**A moment can be a feeling, a scene, an experience, or a detail only you noticed. Momentlet gives it a visual form.**
 
-Momentlet is being prepared for its first App Store release.
+Describe your moment in your own words, choose how the image should feel, and create a visual interpretation shaped by both.
 
-### Create a Moment
+### In this first release
 
-- Describe a meaningful moment in your own words.
-- Choose from Natural, Cinematic, Editorial, Watercolor, Dreamlike, and Nostalgic visual feelings.
-- Create one image shaped by your description and selected feeling.
+- **Write naturally.** Start with what happened, what you noticed, or how it felt—no prompt-writing skills needed.
+- **Choose the visual feeling.** Explore Natural, Cinematic, Editorial, Watercolor, Dreamlike, and Nostalgic.
+- **Create with focus.** Each creation turns one moment into one image.
+- **Keep every Moment together.** Revisit your creations with your original description, style, and date; mark favorites, save to Photos, or share them.
+- **Make more with Premium.** Your first three creations are included. Premium unlocks every style and up to 100 creations each subscription month.
 
-### Keep what matters
-
-- Return to finished images in your local Moment library.
-- Keep the original description, visual feeling, and date with every Moment.
-- Favorite, save to Photos, share, or delete an individual Moment.
-
-### Start free, create more with Premium
-
-- Begin with three successful creations and three core visual feelings.
-- Momentlet Premium includes up to 100 successful creations each subscription month and every Premium visual feeling.
-
+Whatever made the moment yours, make it visible.
