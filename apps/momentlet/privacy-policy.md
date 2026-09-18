@@ -98,7 +98,7 @@ To exercise a right, contact us using the email address below. Requests concerni
 
 ## 8) Age requirements
 
-Momentlet is not intended for individuals under 18, and we do not knowingly collect personal information from anyone under 18.
+Momentlet is not intended for individuals under 13, and we do not knowingly collect personal information from anyone under 13.
 
 ## 9) Changes to this Policy
 

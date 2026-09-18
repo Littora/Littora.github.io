@@ -12,7 +12,7 @@ By downloading or using the Service, you agree to these Terms. If you do not agr
 
 ## 1) Eligibility
 
-The Service is not intended for individuals under 18. By using the Service, you represent that you are at least 18 and legally able to agree to these Terms. You may use the Service only where it is lawful and available.
+The Service is not intended for individuals under 13. By using the Service, you represent that you are at least 13 and legally able to agree to these Terms. You may use the Service only where it is lawful and available.
 
 ## 2) The Service
 
