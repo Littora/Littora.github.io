@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Littora
-description: "Littora creates thoughtful apps that explore human feeling, including Chatura, an AI companion for conversations worth keeping."
+description: "Littora creates thoughtful apps that explore human feeling, including Momentlet, Chatura, and Yonderkin."
 permalink: /
 ---
 
@@ -30,6 +30,13 @@ permalink: /
         <span class="brand-app-card__content">
           <strong>Yonderkin</strong>
           <span class="brand-app-card__description">A living universe of distinct beings, creatures, intelligences, and worlds—each with a voice, Moments, and relationships that keep unfolding.</span>
+        </span>
+      </a>
+      <a class="brand-app-card" href="/apps/momentlet/" aria-label="View Momentlet app page">
+        <span class="brand-app-card__icon brand-app-card__icon--momentlet" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Momentlet</strong>
+          <span class="brand-app-card__description">Turn a fleeting moment into an image worth keeping—described in your words and shaped by a visual feeling.</span>
         </span>
       </a>
     </div>

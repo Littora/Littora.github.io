@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {% include head.html %}
+  <body class="momentlet-site{% unless page.momentlet_home %} momentlet-site--document{% endunless %}">
+    <a class="momentlet-skip-link" href="#main-content">Skip to content</a>
+    {% include momentlet-header.html %}
+    {% if page.momentlet_home %}
+      {{ content }}
+    {% else %}
+      <main id="main-content" class="momentlet-document">
+        <article class="momentlet-document__paper">
+          {{ content }}
+        </article>
+      </main>
+    {% endif %}
+    {% include momentlet-footer.html %}
+    {% include momentlet-download-dialog.html %}
+  </body>
+</html>
+

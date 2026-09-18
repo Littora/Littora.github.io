@@ -52,3 +52,17 @@ defaults:
       share_image_width: 1800
       share_image_height: 981
       share_image_alt: Yonderkin universe
+  - scope:
+      path: "apps/momentlet"
+      type: "pages"
+    values:
+      layout: momentlet
+      lang: en-US
+      momentlet_page: true
+      favicon: /assets/momentlet/momentlet-icon.png
+      apple_touch_icon: /assets/momentlet/momentlet-icon.png
+      share_image: /assets/momentlet/moment-keepsake.jpg
+      share_image_type: image/jpeg
+      share_image_width: 1448
+      share_image_height: 1086
+      share_image_alt: A Momentlet keepsake showing a quiet coastal morning

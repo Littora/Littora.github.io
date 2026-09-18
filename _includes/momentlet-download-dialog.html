@@ -1,0 +1,12 @@
+{% assign modal = site.data.momentlet.en.download_modal %}
+<dialog class="momentlet-dialog" data-momentlet-dialog aria-labelledby="momentlet-dialog-title">
+  <div class="momentlet-dialog__art" aria-hidden="true">
+    <img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="72" height="72" alt="">
+  </div>
+  <h2 id="momentlet-dialog-title">{{ modal.title }}</h2>
+  <p>{{ modal.body }}</p>
+  <div class="momentlet-dialog__actions">
+    <button class="momentlet-button momentlet-button--primary" type="button" data-momentlet-dialog-close>{{ modal.close }}</button>
+    <a class="momentlet-text-link" href="mailto:littoraart@gmail.com?subject=Momentlet%20availability">{{ modal.support }}</a>
+  </div>
+</dialog>

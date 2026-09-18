@@ -1,0 +1,129 @@
+seo:
+  title: "Momentlet — turn your moments into art"
+  description: "Describe a moment, choose how it should feel, and turn it into an AI-generated image you can keep, revisit, save, or share."
+
+nav:
+  how: "How it works"
+  styles: "Styles"
+  premium: "Premium"
+  download: "Download"
+
+hero:
+  title: "Keep how it felt."
+  body: "Describe a moment in your own words. Choose a visual feeling. Momentlet turns it into one image worth keeping."
+  primary: "Download for iPhone"
+  secondary: "See how it works"
+  note: "Start free · No account required · No ads"
+  preview_label: "Illustrative Moment · Natural"
+  preview_description: "Coffee after the rain, when the clouds opened just enough for the sea to catch the light."
+
+opening:
+  title: "Some things are remembered as a feeling before they become a picture."
+  body: "Momentlet begins there. You bring the detail that matters—the weather, the light, who was beside you, or the part you cannot quite photograph. Momentlet gives it visual form without asking you to learn prompt language."
+  artwork_title: "Coffee after the rain"
+  artwork_note: "Natural · Ready to keep, save, or share"
+
+how:
+  title: "From a few words to a Moment."
+  body: "One focused path keeps the experience light, clear, and personal."
+  steps:
+    - number: "01"
+      title: "Describe what happened"
+      body: "Write naturally. A place, a small detail, a person, the light, or simply how the scene stayed with you."
+    - number: "02"
+      title: "Choose how it should feel"
+      body: "Pick one of six visual feelings—from honest and natural to softly painted, dreamlike, or nostalgic."
+    - number: "03"
+      title: "Keep the image"
+      body: "Your finished Moment joins a local library with its original description, visual feeling, and date."
+
+styles:
+  title: "Choose the feeling, not the settings."
+  body: "Each feeling gives your Moment a distinct visual language while keeping the choice understandable."
+  items:
+    - id: natural
+      name: "Natural"
+      note: "True to life"
+      access: "Included"
+    - id: cinematic
+      name: "Cinematic"
+      note: "Light and depth"
+      access: "Included"
+    - id: editorial
+      name: "Editorial"
+      note: "Clean and refined"
+      access: "Included"
+    - id: watercolor
+      name: "Watercolor"
+      note: "Soft and painted"
+      access: "Premium"
+    - id: dreamlike
+      name: "Dreamlike"
+      note: "Luminous and surreal"
+      access: "Premium"
+    - id: nostalgic
+      name: "Nostalgic"
+      note: "Warm film memory"
+      access: "Premium"
+
+library:
+  title: "Not a stream of outputs. A library of your Moments."
+  body: "Every successful creation keeps the picture together with the words and feeling that shaped it. Return to it later, mark a favorite, save it to Photos, or share it your way."
+  points:
+    - "Stored in your local Moment library"
+    - "Original description, visual feeling, and date kept together"
+    - "Favorite, save, share, or delete an individual Moment"
+
+premium:
+  title: "Make more of what matters."
+  body: "Start free and make your first Moments. When you want more room to create, Premium is ready."
+  free_badge: "No payment"
+  free_title: "Start with 3 free Moments"
+  free_price: "$0"
+  free_price_term: "to start"
+  free_note: "Everything you need to see what Momentlet can make from a memory."
+  free_features:
+    - "3 successful creations"
+    - "Natural, Cinematic, and Editorial"
+    - "Save and share every finished Moment"
+  free_cta: "Start free"
+  free_reassurance: "No account · No card · No ads"
+  saving: "Save 52% yearly"
+  paid_title: "Keep creating with Premium"
+  monthly_equivalent_price: "$3.33"
+  monthly_equivalent_term: "/ month"
+  yearly_billing_note: "Billed yearly at $39.99"
+  features:
+    - "100 creations every subscription month"
+    - "All 6 visual feelings"
+    - "New Premium styles as they arrive"
+  monthly_note: "Prefer monthly? $6.99 per month."
+  cta: "Download Momentlet"
+  price_note: "Final local price is shown in the App Store before purchase."
+
+faq:
+  title: "Before you make your first Moment."
+  items:
+    - question: "Do I need to know how to write an AI prompt?"
+      answer: "No. Describe the moment in your own words. Momentlet combines your description with the visual feeling you choose."
+    - question: "Will the image match my memory exactly?"
+      answer: "Not always. AI-generated images are visual interpretations and may change or omit people, objects, text, or small details."
+    - question: "Can I try Momentlet without subscribing?"
+      answer: "Yes. You can complete up to three successful creations with Natural, Cinematic, and Editorial."
+    - question: "What does Premium include?"
+      answer: "Premium includes up to 100 successful creations per subscription month, every current visual feeling, and new Premium styles as they arrive."
+    - question: "Does a failed generation use my allowance?"
+      answer: "No. A creation counts only after a valid image is successfully saved to your local Moment library."
+    - question: "Where are my Moments stored?"
+      answer: "Your finished Moment library is stored locally on this device. Momentlet does not currently provide cloud sync, backup, or cross-device recovery."
+
+closing:
+  title: "What would you keep?"
+  body: "A quiet morning. A road after rain. The last light of a trip. Start with what happened—Momentlet will help make it visible."
+  primary: "Download for iPhone"
+
+download_modal:
+  title: "Almost ready for the App Store."
+  body: "Momentlet is being prepared for App Store review. Downloads will open here as soon as the release is available."
+  close: "Got it"
+  support: "Contact support"

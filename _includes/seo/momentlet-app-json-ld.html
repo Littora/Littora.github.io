@@ -1,0 +1,20 @@
+{% assign app = site.data.momentlet.app %}
+{% assign copy = site.data.momentlet.en %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ app.name }}",
+  "applicationCategory": "PhotographyApplication",
+  "operatingSystem": "iOS {{ app.minimum_ios }} or later",
+  "description": {{ copy.seo.description | jsonify }},
+  "url": "{{ app.site_path | absolute_url }}",
+  "image": "{{ '/assets/momentlet/momentlet-icon.png' | absolute_url }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Littora",
+    "url": "{{ '/' | absolute_url }}"
+  }
+}
+</script>
+

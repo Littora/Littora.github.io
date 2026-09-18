@@ -1,0 +1,189 @@
+{% assign copy = site.data.momentlet.en %}
+{% assign app = site.data.momentlet.app %}
+<main id="main-content" class="momentlet-main">
+  <section class="momentlet-hero" aria-labelledby="momentlet-hero-title">
+    <div class="momentlet-shell momentlet-hero__grid">
+      <div class="momentlet-hero__copy reveal">
+        <h1 id="momentlet-hero-title">{{ copy.hero.title }}</h1>
+        <p class="momentlet-hero__body">{{ copy.hero.body }}</p>
+        <div class="momentlet-actions">
+          {% include momentlet-download-button.html label=copy.hero.primary %}
+          <a class="momentlet-button momentlet-button--quiet" href="#how-it-works">{{ copy.hero.secondary }}</a>
+        </div>
+        <p class="momentlet-hero__note">{{ copy.hero.note }}</p>
+      </div>
+
+      <div class="momentlet-hero__visual reveal" aria-label="Illustrative Momentlet creation preview">
+        <div class="momentlet-composer">
+          <div class="momentlet-composer__topline">
+            <span class="momentlet-composer__brand"><img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="30" height="30" alt="">Momentlet</span>
+          </div>
+          <p class="momentlet-composer__question">What would you like to keep?</p>
+          <p class="momentlet-composer__answer">{{ copy.hero.preview_description }}</p>
+          <div class="momentlet-composer__styles" aria-label="Selected visual feeling">
+            <span data-active>Natural</span><span>Cinematic</span><span>Editorial</span>
+          </div>
+          <figure class="momentlet-composer__result">
+            <img src="{{ '/assets/momentlet/moment-natural.jpg' | relative_url }}" alt="A quiet coastal table with two cups after rain at sunset" width="1200" height="900">
+            <figcaption><span>{{ copy.hero.preview_label }}</span><span>Today</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-opening" aria-labelledby="momentlet-opening-title">
+    <div class="momentlet-shell momentlet-opening__grid">
+      <div class="momentlet-section-heading reveal">
+        <h2 id="momentlet-opening-title">{{ copy.opening.title }}</h2>
+        <p>{{ copy.opening.body }}</p>
+      </div>
+      <div class="momentlet-keepsake reveal">
+        <figure>
+          <img src="{{ '/assets/momentlet/moment-keepsake.jpg' | relative_url }}" alt="A finished Momentlet keepsake showing two cups beside the sea after rain" loading="lazy" width="1448" height="1086">
+          <figcaption>
+            <strong>{{ copy.opening.artwork_title }}</strong>
+            <small>{{ copy.opening.artwork_note }}</small>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-how" id="how-it-works" aria-labelledby="momentlet-how-title">
+    <div class="momentlet-shell">
+      <div class="momentlet-section-heading momentlet-section-heading--center reveal">
+        <h2 id="momentlet-how-title">{{ copy.how.title }}</h2>
+        <p>{{ copy.how.body }}</p>
+      </div>
+      <ol class="momentlet-steps">
+        {% for step in copy.how.steps %}
+          <li class="reveal">
+            <span>{{ step.number }}</span>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.body }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="momentlet-styles" id="styles" aria-labelledby="momentlet-styles-title">
+    <div class="momentlet-shell">
+      <div class="momentlet-section-heading reveal">
+        <h2 id="momentlet-styles-title">{{ copy.styles.title }}</h2>
+        <p>{{ copy.styles.body }}</p>
+      </div>
+      <div class="momentlet-style-grid">
+        {% for style in copy.styles.items %}
+          <article class="momentlet-style-card momentlet-style-card--{{ style.id }} reveal">
+            <div class="momentlet-style-card__sample" aria-hidden="true"><span></span></div>
+            <div>
+              <h3>{{ style.name }}</h3>
+              <p>{{ style.note }}</p>
+            </div>
+            <span class="momentlet-style-card__access{% if style.access == 'Premium' %} momentlet-style-card__access--premium{% endif %}">{{ style.access }}</span>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-library" id="library" aria-labelledby="momentlet-library-title">
+    <div class="momentlet-shell momentlet-library__grid">
+      <div class="momentlet-library__visual reveal">
+        <div class="momentlet-phone" aria-label="Illustrative Moment library preview">
+          <div class="momentlet-phone__bar"><span>Moments</span><span>•••</span></div>
+          <div class="momentlet-phone__grid">
+            <figure class="momentlet-phone__feature">
+              <img src="{{ '/assets/momentlet/moment-natural.jpg' | relative_url }}" alt="" loading="lazy">
+              <figcaption>Natural · Today</figcaption>
+            </figure>
+            <figure><img src="{{ '/assets/momentlet/moment-watercolor.jpg' | relative_url }}" alt="" loading="lazy"><figcaption>Watercolor</figcaption></figure>
+            <figure><img src="{{ '/assets/momentlet/moment-keepsake.jpg' | relative_url }}" alt="" loading="lazy"><figcaption>Favorite</figcaption></figure>
+          </div>
+        </div>
+      </div>
+      <div class="momentlet-section-heading reveal">
+        <h2 id="momentlet-library-title">{{ copy.library.title }}</h2>
+        <p>{{ copy.library.body }}</p>
+        <ul class="momentlet-check-list">
+          {% for point in copy.library.points %}<li>{{ point }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-premium" id="premium" aria-labelledby="momentlet-premium-title">
+    <div class="momentlet-shell momentlet-premium__panel reveal">
+      <div class="momentlet-section-heading momentlet-premium__heading">
+        <h2 id="momentlet-premium-title">{{ copy.premium.title }}</h2>
+        <p>{{ copy.premium.body }}</p>
+      </div>
+      <div class="momentlet-offer">
+        <article class="momentlet-plan momentlet-plan--free">
+          <div class="momentlet-plan__topline">
+            <span class="momentlet-plan__label">Free</span>
+            <strong class="momentlet-plan__detail">{{ copy.premium.free_badge }}</strong>
+          </div>
+          <h3>{{ copy.premium.free_title }}</h3>
+          <div class="momentlet-plan__price momentlet-plan__price--free">
+            <strong>{{ copy.premium.free_price }}</strong>
+            <span>{{ copy.premium.free_price_term }}</span>
+          </div>
+          <p>{{ copy.premium.free_note }}</p>
+          <ul>
+            {% for feature in copy.premium.free_features %}<li>{{ feature }}</li>{% endfor %}
+          </ul>
+          {% include momentlet-download-button.html class="momentlet-button momentlet-button--secondary" label=copy.premium.free_cta %}
+          <small>{{ copy.premium.free_reassurance }}</small>
+        </article>
+        <article class="momentlet-plan momentlet-plan--premium">
+          <div class="momentlet-plan__topline">
+            <span class="momentlet-plan__label">Premium</span>
+            <strong class="momentlet-plan__saving">{{ copy.premium.saving }}</strong>
+          </div>
+          <h3>{{ copy.premium.paid_title }}</h3>
+          <div class="momentlet-plan__price">
+            <strong>{{ copy.premium.monthly_equivalent_price }}</strong>
+            <span>{{ copy.premium.monthly_equivalent_term }}</span>
+          </div>
+          <p class="momentlet-plan__equivalent">{{ copy.premium.yearly_billing_note }}</p>
+          <ul>
+            {% for feature in copy.premium.features %}<li>{{ feature }}</li>{% endfor %}
+          </ul>
+          <p class="momentlet-plan__monthly">{{ copy.premium.monthly_note }}</p>
+          {% include momentlet-download-button.html label=copy.premium.cta %}
+          <small>{{ copy.premium.price_note }}</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-faq" id="faq" aria-labelledby="momentlet-faq-title">
+    <div class="momentlet-shell momentlet-faq__grid">
+      <div class="momentlet-section-heading reveal">
+        <h2 id="momentlet-faq-title">{{ copy.faq.title }}</h2>
+      </div>
+      <div class="momentlet-faq__items reveal">
+        {% for item in copy.faq.items %}
+          <details>
+            <summary>{{ item.question }}<span aria-hidden="true">+</span></summary>
+            <p>{{ item.answer }}</p>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="momentlet-closing" aria-labelledby="momentlet-closing-title">
+    <div class="momentlet-shell momentlet-closing__panel reveal">
+      <img src="{{ '/assets/momentlet/momentlet-icon.png' | relative_url }}" width="92" height="92" alt="Momentlet app icon" loading="lazy">
+      <h2 id="momentlet-closing-title">{{ copy.closing.title }}</h2>
+      <p>{{ copy.closing.body }}</p>
+      <div class="momentlet-actions">
+        {% include momentlet-download-button.html label=copy.closing.primary %}
+      </div>
+    </div>
+  </section>
+</main>
