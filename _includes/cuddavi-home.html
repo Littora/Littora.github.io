@@ -1,0 +1,199 @@
+{% assign copy = site.data.cuddavi.en %}
+{% assign app = site.data.cuddavi.app %}
+<main id="main-content" class="cuddavi-main">
+  <section class="cuddavi-hero cuddavi-hero--requested" aria-labelledby="cuddavi-hero-title">
+    <div class="cuddavi-shell cuddavi-hero__requested-grid">
+      <div class="cuddavi-hero__copy cuddavi-reveal">
+        <p class="cuddavi-eyebrow">{{ copy.hero.eyebrow }}</p>
+        <h1 id="cuddavi-hero-title">{{ copy.hero.title }}</h1>
+        <p class="cuddavi-hero__body">{{ copy.hero.body }}</p>
+        <div class="cuddavi-actions">
+          {% include cuddavi-download-button.html label=copy.hero.primary %}
+          <a class="cuddavi-text-link cuddavi-text-link--with-play" href="#life-together"><span aria-hidden="true">▶</span>{{ copy.hero.secondary }}</a>
+        </div>
+        <p class="cuddavi-hero__note">{{ copy.hero.note }}</p>
+      </div>
+      <figure class="cuddavi-hero__requested-art cuddavi-reveal">
+        <img src="{{ '/assets/cuddavi/cloudfox.jpg' | relative_url }}" width="1254" height="1254" alt="Cloudfox, a curious blue Cuddavi companion" fetchpriority="high" decoding="async">
+        <span class="cuddavi-art-note cuddavi-art-note--curious" aria-hidden="true">Curious<br>today ♡</span>
+        <span class="cuddavi-art-note cuddavi-art-note--believe" aria-hidden="true">“You always<br>believe in me.” ♡</span>
+      </figure>
+    </div>
+    <div class="cuddavi-proof-wrap">
+      <div class="cuddavi-shell cuddavi-proof cuddavi-reveal" aria-label="What makes Cuddavi different">
+        {% for item in copy.proof %}
+          <div class="cuddavi-proof__item cuddavi-proof__item--{{ forloop.index }}">
+            <span class="cuddavi-proof__icon" aria-hidden="true"></span>
+            <span><strong>{{ item.title }}</strong><small>{{ item.body }}</small></span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="cuddavi-bond cuddavi-bond--requested" id="life-together" aria-labelledby="cuddavi-bond-title">
+    <div class="cuddavi-shell cuddavi-bond__requested-grid">
+      <div class="cuddavi-bond__requested-copy cuddavi-reveal">
+        <p class="cuddavi-eyebrow">{{ copy.bond.eyebrow }}</p>
+        <h2 id="cuddavi-bond-title">{{ copy.bond.title }}</h2>
+        <p>{{ copy.bond.body }}</p>
+        <p class="cuddavi-handwritten">Different hearts.<br>A brighter you.</p>
+      </div>
+      <div class="cuddavi-ensemble cuddavi-ensemble--home cuddavi-reveal" role="img" aria-label="Embercub, Cloudfox, Moonling, Mossling, and Starwhale gathered together">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--starwhale" src="{{ '/assets/cuddavi/starwhale.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--cloudfox" src="{{ '/assets/cuddavi/cloudfox.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--embercub" src="{{ '/assets/cuddavi/embercub.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--mossling" src="{{ '/assets/cuddavi/mossling.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--moonling" src="{{ '/assets/cuddavi/moonling.png' | relative_url }}" width="1024" height="1024" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="cuddavi-cosmos" aria-labelledby="cuddavi-universe-title">
+    <figure class="cuddavi-cosmos__art" aria-hidden="true">
+      <img src="{{ '/assets/cuddavi/cuddavi-cosmos-v2.png' | relative_url }}" width="1672" height="941" alt="" loading="lazy" decoding="async">
+    </figure>
+    <div class="cuddavi-shell cuddavi-cosmos__copy cuddavi-reveal">
+      <p class="cuddavi-eyebrow">A universe of companions</p>
+      <h2 id="cuddavi-universe-title">Every new life opens a different world.</h2>
+      <p>Some arrive from cloud gardens. Others carry forests, small suns, quiet moons, or whole oceans of stars with them.</p>
+      <p class="cuddavi-cosmos__whisper">Different worlds.<br>Deeper bonds.</p>
+    </div>
+  </section>
+
+  <section class="cuddavi-today" id="care" aria-labelledby="cuddavi-today-title">
+    <div class="cuddavi-shell">
+      <div class="cuddavi-today__heading cuddavi-reveal">
+        <p class="cuddavi-eyebrow">Today together</p>
+        <h2 id="cuddavi-today-title">Different moments. A deeper bond.</h2>
+      </div>
+
+      <div class="cuddavi-ritual-grid">
+        <article class="cuddavi-ritual cuddavi-reveal">
+          <img src="{{ '/assets/cuddavi/cuddavi-ritual-breakfast-v2.png' | relative_url }}" width="724" height="724" alt="A warm breakfast bowl with berries and a paw emblem" loading="lazy" decoding="async">
+          <h3>A warmer morning</h3>
+          <p>You prepare a favourite breakfast,<br>and they greet the day a little brighter.</p>
+        </article>
+        <article class="cuddavi-ritual cuddavi-reveal">
+          <img src="{{ '/assets/cuddavi/cuddavi-ritual-journal-v2.png' | relative_url }}" width="724" height="724" alt="An open journal with a paw mark and a curious thought" loading="lazy" decoding="async">
+          <h3>Curious conversations</h3>
+          <p>You talk about big questions<br>and little wonders, and they remember<br>what matters to you.</p>
+        </article>
+        <article class="cuddavi-ritual cuddavi-reveal">
+          <img src="{{ '/assets/cuddavi/cuddavi-ritual-bedtime-v2.png' | relative_url }}" width="724" height="724" alt="Soft blue blankets under a crescent moon and stars" loading="lazy" decoding="async">
+          <h3>A remembered bedtime story</h3>
+          <p>You settle in, and they recall<br>your favourite story, just like last time.</p>
+        </article>
+      </div>
+
+      <div class="cuddavi-ensemble cuddavi-ensemble--rituals cuddavi-reveal" role="img" aria-label="Moonling, Embercub, Mossling, and Starwhale together among soft clouds">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--ritual-moonling" src="{{ '/assets/cuddavi/moonling.png' | relative_url }}" width="1024" height="1024" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--ritual-embercub" src="{{ '/assets/cuddavi/embercub.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--ritual-mossling" src="{{ '/assets/cuddavi/mossling.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <img class="cuddavi-ensemble__pet cuddavi-ensemble__pet--ritual-starwhale" src="{{ '/assets/cuddavi/starwhale.jpg' | relative_url }}" width="1254" height="1254" alt="" loading="lazy" decoding="async">
+        <p class="cuddavi-handwritten cuddavi-ensemble__note cuddavi-ensemble__note--left" aria-hidden="true">Different souls.<br>Same kind of love. ♡</p>
+        <p class="cuddavi-handwritten cuddavi-ensemble__note cuddavi-ensemble__note--right" aria-hidden="true">More companions<br>to meet… →</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cuddavi-companions" id="companions" aria-labelledby="cuddavi-companions-title">
+    <div class="cuddavi-shell">
+      <div class="cuddavi-heading cuddavi-heading--center cuddavi-reveal">
+        <p class="cuddavi-eyebrow">{{ copy.companions.eyebrow }}</p>
+        <h2 id="cuddavi-companions-title">{{ copy.companions.title }}</h2>
+        <p>{{ copy.companions.body }}</p>
+      </div>
+      <div class="cuddavi-companion-stage cuddavi-reveal" data-companion-stage>
+        <div class="cuddavi-companion-stage__copy">
+          <p data-companion-origin>From a quiet moon</p>
+          <h3 data-companion-name>Moonling</h3>
+          <p data-companion-personality>Gentle, observant, playful when comfortable.</p>
+          <span>Every companion begins with a nature of their own. What happens next belongs to both of you.</span>
+          <div class="cuddavi-companion-picker" role="listbox" aria-label="Choose a companion to meet">
+            {% for companion in copy.companions.items %}
+              <button type="button" role="option" aria-label="{{ companion.name }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" data-companion data-name="{{ companion.name }}" data-origin="{{ companion.origin }}" data-personality="{{ companion.personality }}" data-image="{{ companion.image | relative_url }}">
+                <img src="{{ companion.image | relative_url }}" alt="" width="96" height="96" loading="lazy">
+                <span>{{ companion.name }}</span>
+              </button>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="cuddavi-companion-stage__portrait">
+          <img src="{{ '/assets/cuddavi/moonling.png' | relative_url }}" alt="Moonling" width="1024" height="1024" data-companion-image>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cuddavi-care" aria-labelledby="cuddavi-care-title">
+    <div class="cuddavi-shell cuddavi-care__grid">
+      <div class="cuddavi-heading cuddavi-reveal">
+        <p class="cuddavi-eyebrow">{{ copy.care.eyebrow }}</p>
+        <h2 id="cuddavi-care-title">{{ copy.care.title }}</h2>
+        <p>{{ copy.care.body }}</p>
+      </div>
+      <ol class="cuddavi-care__steps">
+        {% for step in copy.care.steps %}
+          <li class="cuddavi-reveal"><span>{{ step.number }}</span><div><h3>{{ step.title }}</h3><p>{{ step.body }}</p></div></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="cuddavi-continuity" aria-labelledby="cuddavi-continuity-title">
+    <div class="cuddavi-shell cuddavi-continuity__panel cuddavi-reveal">
+      <div class="cuddavi-continuity__copy">
+        <p class="cuddavi-eyebrow">{{ copy.continuity.eyebrow }}</p>
+        <h2 id="cuddavi-continuity-title">{{ copy.continuity.title }}</h2>
+        <p>{{ copy.continuity.body }}</p>
+        <ul>{% for item in copy.continuity.points %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+      <figure>
+        <img src="{{ '/assets/cuddavi/orbitowl.jpg' | relative_url }}" alt="Orbit Owl, thoughtful and fond of questions" loading="lazy" width="1254" height="1254">
+        <figcaption>“Is a home still a place if we keep adding new constellations to it?”</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cuddavi-home-plan" aria-labelledby="cuddavi-plan-title">
+    <div class="cuddavi-shell cuddavi-home-plan__grid">
+      <div class="cuddavi-heading cuddavi-reveal">
+        <p class="cuddavi-eyebrow">{{ copy.premium.eyebrow }}</p>
+        <h2 id="cuddavi-plan-title">{{ copy.premium.title }}</h2>
+        <p>{{ copy.premium.body }}</p>
+      </div>
+      <div class="cuddavi-home-plan__options cuddavi-reveal">
+        <article><span>Included</span><h3>Begin with one companion</h3><p>Adopt, care, talk, and keep a shared memory together.</p></article>
+        <article><span>Premium</span><h3>Make room for more lives</h3><p>Welcome more companions, each with their own needs, bond, conversations, and memories.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cuddavi-privacy" aria-labelledby="cuddavi-privacy-title">
+    <div class="cuddavi-shell cuddavi-privacy__panel cuddavi-reveal">
+      <div><p class="cuddavi-eyebrow">{{ copy.privacy.eyebrow }}</p><h2 id="cuddavi-privacy-title">{{ copy.privacy.title }}</h2></div>
+      <p>{{ copy.privacy.body }}</p>
+      <a class="cuddavi-text-link" href="{{ '/apps/cuddavi/privacy-policy/' | relative_url }}">Read the privacy page</a>
+    </div>
+  </section>
+
+  <section class="cuddavi-faq" id="faq" aria-labelledby="cuddavi-faq-title">
+    <div class="cuddavi-shell cuddavi-faq__grid">
+      <div class="cuddavi-heading cuddavi-reveal"><p class="cuddavi-eyebrow">Good to know</p><h2 id="cuddavi-faq-title">Before you meet.</h2></div>
+      <div class="cuddavi-faq__items cuddavi-reveal">
+        {% for item in copy.faq %}<details><summary>{{ item.question }}<span aria-hidden="true">+</span></summary><p>{{ item.answer }}</p></details>{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="cuddavi-closing" aria-labelledby="cuddavi-closing-title">
+    <div class="cuddavi-shell cuddavi-closing__panel cuddavi-reveal">
+      <img src="{{ '/assets/cuddavi/cuddavi-icon.png' | relative_url }}" width="92" height="92" alt="Cuddavi app icon" loading="lazy">
+      <p class="cuddavi-eyebrow">A universe of companions</p>
+      <h2 id="cuddavi-closing-title">{{ copy.closing.title }}</h2>
+      <p>{{ copy.closing.body }}</p>
+      {% include cuddavi-download-button.html label=copy.closing.primary %}
+    </div>
+  </section>
+</main>

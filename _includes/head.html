@@ -108,6 +108,9 @@
   {% if page.momentlet_home %}
     {% include seo/momentlet-app-json-ld.html %}
   {% endif %}
+  {% if page.cuddavi_home %}
+    {% include seo/cuddavi-app-json-ld.html %}
+  {% endif %}
   {% if page.app_home or page.chatura_subpage %}
     {% assign chatura_og_locales = "en_US,fr_FR,de_DE,it_IT,nb_NO,ja_JP,ko_KR" | split: "," %}
     {% assign current_og_locale = page.lang | default: site.lang | replace: "-", "_" %}
@@ -147,7 +150,7 @@
     {% endif %}
     <meta name="twitter:image" content="{{ page_share_image | absolute_url }}">
   {% endif %}
-  {% if page.app_home or page.chatura_subpage or page.yonderkin_page or page.momentlet_page %}
+  {% if page.app_home or page.chatura_subpage or page.yonderkin_page or page.momentlet_page or page.cuddavi_page %}
     <link rel="preload" href="{{ "/assets/fonts/BricolageGrotesque-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="{{ "/assets/fonts/DMSans-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
   {% endif %}
@@ -159,6 +162,10 @@
   {% if page.momentlet_page %}
     <link rel="stylesheet" href="{{ "/assets/momentlet.css?v=20260916-1" | relative_url }}">
     <script src="{{ '/assets/momentlet-home.js?v=20260916-1' | relative_url }}" defer></script>
+  {% endif %}
+  {% if page.cuddavi_page %}
+    <link rel="stylesheet" href="{{ "/assets/cuddavi.css?v=20260921-2" | relative_url }}">
+    <script src="{{ '/assets/cuddavi-home.js?v=20260921-2' | relative_url }}" defer></script>
   {% endif %}
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}

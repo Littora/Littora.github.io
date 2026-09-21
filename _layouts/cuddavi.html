@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {% include head.html %}
+  <body class="cuddavi-site{% unless page.cuddavi_home %} cuddavi-site--document{% endunless %}">
+    <a class="cuddavi-skip-link" href="#main-content">Skip to content</a>
+    {% include cuddavi-header.html %}
+    {% if page.cuddavi_home %}
+      {{ content }}
+    {% else %}
+      <main id="main-content" class="cuddavi-document">
+        <article class="cuddavi-document__paper">
+          {{ content }}
+        </article>
+      </main>
+    {% endif %}
+    {% include cuddavi-footer.html %}
+    {% include cuddavi-download-dialog.html %}
+  </body>
+</html>
