@@ -66,3 +66,17 @@ defaults:
       share_image_width: 1448
       share_image_height: 1086
       share_image_alt: A Momentlet keepsake showing a quiet coastal morning
+  - scope:
+      path: "apps/cuddavi"
+      type: "pages"
+    values:
+      layout: cuddavi
+      lang: en-US
+      cuddavi_page: true
+      favicon: /assets/cuddavi/cuddavi-icon.png
+      apple_touch_icon: /assets/cuddavi/cuddavi-icon.png
+      share_image: /assets/cuddavi/cuddavi-cosmos-v2.png
+      share_image_type: image/png
+      share_image_width: 1672
+      share_image_height: 941
+      share_image_alt: Five Cuddavi companions together in a bright universe

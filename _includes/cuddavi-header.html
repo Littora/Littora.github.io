@@ -1,0 +1,24 @@
+{% assign copy = site.data.cuddavi.en %}
+{% assign app = site.data.cuddavi.app %}
+<header class="cuddavi-header" data-cuddavi-header>
+  <div class="cuddavi-shell cuddavi-header__inner">
+    <a class="cuddavi-brand" href="{{ app.site_path | relative_url }}" aria-label="Cuddavi home">
+      <span class="cuddavi-brand__maker">Littora</span>
+      <span class="cuddavi-brand__divider" aria-hidden="true"></span>
+      <img src="{{ '/assets/cuddavi/cuddavi-icon.png' | relative_url }}" width="36" height="36" alt="">
+      <span class="cuddavi-brand__product">Cuddavi</span>
+    </a>
+
+    <button class="cuddavi-menu" type="button" aria-expanded="false" aria-controls="cuddavi-navigation" data-cuddavi-menu>
+      <span>Menu</span>
+    </button>
+
+    <nav class="cuddavi-nav" id="cuddavi-navigation" aria-label="Primary navigation" data-cuddavi-nav>
+      <a href="{{ app.site_path | append: '#life-together' | relative_url }}">{{ copy.nav.life }}</a>
+      <a href="{{ app.site_path | append: '#companions' | relative_url }}">{{ copy.nav.companions }}</a>
+      <a href="{{ app.site_path | append: '#care' | relative_url }}">{{ copy.nav.care }}</a>
+      <a href="{{ app.site_path | append: '#faq' | relative_url }}">{{ copy.nav.faq }}</a>
+      {% include cuddavi-download-button.html class="cuddavi-button cuddavi-button--small" label=copy.nav.download %}
+    </nav>
+  </div>
+</header>

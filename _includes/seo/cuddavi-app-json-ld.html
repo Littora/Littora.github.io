@@ -1,0 +1,19 @@
+{% assign app = site.data.cuddavi.app %}
+{% assign copy = site.data.cuddavi.en %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": {{ app.name | jsonify }},
+  "operatingSystem": "iOS",
+  "applicationCategory": "LifestyleApplication",
+  "description": {{ copy.seo.description | jsonify }},
+  "url": {{ app.site_path | absolute_url | jsonify }},
+  "image": {{ "/assets/cuddavi/cuddavi-icon.png" | absolute_url | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": {{ app.developer | jsonify }},
+    "url": {{ site.url | jsonify }}
+  }
+}
+</script>

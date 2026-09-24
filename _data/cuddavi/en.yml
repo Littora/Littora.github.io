@@ -1,0 +1,127 @@
+seo:
+  title: "Cuddavi — a little life that grows with you"
+  description: "Adopt an AI pet with a personality, changing needs, conversations, and shared memories. Care for one companion or welcome a whole universe."
+
+nav:
+  life: "Life together"
+  companions: "Companions"
+  care: "How care works"
+  faq: "FAQ"
+  download: "Download"
+
+hero:
+  eyebrow: "AI pets with a life of their own"
+  title: "A little life that grows with you."
+  body: "Adopt an AI pet with a nature of their own. Care for what they need, talk about anything, and watch a history form between you."
+  primary: "Download on the App Store"
+  secondary: "See how they live"
+  note: "Kind by design · Private conversations"
+
+proof:
+  - title: "Distinct personalities"
+    body: "No two companions begin the same."
+  - title: "Needs that change"
+    body: "They eat, rest, play, and respond."
+  - title: "Memories you share"
+    body: "Conversations and moments stay together."
+
+bond:
+  eyebrow: "A deeper kind of everyday"
+  title: "More than fed. Known."
+  body: "Each Cuddavi companion has their own personality, changing needs, and an evolving bond. The more you care, talk, and remember together, the more the relationship becomes yours."
+  modules:
+    - title: "Care for the moment"
+      body: "Notice fullness, energy, and joy. Feed, play, or make room to rest—small responses help you learn what feels right for this companion."
+    - title: "Talk about anything"
+      body: "Conversations draw on a companion’s personality, current state, and the recent moments you have shared."
+    - title: "Keep what you share"
+      body: "Save a meaningful detail as a shared memory, so the parts you choose can carry into conversations to come."
+
+companions:
+  eyebrow: "New perspectives await"
+  title: "Meet someone unexpected."
+  body: "From a quiet moon to an ocean of stars, every companion arrives with a different way of noticing the world."
+  items:
+    - name: "Moonling"
+      origin: "From a quiet moon"
+      personality: "Gentle, observant, playful when comfortable."
+      image: "/assets/cuddavi/moonling.png"
+    - name: "Cloudfox"
+      origin: "From the cloud gardens"
+      personality: "Curious, witty, and affectionate."
+      image: "/assets/cuddavi/cloudfox.jpg"
+    - name: "Mossling"
+      origin: "From an ancient forest"
+      personality: "Patient, grounded, and quietly humorous."
+      image: "/assets/cuddavi/mossling.jpg"
+    - name: "Starwhale"
+      origin: "From the ocean of stars"
+      personality: "Dreamy, wise, and fascinated by stories."
+      image: "/assets/cuddavi/starwhale.jpg"
+    - name: "Embercub"
+      origin: "From a warm little sun"
+      personality: "Brave, energetic, and loyal."
+      image: "/assets/cuddavi/embercub.jpg"
+    - name: "Orbit Owl"
+      origin: "From a distant orbit"
+      personality: "Thoughtful, quirky, and fond of questions."
+      image: "/assets/cuddavi/orbitowl.jpg"
+
+care:
+  eyebrow: "Care without pressure"
+  title: "A rhythm you can return to."
+  body: "Cuddavi rewards attention without turning affection into a demand. Needs change with time, favorite activities differ by species, and a companion can always be met where they are."
+  steps:
+    - number: "01"
+      title: "Notice"
+      body: "See how fullness, energy, joy, and mood have changed."
+    - number: "02"
+      title: "Respond"
+      body: "Feed, play, or rest together—with a favorite action when needs are balanced."
+    - number: "03"
+      title: "Grow familiar"
+      body: "Care and conversation build a separate bond with every companion."
+
+continuity:
+  eyebrow: "Conversation with continuity"
+  title: "They bring a point of view. You bring the history."
+  body: "A reply is shaped by who your companion is, how they are feeling, recent conversation, and the shared memory you choose to keep."
+  points:
+    - "A distinct voice and temperament for every species"
+    - "Recent conversations kept with that companion on your device"
+    - "A shared memory you can update whenever it matters"
+
+premium:
+  eyebrow: "Cuddavi Premium"
+  title: "One bond can become a whole home."
+  body: "Begin with one companion. Premium opens the door to more—without flattening them into a collection. Every pet keeps a separate life, mood, bond, conversation, and memory with you."
+
+privacy:
+  eyebrow: "Clear by design"
+  title: "Know what stays and what travels."
+  body: "Your companions, conversation history, and shared memories are stored on your device. When you talk, the message and necessary companion context are sent securely to the AI service and its providers to create a reply."
+
+faq:
+  - question: "Is Cuddavi a game?"
+    answer: "Cuddavi has care and bond systems, but it is designed around companionship rather than winning. There are no public leaderboards or social competition."
+  - question: "What can I do with a companion?"
+    answer: "You can feed, play, rest, talk, give them a name, and keep a shared memory. Their needs, mood, and bond change over time."
+  - question: "Can I adopt more than one pet?"
+    answer: "Yes. You can begin with one companion, while Cuddavi Premium lets you welcome more pets and keep a separate relationship with each one."
+  - question: "Does a companion remember everything?"
+    answer: "No. Recent conversation and a shared memory you choose help shape replies. Cuddavi does not promise perfect or unlimited memory."
+  - question: "Where is my pet data stored?"
+    answer: "Companions, chat history, and shared memories are stored locally on your iPhone. AI conversations require remote processing, as explained before you use them."
+  - question: "Is the app available now?"
+    answer: "Cuddavi is being prepared for App Store review. The download buttons will open the App Store as soon as the release is available."
+
+closing:
+  title: "Who will you meet first?"
+  body: "A moonlit observer. A cloud-garden fox. A tiny warm sun. Or someone stranger still."
+  primary: "Download on the App Store"
+
+download_modal:
+  title: "Your companion is almost ready."
+  body: "Cuddavi is being prepared for App Store review. This download will open on the App Store as soon as the release is available."
+  close: "Got it"
+  support: "Contact support"
