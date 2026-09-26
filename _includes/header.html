@@ -20,6 +20,7 @@
       <nav class="site-nav" id="site-nav-menu" aria-label="{% if page.app_home %}{{ chatura_copy.nav.primary }}{% else %}Primary{% endif %}">
         {% if page.url == "/" %}
           <a class="page-link" href="{{ "/" | relative_url }}#apps">Apps</a>
+          <a class="page-link" href="{{ "/games/" | relative_url }}">Games</a>
         {% elsif page.app_home %}
           <a class="page-link" href="{{ page.url | relative_url }}#features">{{ chatura_copy.nav.features }}</a>
           <a class="page-link" href="{{ page.url | relative_url }}#faq">{{ chatura_copy.nav.faq }}</a>

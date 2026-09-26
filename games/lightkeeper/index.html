@@ -1,0 +1,38 @@
+---
+layout: null
+permalink: /games/lightkeeper/
+title: Lightkeeper · Littora
+description: An optical puzzle in nine chapters.
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7fb">
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/icons/littora-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/games/games.css' | relative_url }}">
+  <script type="module" src="{{ '/games/play.mjs' | relative_url }}"></script>
+</head>
+<body class="play-page light-world" data-game="light">
+  <a class="skip-link" href="#game-body">Skip to game</a>
+  <header class="play-navigation">
+    <a class="all-games" href="{{ '/games/' | relative_url }}"><span aria-hidden="true">←</span> All games</a>
+    <a class="play-brand" href="{{ '/' | relative_url }}">Littora<span> / PLAY</span></a>
+    <button type="button" class="sound-button" id="sound-toggle" aria-pressed="false" aria-label="Enable sound"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5Z"/><path id="sound-waves" d="M15 9l6 6m0-6l-6 6"/></svg><span>Sound</span></button>
+  </header>
+  <main class="play-main">
+    <section class="world-masthead" aria-labelledby="game-title"><div><p class="world-eyebrow">01 / A STUDY IN LIGHT</p><h1 id="game-title">Lightkeeper<span class="world-title-mark" aria-hidden="true">◌</span></h1><p class="world-tagline">A little clarity, one turn at a time.</p></div><span class="world-signature" aria-hidden="true">ROTATE · REFLECT · CONNECT</span></section>
+    <div id="game-body"></div>
+    <noscript><p class="no-script">Enable JavaScript to play this game. <a href="{{ '/games/' | relative_url }}">Return to all games</a>.</p></noscript>
+  </main>
+  <footer class="play-footer"><a href="{{ '/games/' | relative_url }}">More little worlds ↗</a><span data-storage-notice>Your progress stays in this browser.</span></footer>
+</body>
+</html>
