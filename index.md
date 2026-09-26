@@ -25,13 +25,6 @@ permalink: /
           <span class="brand-app-card__description">Character-led AI companionship for everyday warmth, gentle support, and conversations worth keeping.</span>
         </span>
       </a>
-      <a class="brand-app-card" href="/apps/cuddavi/" aria-label="View Cuddavi app page">
-        <span class="brand-app-card__icon brand-app-card__icon--cuddavi" aria-hidden="true"></span>
-        <span class="brand-app-card__content">
-          <strong>Cuddavi</strong>
-          <span class="brand-app-card__description">Adopt an AI pet with a nature of their own—care, talk, remember, and grow a life together.</span>
-        </span>
-      </a>
       <a class="brand-app-card" href="/apps/yonderkin/" aria-label="View Yonderkin app page">
         <span class="brand-app-card__icon brand-app-card__icon--yonderkin" aria-hidden="true"></span>
         <span class="brand-app-card__content">
@@ -44,6 +37,13 @@ permalink: /
         <span class="brand-app-card__content">
           <strong>Momentlet</strong>
           <span class="brand-app-card__description">Turn a fleeting moment into an image worth keeping—described in your words and shaped by a visual feeling.</span>
+        </span>
+      </a>
+      <a class="brand-app-card" href="/apps/cuddavi/" aria-label="View Cuddavi app page">
+        <span class="brand-app-card__icon brand-app-card__icon--cuddavi" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Cuddavi</strong>
+          <span class="brand-app-card__description">Adopt an AI pet with a nature of their own—care, talk, remember, and grow a life together.</span>
         </span>
       </a>
     </div>

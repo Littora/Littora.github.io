@@ -104,6 +104,21 @@ body.cuddavi-site {
   text-decoration: none;
 }
 
+.cuddavi-brand__home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.cuddavi-brand a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cuddavi-brand a:hover {
+  color: var(--cuddavi-teal-deep);
+}
+
 .cuddavi-brand img {
   width: 36px;
   height: 36px;
@@ -203,7 +218,7 @@ body.cuddavi-site {
 .cuddavi-text-link:focus-visible,
 .cuddavi-nav a:focus-visible,
 .cuddavi-menu:focus-visible,
-.cuddavi-brand:focus-visible,
+.cuddavi-brand a:focus-visible,
 .cuddavi-faq summary:focus-visible,
 .cuddavi-companion-picker button:focus-visible,
 .cuddavi-care-demo button:focus-visible {
@@ -1275,9 +1290,12 @@ body.cuddavi-site {
     width: min(100% - 28px, 560px);
   }
 
-  .cuddavi-brand__maker,
-  .cuddavi-brand__divider {
-    display: none;
+  .cuddavi-brand {
+    gap: 0.5rem;
+  }
+
+  .cuddavi-brand__home {
+    gap: 0.4rem;
   }
 
   .cuddavi-brand img {
@@ -1435,7 +1453,7 @@ body.cuddavi-site {
 
 /* Cuddavi editorial universe — immersive launch-page composition */
 :root {
-  --cuddavi-editorial: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif;
+  --cuddavi-editorial: var(--cuddavi-font);
 }
 
 .cuddavi-main {
@@ -1538,27 +1556,36 @@ body.cuddavi-site {
   padding-block: 1.35rem !important;
 }
 
-.cuddavi-proof__icon {
-  width: 48px;
-  height: 48px;
+/* Three illustrated symbols: personality, changing needs, shared memory. */
+.cuddavi-proof .cuddavi-proof__icon {
+  width: 66px;
+  height: 66px;
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  background: #e5f3f2;
+  border: 1px solid rgba(39, 141, 151, 0.1);
+  border-radius: 44% 56% 53% 47%;
+  color: #267d87;
+  background: radial-gradient(circle at 32% 22%, #f6fcfa, #dceeea);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-.cuddavi-proof__icon::before {
-  color: var(--cuddavi-teal-deep);
-  font-size: 1.15rem;
-  line-height: 1;
+.cuddavi-proof__icon svg {
+  width: 56px;
+  height: 56px;
 }
 
-.cuddavi-proof__item--1 .cuddavi-proof__icon::before { content: "✦"; }
-.cuddavi-proof__item--2 .cuddavi-proof__icon { background: #ffe8df; }
-.cuddavi-proof__item--2 .cuddavi-proof__icon::before { content: "♥"; color: var(--cuddavi-coral-deep); }
-.cuddavi-proof__item--3 .cuddavi-proof__icon { background: #eee8fa; }
-.cuddavi-proof__item--3 .cuddavi-proof__icon::before { content: "★"; color: var(--cuddavi-lilac); }
+.cuddavi-proof__item--2 .cuddavi-proof__icon {
+  border-color: rgba(204, 111, 98, 0.12);
+  color: #cc6f62;
+  background: radial-gradient(circle at 32% 22%, #fff9ef, #f8e3d9);
+}
+
+.cuddavi-proof__item--3 .cuddavi-proof__icon {
+  border-color: rgba(129, 111, 173, 0.12);
+  color: #816fad;
+  background: radial-gradient(circle at 32% 22%, #fbf8ff, #e9e1f2);
+}
 
 .cuddavi-proof__item > span:last-child {
   min-width: 0;
@@ -2962,5 +2989,120 @@ body.cuddavi-site {
 
   .cuddavi-ensemble__note {
     display: none;
+  }
+}
+
+/* Display typography: the same bundled family at deliberate optical weights. */
+.cuddavi-main h1,
+.cuddavi-main h2,
+.cuddavi-main h3 {
+  font-family: var(--cuddavi-font);
+  color: #1c3350;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.cuddavi-hero--requested h1 {
+  max-width: 550px;
+  font-size: clamp(3.9rem, 6.25vw, 6rem);
+  font-weight: 560;
+  letter-spacing: -0.025em;
+  line-height: 1.04;
+}
+
+.cuddavi-bond__requested-copy h2,
+.cuddavi-cosmos__copy h2 {
+  font-size: clamp(3.4rem, 5.5vw, 5.4rem);
+}
+
+.cuddavi-today__heading h2 {
+  font-size: clamp(3rem, 4.6vw, 4.5rem);
+}
+
+.cuddavi-main h3 {
+  letter-spacing: -0.015em;
+}
+
+.cuddavi-companion-stage__copy h3 {
+  font-size: clamp(3.5rem, 5.5vw, 5.5rem);
+  letter-spacing: -0.025em;
+}
+
+.cuddavi-hero .cuddavi-actions {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: stretch;
+  gap: 18px;
+}
+
+.cuddavi-hero .cuddavi-hero__note {
+  width: 100%;
+  margin: 0;
+  color: #526478;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* The portrait stays still; only a soft highlight moves across its surface. */
+.cuddavi-companion-stage__portrait {
+  position: relative;
+  isolation: isolate;
+}
+
+.cuddavi-companion-stage__portrait::after {
+  position: absolute;
+  inset: -20%;
+  z-index: 1;
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(115deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.06) 43%,
+    rgba(255, 255, 255, 0.5) 49%,
+    rgba(255, 255, 255, 0.12) 54%,
+    transparent 62%);
+  transform: translateX(-90%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cuddavi-companion-stage__portrait[data-sheen]::after,
+  .cuddavi-companion-stage__portrait:hover::after {
+    animation: cuddavi-companion-sheen 1.4s ease-in-out;
+  }
+}
+
+@keyframes cuddavi-companion-sheen {
+  0% { opacity: 0; transform: translateX(-90%); }
+  18% { opacity: 0.85; }
+  72% { opacity: 0.85; }
+  100% { opacity: 0; transform: translateX(90%); }
+}
+
+@media (max-width: 680px) {
+  .cuddavi-hero--requested h1 {
+    font-size: clamp(2.9rem, 12.8vw, 4.4rem);
+    line-height: 1.08;
+  }
+
+  .cuddavi-hero .cuddavi-actions {
+    width: 100%;
+  }
+
+  .cuddavi-bond__requested-copy h2,
+  .cuddavi-cosmos__copy h2,
+  .cuddavi-today__heading h2 {
+    font-size: clamp(2.55rem, 11.2vw, 3.65rem);
+  }
+
+  .cuddavi-cosmos__copy h2 {
+    color: #fffdf8;
+  }
+
+  .cuddavi-companion-stage__copy h3 {
+    font-size: clamp(3rem, 12vw, 4rem);
   }
 }

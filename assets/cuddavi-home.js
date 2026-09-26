@@ -91,13 +91,29 @@
   const companionName = document.querySelector("[data-companion-name]");
   const companionOrigin = document.querySelector("[data-companion-origin]");
   const companionPersonality = document.querySelector("[data-companion-personality]");
+  const companionPortrait = companionImage?.parentElement;
+  let companionSheenTimer = null;
   document.querySelectorAll("[data-companion]").forEach((button) => {
     button.addEventListener("click", () => {
       document.querySelectorAll("[data-companion]").forEach((item) => item.setAttribute("aria-selected", "false"));
       button.setAttribute("aria-selected", "true");
       if (companionImage instanceof HTMLImageElement) {
-        companionImage.src = button.dataset.image || companionImage.src;
+        clearTimeout(companionSheenTimer);
+        companionPortrait?.removeAttribute("data-sheen");
+        const imagePath = button.dataset.image || companionImage.getAttribute("src");
+        companionImage.src = imagePath;
         companionImage.alt = button.dataset.name || "Cuddavi companion";
+        companionImage.decode().then(() => {
+          // A rapid second selection should not animate the previous companion.
+          if (companionImage.getAttribute("src") !== imagePath
+            || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+          companionPortrait?.setAttribute("data-sheen", "");
+          companionSheenTimer = setTimeout(() => {
+            companionPortrait?.removeAttribute("data-sheen");
+          }, 1400);
+        }).catch(() => {
+          // The next selection remains usable if an image fails to decode.
+        });
       }
       if (companionName) companionName.textContent = button.dataset.name || "";
       if (companionOrigin) companionOrigin.textContent = button.dataset.origin || "";

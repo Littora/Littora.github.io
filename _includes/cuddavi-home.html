@@ -4,14 +4,12 @@
   <section class="cuddavi-hero cuddavi-hero--requested" aria-labelledby="cuddavi-hero-title">
     <div class="cuddavi-shell cuddavi-hero__requested-grid">
       <div class="cuddavi-hero__copy cuddavi-reveal">
-        <p class="cuddavi-eyebrow">{{ copy.hero.eyebrow }}</p>
         <h1 id="cuddavi-hero-title">{{ copy.hero.title }}</h1>
         <p class="cuddavi-hero__body">{{ copy.hero.body }}</p>
         <div class="cuddavi-actions">
           {% include cuddavi-download-button.html label=copy.hero.primary %}
-          <a class="cuddavi-text-link cuddavi-text-link--with-play" href="#life-together"><span aria-hidden="true">▶</span>{{ copy.hero.secondary }}</a>
+          <p class="cuddavi-hero__note">{{ copy.hero.note }}</p>
         </div>
-        <p class="cuddavi-hero__note">{{ copy.hero.note }}</p>
       </div>
       <figure class="cuddavi-hero__requested-art cuddavi-reveal">
         <img src="{{ '/assets/cuddavi/cloudfox.jpg' | relative_url }}" width="1254" height="1254" alt="Cloudfox, a curious blue Cuddavi companion" fetchpriority="high" decoding="async">
@@ -23,7 +21,35 @@
       <div class="cuddavi-shell cuddavi-proof cuddavi-reveal" aria-label="What makes Cuddavi different">
         {% for item in copy.proof %}
           <div class="cuddavi-proof__item cuddavi-proof__item--{{ forloop.index }}">
-            <span class="cuddavi-proof__icon" aria-hidden="true"></span>
+            <span class="cuddavi-proof__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" focusable="false">
+                {% case forloop.index %}
+                  {% when 1 %}
+                    <path d="M15 45C9 33 15 14 32 12c13-2 25 7 25 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".35"/>
+                    <ellipse cx="24" cy="25" rx="4" ry="5.5" transform="rotate(-25 24 25)" fill="currentColor" opacity=".65"/>
+                    <ellipse cx="36" cy="23" rx="4" ry="5.5" transform="rotate(15 36 23)" fill="currentColor" opacity=".85"/>
+                    <ellipse cx="16" cy="34" rx="3.5" ry="4.5" transform="rotate(-35 16 34)" fill="currentColor" opacity=".5"/>
+                    <ellipse cx="44" cy="33" rx="3.5" ry="4.5" transform="rotate(35 44 33)" fill="currentColor" opacity=".65"/>
+                    <path d="M20 46c-3-5 2-9 5-13 2-3 6-4 9-1 4 4 10 7 8 13-2 6-8 2-11 2-4 0-8 5-11-1Z" fill="currentColor"/>
+                    <path d="m49 13 1.5 4.5L55 19l-4.5 1.5L49 25l-1.5-4.5L43 19l4.5-1.5L49 13Z" fill="#dfb56d"/>
+                    <circle cx="47" cy="49" r="2" fill="#dfb56d"/>
+                  {% when 2 %}
+                    <path d="M32 43S15 34 15 24c0-9 11-12 17-4 6-8 17-5 17 4 0 10-17 19-17 19Z" fill="currentColor" opacity=".82"/>
+                    <path d="M19 29h7l3-6 5 13 3-7h8" stroke="#fffaf2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 45c9 9 26 9 35-1M14 45v7M14 45h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+                    <path d="M48 10c3 1 5 4 5 7-4 0-7-3-7-6" fill="#dfb56d"/>
+                    <circle cx="12" cy="16" r="2" fill="#dfb56d"/>
+                  {% when 3 %}
+                    <path d="M32 23c-7-5-15-5-23-3v27c8-2 16-2 23 3 7-5 15-5 23-3V20c-8-2-16-2-23 3Z" fill="currentColor" opacity=".14"/>
+                    <path d="M32 23c-7-5-15-5-23-3v27c8-2 16-2 23 3 7-5 15-5 23-3V20c-8-2-16-2-23 3ZM32 23v27" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M16 29c3-.4 6 0 9 1M16 36c3-.4 6 0 9 1M39 37c3-1 6-1.4 9-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+                    <path d="m41 7 1.8 5.2L48 14l-5.2 1.8L41 21l-1.8-5.2L34 14l5.2-1.8L41 7Z" fill="#dfb56d"/>
+                    <path d="m19 12 8-3 5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".4"/>
+                    <circle cx="19" cy="12" r="1.8" fill="currentColor"/>
+                    <circle cx="27" cy="9" r="1.8" fill="currentColor"/>
+                {% endcase %}
+              </svg>
+            </span>
             <span><strong>{{ item.title }}</strong><small>{{ item.body }}</small></span>
           </div>
         {% endfor %}
@@ -34,7 +60,6 @@
   <section class="cuddavi-bond cuddavi-bond--requested" id="life-together" aria-labelledby="cuddavi-bond-title">
     <div class="cuddavi-shell cuddavi-bond__requested-grid">
       <div class="cuddavi-bond__requested-copy cuddavi-reveal">
-        <p class="cuddavi-eyebrow">{{ copy.bond.eyebrow }}</p>
         <h2 id="cuddavi-bond-title">{{ copy.bond.title }}</h2>
         <p>{{ copy.bond.body }}</p>
         <p class="cuddavi-handwritten">Different hearts.<br>A brighter you.</p>
@@ -54,7 +79,6 @@
       <img src="{{ '/assets/cuddavi/cuddavi-cosmos-v2.png' | relative_url }}" width="1672" height="941" alt="" loading="lazy" decoding="async">
     </figure>
     <div class="cuddavi-shell cuddavi-cosmos__copy cuddavi-reveal">
-      <p class="cuddavi-eyebrow">A universe of companions</p>
       <h2 id="cuddavi-universe-title">Every new life opens a different world.</h2>
       <p>Some arrive from cloud gardens. Others carry forests, small suns, quiet moons, or whole oceans of stars with them.</p>
       <p class="cuddavi-cosmos__whisper">Different worlds.<br>Deeper bonds.</p>
@@ -64,7 +88,6 @@
   <section class="cuddavi-today" id="care" aria-labelledby="cuddavi-today-title">
     <div class="cuddavi-shell">
       <div class="cuddavi-today__heading cuddavi-reveal">
-        <p class="cuddavi-eyebrow">Today together</p>
         <h2 id="cuddavi-today-title">Different moments. A deeper bond.</h2>
       </div>
 
@@ -100,7 +123,6 @@
   <section class="cuddavi-companions" id="companions" aria-labelledby="cuddavi-companions-title">
     <div class="cuddavi-shell">
       <div class="cuddavi-heading cuddavi-heading--center cuddavi-reveal">
-        <p class="cuddavi-eyebrow">{{ copy.companions.eyebrow }}</p>
         <h2 id="cuddavi-companions-title">{{ copy.companions.title }}</h2>
         <p>{{ copy.companions.body }}</p>
       </div>
@@ -129,7 +151,6 @@
   <section class="cuddavi-care" aria-labelledby="cuddavi-care-title">
     <div class="cuddavi-shell cuddavi-care__grid">
       <div class="cuddavi-heading cuddavi-reveal">
-        <p class="cuddavi-eyebrow">{{ copy.care.eyebrow }}</p>
         <h2 id="cuddavi-care-title">{{ copy.care.title }}</h2>
         <p>{{ copy.care.body }}</p>
       </div>
@@ -144,7 +165,6 @@
   <section class="cuddavi-continuity" aria-labelledby="cuddavi-continuity-title">
     <div class="cuddavi-shell cuddavi-continuity__panel cuddavi-reveal">
       <div class="cuddavi-continuity__copy">
-        <p class="cuddavi-eyebrow">{{ copy.continuity.eyebrow }}</p>
         <h2 id="cuddavi-continuity-title">{{ copy.continuity.title }}</h2>
         <p>{{ copy.continuity.body }}</p>
         <ul>{% for item in copy.continuity.points %}<li>{{ item }}</li>{% endfor %}</ul>
@@ -159,7 +179,6 @@
   <section class="cuddavi-home-plan" aria-labelledby="cuddavi-plan-title">
     <div class="cuddavi-shell cuddavi-home-plan__grid">
       <div class="cuddavi-heading cuddavi-reveal">
-        <p class="cuddavi-eyebrow">{{ copy.premium.eyebrow }}</p>
         <h2 id="cuddavi-plan-title">{{ copy.premium.title }}</h2>
         <p>{{ copy.premium.body }}</p>
       </div>
@@ -170,17 +189,9 @@
     </div>
   </section>
 
-  <section class="cuddavi-privacy" aria-labelledby="cuddavi-privacy-title">
-    <div class="cuddavi-shell cuddavi-privacy__panel cuddavi-reveal">
-      <div><p class="cuddavi-eyebrow">{{ copy.privacy.eyebrow }}</p><h2 id="cuddavi-privacy-title">{{ copy.privacy.title }}</h2></div>
-      <p>{{ copy.privacy.body }}</p>
-      <a class="cuddavi-text-link" href="{{ '/apps/cuddavi/privacy-policy/' | relative_url }}">Read the privacy page</a>
-    </div>
-  </section>
-
   <section class="cuddavi-faq" id="faq" aria-labelledby="cuddavi-faq-title">
     <div class="cuddavi-shell cuddavi-faq__grid">
-      <div class="cuddavi-heading cuddavi-reveal"><p class="cuddavi-eyebrow">Good to know</p><h2 id="cuddavi-faq-title">Before you meet.</h2></div>
+      <div class="cuddavi-heading cuddavi-reveal"><h2 id="cuddavi-faq-title">Before you meet.</h2></div>
       <div class="cuddavi-faq__items cuddavi-reveal">
         {% for item in copy.faq %}<details><summary>{{ item.question }}<span aria-hidden="true">+</span></summary><p>{{ item.answer }}</p></details>{% endfor %}
       </div>
@@ -190,7 +201,6 @@
   <section class="cuddavi-closing" aria-labelledby="cuddavi-closing-title">
     <div class="cuddavi-shell cuddavi-closing__panel cuddavi-reveal">
       <img src="{{ '/assets/cuddavi/cuddavi-icon.png' | relative_url }}" width="92" height="92" alt="Cuddavi app icon" loading="lazy">
-      <p class="cuddavi-eyebrow">A universe of companions</p>
       <h2 id="cuddavi-closing-title">{{ copy.closing.title }}</h2>
       <p>{{ copy.closing.body }}</p>
       {% include cuddavi-download-button.html label=copy.closing.primary %}
