@@ -4,7 +4,7 @@ This app uses the existing Jekyll structure: product data in `_data/pickkin`, ap
 
 ## Update content
 
-- `_data/pickkin/app.yml`: product identity, support email, App Store URL, daily allowances, icon, languages.
+- `_data/pickkin/app.yml`: product identity, support email, App Store URL, free weekly and Premium monthly allowances, icon, languages.
 - `_data/pickkin/en.yml`: marketing copy, FAQs, download dialog, and three illustrative decision examples.
 - `_includes/pickkin-home.html`: homepage sections.
 - `assets/pickkin.scss`: responsive styling, motion preferences, and document/dialog styles.
@@ -24,7 +24,7 @@ All CTAs show a normal download action. With `app_store_url` empty, they open on
 - `/apps/pickkin/whats-new/`
 - `/apps/pickkin/support/`
 
-Privacy Policy and Terms of Service are intentionally placeholders, excluded from the sitemap and marked `noindex`. Replace their contents, then remove `noindex` and `sitemap: false` when the final documents are ready. The Apple standard EULA is linked separately.
+Privacy Policy and Terms of Service are intentionally placeholders, excluded from the sitemap and marked `noindex`. Replace their contents, then remove `noindex` and `sitemap: false` when the final documents are ready.
 
 ## Local build
 
@@ -43,3 +43,7 @@ Check desktop/mobile layouts, the three example branches, acceptance/restart, pu
 - No JavaScript errors or failed page/asset requests occurred. Content remains readable with JavaScript disabled.
 - Desktop and mobile screenshots were visually reviewed.
 - Original source hashes and rendered outputs were compared against the baseline. The homepage app entry is the only edit to an existing source file; existing app pages and shared assets remain unchanged.
+
+## Presentation updates
+
+The header includes a Littora home link alongside Pickkin and keeps only How it works and Download. Decorative section labels and the tagline are removed. The two-line App Store button uses explicit type sizes and line heights. Hero columns align to the top so longer examples cannot move the introduction. Website allowances are configured as 3 free nudges per week and 100 Premium nudges per month; the plans, FAQ, and release notes use the same data. These changes apply to the website presentation only.

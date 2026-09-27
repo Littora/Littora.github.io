@@ -6,11 +6,9 @@ description: "Product updates and release notes for Pickkin, your AI decision bu
 permalink: /apps/pickkin/whats-new/
 ---
 
-<p class="pickkin-eyebrow">A small beginning</p>
-
 # What’s New
 
-<p class="pickkin-document__lead">Introducing Pickkin. Let’s pick together.</p>
+<p class="pickkin-document__lead">Introducing Pickkin, your AI decision buddy.</p>
 
 ## Version 1.0.0
 
@@ -34,6 +32,6 @@ Use Pickkin in English, German, French, Italian, Japanese, Korean, or Norwegian 
 
 ### Start free, with room for more
 
-Start with 10 successful AI nudges per day. Pickkin Premium offers 50 per day through monthly or annual subscriptions.
+Start with {{ site.data.pickkin.app.free_weekly_nudges }} successful AI nudges per week. Pickkin Premium offers {{ site.data.pickkin.app.premium_monthly_nudges }} per month through monthly or annual subscriptions.
 
 <p>{% include pickkin-download-button.html %}</p>

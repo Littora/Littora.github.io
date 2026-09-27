@@ -8,8 +8,6 @@ noindex: true
 sitemap: false
 ---
 
-<p class="pickkin-eyebrow">Privacy</p>
-
 # Privacy Policy
 
 <p class="pickkin-document__lead">We’re preparing this page.</p>

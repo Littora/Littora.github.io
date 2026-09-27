@@ -6,8 +6,6 @@ description: "Get help with Pickkin, subscriptions, saved decisions, or an AI nu
 permalink: /apps/pickkin/support/
 ---
 
-<p class="pickkin-eyebrow">Here to help</p>
-
 # A little help, when you need it.
 
 <p class="pickkin-document__lead">Questions, feedback, or something that isn’t working? We’d love to hear from you.</p>
@@ -20,7 +18,7 @@ Or write to **[littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Pickkin
 
 ### An AI nudge won’t load
 
-AI nudges need an internet connection. Check your connection and try again. Failed or canceled replies don’t use up a successful nudge from your daily allowance.
+AI nudges need an internet connection. Check your connection and try again. Failed or canceled replies don’t use up a successful nudge from your allowance.
 
 ### I want to restore Premium
 

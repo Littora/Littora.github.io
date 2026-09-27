@@ -1,5 +1,4 @@
 hero:
-  eyebrow: Your AI decision buddy
   title: One less thing on your mind.
   body: Say what you’re torn between. Get a thoughtful nudge, react, and find a choice that feels right for today.
 features:
@@ -30,7 +29,7 @@ faq:
   - question: What if I don’t like its suggestion?
     answer: Push back. Pickkin uses your reaction to clarify what matters or which condition is missing. A recommendation is a starting point, and the final choice is yours.
   - question: Can I start for free?
-    answer: Yes. Start with 10 successful AI nudges per day. Pickkin Premium gives you 50 per day, with monthly and annual subscriptions available in the app. Current prices and renewal details are shown before you subscribe.
+    answer: Yes. Start with %free_nudges% successful AI nudges per week. Pickkin Premium gives you %premium_nudges% per month, with monthly and annual subscriptions available in the app. Current prices and renewal details are shown before you subscribe.
   - question: Where do my decisions go?
     answer: Your saved decisions stay on your iPhone. When you ask for an AI nudge, your dilemma and relevant context are sent to our AI service and its providers. The app explains this before your first request. Decision history does not currently sync between devices.
   - question: Which languages are supported?
