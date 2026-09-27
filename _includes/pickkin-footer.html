@@ -1,0 +1,16 @@
+{% assign app = site.data.pickkin.app %}
+<footer class="pickkin-footer">
+  <div class="pickkin-shell">
+    <div class="pickkin-footer__top">
+      <div><a class="pickkin-brand" href="{{ app.site_path | relative_url }}"><img src="{{ app.icon | relative_url }}" width="32" height="32" alt="" loading="lazy"><span>Pickkin</span></a><p>Let’s pick together.</p></div>
+      <nav aria-label="Pickkin information">
+        <a href="{{ '/apps/pickkin/privacy-policy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/apps/pickkin/terms-of-service/' | relative_url }}">Terms of Service</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
+        <a href="{{ '/apps/pickkin/whats-new/' | relative_url }}">What’s New</a>
+        <a href="{{ '/apps/pickkin/support/' | relative_url }}">Support</a>
+      </nav>
+    </div>
+    <div class="pickkin-footer__bottom"><span>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">Littora</a></span><a href="mailto:{{ app.support_email }}">{{ app.support_email }}</a><a href="{{ '/' | relative_url }}">More from Littora ↗</a></div>
+  </div>
+</footer>

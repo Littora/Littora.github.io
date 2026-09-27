@@ -1,0 +1,16 @@
+{% assign app = site.data.pickkin.app %}
+<header class="pickkin-header" data-pickkin-header>
+  <div class="pickkin-shell pickkin-header__inner">
+    <a class="pickkin-brand" href="{{ app.site_path | relative_url }}" aria-label="Pickkin home">
+      <img src="{{ app.icon | relative_url }}" width="40" height="40" alt="">
+      <span>Pickkin</span>
+    </a>
+    <button class="pickkin-menu" type="button" aria-expanded="false" aria-controls="pickkin-navigation" data-pickkin-menu>Menu <span aria-hidden="true">+</span></button>
+    <nav id="pickkin-navigation" class="pickkin-nav" aria-label="Pickkin navigation" data-pickkin-navigation>
+      <a href="{{ app.site_path | relative_url }}#how-it-works">How it works</a>
+      <a href="{{ app.site_path | relative_url }}#questions">Questions</a>
+      <a href="{{ '/apps/pickkin/support/' | relative_url }}"{% if page.permalink == '/apps/pickkin/support/' %} aria-current="page"{% endif %}>Support</a>
+      {% include pickkin-download-button.html compact=true %}
+    </nav>
+  </div>
+</header>

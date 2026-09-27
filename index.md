@@ -46,6 +46,13 @@ permalink: /
           <span class="brand-app-card__description">Adopt an AI pet with a nature of their own—care, talk, remember, and grow a life together.</span>
         </span>
       </a>
+      <a class="brand-app-card" href="{{ '/apps/pickkin/' | relative_url }}" aria-label="View Pickkin app page">
+        <span class="brand-app-card__icon" style="background: #146f60 url('{{ '/assets/pickkin/pickkin-icon.webp' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Pickkin</strong>
+          <span class="brand-app-card__description">Your AI decision buddy for everyday dilemmas. Get a thoughtful nudge, react, and find a choice that feels right for today.</span>
+        </span>
+      </a>
     </div>
   </section>
 </div>

@@ -1,0 +1,10 @@
+{% assign app = site.data.pickkin.app %}
+{% assign copy = site.data.pickkin.en.download_modal %}
+<dialog class="pickkin-dialog" id="pickkin-download-dialog" aria-labelledby="pickkin-dialog-title" aria-describedby="pickkin-dialog-body" data-pickkin-dialog>
+  <button class="pickkin-dialog__dismiss" type="button" data-pickkin-dialog-close aria-label="Close download message">×</button>
+  <img src="{{ app.icon | relative_url }}" width="72" height="72" alt="">
+  <h2 id="pickkin-dialog-title">{{ copy.title }}</h2>
+  <p id="pickkin-dialog-body">{{ copy.body }}</p>
+  <button class="pickkin-action pickkin-action--primary" type="button" data-pickkin-dialog-close autofocus>{{ copy.close }}</button>
+  <a class="pickkin-dialog__support" href="mailto:{{ app.support_email }}?subject=Pickkin%20Support">Contact support</a>
+</dialog>

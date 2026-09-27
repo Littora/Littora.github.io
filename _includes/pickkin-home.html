@@ -1,0 +1,86 @@
+{% assign app = site.data.pickkin.app %}
+{% assign copy = site.data.pickkin.en %}
+{% assign example = copy.examples.first %}
+{% assign first = example.nodes.start %}
+<main id="main-content">
+  <section class="pickkin-hero pickkin-shell" aria-labelledby="pickkin-hero-title">
+    <div class="pickkin-hero__copy">
+      <p class="pickkin-eyebrow">{{ copy.hero.eyebrow }}</p>
+      <h1 id="pickkin-hero-title">{{ copy.hero.title }}</h1>
+      <p class="pickkin-hero__body">{{ copy.hero.body }}</p>
+      <div class="pickkin-hero__actions">
+        {% include pickkin-download-button.html %}
+        <a class="pickkin-text-link" href="#how-it-works">See how it feels <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="pickkin-hero__note">For iPhone <span>·</span> 7 languages <span>·</span> Free to start</p>
+      <div class="pickkin-hero__signature"><span aria-hidden="true">↗</span><p>Let’s pick together.</p></div>
+    </div>
+    <div class="pickkin-demo" id="try-pickkin" data-pickkin-demo>
+      <div class="pickkin-demo__heading"><span>A little preview</span><span class="pickkin-demo__spark" aria-hidden="true">↗</span></div>
+      <div class="pickkin-demo__examples" role="group" aria-label="Choose a sample dilemma">
+        {% for item in copy.examples %}<button type="button" data-pickkin-example="{{ item.id }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ item.label }}</button>{% endfor %}
+      </div>
+      <p class="pickkin-demo__dilemma" data-pickkin-dilemma>“{{ example.dilemma }}”</p>
+      <div class="pickkin-demo__card" role="group" aria-labelledby="pickkin-demo-title" tabindex="-1" data-pickkin-card data-state="question">
+        <p class="pickkin-demo__eyebrow" data-pickkin-eyebrow>{{ first.eyebrow }}</p>
+        <h2 id="pickkin-demo-title" data-pickkin-demo-title>{{ first.title }}</h2>
+        <div class="pickkin-demo__voices" data-pickkin-voices hidden></div>
+        <p class="pickkin-demo__body" data-pickkin-demo-body>{{ first.body }}</p>
+        <div class="pickkin-demo__actions" data-pickkin-actions>{% for action in first.actions %}<button class="pickkin-reaction" type="button" data-pickkin-next="{{ action.next }}">{{ action.label }}</button>{% endfor %}</div>
+      </div>
+      <p class="pickkin-demo__note">A sample dilemma. Your own starts in the app.</p>
+      <div class="pickkin-sr-only" role="status" aria-live="polite" aria-atomic="true" data-pickkin-announcement></div>
+    </div>
+    <script id="pickkin-examples" type="application/json">{{ copy.examples | jsonify | replace: '</', '<\/' }}</script>
+  </section>
+
+  <section class="pickkin-features pickkin-shell" aria-labelledby="pickkin-features-title">
+    <div class="pickkin-section-heading">
+      <p class="pickkin-eyebrow">A nudge that fits the moment</p>
+      <h2 id="pickkin-features-title">A little clarity can<br>change your whole day.</h2>
+      <p>Sometimes you need a new angle. Sometimes you need someone to make the first pick. Pickkin meets you there.</p>
+    </div>
+    <div class="pickkin-features__grid">{% for feature in copy.features %}<article><span class="pickkin-feature-number">{{ feature.number }}</span><h3>{{ feature.title }}</h3><p>{{ feature.body }}</p></article>{% endfor %}</div>
+  </section>
+
+  <section class="pickkin-how pickkin-shell" id="how-it-works" aria-labelledby="pickkin-how-title">
+    <div class="pickkin-how__panel">
+      <div class="pickkin-how__copy">
+        <p class="pickkin-eyebrow">Small steps. A clearer choice.</p>
+        <h2 id="pickkin-how-title">From “maybe”<br>to “let’s do that.”</h2>
+        <ol class="pickkin-steps">{% for step in copy.steps %}<li><span aria-hidden="true">{{ step.number }}</span><div><h3>{{ step.title }}</h3><p>{{ step.body }}</p></div></li>{% endfor %}</ol>
+        <a class="pickkin-text-link" href="#try-pickkin">Try the little preview <span aria-hidden="true">↑</span></a>
+      </div>
+      <figure class="pickkin-app-preview">
+        <div class="pickkin-phone"><img src="{{ '/assets/pickkin/pickkin-app-preview.webp' | relative_url }}" width="672" height="1454" loading="lazy" decoding="async" alt="Pickkin’s iPhone screen presents two sides of tonight’s plans and two simple reactions, one card at a time."></div>
+        <figcaption>One little step at a time.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="pickkin-kept pickkin-shell" aria-labelledby="pickkin-kept-title">
+    <div class="pickkin-kept__visual" role="img" aria-label="An example saved decision: Tonight’s plans, stay in and recharge.">
+      <div class="pickkin-kept__card"><span class="pickkin-kept__check" aria-hidden="true">✓</span><p class="pickkin-eyebrow">My decisions</p><h3>Tonight’s plans</h3><p>Stay in and recharge.</p><span class="pickkin-kept__settled">Decided. A little lighter.</span></div>
+      <span class="pickkin-kept__caption">A choice you can come back to.</span>
+    </div>
+    <div class="pickkin-kept__copy"><p class="pickkin-eyebrow">Make a choice. Keep the clarity.</p><h2 id="pickkin-kept-title">Settled, saved,<br>and off your mind.</h2><p>Your decisions have a home in My decisions. Keep your choice and an optional small next step, then get back to the rest of your day.</p><p class="pickkin-kept__privacy"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="10" width="12" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Saved decisions stay on your iPhone.</p></div>
+  </section>
+
+  <section class="pickkin-plans pickkin-shell" aria-labelledby="pickkin-plans-title">
+    <div class="pickkin-plans__intro"><p class="pickkin-eyebrow">Start with a little nudge</p><h2 id="pickkin-plans-title">A little help.<br>Room for more.</h2><p>Start free. Choose Premium when you’d like more nudges in your day.</p></div>
+    <div class="pickkin-plans__options">
+      <article><span class="pickkin-plan-label">Free</span><h3>{{ app.free_daily_nudges }} <span>nudges a day</span></h3><p>All three kinds of nudges.<br>Your reactions. Your saved decisions.</p></article>
+      <article class="pickkin-plan-premium"><span class="pickkin-plan-label">Pickkin Premium <span aria-hidden="true">↗</span></span><h3>{{ app.premium_daily_nudges }} <span>nudges a day</span></h3><p>A little more room to work things out.<br>Monthly or annual, in the app.</p></article>
+      <p class="pickkin-plans__note">A nudge counts when an AI reply succeeds. Subscription prices and renewal details are shown in the app.</p>
+    </div>
+  </section>
+
+  <section class="pickkin-faq pickkin-shell" id="questions" aria-labelledby="pickkin-faq-title">
+    <div><p class="pickkin-eyebrow">A few things you might wonder</p><h2 id="pickkin-faq-title">Little questions.<br>Clear answers.</h2><a class="pickkin-text-link" href="{{ '/apps/pickkin/support/' | relative_url }}">Ask us something <span aria-hidden="true">↗</span></a></div>
+    <div class="pickkin-faq__items">{% for item in copy.faq %}<details><summary>{{ item.question }}<span aria-hidden="true">+</span></summary><p>{{ item.answer }}</p></details>{% endfor %}</div>
+  </section>
+
+  <section class="pickkin-closing pickkin-shell" aria-labelledby="pickkin-closing-title">
+    <div class="pickkin-closing__panel"><img src="{{ app.icon | relative_url }}" width="72" height="72" alt="" loading="lazy"><p class="pickkin-eyebrow">Let’s pick together.</p><h2 id="pickkin-closing-title">Your next little choice<br>could feel a little lighter.</h2><p>Say what you’re torn between. We’ll take it one nudge at a time.</p>{% include pickkin-download-button.html light=true %}<span class="pickkin-closing__note">For the little decisions in a full, real life.</span></div>
+  </section>
+</main>

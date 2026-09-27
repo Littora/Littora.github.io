@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="pickkin-root">
+  {% include pickkin-head.html %}
+  <body class="pickkin-site{% unless page.pickkin_home %} pickkin-site--document{% endunless %}">
+    <a class="pickkin-skip" href="#main-content">Skip to content</a>
+    {% include pickkin-header.html %}
+    {% if page.pickkin_home %}
+      {{ content }}
+    {% else %}
+      <main id="main-content" class="pickkin-document pickkin-shell">
+        <a class="pickkin-back" href="{{ site.data.pickkin.app.site_path | relative_url }}">← Back to Pickkin</a>
+        <article>{{ content }}</article>
+      </main>
+    {% endif %}
+    {% include pickkin-footer.html %}
+    {% include pickkin-download-dialog.html %}
+    {% if site.data.pickkin.app.app_store_url == '' %}
+    <noscript><p class="pickkin-nojs pickkin-shell">Pickkin is being prepared for App Store review. Downloads will open here after approval. For help, email <a href="mailto:{{ site.data.pickkin.app.support_email }}">{{ site.data.pickkin.app.support_email }}</a>.</p></noscript>
+    {% endif %}
+  </body>
+</html>
