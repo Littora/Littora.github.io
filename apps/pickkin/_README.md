@@ -46,4 +46,4 @@ Check desktop/mobile layouts, the three example branches, acceptance/restart, pu
 
 ## Presentation updates
 
-The header includes a Littora home link alongside Pickkin and keeps only How it works and Download. Decorative section labels and the tagline are removed. The two-line App Store button uses explicit type sizes and line heights. Hero columns align to the top so longer examples cannot move the introduction. Website allowances are configured as 3 free nudges per week and 100 Premium nudges per month; the plans, FAQ, and release notes use the same data. These changes apply to the website presentation only.
+The header includes a Littora home link alongside Pickkin and keeps only See how it feels and Download. Decorative section labels and the tagline are removed. The two-line App Store button uses explicit type sizes and line heights. Hero columns align to the top so longer examples cannot move the introduction. Website allowances are configured as 3 free nudges per week and 100 Premium nudges per month; the plans, FAQ, and release notes use the same data. These changes apply to the website presentation only.
