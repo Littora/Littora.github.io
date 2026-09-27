@@ -1,0 +1,35 @@
+---
+layout: null
+permalink: /games/numberloom/
+title: Numberloom · Littora
+description: A colourful take on the classic 2048 number puzzle.
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f1e6">
+  <meta name="description" content="{{ page.description | escape }}">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/icons/littora-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/games/games.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/games/classics.css' | relative_url }}">
+  <script type="module" src="{{ '/games/classics.mjs' | relative_url }}"></script>
+</head>
+<body class="play-page classic-page number-world" data-classic="number">
+  <a class="skip-link" href="#game-body">Skip to game</a>
+  <header class="play-navigation">
+    <a class="all-games" href="{{ '/games/' | relative_url }}"><span aria-hidden="true">←</span> All games</a>
+    <a class="play-brand" href="{{ '/' | relative_url }}">Littora<span> / PLAY</span></a>
+    <button type="button" class="sound-button" id="classic-sound" aria-pressed="false" aria-label="Enable sound"><span aria-hidden="true">♪</span> Sound</button>
+  </header>
+  <main class="play-main">
+    <section class="world-masthead" aria-labelledby="game-title"><div><p class="world-eyebrow">04 / THE ART OF ADDING UP</p><h1 id="game-title">Numberloom</h1><p class="world-tagline">2048, with a little colour.</p></div><span class="world-signature" aria-hidden="true">SLIDE · MATCH · MAKE ROOM</span></section>
+    <div id="game-body"></div>
+    <noscript><p class="no-script">Enable JavaScript to play this game. <a href="{{ '/games/' | relative_url }}">Return to all games</a>.</p></noscript>
+  </main>
+  <footer class="play-footer"><a href="{{ '/games/' | relative_url }}">More little worlds ↗</a><span data-storage-notice>Your best stays in this browser.</span></footer>
+</body>
+</html>

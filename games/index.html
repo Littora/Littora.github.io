@@ -1,0 +1,68 @@
+---
+layout: null
+permalink: /games/
+title: Play · Littora
+description: A small collection of original browser games. Six different worlds, from original discoveries to much-loved classics.
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f3">
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ '/games/' | absolute_url }}">
+  <meta property="og:image" content="{{ '/games/assets/tide-garden.webp' | absolute_url }}">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ '/games/' | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/icons/littora-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/games/games.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/games/classics.css' | relative_url }}">
+  <script type="module" src="{{ '/games/portal.mjs' | relative_url }}"></script>
+</head>
+<body class="collection-page">
+  <a class="skip-link" href="#collection">Skip to games</a>
+  <header class="collection-header">
+    <a class="littora-wordmark" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora<span>.</span></a>
+  </header>
+  <main class="collection-main">
+    <section class="collection-intro" aria-labelledby="collection-title">
+      <div class="intro-copy"><h1 id="collection-title">Make a little time<br>for <em>play.</em></h1><p>Six little worlds. A different kind of joy in each.<br>No downloads, no hurry. Just a little curiosity.</p></div>
+      <div class="play-composition" aria-hidden="true"><span class="composition-line"></span><span class="composition-sun">✳</span><span class="composition-tile">↗</span><span class="composition-orbit"></span><span class="composition-note">A LITTLE ROOM<br>FOR WONDER.</span></div>
+    </section>
+    <section id="collection" class="world-collection" aria-label="Games">
+      <div class="world-cards">
+        <a class="world-card light-card" href="{{ '/games/lightkeeper/' | relative_url }}">
+          <div class="world-art optical-cover" aria-hidden="true"><span class="cover-mark">01 / OPTICAL STUDIES</span><svg viewBox="0 0 420 300"><defs><pattern id="cover-grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#e5e1eb" stroke-width=".7"/></pattern></defs><rect width="420" height="300" fill="url(#cover-grid)"/><circle cx="316" cy="72" r="23" fill="#eee9fc"/><circle cx="316" cy="72" r="12" fill="white" stroke="#9c86df" stroke-width="1.5"/><circle cx="316" cy="72" r="4" fill="#977be4"/><path d="M0 217H106V133H316V72" fill="none" stroke="#ae97ed" stroke-width="12" opacity=".12"/><path d="M0 217H106V133H316V72" fill="none" stroke="#9272df" stroke-width="2.5"/><g fill="white" stroke="#a8a2b5"><rect x="88" y="199" width="36" height="36" rx="4"/><rect x="88" y="115" width="36" height="36" rx="4"/><rect x="298" y="115" width="36" height="36" rx="4"/></g><g stroke="#5b526c" stroke-width="2.5"><path d="M94 229l24-24M94 121l24 24M304 145l24-24"/></g><circle cx="232" cy="133" r="14" fill="white" stroke="#9c86df"/><circle cx="232" cy="133" r="4" fill="#977be4"/></svg><span class="optical-footnote">ONE BEAM. A LITTLE CLARITY.</span></div>
+          <div class="world-copy"><div class="world-meta"><span class="genre-tag">Minimal & mindful</span><span>9 puzzles</span></div><h3>Lightkeeper</h3><p>Turn a mirror. Follow a beam.<br>Make a little sense of the light.</p><span class="world-cta">Play Lightkeeper <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="world-card drift-card" href="{{ '/games/driftline/' | relative_url }}">
+          <div class="world-art pixel-cover"><canvas id="drift-cover" aria-hidden="true"></canvas><span class="pixel-cover-label" aria-hidden="true">A TINY OCEAN ADVENTURE</span><span class="pixel-cover-number" aria-hidden="true">02</span></div>
+          <div class="world-copy"><div class="world-meta"><span class="genre-tag">Pixels & possibility</span><span>Explore / challenge</span></div><h3>Driftline</h3><p>A tiny boat. A big blue adventure.<br>Take the scenic route to somewhere.</p><span class="world-cta">Play Driftline <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="world-card garden-card" href="{{ '/games/tide-garden/' | relative_url }}">
+          <div class="world-art garden-cover"><img src="{{ '/games/assets/tide-garden.webp' | relative_url }}" alt="A softly painted coral reef filled with cheerful little sea creatures" width="1536" height="1024"><span class="garden-cover-label" aria-hidden="true">A LITTLE SOMETHING TO GROW</span></div>
+          <div class="world-copy"><div class="world-meta"><span class="genre-tag">Cute & quietly clever</span><span>Grow your own reef</span></div><h3>Tide Garden</h3><p>Meet your little coral companions.<br>Plant, match, and make room to grow.</p><span class="world-cta">Play Tide Garden <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="world-card number-card" href="{{ '/games/numberloom/' | relative_url }}">
+          <div class="world-art number-cover" aria-hidden="true"><span class="number-cover-label">THE JOY OF 2048</span><div class="number-cover-grid"><span>2</span><span>4</span><span>8</span><span>16</span><span>32</span><span>64</span><span>128</span><span>256</span><span>2048</span></div><span class="number-cover-dot"></span></div>
+          <div class="world-copy"><div class="world-meta"><span class="genre-tag">Geometric & colourful</span><span>Classic 2048</span></div><h3>Numberloom</h3><p>A meeting of numbers and colour.<br>Slide, combine, and find your 2048.</p><span class="world-cta">Play Numberloom <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="world-card snake-card" href="{{ '/games/picnic-snake/' | relative_url }}">
+          <div class="world-art snake-cover" aria-hidden="true"><span class="snake-cover-cloud"></span><span class="snake-cover-sun">☀</span><svg viewBox="0 0 420 300"><path d="M65 213H143Q176 213 176 179V154Q176 124 210 124H274" fill="none" stroke="#31563f" stroke-width="43" stroke-linecap="round"/><path d="M65 209H143Q176 209 176 176V151Q176 121 210 121H274" fill="none" stroke="#89b65a" stroke-width="35" stroke-linecap="round"/><ellipse cx="280" cy="120" rx="30" ry="24" fill="#a1c56c" stroke="#31563f" stroke-width="2"/><g fill="#fff9dc"><circle cx="284" cy="105" r="8"/><circle cx="284" cy="128" r="8"/></g><g fill="#31563f"><circle cx="287" cy="105" r="3"/><circle cx="287" cy="128" r="3"/></g><path d="M306 119h12m0 0 7-6m-7 6 7 6" stroke="#d96c54" stroke-width="2.5" fill="none"/><path d="M349 185c-28-15-36 18-20 37 9 10 16 9 21 5 5 4 15 4 22-8 12-21 2-41-23-34" fill="#e46c51" stroke="#943f37" stroke-width="2"/><path d="M349 186q-4-17 4-22" stroke="#6c7650" stroke-width="3" fill="none"/><path d="M351 177q15-18 24-9-8 14-24 9" fill="#6e9e51"/></svg><span class="snake-cover-label">BRING YOUR APPETITE.</span></div>
+          <div class="world-copy"><div class="world-meta"><span class="genre-tag">Cartoon & carefree</span><span>Classic Snake</span></div><h3>Picnic Snake</h3><p>Chase an apple. Grow a little longer.<br>Try to keep your tail out of trouble.</p><span class="world-cta">Play Picnic Snake <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="world-card field-card" href="{{ '/games/field-notes/' | relative_url }}">
+          <div class="world-art field-cover" aria-hidden="true"><span class="field-cover-label">THE MEADOW SURVEY / No. 06</span><div class="field-cover-grid"><span></span><span></span><span>1</span><span>2</span><span>⚑</span><span></span><span>1</span><span>2</span><span></span><span></span><span></span><span>1</span><span>1</span><span></span><span></span><span>⚑</span></div><svg class="field-cover-sprig" viewBox="0 0 100 170"><path d="M50 160Q30 95 61 12M48 139Q5 131 12 103Q42 103 48 139M45 110Q84 101 85 74Q53 77 45 110M45 80Q10 61 23 40Q49 50 45 80M51 46Q85 37 81 16Q57 25 51 46" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span class="field-cover-stamp">OBSERVE<br>& DISCOVER</span></div>
+          <div class="world-copy"><div class="world-meta"><span class="genre-tag">Botanical & thoughtful</span><span>Classic Minesweeper</span></div><h3>Field Notes</h3><p>Read the clues. Mark the hidden mines.<br>Discover every safe patch of meadow.</p><span class="world-cta">Play Field Notes <span aria-hidden="true">↗</span></span></div>
+        </a>
+      </div>
+    </section>
+    <div class="collection-afterword"><span aria-hidden="true">✳</span><p>A small detour can be a lovely thing.</p><span class="afterword-caption">MADE WITH CARE. PLAYED AT YOUR PACE.</span></div>
+  </main>
+  <footer class="collection-footer"><a href="{{ '/' | relative_url }}">Littora</a><span>Little worlds. Human feeling.</span><span>Your progress stays in this browser.</span></footer>
+</body>
+</html>

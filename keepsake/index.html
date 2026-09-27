@@ -1,0 +1,48 @@
+---
+layout: null
+permalink: /keepsake/
+title: A Moment Ashore · Littora
+description: An original shoreline print, made in your browser for this visit. Keep the moment as a beautiful downloadable keepsake.
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf9f4">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="{{ page.description | escape }}">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/icons/littora-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/keepsake/keepsake.css' | relative_url }}?v=4">
+  <script type="module" src="{{ '/keepsake/keepsake.mjs' | relative_url }}?v=4"></script>
+</head>
+<body class="keepsake-page">
+  <a class="skip-link" href="#keepsake-editor">Skip to save your keepsake</a>
+  <header class="keepsake-nav"><a class="littora-wordmark" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora<span>.</span></a></header>
+  <main class="keepsake-main">
+    <section class="keepsake-heading" aria-labelledby="keepsake-title">
+      <h1 id="keepsake-title">A moment, <em>yours.</em></h1>
+      <p>A little piece of Littora, made for this visit.</p>
+    </section>
+    <section class="keepsake-preview" aria-label="Your original keepsake">
+      <div class="print-mount"><div id="print-preview" class="print-preview" aria-busy="true"></div></div>
+    </section>
+    <section class="keepsake-editor" id="keepsake-editor" aria-label="Personalize and save your keepsake">
+      <fieldset class="print-palettes"><legend class="keepsake-sr-only">Choose a colour</legend><div id="palette-options"></div></fieldset>
+      <form id="signature-form" autocomplete="off">
+        <label for="visitor-name" class="keepsake-sr-only">Your name (optional)</label>
+        <input id="visitor-name" type="text" name="signature" maxlength="48" placeholder="Your name (optional)" autocomplete="off" spellcheck="false" aria-describedby="name-privacy name-error">
+        <p id="name-privacy">Your name stays in this browser. Nothing is uploaded.</p>
+        <p id="name-error" class="name-error" role="alert" hidden></p>
+      </form>
+      <button type="button" class="download-print" id="download-png" disabled><span>Save my keepsake</span><span aria-hidden="true">↓</span></button>
+      <div class="download-details"><span>PNG · 2400 × 3200</span><button type="button" id="download-svg" disabled>SVG original</button></div>
+      <p id="print-status" class="print-status" role="status" aria-live="polite" hidden></p>
+      <a id="save-again" class="save-ready-file" hidden>Save the prepared file</a>
+    </section>
+    <noscript><p class="no-script">Enable JavaScript to generate your keepsake locally in this browser.</p></noscript>
+  </main>
+</body>
+</html>
