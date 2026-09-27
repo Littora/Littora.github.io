@@ -1,6 +1,10 @@
 {% if page.yonderkin_page %}
   {% include yonderkin-header.html %}
 {% else %}
+{% if page.url == "/" %}
+  <link rel="stylesheet" href="{{ '/keepsake/navigation.css' | relative_url }}?v=4">
+  <script type="module" src="{{ '/keepsake/navigation.mjs' | relative_url }}?v=1"></script>
+{% endif %}
 <header class="site-header{% if page.app_home or page.chatura_subpage %} site-header--product{% endif %}">
   {% assign chatura_locale = page.lang | default: site.lang | split: "-" | first %}
   {% assign chatura_copy = site.data.chatura[chatura_locale] | default: site.data.chatura.en %}
@@ -17,16 +21,23 @@
       <button class="site-nav__toggle" type="button" aria-label="{% if page.app_home %}{{ chatura_copy.nav.toggle }}{% else %}Toggle navigation{% endif %}" aria-controls="site-nav-menu" aria-expanded="false">
         <span class="site-nav__toggle-icon" aria-hidden="true"></span>
       </button>
-      <nav class="site-nav" id="site-nav-menu" aria-label="{% if page.app_home %}{{ chatura_copy.nav.primary }}{% else %}Primary{% endif %}">
+      <nav class="site-nav{% if page.url == "/" %} site-nav--home{% endif %}" id="site-nav-menu" aria-label="{% if page.app_home %}{{ chatura_copy.nav.primary }}{% else %}Primary{% endif %}">
         {% if page.url == "/" %}
-          <a class="page-link" href="{{ "/" | relative_url }}#apps">Apps</a>
-          <a class="page-link" href="{{ "/games/" | relative_url }}">Games</a>
+          <a class="page-link home-nav-item" href="{{ "/" | relative_url }}#apps">Apps</a>
+          <a class="page-link home-nav-item" href="{{ "/games/" | relative_url }}">Games</a>
+          <div class="home-more">
+            <button class="home-nav-item home-more-toggle" id="littora-more-toggle" type="button" aria-expanded="false" aria-controls="littora-more-menu">More<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="home-more-panel" id="littora-more-menu" hidden>
+              <a class="page-link home-more-link" href="{{ '/keepsake/' | relative_url }}">Keepsake<span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
         {% elsif page.app_home %}
           <a class="page-link" href="{{ page.url | relative_url }}#features">{{ chatura_copy.nav.features }}</a>
           <a class="page-link" href="{{ page.url | relative_url }}#faq">{{ chatura_copy.nav.faq }}</a>
           <a class="page-link page-link--download" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ chatura_copy.common.download }}</a>
         {% endif %}
       </nav>
+      {% unless page.url == "/" %}
       <script>
         (function () {
           var toggle = document.querySelector(".site-nav__toggle");
@@ -73,6 +84,7 @@
           });
         })();
       </script>
+      {% endunless %}
     {% endif %}
   </div>
 </header>

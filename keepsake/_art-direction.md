@@ -1,0 +1,7 @@
+## A Moment Ashore — visit keepsake
+
+An illustrated coastal postcard on warm paper. An arched landscape contains a striped lighthouse, a seaside cottage, an organic cliff with a winding path, two sailboats, distant islands, birds, soft clouds, layered water lines and clusters of wildflowers. Gentle gradients, small etched details and subtle grain bring depth to the illustration. The rounded paper border, restrained serif title and optional dedication keep it composed and readable. Sea Glass, Apricot Light and Blue Mist pair light paper with fresh water colours and warm accents. Scene details are derived from the full 128-bit edition seed through a seeded four-word generator, and are unchanged by personalisation. Arrival time and edition are integral to the artwork.
+
+The page gives the postcard centre stage in a single column. A short heading, three soft palette pills, an optional name field and one rounded save button replace the former two-column studio and its explanatory panels. The brand wordmark is the only header link. The illustration scales down on short desktop viewports to keep the save action within comfortable reach.
+
+Every visitor receives original code-native vector art rather than a reused bitmap. PNG rasterisation happens in the browser at 2400 × 3200. All typography and paths are inside the downloaded SVG; there are no external fonts, images or linked resources. Generated scenery is artistic, not a representation of actual tides or the visitor's physical location.
