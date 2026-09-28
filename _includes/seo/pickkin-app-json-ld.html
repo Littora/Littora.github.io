@@ -1,0 +1,16 @@
+{% assign app = site.data.pickkin.app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pickkin: AI Decision Buddy",
+  "url": {{ app.site_path | absolute_url | jsonify }},
+  "image": {{ app.share_image | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "LifestyleApplication",
+  "inLanguage": ["en", "de", "fr", "it", "ja", "ko", "nb"],
+  "author": {"@type": "Organization", "name": "Littora", "url": {{ '/' | absolute_url | jsonify }}},
+  "featureList": ["Contextual decision nudges", "Questions that clarify priorities", "Suggestions with reasons", "Reactions that move the choice forward", "Local decision history"]
+}
+</script>

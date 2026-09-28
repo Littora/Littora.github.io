@@ -1,0 +1,13 @@
+name: Pickkin
+developer: Littora
+bundle_id: art.littora.pickkin
+site_path: /apps/pickkin/
+app_store_url: ""
+support_email: littoraart@gmail.com
+icon: /assets/pickkin/pickkin-icon.webp
+share_image: /assets/pickkin/pickkin-icon.png
+platform: iPhone
+minimum_ios: "17"
+free_weekly_nudges: 3
+premium_monthly_nudges: 100
+languages: [English, Deutsch, Français, Italiano, 日本語, 한국어, Norsk bokmål]

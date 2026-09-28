@@ -1,0 +1,18 @@
+{% assign app = site.data.pickkin.app %}
+<header class="pickkin-header" data-pickkin-header>
+  <div class="pickkin-shell pickkin-header__inner">
+    <div class="pickkin-header__brand">
+      <a class="pickkin-maker" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora</a>
+      <span class="pickkin-brand-divider" aria-hidden="true"></span>
+      <a class="pickkin-brand" href="{{ app.site_path | relative_url }}" aria-label="Pickkin home">
+        <img src="{{ app.icon | relative_url }}" width="36" height="36" alt="">
+        <span>Pickkin</span>
+      </a>
+    </div>
+    <button class="pickkin-menu" type="button" aria-expanded="false" aria-controls="pickkin-navigation" data-pickkin-menu>Menu <span aria-hidden="true">+</span></button>
+    <nav id="pickkin-navigation" class="pickkin-nav" aria-label="Pickkin navigation" data-pickkin-navigation>
+      <a href="{{ app.site_path | relative_url }}#how-it-works">See how it feels</a>
+      {% include pickkin-download-button.html compact=true %}
+    </nav>
+  </div>
+</header>

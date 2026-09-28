@@ -1,0 +1,149 @@
+hero:
+  title: One less thing on your mind.
+  body: Say what you’re torn between. Get a thoughtful nudge, react, and find a choice that feels right for today.
+features:
+  - number: "01"
+    title: A question that changes the angle.
+    body: Sometimes, one unexpected question helps you notice what another list of pros and cons couldn’t.
+  - number: "02"
+    title: A pick you can push back on.
+    body: Pickkin takes a side and tells you why. Your reaction helps make the next nudge more useful.
+  - number: "03"
+    title: Two wants, put into words.
+    body: When two things pull you in different directions, see the tug-of-war in two short lines. Then choose what matters today.
+steps:
+  - number: "1"
+    title: Say your little dilemma.
+    body: A sentence is enough. Plans, little purchases, a free afternoon—start wherever you’re stuck.
+  - number: "2"
+    title: See how the nudge feels.
+    body: Tap a reaction, push back, or add a little detail. Each step helps bring the choice into focus.
+  - number: "3"
+    title: Make a pick. Get on with your day.
+    body: Accept the suggestion or choose your own. Pickkin wraps up when you’ve decided.
+faq:
+  - question: What kinds of decisions can I bring?
+    answer: Everyday plans, little purchases, things to do, and small preferences. Bring consequential decisions to the people and professionals best placed to help.
+  - question: How is a nudge chosen?
+    answer: Pickkin uses what you share to choose a helpful next step—a clarifying question, a suggestion with a reason, or two short lines that describe the pull you’re feeling. You don’t have to choose a mode.
+  - question: What if I don’t like its suggestion?
+    answer: Push back. Pickkin uses your reaction to clarify what matters or which condition is missing. A recommendation is a starting point, and the final choice is yours.
+  - question: Can I start for free?
+    answer: Yes. Start with %free_nudges% successful AI nudges per week. Pickkin Premium gives you %premium_nudges% per month, with monthly and annual subscriptions available in the app. Current prices and renewal details are shown before you subscribe.
+  - question: Where do my decisions go?
+    answer: Your saved decisions stay on your iPhone. When you ask for an AI nudge, your dilemma and relevant context are sent to our AI service and its providers. The app explains this before your first request. Decision history does not currently sync between devices.
+  - question: Which languages are supported?
+    answer: English, German, French, Italian, Japanese, Korean, and Norwegian Bokmål. Choose a language in Settings or follow your iPhone’s language.
+  - question: Does it work offline?
+    answer: An internet connection is needed for AI nudges. Your saved decisions remain available on your device.
+download_modal:
+  title: Almost time to pick together.
+  body: Pickkin is being prepared for App Store review. Check back here to download it after approval.
+  close: Got it
+examples:
+  - id: plans
+    label: Go or stay?
+    dilemma: I’m tired, but I don’t want to miss tonight’s plans.
+    nodes:
+      start:
+        eyebrow: A different angle
+        title: If tonight’s plans were canceled, how would you feel?
+        body: Sometimes, a little change in the question makes your reaction clearer.
+        actions:
+          - {label: Relieved, next: rest}
+          - {label: Disappointed, next: visit}
+      rest:
+        eyebrow: My pick for tonight
+        title: Stay in and recharge.
+        body: You’re tired, and a canceled plan would feel like a relief. Rest gets my vote tonight.
+        pick: Stay in and recharge.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Not quite, next: pushback}
+      pushback:
+        eyebrow: Let’s get a little clearer
+        title: What are you still drawn to?
+        body: The part you’re reluctant to give up can help us find a better fit.
+        actions:
+          - {label: Seeing my friends, next: visit}
+          - {label: Having a full evening, next: intentional}
+      visit:
+        eyebrow: A little of what you want
+        title: Go for a little while.
+        body: Seeing your friends seems worth some energy. Make a short appearance and give yourself an easy exit.
+        pick: Go for a little while.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Not quite, next: pushback}
+      intentional:
+        eyebrow: Make room for a good evening
+        title: Make staying in feel like a plan.
+        body: A favorite film, something good to eat, an early night. A quiet evening can still feel like yours.
+        pick: Make staying in feel like a plan.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Not quite, next: pushback}
+  - id: purchase
+    label: Buy or wait?
+    dilemma: I’ve compared these headphones all week. They’re on sale, but mine still work.
+    nodes:
+      start:
+        eyebrow: My first pick
+        title: Give it a day.
+        body: Your headphones still work, and the sale seems to be adding urgency. See whether you want them as much tomorrow.
+        pick: Give it a day.
+        actions:
+          - {label: That feels right, next: done}
+          - {label: Still tempted, next: why}
+      why:
+        eyebrow: A useful little distinction
+        title: What would the new pair change?
+        body: Let’s separate what you’d use from what feels hard to pass up.
+        actions:
+          - {label: Better for my daily commute, next: commute}
+          - {label: Mostly a good deal, next: wait}
+      commute:
+        eyebrow: A reason worth keeping
+        title: Check the everyday difference.
+        body: Try them if you can. If they noticeably improve your commute and fit your budget, that’s a clearer reason to buy.
+        pick: Try them before deciding.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Reconsider, next: why}
+      wait:
+        eyebrow: My pick
+        title: Let this sale pass.
+        body: You haven’t named a change you need. Keep the money for something you already know you’ll enjoy.
+        pick: Let this sale pass.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Reconsider, next: why}
+  - id: weekend
+    label: My weekend?
+    dilemma: I want a restful weekend, but I also want it to feel a little different.
+    nodes:
+      start:
+        eyebrow: Two sides of you
+        title: Which feels closer to this weekend?
+        voices:
+          - {label: The restful side, text: I want to wake up without a plan.}
+          - {label: The curious side, text: I want a day I’ll remember.}
+        actions:
+          - {label: A slow morning, next: slow}
+          - {label: Something different, next: outing}
+      slow:
+        eyebrow: Leave a little room
+        title: Keep the morning open.
+        body: Let the day start slowly. If you feel like going out later, choose one easy thing nearby.
+        pick: Keep the morning open.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Not quite, next: start}
+      outing:
+        eyebrow: One small adventure
+        title: Pick one easy outing.
+        body: A new café, a short walk somewhere different, a little exhibition. Keep the rest of the day free.
+        pick: Pick one easy outing.
+        actions:
+          - {label: Go with this, next: done}
+          - {label: Not quite, next: start}

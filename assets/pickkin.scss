@@ -1,0 +1,303 @@
+---
+---
+
+@font-face {
+  font-family: "Pickkin DM Sans";
+  src: url("fonts/DMSans-Variable.ttf") format("truetype-variations");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pickkin Bricolage";
+  src: url("fonts/BricolageGrotesque-Variable.ttf") format("truetype-variations");
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+}
+html.pickkin-root {
+  --pk-paper: #f8f6ee;
+  --pk-ink: #183d34;
+  --pk-green: #256652;
+  --pk-muted: #62756b;
+  --pk-mint: #e4ede2;
+  --pk-line: #d9e1d6;
+  --pk-yellow: #f3d99c;
+  --pk-white: #fffefa;
+  color-scheme: light;
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+  scrollbar-gutter: stable;
+}
+.pickkin-site {
+  margin: 0;
+  color: var(--pk-ink);
+  background: var(--pk-paper);
+  font: 400 16px/1.6 "Pickkin DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.pickkin-site *, .pickkin-site *::before, .pickkin-site *::after { box-sizing: border-box; }
+.pickkin-site [hidden] { display: none !important; }
+.pickkin-site ::selection { background: var(--pk-yellow); color: var(--pk-ink); }
+.pickkin-site img { display: block; max-width: 100%; height: auto; }
+.pickkin-site svg { display: block; }
+.pickkin-site button, .pickkin-site a { -webkit-tap-highlight-color: transparent; }
+.pickkin-site :where(button) { font: inherit; color: inherit; cursor: pointer; }
+.pickkin-site a { color: inherit; text-decoration: none; }
+.pickkin-site a:focus-visible, .pickkin-site button:focus-visible, .pickkin-site summary:focus-visible { outline: 3px solid #ab7c29; outline-offset: 5px; }
+.pickkin-site h1, .pickkin-site h2, .pickkin-site h3, .pickkin-site p, .pickkin-site figure { margin: 0; }
+.pickkin-site h1, .pickkin-site h2, .pickkin-site h3 { font-family: "Pickkin Bricolage", "Pickkin DM Sans", sans-serif; font-weight: 600; }
+.pickkin-site h2 { font-size: clamp(32px, 3.5vw, 46px); line-height: 1.12; letter-spacing: -1.7px; }
+.pickkin-shell { width: min(1160px, calc(100% - 96px)); margin-inline: auto; }
+.pickkin-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.pickkin-skip { position: fixed; top: 10px; left: 20px; z-index: 100; padding: 10px 18px; background: var(--pk-white); border-radius: 8px; transform: translateY(-160%); }
+.pickkin-skip:focus { transform: translateY(0); }
+.pickkin-header { position: sticky; top: 0; z-index: 10; background: rgba(248, 246, 238, .94); border-bottom: 1px solid rgba(217, 225, 214, .65); backdrop-filter: blur(18px); }
+.pickkin-header__inner { min-height: 88px; display: flex; justify-content: space-between; align-items: center; gap: 28px; }
+.pickkin-header__brand { display: inline-flex; align-items: center; gap: 14px; }
+.pickkin-maker { font-family: "Pickkin Bricolage", sans-serif; font-size: 21px; font-weight: 600; letter-spacing: -.7px; }
+.pickkin-maker:hover { color: var(--pk-green); }
+.pickkin-brand-divider { width: 1px; height: 23px; background: #c2cec2; }
+.pickkin-header .pickkin-brand span { font-size: 23px; }
+.pickkin-brand { display: inline-flex; align-items: center; gap: 12px; flex: 0 0 auto; }
+.pickkin-brand img { border-radius: 11px; }
+.pickkin-brand span { font-family: "Pickkin Bricolage", sans-serif; font-size: 26px; font-weight: 650; letter-spacing: -1.2px; }
+.pickkin-nav { display: flex; align-items: center; gap: 30px; }
+.pickkin-nav > a { font-size: 13px; font-weight: 500; }
+.pickkin-nav > a:hover, .pickkin-nav [aria-current] { color: var(--pk-green); text-decoration: underline; text-underline-offset: 5px; }
+.pickkin-menu { display: none; }
+.pickkin-download { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 56px; padding: 10px 20px; border: 0; border-radius: 13px; background: var(--pk-green); color: #fffefa !important; line-height: 1.15; text-align: left; transition: background .18s, transform .18s; }
+.pickkin-download:hover { background: #194a3c; transform: translateY(-2px); }
+.pickkin-download svg { width: 22px; height: 27px; flex: 0 0 auto; }
+.pickkin-download__label { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 13px; font-weight: 600; line-height: 1.2; white-space: nowrap; }
+.pickkin-download__caption { font-size: 10px; font-weight: 400; line-height: 1.2; letter-spacing: .1px; }
+.pickkin-download__title { font-size: 22px; font-weight: 500; line-height: 1.05; letter-spacing: -.4px; }
+.pickkin-download--compact { min-height: 43px; border-radius: 12px; gap: 9px; padding: 10px 17px; font-size: 13px; font-weight: 600; }
+.pickkin-download--compact svg { width: 15px; height: 20px; }
+.pickkin-download--light { background: var(--pk-white); color: var(--pk-ink) !important; }
+.pickkin-download--light:hover { background: var(--pk-yellow); }
+.pickkin-text-link { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; }
+.pickkin-text-link span { font-size: 19px; }
+.pickkin-text-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.pickkin-hero { display: grid; grid-template-columns: 1.07fr 1fr; align-items: start; gap: 70px; padding-block: 82px 86px; }
+.pickkin-hero h1 { font-size: clamp(46px, 6vw, 78px); line-height: 1.01; letter-spacing: -3.7px; max-width: 540px; }
+.pickkin-hero__body { max-width: 420px; margin-top: 25px !important; color: var(--pk-muted); font-size: 18px; line-height: 1.65; }
+.pickkin-hero__actions { display: flex; align-items: center; gap: 25px; flex-wrap: wrap; margin-top: 32px; }
+.pickkin-hero__note { font-size: 12px; color: var(--pk-muted); margin-top: 15px !important; }
+.pickkin-hero__note span { padding-inline: 7px; }
+.pickkin-demo { position: relative; padding: 28px; background: #e6ece2; border: 1px solid #dde5d9; border-radius: 32px; box-shadow: 0 22px 65px rgba(44, 68, 40, .07); }
+.pickkin-demo__heading { display: flex; align-items: center; justify-content: space-between; padding-bottom: 17px; font-size: 14px; font-weight: 600; }
+.pickkin-demo__spark { color: #537957; font-size: 24px; line-height: 1; }
+.pickkin-demo__examples { display: flex; gap: 7px; flex-wrap: wrap; }
+.pickkin-demo__examples button { min-height: 36px; padding: 7px 12px; border: 1px solid transparent; border-radius: 24px; background: rgba(255, 254, 250, .6); font-size: 11px; font-weight: 600; }
+.pickkin-demo__examples button[aria-pressed="true"] { background: var(--pk-ink); color: var(--pk-white); }
+.pickkin-demo__examples button:hover { border-color: #8ca793; }
+.pickkin-demo__dilemma { margin: 21px 4px !important; font-size: 16px; font-weight: 500; line-height: 1.6; }
+.pickkin-demo__card { padding: 26px; border-radius: 24px; background: var(--pk-white); min-height: 298px; }
+.pickkin-demo__card:focus { outline: none; }
+.pickkin-demo__card:focus-visible { outline: 2px solid #608568; outline-offset: 5px; }
+.pickkin-demo__eyebrow { color: var(--pk-green); font-size: 11px; font-weight: 600; letter-spacing: .3px; margin-bottom: 15px !important; display: flex; gap: 8px; align-items: center; }
+.pickkin-demo__eyebrow::before { content: "↗"; font-size: 19px; line-height: 1; }
+.pickkin-demo__card[data-state="done"] .pickkin-demo__eyebrow::before { content: "✓"; }
+.pickkin-demo__card h2 { font-size: 25px; line-height: 1.22; letter-spacing: -.6px; }
+.pickkin-demo__body { color: var(--pk-muted); font-size: 13px; line-height: 1.7; margin-top: 14px !important; }
+.pickkin-demo__actions { display: grid; gap: 8px; margin-top: 22px; }
+.pickkin-reaction { width: 100%; min-height: 45px; padding: 11px 15px; border: 1px solid transparent; border-radius: 13px; background: #e9f0e5; font-size: 12px !important; font-weight: 600 !important; line-height: 1.4; transition: background .16s; }
+.pickkin-reaction:hover { background: #dae8d5; }
+.pickkin-reaction--primary { background: var(--pk-green); color: var(--pk-white) !important; }
+.pickkin-reaction--primary:hover { background: #194a3c; }
+.pickkin-demo__voices { display: grid; gap: 9px; margin-top: 19px; }
+.pickkin-demo__voices > div { padding: 13px 15px; background: #e5eee2; border-radius: 12px; }
+.pickkin-demo__voices > div + div { background: #f6e2b1; }
+.pickkin-demo__voices strong { font-size: 10px; font-weight: 600; }
+.pickkin-demo__voices p { margin-top: 4px; font-size: 14px; }
+.pickkin-demo__note { color: var(--pk-muted); font-size: 10px; text-align: center; padding-top: 17px; }
+.pickkin-features { padding-block: 58px 106px; border-top: 1px solid var(--pk-line); }
+.pickkin-section-heading { text-align: center; margin-bottom: 48px; }
+.pickkin-section-heading > p:last-child { max-width: 530px; margin: 20px auto 0; color: var(--pk-muted); font-size: 16px; }
+.pickkin-features__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.pickkin-features__grid article + article { border-left: 1px solid var(--pk-line); padding-left: 40px; }
+.pickkin-feature-number { font-size: 13px; line-height: 1; display: inline-flex; justify-content: center; align-items: center; width: 38px; height: 38px; background: var(--pk-yellow); border-radius: 50%; margin-bottom: 20px; }
+.pickkin-features h3 { font-size: 22px; line-height: 1.25; letter-spacing: -.6px; max-width: 260px; }
+.pickkin-features__grid p { color: var(--pk-muted); font-size: 14px; margin-top: 16px; }
+.pickkin-how { padding-bottom: 100px; }
+.pickkin-how__panel { display: grid; grid-template-columns: 1.18fr .82fr; gap: 40px; align-items: center; padding: 62px 70px; background: var(--pk-mint); border-radius: 32px; }
+.pickkin-steps { list-style: none; margin: 32px 0 27px; padding: 0; display: grid; gap: 27px; }
+.pickkin-steps li { display: flex; gap: 17px; align-items: flex-start; }
+.pickkin-steps li > span { display: grid; place-items: center; flex: 0 0 28px; height: 28px; border: 1px solid #acc4ac; border-radius: 50%; font-size: 12px; margin-top: 2px; }
+.pickkin-steps h3 { font-size: 17px; line-height: 1.4; letter-spacing: -.3px; }
+.pickkin-steps p { font-size: 14px; color: #5c7163; margin-top: 7px; max-width: 345px; }
+.pickkin-app-preview { justify-self: center; transform: rotate(3deg); width: min(100%, 265px); }
+.pickkin-phone { border: 7px solid #244c3b; border-radius: 37px; overflow: hidden; box-shadow: 12px 20px 44px rgba(22, 59, 37, .13); background: #f8f5e9; }
+.pickkin-phone img { width: 100%; }
+.pickkin-app-preview figcaption { font-size: 12px; color: #597260; text-align: center; margin-top: 19px; }
+.pickkin-kept { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; padding-bottom: 112px; }
+.pickkin-kept__visual { min-height: 330px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 34px; background: #f0ebdc; border-radius: 28px; }
+.pickkin-kept__card { position: relative; width: 100%; max-width: 330px; padding: 30px; border-radius: 21px; background: var(--pk-white); box-shadow: 0 12px 40px #4159380a; transform: rotate(-3deg); }
+.pickkin-kept__check { position: absolute; right: 25px; top: 27px; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #e9f0e3; color: var(--pk-green); font-size: 18px; }
+.pickkin-kept__card h3 { font-size: 23px; letter-spacing: -.65px; }
+.pickkin-kept__card > p { font-size: 14px; color: var(--pk-muted); margin-top: 6px; }
+.pickkin-kept__settled { display: block; font-size: 10px; color: #748276; padding-top: 27px; }
+.pickkin-kept__caption { font-size: 12px; padding-top: 25px; color: var(--pk-muted); }
+.pickkin-kept__copy > p { margin-top: 22px; font-size: 15px; color: var(--pk-muted); max-width: 420px; }
+.pickkin-kept__privacy { display: flex; align-items: center; gap: 9px; font-size: 12px !important; }
+.pickkin-kept__privacy svg { width: 17px; height: 19px; fill: none; stroke: #5d7c60; stroke-width: 1.6; }
+.pickkin-plans { display: grid; grid-template-columns: .9fr 1.1fr; gap: 65px; border-top: 1px solid var(--pk-line); padding-block: 68px 80px; }
+.pickkin-plans__intro > p:last-child { color: var(--pk-muted); font-size: 15px; margin-top: 18px; max-width: 320px; }
+.pickkin-plans__options { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: center; }
+.pickkin-plans__options article { padding: 25px 23px; background: #ebece2; border-radius: 19px; }
+.pickkin-plans__options article.pickkin-plan-premium { background: #e1ebdd; }
+.pickkin-plan-label { display: flex; justify-content: space-between; font-size: 11px; font-weight: 600; }
+.pickkin-plans__options h3 { font-size: 42px; line-height: 1; margin-top: 23px; letter-spacing: -1.5px; }
+.pickkin-plans__options h3 span { display: block; font-family: "Pickkin DM Sans", sans-serif; font-weight: 400; letter-spacing: 0; font-size: 12px; padding-top: 6px; }
+.pickkin-plans__options article p { font-size: 11px; line-height: 1.7; color: var(--pk-muted); margin-top: 20px; }
+.pickkin-plans__note { grid-column: 1 / -1; color: var(--pk-muted); font-size: 10px; }
+.pickkin-faq { display: grid; grid-template-columns: .9fr 1.1fr; gap: 65px; padding-block: 60px 105px; }
+.pickkin-faq .pickkin-text-link { margin-top: 27px; }
+.pickkin-faq details { border-bottom: 1px solid var(--pk-line); }
+.pickkin-faq details:first-child { border-top: 1px solid var(--pk-line); }
+.pickkin-faq summary { list-style: none; cursor: pointer; padding: 20px 0; font-size: 14px; font-weight: 500; display: flex; justify-content: space-between; align-items: center; gap: 25px; }
+.pickkin-faq summary::-webkit-details-marker { display: none; }
+.pickkin-faq summary > span { font-size: 20px; flex: 0 0 auto; font-weight: 400; }
+.pickkin-faq details[open] summary > span { transform: rotate(45deg); }
+.pickkin-faq details > p { color: var(--pk-muted); font-size: 13px; padding: 0 30px 23px 0; }
+.pickkin-closing { padding-bottom: 75px; }
+.pickkin-closing__panel { background: #235b47; color: #fffdf1; text-align: center; padding: 57px 30px; border-radius: 32px; }
+.pickkin-closing__panel > img { margin: 0 auto 23px; border-radius: 19px; box-shadow: 0 8px 25px #1b443780; }
+.pickkin-closing h2 { font-size: clamp(30px, 3.6vw, 48px); letter-spacing: -1.6px; }
+.pickkin-closing__panel > p { color: #cbdbc6; font-size: 14px; margin: 22px auto 27px; }
+.pickkin-closing__note { display: block; color: #c0d2bd; font-size: 10px; padding-top: 20px; }
+.pickkin-footer { padding-block: 10px 30px; }
+.pickkin-footer__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; padding-bottom: 28px; }
+.pickkin-footer .pickkin-brand span { font-size: 24px; }
+.pickkin-footer nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px 22px; max-width: 500px; padding-top: 9px; }
+.pickkin-footer nav a { font-size: 11px; }
+.pickkin-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.pickkin-modal-open { overflow: hidden; }
+.pickkin-dialog { border: 1px solid var(--pk-line); border-radius: 28px; padding: 40px; width: min(450px, calc(100% - 32px)); max-height: calc(100dvh - 40px); overflow-y: auto; color: var(--pk-ink); background: var(--pk-paper); text-align: center; box-shadow: 0 25px 100px #162d3050; }
+.pickkin-dialog::backdrop { background: rgba(18, 38, 29, .4); backdrop-filter: blur(4px); }
+.pickkin-dialog > img { margin: 4px auto 23px; border-radius: 19px; }
+.pickkin-dialog h2 { font-size: 33px; letter-spacing: -1px; }
+.pickkin-dialog p { font-size: 15px; color: var(--pk-muted); margin: 19px 0 25px; }
+.pickkin-dialog__dismiss { position: absolute; top: 11px; right: 12px; border: 0; width: 36px; height: 36px; background: transparent; font-size: 26px !important; }
+.pickkin-action { display: inline-flex; justify-content: center; align-items: center; padding: 12px 23px; min-height: 46px; border-radius: 12px; border: 0; font-size: 14px; font-weight: 500; line-height: 1.5; }
+.pickkin-action--primary { background: var(--pk-green); color: var(--pk-white) !important; }
+.pickkin-action--primary:hover { background: #194a3c; }
+.pickkin-dialog .pickkin-action { width: 100%; }
+.pickkin-dialog__support { display: inline-block; font-size: 12px; text-decoration: underline !important; text-underline-offset: 4px; margin-top: 19px; }
+.pickkin-nojs { font-size: 13px; padding-bottom: 25px; }
+html:not(.pickkin-js) .pickkin-demo__examples, html:not(.pickkin-js) .pickkin-demo__actions { display: none; }
+.pickkin-document { max-width: 860px; padding-block: 50px 90px; min-height: 63vh; }
+.pickkin-back { display: inline-block; color: var(--pk-muted) !important; font-size: 13px; margin-bottom: 43px; }
+.pickkin-document h1 { font-size: clamp(36px, 5vw, 57px); line-height: 1.06; letter-spacing: -2px; margin: 16px 0 26px; max-width: 700px; }
+.pickkin-document h2 { font-size: 29px; letter-spacing: -.8px; margin: 38px 0 18px; }
+.pickkin-document h3 { font-size: 20px; letter-spacing: -.4px; margin: 28px 0 10px; }
+.pickkin-document p { margin-block: 16px; }
+.pickkin-document__lead { font-size: 20px; color: var(--pk-muted); max-width: 600px; }
+.pickkin-document article > p, .pickkin-document li { color: var(--pk-muted); }
+.pickkin-document article a:not(.pickkin-action):not(.pickkin-download) { text-decoration: underline; text-underline-offset: 4px; color: var(--pk-green); }
+.pickkin-document li { margin-block: 8px; }
+@media (min-width: 1400px) { .pickkin-hero { padding-block: 95px 110px; } }
+@media (max-width: 1050px) {
+  .pickkin-shell { width: calc(100% - 64px); }
+  .pickkin-hero { gap: 36px; }
+  .pickkin-hero h1 { font-size: 61px; letter-spacing: -3px; }
+  .pickkin-demo { padding: 23px; }
+  .pickkin-demo__card { padding: 22px; }
+  .pickkin-demo__card h2 { font-size: 23px; }
+  .pickkin-features__grid { gap: 24px; }
+  .pickkin-features__grid article + article { padding-left: 24px; }
+  .pickkin-how__panel { padding: 45px; }
+  .pickkin-kept { gap: 55px; }
+  .pickkin-faq, .pickkin-plans { gap: 35px; }
+}
+@media (max-width: 760px) {
+  html.pickkin-root { scroll-padding-top: 88px; }
+  .pickkin-shell { width: calc(100% - 40px); }
+  .pickkin-header__inner { min-height: 74px; gap: 15px; flex-wrap: wrap; }
+  .pickkin-header__brand { gap: 10px; }
+  .pickkin-maker { font-size: 18px; }
+  .pickkin-brand-divider { height: 20px; }
+  .pickkin-header .pickkin-brand { gap: 8px; }
+  .pickkin-brand img { width: 30px; height: 30px; border-radius: 9px; }
+  .pickkin-header .pickkin-brand span { font-size: 21px; }
+  .pickkin-js .pickkin-menu { display: inline-flex; align-items: center; gap: 10px; justify-content: center; min-height: 42px; padding: 8px 12px; font-size: 12px; border: 1px solid var(--pk-line); border-radius: 11px; background: transparent; }
+  .pickkin-menu span { font-size: 19px; line-height: 1; }
+  .pickkin-menu[aria-expanded="true"] span { transform: rotate(45deg); }
+  .pickkin-nav { width: 100%; flex-wrap: wrap; gap: 18px 24px; padding-bottom: 20px; }
+  .pickkin-js .pickkin-nav { display: none; }
+  .pickkin-js .pickkin-nav[data-open] { display: flex; }
+  .pickkin-nav > a { font-size: 14px; }
+  .pickkin-nav .pickkin-download { margin-left: auto; }
+  .pickkin-hero { grid-template-columns: 1fr; gap: 45px; padding-block: 45px 56px; }
+  .pickkin-hero h1 { font-size: clamp(46px, 9.9vw, 65px); letter-spacing: -2.6px; max-width: 500px; }
+  .pickkin-hero__body { max-width: 420px; font-size: 16px; margin-top: 21px !important; }
+  .pickkin-hero__actions { margin-top: 27px; gap: 20px; }
+  .pickkin-demo { max-width: 480px; width: 100%; justify-self: center; padding: 23px; border-radius: 27px; }
+  .pickkin-demo__heading { font-size: 14px; }
+  .pickkin-demo__examples button { min-height: 40px; font-size: 11px; padding-inline: 12px; }
+  .pickkin-demo__dilemma { font-size: 16px; }
+  .pickkin-demo__card h2 { font-size: 26px; }
+  .pickkin-demo__card { min-height: 0; padding: 24px 21px; }
+  .pickkin-demo__body { font-size: 14px; }
+  .pickkin-reaction { min-height: 47px; font-size: 13px !important; }
+  .pickkin-demo__note { font-size: 10px; }
+  .pickkin-features { padding-block: 44px 63px; }
+  .pickkin-section-heading { text-align: left; margin-bottom: 35px; }
+  .pickkin-section-heading > p:last-child { margin-left: 0; margin-right: 0; font-size: 15px; }
+  .pickkin-site h2 { letter-spacing: -1.2px; }
+  .pickkin-features__grid { grid-template-columns: 1fr; gap: 29px; }
+  .pickkin-features__grid article { display: grid; grid-template-columns: 38px 1fr; column-gap: 17px; }
+  .pickkin-features__grid article + article { padding-left: 0; border-left: 0; border-top: 1px solid var(--pk-line); padding-top: 29px; }
+  .pickkin-feature-number { grid-row: 1 / 3; margin: 0; }
+  .pickkin-features h3 { max-width: 330px; font-size: 22px; }
+  .pickkin-features__grid p { margin-top: 10px; font-size: 14px; }
+  .pickkin-how { padding-bottom: 64px; }
+  .pickkin-how__panel { grid-template-columns: 1fr; padding: 35px 25px; gap: 45px; border-radius: 25px; }
+  .pickkin-steps h3 { font-size: 17px; }
+  .pickkin-steps p { font-size: 14px; }
+  .pickkin-app-preview { width: 240px; transform: rotate(2deg); }
+  .pickkin-kept { grid-template-columns: 1fr; gap: 35px; padding-bottom: 65px; }
+  .pickkin-kept__copy { grid-row: 1; }
+  .pickkin-kept__visual { min-height: 290px; padding: 32px 26px; }
+  .pickkin-kept__copy > p { margin-top: 20px; }
+  .pickkin-plans { grid-template-columns: 1fr; gap: 30px; padding-block: 43px 40px; }
+  .pickkin-plans__intro > p:last-child { max-width: 440px; }
+  .pickkin-plans__options article { padding: 22px 17px; }
+  .pickkin-plans__options h3 { font-size: 39px; }
+  .pickkin-plans__options article p { font-size: 11px; }
+  .pickkin-faq { grid-template-columns: 1fr; gap: 32px; padding-block: 30px 65px; }
+  .pickkin-faq .pickkin-text-link { margin-top: 21px; }
+  .pickkin-faq summary { min-height: 62px; padding-block: 18px; font-size: 14px; }
+  .pickkin-faq details > p { font-size: 14px; }
+  .pickkin-closing { padding-bottom: 45px; }
+  .pickkin-closing__panel { padding: 39px 25px; border-radius: 25px; }
+  .pickkin-closing h2 { font-size: 34px; }
+  .pickkin-closing__panel > p { font-size: 14px; }
+  .pickkin-footer__top { flex-direction: column; gap: 21px; }
+  .pickkin-footer nav { justify-content: flex-start; max-width: 100%; gap: 14px 20px; }
+  .pickkin-footer nav a { font-size: 12px; }
+  .pickkin-document { padding-block: 33px 65px; }
+  .pickkin-back { margin-bottom: 30px; }
+  .pickkin-document h1 { font-size: 43px; letter-spacing: -1.7px; }
+  .pickkin-document h2 { font-size: 27px; margin-top: 33px; }
+  .pickkin-document h3 { font-size: 20px; }
+  .pickkin-document__lead { font-size: 18px; }
+  .pickkin-dialog { padding: 37px 25px 29px; }
+  .pickkin-dialog h2 { font-size: 31px; }
+}
+@media (max-width: 380px) {
+  .pickkin-shell { width: calc(100% - 32px); }
+  .pickkin-hero__actions { gap: 16px; }
+  .pickkin-hero__actions .pickkin-text-link { font-size: 12px; }
+  .pickkin-demo { padding: 19px; }
+  .pickkin-demo__examples { gap: 5px; }
+  .pickkin-demo__examples button { padding-inline: 10px; }
+  .pickkin-demo__card h2 { font-size: 23px; }
+  .pickkin-plan-label { font-size: 10px; }
+  .pickkin-nav .pickkin-download { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.pickkin-root { scroll-behavior: auto; }
+  .pickkin-site *, .pickkin-site *::before, .pickkin-site *::after { animation: none !important; transition: none !important; }
+}
