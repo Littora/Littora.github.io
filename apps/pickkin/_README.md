@@ -24,7 +24,13 @@ All CTAs show a normal download action. With `app_store_url` empty, they open on
 - `/apps/pickkin/whats-new/`
 - `/apps/pickkin/support/`
 
-Privacy Policy and Terms of Service are intentionally placeholders, excluded from the sitemap and marked `noindex`. Replace their contents, then remove `noindex` and `sitemap: false` when the final documents are ready.
+The bodies of Privacy Policy, Terms of Service, and What’s New are copied verbatim from the Pickkin project. Only the website’s Jekyll front matter is added; no custom introduction, CTA, or wording is inserted into these bodies. The completed legal pages are included in the sitemap and no longer marked `noindex`.
+
+Content sources in `Project_Pickkin`:
+
+- `Business/Legal/PrivacyPolicy/PrivacyPolicy.md`
+- `Business/Legal/TermsOfService/TermsOfService.md`
+- `Operations & Growth/WhatsNew/WhatsNew_Codex_Version/WhatsNew/WhatsNew.en.md`
 
 ## Local build
 
@@ -46,4 +52,4 @@ Check desktop/mobile layouts, the three example branches, acceptance/restart, pu
 
 ## Presentation updates
 
-The header includes a Littora home link alongside Pickkin and keeps only See how it feels and Download. Decorative section labels and the tagline are removed. The two-line App Store button uses explicit type sizes and line heights. Hero columns align to the top so longer examples cannot move the introduction. Website allowances are configured as 3 free nudges per week and 100 Premium nudges per month; the plans, FAQ, and release notes use the same data. These changes apply to the website presentation only.
+The header includes a Littora home link alongside Pickkin and keeps only See how it feels and Download. Decorative section labels and the tagline are removed. The two-line App Store button uses explicit type sizes and line heights. Hero columns align to the top so longer examples cannot move the introduction. Website allowances are configured as 3 free nudges per week and 100 Premium nudges per month; the plans and FAQ use the same data; release notes are copied from the source file listed above. These changes apply to the website presentation only.

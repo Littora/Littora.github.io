@@ -7,31 +7,16 @@ permalink: /apps/pickkin/whats-new/
 ---
 
 # What’s New
+## Version 1.0.0 — Introducing Pickkin
 
-<p class="pickkin-document__lead">Introducing Pickkin, your AI decision buddy.</p>
+**Small choices. Lighter days.**
 
-## Version 1.0.0
+Go or stay? Buy or wait? Meet Pickkin, your AI decision buddy.
 
-Our first release is being prepared for App Store review.
+### In this first release
 
-### A thoughtful nudge for everyday dilemmas
+- **Get a fresh angle.** A useful question, a suggestion with a reason, or two sides of your dilemma put into words.
+- **React your way.** Agree, push back, or add a detail to help the choice move forward.
+- **Make it yours.** Accept a suggestion or write your own choice, then save it for later.
 
-Say what you’re torn between. Pickkin chooses a helpful next step: a question, a suggestion with a reason, or two short lines that make the pull clearer.
-
-### Your reaction moves things forward
-
-Tap a reaction or add a little detail. Push back when a suggestion doesn’t fit. Each step helps clarify the choice.
-
-### A simple finish
-
-Accept a suggestion or choose your own. Keep the result in **My decisions**, with an optional small next step.
-
-### Seven languages, one little buddy
-
-Use Pickkin in English, German, French, Italian, Japanese, Korean, or Norwegian Bokmål. Choose your language in Settings or follow your iPhone.
-
-### Start free, with room for more
-
-Start with {{ site.data.pickkin.app.free_weekly_nudges }} successful AI nudges per week. Pickkin Premium offers {{ site.data.pickkin.app.premium_monthly_nudges }} per month through monthly or annual subscriptions.
-
-<p>{% include pickkin-download-button.html %}</p>
+Let’s pick together.
