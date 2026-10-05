@@ -1,0 +1,74 @@
+{% assign app = site.data.widgetflair.app %}
+{% assign copy = site.data.widgetflair.en %}
+{% assign free_templates = app.templates | where: 'premium', false %}
+{% assign premium_templates = app.templates | where: 'premium', true %}
+<main id="main-content">
+  <section class="wf-hero wf-shell" aria-labelledby="wf-hero-title">
+    <div class="wf-hero__copy">
+      <h1 id="wf-hero-title">{{ copy.hero.title }}<br><span>{{ copy.hero.second_line }}</span></h1>
+      <p class="wf-hero__body">{{ copy.hero.body }}</p>
+      <div class="wf-actions">
+        {% include widgetflair-download-button.html %}
+        <a class="wf-text-link" href="#widgets">{{ copy.hero.secondary }} <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="wf-hero__note">{{ free_templates.size }} free designs <span aria-hidden="true">·</span> Works offline <span aria-hidden="true">·</span> No account</p>
+    </div>
+    <div class="wf-hero__studio" aria-label="Interactive previews of WidgetFlair designs">
+      <div class="wf-stage">
+        <div class="wf-stage__clock">{% include widgetflair-widget-preview.html kind='studioClock' palette='butter' live=true label='Studio clock preview showing 10:08 on Monday, October 5' %}</div>
+        <div class="wf-stage__quote">{% include widgetflair-widget-preview.html kind='quote' palette='lavender' label='Daily perspective preview: Leave a little room for wonder' %}</div>
+        <div class="wf-stage__note">{% include widgetflair-widget-preview.html kind='note' palette='cream' wide=true label='Little note preview: Make space for a little joy' %}</div>
+        <div class="wf-stage__water">{% include widgetflair-widget-preview.html kind='hydration' palette='lavender' interactive=true %}</div>
+      </div>
+      <div class="wf-palette-controls" data-wf-palettes>
+        <div><span>Try a color</span><strong data-wf-palette-name>Butter</strong></div>
+        <div class="wf-swatches" role="group" aria-label="Choose a Studio clock palette">
+          {% for palette in app.palettes %}<button type="button" data-wf-palette="{{ palette.id }}" data-wf-palette-label="{{ palette.name }}" style="--swatch:{{ palette.color }}" aria-label="{{ palette.name }} palette" aria-pressed="{% if palette.id == 'butter' %}true{% else %}false{% endif %}" title="{{ palette.name }}"><span></span></button>{% endfor %}
+        </div>
+      </div>
+      <p class="wf-preview-note">Illustrative previews. Your designs, your details.</p>
+      <p class="wf-sr-only" data-wf-demo-announcement role="status" aria-live="polite"></p>
+    </div>
+  </section>
+  <div class="wf-proof wf-shell" aria-label="WidgetFlair at a glance">
+    <p><strong>{{ app.templates.size }}</strong> thoughtful designs</p><span aria-hidden="true"></span><p><strong>{{ app.palettes.size }}</strong> beautiful palettes</p><span aria-hidden="true"></span><p><strong>3</strong> Home Screen sizes</p><span aria-hidden="true"></span><p><strong>100%</strong> offline widget use</p>
+  </div>
+  <section class="wf-collection wf-shell" id="widgets" aria-labelledby="wf-collection-title">
+    <div class="wf-section-heading"><h2 id="wf-collection-title">{{ copy.gallery.title }}</h2><p>{{ copy.gallery.body }}</p></div>
+    <div class="wf-collection__toolbar">
+      <div class="wf-filters" role="group" aria-label="Filter widget collection" data-wf-filters>{% for filter in copy.gallery.filters %}<button type="button" data-wf-filter="{{ filter.id }}" aria-pressed="{% if filter.id == 'all' %}true{% else %}false{% endif %}">{{ filter.label }}</button>{% endfor %}</div>
+      <p class="wf-collection__count" role="status" aria-live="polite" data-wf-filter-status>{{ app.templates.size }} designs to make your own</p>
+    </div>
+    <div class="wf-gallery" data-wf-gallery>
+      {% for template in app.templates %}
+        <article class="wf-gallery-card" data-wf-category="{{ template.category }}">
+          <div class="wf-gallery-card__preview">{% include widgetflair-widget-preview.html kind=template.id palette=template.palette label=template.name %}</div>
+          <div class="wf-gallery-card__heading"><h3>{{ template.name }}</h3><span class="wf-access{% if template.premium %} wf-access--premium{% endif %}">{% if template.premium %}Premium{% else %}Free{% endif %}</span></div>
+          <p>{{ template.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+    <p class="wf-collection__footnote">Every design comes in small, medium, and large. Compatible designs also fit your Lock Screen.</p>
+  </section>
+  <section class="wf-offline wf-shell" aria-labelledby="wf-offline-title">
+    <div class="wf-offline__art" aria-hidden="true"><div class="wf-airplane"><svg viewBox="0 0 120 120" fill="none"><path d="m19 51 81-28-28 81-15-35z" fill="#ffb397"/><path d="m19 51 38 18 43-46z" fill="#ffd884"/><path d="m57 69 43-46-28 81z" fill="#e47c5e"/><path d="M57 69 100 23" stroke="#fffbf4" stroke-width="2"/></svg></div><span class="wf-offline__orbit wf-offline__orbit--one"></span><span class="wf-offline__orbit wf-offline__orbit--two"></span></div>
+    <div class="wf-section-heading"><h2 id="wf-offline-title">Looks lovely.<br>Works anywhere.</h2><p>On the morning commute. Above the clouds. Somewhere with no bars. Your widgets are ready whenever your day is.</p><ul class="wf-checks"><li>Create, customize, and use widgets offline</li><li>Your saved designs and personal content live on your device</li><li>No account, no ads, no app analytics</li></ul><p class="wf-fine-print">Purchases and restores connect to Apple. iCloud-only photos may need to download first.</p></div>
+  </section>
+  <section class="wf-how wf-shell" id="how-it-works" aria-labelledby="wf-how-title">
+    <div class="wf-section-heading wf-section-heading--center"><h2 id="wf-how-title">{{ copy.how.title }}</h2></div>
+    <ol class="wf-steps">{% for step in copy.how.steps %}<li><span class="wf-step-number">{{ step.number }}</span><h3>{{ step.title }}</h3><p>{{ step.body }}</p></li>{% endfor %}</ol>
+    <div class="wf-how__help"><span>Home Screen &amp; compatible Lock Screen designs</span><a class="wf-text-link" href="{{ '/apps/widgetflair/support/' | relative_url }}">See the setup guide <span aria-hidden="true">↗</span></a></div>
+  </section>
+  <section class="wf-premium wf-shell" id="premium" aria-labelledby="wf-premium-title">
+    <div class="wf-section-heading wf-section-heading--center"><h2 id="wf-premium-title">Free to start.<br>More with Premium.</h2><p>Everyday favorites to start. Extra personality when you want it.</p></div>
+    <div class="wf-plans">
+      <article class="wf-plan"><span class="wf-plan__tag">WidgetFlair</span><h3>Your everyday essentials.</h3><p class="wf-plan__headline">{{ free_templates.size }} designs. <span>Yours for free.</span></p><ul class="wf-checks"><li>Clocks, calendar, countdown, notes, and more</li><li>All {{ app.palettes.size }} color palettes</li><li>Small, medium, and large sizes</li><li>Offline use and your own saved library</li></ul>{% include widgetflair-download-button.html compact=true %}</article>
+      <article class="wf-plan wf-plan--premium"><span class="wf-plan__tag">WidgetFlair <strong>Premium</strong></span><h3>A little extra personality.</h3><p class="wf-plan__headline">{{ premium_templates.size }} more designs. <span>More ways to make it you.</span></p><ul class="wf-checks"><li>Everything in the free collection</li><li>Flip clock and Photo frame</li><li>Across time zones and Year in dots</li><li>Saved designs keep working after Premium ends</li></ul>{% include widgetflair-download-button.html compact=true %}<p class="wf-fine-print">Monthly or yearly subscription. Current prices appear in the app.</p></article>
+    </div>
+  </section>
+  <section class="wf-faq wf-shell" id="faq" aria-labelledby="wf-faq-title">
+    <div class="wf-section-heading"><h2 id="wf-faq-title">The little<br>details.</h2><p>Need a hand? <a href="{{ '/apps/widgetflair/support/' | relative_url }}">We’re here to help.</a></p></div>
+    <div class="wf-faq__items">{% for item in copy.faq %}<details><summary>{{ item.question }}<span aria-hidden="true">+</span></summary><p>{{ item.answer }}</p></details>{% endfor %}</div>
+  </section>
+  <section class="wf-closing wf-shell" aria-labelledby="wf-closing-title"><div class="wf-closing__panel"><img src="{{ app.web_icon | relative_url }}" width="88" height="88" alt="WidgetFlair app icon" loading="lazy"><h2 id="wf-closing-title">Make your screen<br>feel like you.</h2><p>A little useful. A little lovely. A little flair.</p>{% include widgetflair-download-button.html %}</div></section>
+</main>

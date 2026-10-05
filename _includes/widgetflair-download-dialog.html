@@ -1,0 +1,9 @@
+{% assign copy = site.data.widgetflair.en.download_modal %}
+<dialog class="wf-dialog" data-wf-dialog aria-labelledby="wf-dialog-title" aria-describedby="wf-dialog-body">
+  <button class="wf-dialog__dismiss" type="button" data-wf-dialog-close aria-label="Close download message">×</button>
+  <img src="{{ site.data.widgetflair.app.web_icon | relative_url }}" width="76" height="76" alt="">
+  <h2 id="wf-dialog-title">{{ copy.title }}</h2>
+  <p id="wf-dialog-body">{{ copy.body }}</p>
+  <button class="wf-download wf-download--compact" type="button" data-wf-dialog-close autofocus>{{ copy.close }}</button>
+  <a class="wf-dialog__support" href="mailto:{{ site.data.widgetflair.app.support_email }}?subject=WidgetFlair%20availability">Questions? Email us</a>
+</dialog>

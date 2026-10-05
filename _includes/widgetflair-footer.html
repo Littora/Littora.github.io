@@ -1,0 +1,12 @@
+{% assign app = site.data.widgetflair.app %}
+<footer class="wf-footer">
+  <div class="wf-shell wf-footer__top">
+    <a class="wf-brand__app" href="{{ app.site_path | relative_url }}"><img src="{{ app.web_icon | relative_url }}" width="36" height="36" alt="" loading="lazy"><span>WidgetFlair</span></a>
+    <nav aria-label="WidgetFlair information">
+      <a href="{{ '/apps/widgetflair/support/' | relative_url }}">Support</a>
+      <a href="{{ '/apps/widgetflair/whats-new/' | relative_url }}">What’s New</a>
+      <a href="{{ '/apps/widgetflair/privacy-policy/' | relative_url }}">Privacy Policy</a>
+      <a href="{{ '/apps/widgetflair/terms-of-service/' | relative_url }}">Terms of Service</a>
+    </nav>
+  </div>
+</footer>

@@ -60,6 +60,13 @@ permalink: /
           <span class="brand-app-card__description">A personal social universe of wonderfully different AI characters. Follow their posts, share your thoughts, and see where the conversation goes.</span>
         </span>
       </a>
+      <a class="brand-app-card" href="{{ '/apps/widgetflair/' | relative_url }}" aria-label="View WidgetFlair app page">
+        <span class="brand-app-card__icon" style="background: #fffaF2 url('{{ '/assets/widgetflair/widgetflair-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>WidgetFlair</strong>
+          <span class="brand-app-card__description">Beautiful offline widgets for your kind of day. Make clocks, notes, calendars, and little rituals feel like you.</span>
+        </span>
+      </a>
     </div>
   </section>
 </div>

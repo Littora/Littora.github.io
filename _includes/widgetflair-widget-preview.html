@@ -1,0 +1,55 @@
+{% assign wf_kind = include.kind %}
+<div class="wf-widget wf-widget--{{ wf_kind }}{% if include.wide %} wf-widget--wide{% endif %}" data-palette="{{ include.palette | default: 'cream' }}"{% if include.live %} data-wf-live-widget{% endif %}{% if include.interactive %} role="group" aria-label="Interactive Water ritual example"{% else %} role="img" aria-label="{{ include.label | default: 'Illustrative WidgetFlair widget preview' | escape }}"{% endif %}>
+  {% case wf_kind %}
+  {% when 'studioClock' %}
+    <svg class="wf-clock" viewBox="0 0 200 200" aria-hidden="true">
+      {% for tick in (0..11) %}<line x1="100" y1="14" x2="100" y2="{% assign quarter = tick | modulo: 3 %}{% if quarter == 0 %}29{% else %}23{% endif %}" transform="rotate({{ tick | times: 30 }} 100 100)" class="{% if quarter == 0 %}wf-clock__quarter{% else %}wf-clock__tick{% endif %}"/>{% endfor %}
+      <line x1="100" y1="100" x2="100" y2="56" transform="rotate(304 100 100)" class="wf-clock__hour"/>
+      <line x1="100" y1="100" x2="100" y2="37" transform="rotate(48 100 100)" class="wf-clock__minute"/>
+      <circle cx="100" cy="100" r="4.5" fill="currentColor"/>
+    </svg>
+    <span class="wf-widget__date">MON, OCT 5</span>
+  {% when 'digitalClock' %}
+    <span class="wf-widget__eyebrow">Right here, right now</span>
+    <strong class="wf-widget__digital">10:08</strong>
+    <span class="wf-widget__caption">Mon, Oct 5</span>
+  {% when 'flipClock' %}
+    <span class="wf-widget__eyebrow">Right here, right now</span>
+    <div class="wf-flip"><span>10</span><b>:</b><span>08</span></div>
+    <span class="wf-widget__caption">Mon, Oct 5</span>
+  {% when 'calendar' %}
+    <strong class="wf-widget__month">October 2026</strong>
+    <div class="wf-calendar"><span class="wf-calendar__weekday">M</span><span class="wf-calendar__weekday">T</span><span class="wf-calendar__weekday">W</span><span class="wf-calendar__weekday">T</span><span class="wf-calendar__weekday">F</span><span class="wf-calendar__weekday">S</span><span class="wf-calendar__weekday">S</span><span></span><span></span><span></span>{% for day in (1..31) %}<span{% if day == 5 %} class="wf-calendar__today"{% endif %}>{{ day }}</span>{% endfor %}</div>
+  {% when 'countdown' %}
+    <span class="wf-widget__eyebrow">Looking forward <span aria-hidden="true">✦</span></span>
+    <div class="wf-countdown"><strong>18</strong><span>days</span></div>
+    <strong class="wf-widget__caption">Our autumn escape</strong>
+    <small class="wf-widget__caption">Oct 23, 2026</small>
+  {% when 'quote' %}
+    <span class="wf-quote-mark" aria-hidden="true">“</span>
+    <strong class="wf-widget__serif">Leave a little room for wonder.</strong>
+    <span class="wf-widget__eyebrow">Daily perspective</span>
+  {% when 'note' %}
+    <span class="wf-widget__eyebrow">A little reminder <svg viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m7 3 7 2-2 5 2 4-10-3 4-2zM8 12l-2 6"/></svg></span>
+    <strong class="wf-widget__serif">Make space for a little joy.</strong>
+  {% when 'hydration' %}
+    <span class="wf-widget__eyebrow">Water ritual <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M10 1c-2 4-6 7-6 11a6 6 0 0 0 12 0c0-4-4-7-6-11Z"/></svg></span>
+    <div class="wf-water"><span><strong data-wf-water-count>3</strong><small> / 8</small></span>{% if include.interactive %}<button type="button" data-wf-water-add aria-label="Log a glass in this example">+</button>{% endif %}</div>
+    <div class="wf-water__track"><span data-wf-water-fill style="width:37.5%"></span></div>
+    <span class="wf-widget__caption" data-wf-water-caption>glasses today</span>
+  {% when 'dayProgress' %}
+    <span class="wf-widget__eyebrow">Today, unfolding</span>
+    <div class="wf-day"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="41" class="wf-day__track"/><circle cx="50" cy="50" r="41" class="wf-day__fill"/><circle cx="50" cy="50" r="9" class="wf-day__sun"/>{% for ray in (0..7) %}<path d="M50 31v-5" transform="rotate({{ ray | times: 45 }} 50 50)" class="wf-day__sun"/>{% endfor %}</svg><strong>42<small>%</small></strong></div>
+    <span class="wf-widget__caption">Make this moment count</span>
+  {% when 'yearProgress' %}
+    <span class="wf-widget__eyebrow">Year in dots</span>
+    <div class="wf-dots">{% for dot in (1..100) %}<span{% if dot <= 76 %} class="wf-dot--filled"{% endif %}></span>{% endfor %}</div>
+    <div class="wf-widget__bottom"><strong>76%</strong><span>A year of possibilities</span></div>
+  {% when 'photo' %}
+    <div class="wf-photo"><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="wf-photo-sky" x2="0" y2="1"><stop stop-color="#e9ddc8"/><stop offset="1" stop-color="#c6d5c1"/></linearGradient></defs><path fill="url(#wf-photo-sky)" d="M0 0h300v300H0z"/><circle cx="208" cy="88" r="34" fill="#fff4d8"/><path d="M0 191Q73 112 156 182T300 163V300H0" fill="#92ae95"/><path d="M0 225Q93 189 177 236T300 203V300H0" fill="#607e6b"/><path d="M0 270Q97 206 192 275T300 248V300H0" fill="#385449"/></svg><span>A favorite moment</span></div>
+  {% when 'worldClock' %}
+    <span class="wf-widget__eyebrow">Across time zones</span>
+    <div class="wf-zones"><div><span>Here · London</span><strong>10:08</strong></div><div><span>New York</span><strong>05:08</strong></div></div>
+    <span class="wf-widget__caption">A little closer, wherever they are</span>
+  {% endcase %}
+</div>

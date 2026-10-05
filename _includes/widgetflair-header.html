@@ -1,0 +1,20 @@
+{% assign app = site.data.widgetflair.app %}
+<header class="wf-header">
+  <div class="wf-shell wf-header__inner">
+    <div class="wf-brand">
+      <a class="wf-brand__maker" href="{{ '/' | relative_url }}">Littora</a>
+      <span class="wf-brand__divider" aria-hidden="true"></span>
+      <a class="wf-brand__app" href="{{ app.site_path | relative_url }}"><img src="{{ app.web_icon | relative_url }}" width="40" height="40" alt=""><span>WidgetFlair</span></a>
+    </div>
+    <button class="wf-menu" type="button" aria-expanded="false" aria-controls="wf-navigation" data-wf-menu>Menu <span aria-hidden="true">+</span></button>
+    <nav class="wf-nav" id="wf-navigation" aria-label="Primary" data-wf-navigation>
+      {% if page.widgetflair_home %}
+        <a href="#widgets">Widgets</a>
+      {% else %}
+        <a href="{{ app.site_path | relative_url }}">Explore widgets</a>
+      {% endif %}
+      <a href="{{ '/apps/widgetflair/support/' | relative_url }}"{% if page.permalink == '/apps/widgetflair/support/' %} aria-current="page"{% endif %}>Support</a>
+      {% include widgetflair-download-button.html compact=true %}
+    </nav>
+  </div>
+</header>
