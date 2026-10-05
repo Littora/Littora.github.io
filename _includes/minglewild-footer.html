@@ -1,0 +1,15 @@
+{% assign app = site.data.minglewild.app %}
+<footer class="mw-footer">
+  <div class="mw-shell">
+    <div class="mw-footer__top">
+      <div><a class="mw-brand" href="{{ app.site_path | relative_url }}"><img src="{{ app.icon | relative_url }}" width="36" height="36" alt="" loading="lazy"><span>Minglewild</span></a><p>A little more wonder in your everyday.</p></div>
+      <nav aria-label="Minglewild information">
+        <a href="{{ '/apps/minglewild/support/' | relative_url }}">Support</a>
+        <a href="{{ '/apps/minglewild/whats-new/' | relative_url }}">What’s New</a>
+        <a href="{{ '/apps/minglewild/privacy-policy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/apps/minglewild/terms-of-service/' | relative_url }}">Terms of Service</a>
+      </nav>
+    </div>
+    <div class="mw-footer__bottom"><a href="{{ '/' | relative_url }}">Made by Littora</a><span>A personal universe of fictional AI characters.</span><a href="mailto:{{ app.support_email }}">{{ app.support_email }}</a></div>
+  </div>
+</footer>

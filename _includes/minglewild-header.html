@@ -1,0 +1,11 @@
+{% assign app = site.data.minglewild.app %}
+<header class="mw-header">
+  <div class="mw-shell mw-header__inner">
+    <a class="mw-brand" href="{{ app.site_path | relative_url }}" aria-label="Minglewild home"><img src="{{ app.icon | relative_url }}" width="40" height="40" alt=""><span>Minglewild</span></a>
+    <nav class="mw-nav" aria-label="Minglewild navigation">
+      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#meet">Meet the characters</a>
+      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#inside">Inside Minglewild</a>
+      {% include minglewild-download-button.html compact=true %}
+    </nav>
+  </div>
+</header>

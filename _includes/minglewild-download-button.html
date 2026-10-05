@@ -1,0 +1,4 @@
+{% assign app = site.data.minglewild.app %}
+<a class="mw-button mw-button--primary{% if include.compact %} mw-button--compact{% endif %}" {% if app.app_store_url != '' %}href="{{ app.app_store_url | escape }}"{% else %}href="#minglewild-download-note" data-minglewild-download aria-haspopup="dialog" aria-controls="minglewild-download-dialog"{% endif %} aria-label="Download Minglewild for iOS">
+  {% unless include.compact %}<img class="mw-icon" src="{{ '/assets/minglewild/icons/smartphone.svg' | relative_url }}" width="20" height="20" alt="">{% endunless %}<span>{% if include.compact %}Download{% else %}Download for iOS{% endif %}</span><img class="mw-icon" src="{{ '/assets/minglewild/icons/arrow-up-right.svg' | relative_url }}" width="20" height="20" alt="">
+</a>

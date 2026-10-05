@@ -1,0 +1,11 @@
+{% assign app = site.data.minglewild.app %}
+{% assign copy = site.data.minglewild.en.download_modal %}
+<dialog class="mw-dialog" id="minglewild-download-dialog" aria-labelledby="mw-download-title" aria-describedby="mw-download-body">
+  <button class="mw-dialog__dismiss" type="button" data-minglewild-close aria-label="Close download message"><img src="{{ '/assets/minglewild/icons/x.svg' | relative_url }}" width="22" height="22" alt=""></button>
+  <img class="mw-dialog__icon" src="{{ app.icon | relative_url }}" width="76" height="76" alt="">
+  <p class="mw-eyebrow">Minglewild for iPhone</p>
+  <h2 id="mw-download-title">{{ copy.title }}</h2>
+  <p id="mw-download-body">{{ copy.body }}</p>
+  <button class="mw-button mw-button--primary" type="button" data-minglewild-close autofocus>{{ copy.close }}</button>
+  <a class="mw-dialog__support" href="mailto:{{ app.support_email }}?subject=Minglewild%20Support">Contact support</a>
+</dialog>
