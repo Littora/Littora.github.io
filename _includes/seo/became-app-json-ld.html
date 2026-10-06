@@ -1,0 +1,17 @@
+{% assign app = site.data.became.app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ app.name | jsonify }},
+  "url": {{ app.site_path | absolute_url | jsonify }},
+  "image": {{ app.icon | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS 17 or later",
+  "availableOnDevice": "iPhone",
+  "inLanguage": ["en", "de", "fr", "it", "ja", "ko", "nb"],
+  "author": {"@type": "Organization", "name": "Littora", "url": {{ '/' | absolute_url | jsonify }}},
+  "featureList": ["Significant milestone recording", "Optional AI text refinement and illustrations", "Gallery, Editorial and Postcard presentations", "Local collection, search and favorites", "Anniversary resurfacing", "Image and text sharing", "Backup export and import"]
+}
+</script>

@@ -1,0 +1,118 @@
+{% assign copy = site.data.became.en %}
+{% assign app = site.data.became.app %}
+<main id="main-content">
+  <section class="bc-hero bc-shell" aria-labelledby="bc-hero-title">
+    <div class="bc-hero__copy">
+      <p class="bc-eyebrow"><span aria-hidden="true"></span> Your personal milestone collection</p>
+      <h1 id="bc-hero-title">{{ copy.hero.title }}<br><em>{{ copy.hero.accent }}</em></h1>
+      <p class="bc-lead">{{ copy.hero.description }}</p>
+      <div class="bc-hero__actions">
+        {% include became-download-button.html %}
+        <a class="bc-text-link" href="#how-it-works">Meet Became <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="bc-hero__note">{{ copy.hero.note }}</p>
+    </div>
+    <div class="bc-hero__visual" aria-label="Illustrative examples of recorded milestones">
+      <div class="bc-hero__orbit" aria-hidden="true"></div>
+      <div class="bc-hero__back">{% include became-record.html example="career" presentation="editorial" mini=true eager=true %}</div>
+      <div class="bc-hero__front">{% include became-record.html example="graduation" presentation="gallery" mini=true eager=true %}</div>
+      <div class="bc-hero__stamp" aria-hidden="true"><span>Worth<br>remembering.</span><svg viewBox="0 0 40 40" fill="none"><path d="M20 7v26M7 20h26M11 11l18 18M29 11L11 29" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <p class="bc-preview-note">Illustrative milestone previews.</p>
+    </div>
+  </section>
+
+  <section class="bc-occasions bc-shell" aria-labelledby="bc-occasions-title">
+    <p id="bc-occasions-title">Some things deserve<br> a lasting record.</p>
+    <ul><li>Personal growth</li><li>Career</li><li>Relationships</li><li>Experiences</li><li>Life events</li></ul>
+  </section>
+
+  <section class="bc-section bc-shell" id="how-it-works" aria-labelledby="bc-how-title">
+    <div class="bc-section-heading">
+      <p class="bc-eyebrow">From a few words to a lasting record</p>
+      <h2 id="bc-how-title">Simple to record.<br>Meaningful to return to.</h2>
+      <p>Bring the significance. Became helps you give it shape.</p>
+    </div>
+    <div class="bc-steps">
+      <article class="bc-step">
+        <div class="bc-step__visual bc-notes" aria-label="Example event notes"><span>EVENT NOTES</span><p>Finished my first marathon.<br>Six months of training.<br>Proud I kept going.</p><div><span>Oct 20, 2025</span><span>Personal growth</span></div></div>
+        <div class="bc-step__heading"><span>01</span><h3>Start in your own words.</h3></div>
+        <p>Describe the event, choose a date, and add a category. A few details are enough to begin.</p>
+      </article>
+      <article class="bc-step">
+        <div class="bc-step__visual bc-refine"><span class="bc-refine__label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z" fill="currentColor"/></svg> Optional AI refinement</span><p>“After six months of consistent training, I completed my first marathon…”</p><span class="bc-refine__note">Illustrative refinement · Always editable</span></div>
+        <div class="bc-step__heading"><span>02</span><h3>Give the details their due.</h3></div>
+        <p>Refine your description and create an illustration with AI, or keep your own words and photo. You decide.</p>
+      </article>
+      <article class="bc-step">
+        <div class="bc-step__visual bc-finish"><div class="bc-finish__card"><img src="{{ '/assets/became/became-horizon.svg' | relative_url }}" width="720" height="540" alt="" loading="lazy"><strong>My first marathon</strong></div><span class="bc-finish__saved"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" fill="none" stroke="currentColor" stroke-width="2"/></svg> Milestone saved</span></div>
+        <div class="bc-step__heading"><span>03</span><h3>Make it yours. Keep it.</h3></div>
+        <p>Choose a presentation, review the title and description, and save. Beautiful records, with you in control.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="bc-studio-wrap" id="presentations" aria-labelledby="bc-studio-title">
+    <div class="bc-studio bc-shell">
+      <div class="bc-studio__copy">
+        <p class="bc-eyebrow">A milestone deserves a considered design</p>
+        <h2 id="bc-studio-title">The same achievement.<br><em>Your way to keep it.</em></h2>
+        <p>Image-led, editorial, or beautifully framed. Three presentations to match the significance of your milestone.</p>
+        <div class="bc-style-picker" role="group" aria-label="Choose a milestone presentation">
+          {% for style in copy.presentations %}<button type="button" data-bc-presentation="{{ style.id }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="bc-presentation-preview">{{ style.name }}</button>{% endfor %}
+        </div>
+        <div class="bc-style-descriptions" aria-live="polite" aria-atomic="true">
+          {% for style in copy.presentations %}<p data-bc-style-description="{{ style.id }}"{% unless forloop.first %} hidden{% endunless %}>{{ style.description }}</p>{% endfor %}
+        </div>
+        <p class="bc-studio__footnote">All three styles are included. Change the presentation whenever you wish.</p>
+      </div>
+      <div class="bc-studio__preview" id="bc-presentation-preview">
+        {% include became-record.html example="marathon" presentation="gallery" live=true %}
+        <p class="bc-preview-note">Interactive illustration of the app’s card styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bc-revisit bc-section bc-shell" aria-labelledby="bc-revisit-title">
+    <div class="bc-collection" aria-label="Illustrative collection preview">
+      <div class="bc-collection__header"><span>My milestones</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m15 15 5 5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <p class="bc-collection__year">2026 <span>YOUR PROGRESS, PRESERVED</span></p>
+      <div class="bc-collection__row"><span class="bc-collection__date">JUN<strong>18</strong></span><img src="{{ '/assets/became/became-horizon.svg' | relative_url }}" width="720" height="540" alt="" loading="lazy"><div><span>Personal growth</span><h3>My graduation</h3></div><span class="bc-heart" aria-label="Favorite">♡</span></div>
+      <div class="bc-collection__row"><span class="bc-collection__date">APR<strong>07</strong></span><img src="{{ '/assets/became/became-ascent.svg' | relative_url }}" width="720" height="540" alt="" loading="lazy"><div><span>Career</span><h3>A new chapter in my career</h3></div></div>
+      <div class="bc-anniversary"><span aria-hidden="true">↺</span><div><strong>On this day</strong><p>A milestone worth revisiting.</p></div></div>
+      <p class="bc-preview-note">Illustrative collection and anniversary preview.</p>
+    </div>
+    <div class="bc-revisit__copy">
+      <p class="bc-eyebrow">Keep the perspective you’ve earned</p>
+      <h2 id="bc-revisit-title">Look back.<br>See how far you’ve come.</h2>
+      <p>A collection of significant events, easy to browse and beautiful to revisit.</p>
+      <ul class="bc-feature-list"><li><span aria-hidden="true">↗</span><div><h3>Find what matters.</h3><p>Search your records, browse by category, or return to your favorites.</p></div></li><li><span aria-hidden="true">↺</span><div><h3>Let anniversaries bring you back.</h3><p>Revisit a milestone on the date it happened.</p></div></li><li><span aria-hidden="true">↥</span><div><h3>Share what you choose.</h3><p>Share the description or a beautifully rendered milestone card.</p></div></li></ul>
+    </div>
+  </section>
+
+  <section class="bc-private bc-shell" aria-labelledby="bc-private-title">
+    <div class="bc-private__mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><rect x="14" y="29" width="36" height="27" rx="8" stroke="currentColor" stroke-width="2"/><path d="M22 29V19a10 10 0 0 1 20 0v10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="42" r="3" fill="currentColor"/></svg></div>
+    <div><p class="bc-eyebrow">Personal by design</p><h2 id="bc-private-title">Your records. Your device.</h2><p>No account or social feed. Your milestones and photos stay in your local collection, with backup export and import when you need them.</p></div>
+    <p class="bc-private__ai">AI is your choice. Generation sends your description and selected style to the AI service after consent. Your imported photos are never uploaded.</p>
+  </section>
+
+  <section class="bc-plans bc-section bc-shell" aria-labelledby="bc-plans-title">
+    <div class="bc-section-heading"><p class="bc-eyebrow">Begin freely. Create more with Premium.</p><h2 id="bc-plans-title">Room for every milestone.</h2><p>Manual records, your photos, and all three presentations are unlimited on every plan.</p></div>
+    <div class="bc-plan-grid">
+      <article class="bc-plan"><p class="bc-plan__name">Became</p><h3>A thoughtful place to begin.</h3><p class="bc-plan__allowance"><strong>{{ app.free_weekly_creations }}</strong> AI creations each week</p><ul><li>Unlimited manual milestones</li><li>Your own photos and three presentations</li><li>Search, favorites, anniversaries, and sharing</li><li>Backup export and import</li></ul></article>
+      <article class="bc-plan bc-plan--premium"><p class="bc-plan__name"><span aria-hidden="true">✦</span> Became Premium</p><h3>More possibilities for what’s next.</h3><p class="bc-plan__allowance"><strong>{{ app.premium_monthly_creations }}</strong> AI creations each month</p><ul><li>More AI description refinements</li><li>More AI illustrations</li><li>Everything included in Became</li><li>Monthly or yearly subscription in the app</li></ul></article>
+    </div>
+    <p class="bc-plans__note">A successful text refinement or illustration uses one creation. Failed requests do not count. Unused creations do not roll over. Subscription prices and terms are shown in the app.</p>
+  </section>
+
+  <section class="bc-faq bc-section bc-shell" aria-labelledby="bc-faq-title">
+    <div><p class="bc-eyebrow">A few things to know</p><h2 id="bc-faq-title">Made clear.</h2><a class="bc-text-link" href="{{ '/apps/became/support/' | relative_url }}">Visit support <span aria-hidden="true">↗</span></a></div>
+    <div>{% for faq in copy.faqs %}<details><summary>{{ faq.question }}<span aria-hidden="true">+</span></summary><p>{{ faq.answer }}</p></details>{% endfor %}</div>
+  </section>
+
+  <section class="bc-final bc-shell" aria-labelledby="bc-final-title">
+    <img src="{{ app.web_icon | relative_url }}" width="76" height="76" alt="" loading="lazy">
+    <h2 id="bc-final-title">You made it happen.<br><em>Make a record of it.</em></h2>
+    <p>Start your collection of milestones with Became.</p>
+    {% include became-download-button.html %}
+  </section>
+</main>

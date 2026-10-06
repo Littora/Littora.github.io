@@ -1,0 +1,52 @@
+hero:
+  title: "For the milestones"
+  accent: "that make you."
+  description: "Record significant achievements, turning points, and life events. Refine your words with optional AI, choose a beautiful presentation, and build a collection worth returning to."
+  note: "No account required. Your collection stays on your device."
+examples:
+  graduation:
+    title: "My graduation"
+    date: "June 18, 2026"
+    datetime: "2026-06-18"
+    category: "Personal growth"
+    image: /assets/became/became-horizon.svg
+    description: "Three years of learning, late nights, and steady work. Today I graduated, proud of the commitment it took to get here."
+  career:
+    title: "A new chapter in my career"
+    date: "April 7, 2026"
+    datetime: "2026-04-07"
+    category: "Career"
+    image: /assets/became/became-ascent.svg
+    description: "I stepped into a role I had worked toward for years. A new responsibility, and a meaningful recognition of how far I have come."
+  marathon:
+    title: "My first marathon"
+    date: "October 20, 2025"
+    datetime: "2025-10-20"
+    category: "Personal growth"
+    image: /assets/became/became-horizon.svg
+    description: "After six months of consistent training, I completed my first marathon. Crossing the finish line marked a major personal achievement and the completion of a goal I had worked toward for months."
+presentations:
+  - id: gallery
+    name: Gallery
+    description: "An image-led cover with a striking title. Give the achievement its own space."
+  - id: editorial
+    name: Editorial
+    description: "A considered date, headline, and description. Let your words take the lead."
+  - id: postcard
+    name: Postcard
+    description: "A beautifully framed image with a personal caption. A milestone you can share."
+faqs:
+  - question: "What belongs in Became?"
+    answer: "Significant achievements, turning points, and life events: a graduation, a career milestone, a relationship, a meaningful experience, or a decision that changed your direction. Choose what deserves a lasting record."
+  - question: "Do I have to use AI?"
+    answer: "No. You can write, edit, save, and choose a presentation yourself. Add your own photo, keep the designed cover, or choose optional AI refinement and illustration."
+  - question: "Can I use Became offline?"
+    answer: "Manual recording, your saved collection, and presentation choices work offline. AI generation and App Store purchases or restoration need an internet connection."
+  - question: "Where are my records kept?"
+    answer: "Your records and photos stay in the app on your device and are included in its device backup. You can also export and import a Became backup in Settings. Became does not require an account or provide cloud collection sync."
+  - question: "Which devices and languages are supported?"
+    answer: "Became is designed for iPhone with iOS 17 or later. The app supports English, German, French, Italian, Japanese, Korean, and Norwegian Bokmål."
+download_modal:
+  title: "Became is almost ready."
+  body: "Became is being submitted for App Store review. You’ll be able to download it here after approval. Please check back soon."
+  close: "Got it"

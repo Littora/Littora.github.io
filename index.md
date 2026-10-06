@@ -67,6 +67,13 @@ permalink: /
           <span class="brand-app-card__description">Beautiful offline widgets for your kind of day. Make clocks, notes, calendars, and little rituals feel like you.</span>
         </span>
       </a>
+      <a class="brand-app-card" href="{{ '/apps/became/' | relative_url }}" aria-label="View Became app page">
+        <span class="brand-app-card__icon" style="background: #e9f6ef url('{{ '/assets/became/became-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Became</strong>
+          <span class="brand-app-card__description">A beautiful home for your milestones. Record significant achievements, refine your words with optional AI, and revisit how far you’ve come.</span>
+        </span>
+      </a>
     </div>
   </section>
 </div>

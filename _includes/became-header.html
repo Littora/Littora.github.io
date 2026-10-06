@@ -1,0 +1,21 @@
+{% assign app = site.data.became.app %}
+<header class="bc-header">
+  <div class="bc-shell bc-header__inner">
+    <div class="bc-brand">
+      <a class="bc-maker" href="{{ '/' | relative_url }}">Littora</a>
+      <span class="bc-brand__divider" aria-hidden="true"></span>
+      <a class="bc-brand__app" href="{{ app.site_path | relative_url }}"><img src="{{ app.web_icon | relative_url }}" width="36" height="36" alt=""><span>Became</span></a>
+    </div>
+    <button class="bc-menu" type="button" aria-expanded="false" aria-controls="bc-navigation" data-bc-menu>Menu <span aria-hidden="true">+</span></button>
+    <nav class="bc-nav" id="bc-navigation" aria-label="Primary" data-bc-navigation>
+      {% if page.became_home %}
+        <a href="#how-it-works">How it works</a>
+        <a href="#presentations">Designs</a>
+      {% else %}
+        <a href="{{ app.site_path | relative_url }}">Explore Became</a>
+      {% endif %}
+      <a href="{{ '/apps/became/support/' | relative_url }}"{% if page.permalink == '/apps/became/support/' %} aria-current="page"{% endif %}>Support</a>
+      {% include became-download-button.html compact=true %}
+    </nav>
+  </div>
+</header>

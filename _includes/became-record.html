@@ -1,0 +1,14 @@
+{% assign record = site.data.became.en.examples[include.example] %}
+<article class="bc-record{% if include.mini %} bc-record--mini{% endif %}" data-presentation="{{ include.presentation | default: 'gallery' }}"{% if include.live %} data-bc-live-record{% endif %}>
+  <div class="bc-record__cover">
+    <img class="bc-record__image" src="{{ record.image | relative_url }}" width="720" height="540" alt=""{% unless include.eager %} loading="lazy"{% endunless %}>
+    <div class="bc-record__heading">
+      <div class="bc-record__meta"><span>{{ record.category }}</span><time datetime="{{ record.datetime }}">{{ record.date }}</time></div>
+      <h3>{{ record.title }}</h3>
+    </div>
+  </div>
+  <div class="bc-record__copy">
+    <p>{{ record.description }}</p>
+    {% unless include.mini %}<span class="bc-record__signature">A milestone, recorded.</span>{% endunless %}
+  </div>
+</article>
