@@ -74,6 +74,13 @@ permalink: /
           <span class="brand-app-card__description">A beautiful home for your milestones. Record significant achievements, refine your words with optional AI, and revisit how far you’ve come.</span>
         </span>
       </a>
+      <a class="brand-app-card" href="{{ '/apps/framila/' | relative_url }}" aria-label="View Framila app page">
+        <span class="brand-app-card__icon" style="background: #f5f1e9 url('{{ '/assets/framila/framila-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Framila</strong>
+          <span class="brand-app-card__description">Give a meaningful photo a beautiful frame, a story on the back, and a place to stay. Create, keep, and share personal keepsakes, entirely offline.</span>
+        </span>
+      </a>
     </div>
   </section>
 </div>

@@ -1,0 +1,117 @@
+{% assign app = site.data.framila.app %}
+{% assign copy = site.data.framila.en %}
+{% assign free_styles = app.styles | where: 'premium', false %}
+<main id="main-content">
+  <section class="fm-hero fm-shell" aria-labelledby="fm-hero-title">
+    <div class="fm-hero__copy">
+      <p class="fm-eyebrow"><span class="fm-eyebrow__line" aria-hidden="true"></span>{{ copy.hero.eyebrow }}</p>
+      <h1 id="fm-hero-title">{{ copy.hero.title }}<br><em>{{ copy.hero.second_line }}</em></h1>
+      <p class="fm-lead">{{ copy.hero.body }}</p>
+      <div class="fm-actions">{% include framila-download-button.html %}<a class="fm-text-link" href="#frames">{{ copy.hero.secondary }} <span aria-hidden="true">↓</span></a></div>
+      <p class="fm-hero__note">Three free frames to begin. No account needed.</p>
+    </div>
+    <div class="fm-hero__visual">
+      <div class="fm-hero__halo" aria-hidden="true"></div>
+      <div class="fm-hero__note-card" aria-hidden="true"><span>A MEMORY, IN YOUR WORDS</span><p>An ordinary<br>afternoon.<br>A memory<br>forever.</p><svg class="fm-handwriting" viewBox="0 0 210 70" fill="none"><path d="M10 52c18-38 22-42 18-12-2 13 12 18 17 5 6-17 13-22 12-8-1 17 10 18 18 4 10-15 16-17 11-4-3 9 6 8 14-3 12-18 9-24 3-6-6 19 0 29 12 18 14-13 11-40 5-23-7 21 0 34 15 21 12-12 8-33 3-19-6 18 5 23 18 12 13-12 14-13 14-4 0 13 7 13 16 3M21 63c37-8 90-8 161-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="fm-hero__frame">{% include framila-artwork.html style='gallery' memory='family' eager=true %}<span class="fm-hero__label">A photograph.<br><em>A little more meaning.</em></span></div>
+      <p class="fm-preview-note">Illustrative keepsake · sample photograph &amp; story</p>
+    </div>
+  </section>
+  <nav class="fm-highlights fm-shell" aria-label="Explore what makes a Framila keepsake">
+    <a href="#frames"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="5" y="4" width="22" height="24" rx="2"/><rect x="10" y="9" width="12" height="14" rx=".5"/></svg><span><strong>A frame that feels right.</strong><small>Thoughtful proportions. Quiet materials.</small></span><span class="fm-highlights__arrow" aria-hidden="true">↗</span></a>
+    <a href="#the-back"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 21 3-7L23 3l5 5-12 12-8 1ZM11 14l5 6M6 28c4-8 5-8 6-3 1 4 4-4 6-1 2 4 4-1 8 0"/></svg><span><strong>Your story, on the back.</strong><small>Personal words. Real handwriting.</small></span><span class="fm-highlights__arrow" aria-hidden="true">↗</span></a>
+    <a href="#share-and-print"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 10H5v17h22V10h-4M16 21V4m-5 5 5-5 5 5"/></svg><span><strong>Made to leave the screen.</strong><small>Share or print. No watermark.</small></span><span class="fm-highlights__arrow" aria-hidden="true">↗</span></a>
+  </nav>
+  <section class="fm-frames-wrap" id="frames" aria-labelledby="fm-frames-title">
+    <div class="fm-frames fm-shell fm-section">
+      <div class="fm-frames__stage">
+        <div class="fm-frames__live">{% include framila-artwork.html style='gallery' live=true %}</div>
+        <div class="fm-frame-picker" role="group" aria-label="Preview a free frame style" data-fm-frame-picker>{% for style in free_styles %}<button type="button" data-fm-frame="{{ style.id }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ style.name }}</button>{% endfor %}</div>
+        <div class="fm-memory-picker" role="group" aria-label="Choose a sample photograph" data-fm-memory-picker>
+          {% for entry in app.memories %}{% assign memory = entry[1] %}<button type="button" data-fm-memory="{{ entry[0] }}" data-fm-image="{{ memory.image | relative_url }}" data-fm-alt="{{ memory.alt | escape }}" data-fm-caption="{{ memory.caption | escape }}" data-fm-date="{{ memory.date | escape }}" aria-pressed="{% if entry[0] == 'companion' %}true{% else %}false{% endif %}" aria-label="Preview {{ memory.label | downcase | escape }} photo"><img src="{{ memory.image | relative_url }}" width="64" height="80" alt="" loading="lazy"><span>{{ memory.label }}</span></button>{% endfor %}
+        </div>
+        <p class="fm-memory-status" role="status" aria-live="polite" data-fm-memory-status>Milo, at home · March 2024</p>
+        <p class="fm-preview-note">Illustrative photos &amp; frames · make either your own</p>
+      </div>
+      <div class="fm-frames__copy">
+        <p class="fm-eyebrow">01 / Give it a frame</p>
+        <h2 id="fm-frames-title">Less decoration.<br><em>More photograph.</em></h2>
+        <p class="fm-body">Considered proportions. Quiet materials. Room to breathe. Start with a complete composition, then make every detail your own.</p>
+        <div class="fm-style-descriptions" aria-live="polite">{% for style in free_styles %}<p data-fm-style-description="{{ style.id }}"{% unless forloop.first %} hidden{% endunless %}><strong>{{ style.name }}</strong>{{ style.description }}</p>{% endfor %}</div>
+        <ul class="fm-feature-list"><li>Portrait, square, or landscape</li><li>Mat width, muted palettes &amp; photo-inspired colors</li><li>Keep the whole photo, or choose your crop</li><li>A name, a date, a little note — only if you want</li></ul>
+      </div>
+    </div>
+  </section>
+  <section class="fm-story fm-shell fm-section" id="the-back" aria-labelledby="fm-story-title">
+    <div class="fm-story__copy">
+      <p class="fm-eyebrow">02 / Keep the words, too</p>
+      <h2 id="fm-story-title">{{ copy.story.title }}<br><em>{{ copy.story.second_line }}</em></h2>
+      <p class="fm-body">{{ copy.story.body }}</p>
+      <div class="fm-story__detail"><span aria-hidden="true">↳</span><p><strong>A handwriting only you know.</strong>Write with your finger. A signature, a small drawing, a few imperfect words. Sometimes, those are the best part.</p></div>
+      <a class="fm-text-link" href="#make-it-yours">Make something personal <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="fm-story__demo">
+      <div class="fm-story__object">
+        <div class="fm-story__front" data-fm-story-front hidden>{% include framila-artwork.html style='keepsake' memory='family' %}</div>
+        <div class="fm-story__back" data-fm-story-back>
+          <div class="fm-story__meta"><span>{{ copy.story.place }}</span><span>{{ copy.story.date }}</span></div>
+          <blockquote>“{{ copy.story.quote }}”</blockquote>
+          <svg class="fm-handwriting" viewBox="0 0 210 70" fill="none" role="img" aria-label="Illustrative handwritten signature"><path d="M10 52c18-38 22-42 18-12-2 13 12 18 17 5 6-17 13-22 12-8-1 17 10 18 18 4 10-15 16-17 11-4-3 9 6 8 14-3 12-18 9-24 3-6-6 19 0 29 12 18 14-13 11-40 5-23-7 21 0 34 15 21 12-12 8-33 3-19-6 18 5 23 18 12 13-12 14-13 14-4 0 13 7 13 16 3M21 63c37-8 90-8 161-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="fm-story__back-label">The story behind the photo</span>
+        </div>
+      </div>
+      <button class="fm-flip fm-text-link" type="button" data-fm-flip aria-pressed="true" aria-controls="fm-story-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8a8 8 0 0 1 14-2l2 2M20 16a8 8 0 0 1-14 2l-2-2M20 3v5h-5M4 21v-5h5"/></svg>Flip the keepsake</button>
+      <p class="fm-preview-note" id="fm-story-status" role="status" aria-live="polite">The back · illustrative story &amp; handwriting</p>
+    </div>
+  </section>
+  <section class="fm-pair-wrap" aria-labelledby="fm-pair-title">
+    <div class="fm-pair fm-shell fm-section">
+      <div class="fm-pair__copy"><p class="fm-eyebrow">03 / Then &amp; now <span class="fm-pill">Premium</span></p><h2 id="fm-pair-title">Two photographs.<br><em>All the years between.</em></h2><p class="fm-body">The first day of school and graduation. The day you moved in and the day you left. The same place, years apart.</p><p class="fm-body">Bring two photos together with one frame, their dates, and a few words. Let the distance between them tell its own story.</p></div>
+      <div class="fm-pair__visual">
+        <div class="fm-paired-artwork"><div class="fm-paired-artwork__photos"><figure><img src="{{ '/assets/framila/memory-summer.webp' | relative_url }}" width="720" height="900" alt="The same alpine lake in early summer, with green trees and a rowing boat" loading="lazy"><figcaption>June 2018</figcaption></figure><figure><img src="{{ '/assets/framila/memory-autumn.webp' | relative_url }}" width="900" height="1125" alt="The alpine lake in autumn, with golden leaves and a rowing boat" loading="lazy"><figcaption>October 2024</figcaption></figure></div><p>The same lake. A different chapter.</p></div>
+        <p class="fm-preview-note">Illustrative two-photo composition · sample photos &amp; dates</p>
+      </div>
+    </div>
+  </section>
+  <section class="fm-export fm-shell fm-section" id="share-and-print" aria-labelledby="fm-export-title">
+    <div class="fm-export__intro"><p class="fm-eyebrow">From your camera roll to something more</p><h2 id="fm-export-title">Keep it. Show it.<br><em>Give it with love.</em></h2><p class="fm-body">A finished keepsake is made to leave the editor. Decide how you want to hold on to it.</p><div class="fm-export__formats"><span>PNG</span><span>A4 PDF</span><span>No watermark</span></div></div>
+    <div class="fm-export__items"><article><span class="fm-export__number" aria-hidden="true">01</span><div><h3>A collection that stays close.</h3><p>Save on your device. Search your stories, find a favorite, and return to the moments that matter.</p></div></article><article><span class="fm-export__number" aria-hidden="true">02</span><div><h3>A photo, a story, or both.</h3><p>Share the front, the back, or both as separate images. No watermark gets between your photo and its meaning.</p></div></article><article><span class="fm-export__number" aria-hidden="true">03</span><div><h3>Something you can hold.</h3><p>Export a two-page A4 PDF for printing. Slip it into a card, put it on the wall, or give it to someone you love.</p></div></article></div>
+  </section>
+  <section class="fm-offline-wrap" id="offline" aria-labelledby="fm-offline-title">
+    <div class="fm-offline fm-shell fm-section">
+      <div class="fm-offline__visual">
+        <div class="fm-offline__halo" aria-hidden="true"></div>
+        <div class="fm-local-phone" role="img" aria-label="Illustration of family, pet and travel keepsakes stored in a local iPhone collection">
+          <div class="fm-local-phone__screen" aria-hidden="true">
+            <div class="fm-local-phone__island"></div>
+            <span class="fm-local-phone__brand">Framila</span>
+            <h3>My memories</h3>
+            <span class="fm-local-phone__saved"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="m3 8 3 3 7-7"/></svg>Saved on this iPhone</span>
+            <div class="fm-local-collection">
+              {% for entry in app.memories %}{% assign memory = entry[1] %}<div class="fm-local-memory"><div class="fm-local-memory__photo fm-local-memory__photo--{{ entry[0] }}"><img src="{{ memory.image | relative_url }}" width="{{ memory.width }}" height="{{ memory.height }}" alt="" loading="lazy"></div><strong>{{ memory.caption }}</strong><small>{{ memory.date }}</small></div>{% endfor %}
+              <div class="fm-local-memory"><div class="fm-local-memory__pair"><img src="{{ '/assets/framila/memory-summer.webp' | relative_url }}" width="720" height="900" alt="" loading="lazy"><img src="{{ '/assets/framila/memory-autumn.webp' | relative_url }}" width="900" height="1125" alt="" loading="lazy"></div><strong>Then &amp; now</strong><small>Two chapters, together</small></div>
+            </div>
+            <div class="fm-local-phone__bottom"><span>My memories</span><span>Your studio</span></div>
+            <div class="fm-local-phone__home"></div>
+          </div>
+        </div>
+        <span class="fm-offline__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 18-7-7 18-3-8-8-3Zm8 3L21 3"/></svg>Even in airplane mode.</span>
+        <p class="fm-preview-note">Illustrative local collection</p>
+      </div>
+      <div class="fm-offline__copy">
+        <p class="fm-eyebrow">A complete studio, on your iPhone</p>
+        <h2 id="fm-offline-title">Your studio.<br><em>Wherever you are.</em></h2>
+        <p class="fm-body">On a long journey. In a quiet corner. Somewhere with no signal. Turn a photo into something meaningful, from the first crop to the final export.</p>
+        <div class="fm-offline__features">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4zM8 14l3-3 3 3 2-2 4 4M8 8h.01"/></svg><p><strong>Make the whole keepsake offline.</strong><span>Choose a frame, write on the back, save, and export. Every creative step works without Wi-Fi.</span></p></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M10 18l2 2 2-2"/></svg><p><strong>Your collection stays on your iPhone.</strong><span>No account to open. No ads or app analytics. Just your photos, your words, and a place to keep them.</span></p></div>
+        </div>
+        <p class="fm-fine-print">Download iCloud-only photos first. Purchases and restores connect to Apple. Export valuable keepsakes for safekeeping.</p>
+      </div>
+    </div>
+  </section>
+  <section class="fm-how fm-shell fm-section" id="make-it-yours" aria-labelledby="fm-how-title"><div class="fm-section-heading"><p class="fm-eyebrow">A few thoughtful touches</p><h2 id="fm-how-title">One photo is all it takes.</h2></div><ol class="fm-steps"><li><span>01</span><h3>Choose what matters.</h3><p>A person, a place, a wonderfully ordinary afternoon. Pick a photo from your library.</p></li><li><span>02</span><h3>Give it a little care.</h3><p>Find its frame. Adjust the space and colors. Add a date, a story, or your handwriting.</p></li><li><span>03</span><h3>Make it a keepsake.</h3><p>Save it to your collection. Export, share, or print it whenever you’re ready.</p></li></ol></section>
+  <section class="fm-premium fm-shell fm-section" id="premium" aria-labelledby="fm-premium-title"><div class="fm-section-heading"><p class="fm-eyebrow">Begin with a photograph</p><h2 id="fm-premium-title">Meaning comes free.<br><em>More possibilities with Premium.</em></h2></div><div class="fm-plans"><article class="fm-plan"><span class="fm-eyebrow">Framila</span><h3>A beautiful place to start.</h3><p>Everything you need for a single-photo keepsake.</p><ul class="fm-feature-list"><li>Gallery, Keepsake &amp; Portrait frames</li><li>Colors, mat width, crop, caption &amp; date</li><li>A story &amp; real handwriting on the back</li><li>Local collection, search &amp; favorites</li><li>1,600-pixel PNG &amp; two-page A4 PDF exports</li></ul>{% include framila-download-button.html compact=true %}</article><article class="fm-plan fm-plan--premium"><span class="fm-eyebrow">Framila <span class="fm-pill">Premium</span></span><h3>A wider world of keepsakes.</h3><p>For more ways to tell your story.</p><ul class="fm-feature-list"><li>Everything in Framila</li><li>Heirloom, Noir &amp; Linen frames</li><li>Two-photo Then &amp; now compositions</li><li>3,200-pixel PNG exports</li><li>Saved Premium works stay editable after expiry</li></ul>{% include framila-download-button.html compact=true %}<p class="fm-fine-print">Monthly or yearly. Current prices appear in the app.</p></article></div></section>
+  <section class="fm-faq fm-shell fm-section" aria-labelledby="fm-faq-title"><div><p class="fm-eyebrow">The useful details</p><h2 id="fm-faq-title">A few things<br> <em>you might wonder.</em></h2><a class="fm-text-link" href="{{ '/apps/framila/support/' | relative_url }}">Visit support <span aria-hidden="true">↗</span></a></div><div class="fm-faq__items">{% for item in copy.faq %}<details><summary>{{ item.question }}<span aria-hidden="true">+</span></summary><p>{{ item.answer }}</p></details>{% endfor %}</div></section>
+  <section class="fm-closing fm-shell" aria-labelledby="fm-closing-title"><div class="fm-closing__panel"><img src="{{ app.web_icon | relative_url }}" width="84" height="84" alt="Framila app icon" loading="lazy"><p class="fm-eyebrow">There’s probably a photo you’re thinking of.</p><h2 id="fm-closing-title">Give it <em>a place to stay.</em></h2><p>Make something worth keeping.</p>{% include framila-download-button.html %}<span class="fm-closing__note">For iPhone · iOS 17 or later</span></div></section>
+</main>

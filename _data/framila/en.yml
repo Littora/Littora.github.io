@@ -1,0 +1,32 @@
+hero:
+  eyebrow: A small studio for meaningful photos
+  title: Some moments
+  second_line: deserve a frame.
+  body: "Turn a photo you love into a beautifully framed keepsake. Add a story on the back. Keep it close, print it, or give it to someone who was there."
+  secondary: Explore the frames
+story:
+  title: The photo holds a moment.
+  second_line: You hold the story.
+  body: "A place. A date. The words you don’t want to forget. Give your photograph a back, and keep its front beautifully simple."
+  quote: "You called it an ordinary afternoon. I think I’ll remember it forever."
+  place: Sunday, with you
+  date: May 2024
+faq:
+  - question: Does Framila work offline?
+    answer: "Yes. Create, edit, save, and export on your device, without an account. Photos stored only in iCloud need to download first. Buying or restoring Premium connects to Apple."
+  - question: What can I make for free?
+    answer: "Start with Gallery, Keepsake, and Portrait. Customize the mat, colors, crop, caption, and date; add a story and real handwriting on the back. Save your work and export watermark-free PNGs at 1,600 pixels wide or a two-page A4 PDF."
+  - question: What does Premium add?
+    answer: "Heirloom, Noir, and Linen frames, two-photo Then & now compositions, and PNG exports at 3,200 pixels wide. Monthly and yearly subscriptions are available in the app, where you can see current prices. Saved Premium works remain editable and exportable when your subscription ends; new Premium designs require active access."
+  - question: Can I use my own handwriting?
+    answer: "Yes. Write or draw on the back with your finger. Your strokes become part of the keepsake and its export."
+  - question: Can I print or share both sides?
+    answer: "Export the front, the back, or both as separate PNGs. For printing, export a two-page A4 PDF with one side on each page, then use the system share sheet. Print sharpness depends on your original photo and crop. Framila does not provide physical frames or a print-delivery service."
+  - question: Where are my photos and keepsakes stored?
+    answer: "Your library stays on your device. Framila has no account, ads, app analytics, or developer cloud storage. Your original photo stays unchanged. Device backups follow your iOS settings; deleting Framila can remove its local library, so export important work to Files for safekeeping."
+  - question: Which devices and languages are supported?
+    answer: "Framila supports iPhone with iOS 17 or later. The app follows your system language and supports English, German, French, Italian, Japanese, Korean, and Norwegian Bokmål."
+download_modal:
+  title: Your next keepsake is close.
+  body: "Framila is being submitted for App Store review. You’ll be able to download it here as soon as it’s approved. Please check back soon."
+  close: Got it

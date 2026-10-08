@@ -1,0 +1,14 @@
+{% assign app = site.data.framila.app %}
+<header class="fm-header">
+  <div class="fm-shell fm-header__inner">
+    <div class="fm-brand">
+      <a class="fm-maker" href="{{ '/' | relative_url }}">Littora</a>
+      <span class="fm-brand__divider" aria-hidden="true"></span>
+      <a class="fm-brand__app" href="{{ app.site_path | relative_url }}"><img src="{{ app.web_icon | relative_url }}" width="40" height="40" alt=""><span>Framila</span></a>
+    </div>
+    <nav class="fm-nav" aria-label="Primary">
+      <a class="fm-nav__frames" href="{% if page.framila_home %}#frames{% else %}{{ app.site_path | relative_url }}#frames{% endif %}">The frames</a>
+      {% include framila-download-button.html compact=true %}
+    </nav>
+  </div>
+</header>

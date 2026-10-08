@@ -1,0 +1,8 @@
+{% assign memory_id = include.memory | default: 'companion' %}
+{% assign memory = site.data.framila.app.memories[memory_id] %}
+<div class="fm-artwork" data-frame="{{ include.style | default: 'gallery' }}"{% if include.live %} data-fm-live-frame{% endif %}>
+  <div class="fm-artwork__mat">
+    <img src="{{ memory.image | relative_url }}" width="{{ memory.width }}" height="{{ memory.height }}" alt="{{ memory.alt | escape }}"{% if include.eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %}{% if include.live %} data-fm-memory-image{% endif %}>
+    <div class="fm-artwork__caption"><span{% if include.live %} data-fm-memory-caption{% endif %}>{{ memory.caption }}</span><span{% if include.live %} data-fm-memory-date{% endif %}>{{ memory.date }}</span></div>
+  </div>
+</div>
