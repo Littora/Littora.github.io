@@ -11,38 +11,19 @@ image:
   alt: "Framila — some moments deserve a frame"
 ---
 
-# A beginning worth keeping.
+# What’s New
+## Version 1.0.0 — Introducing Framila
 
-<p class="fm-document__lead">The first Framila release turns a meaningful photograph into something you can save, share, print, or give.</p>
+**A photo worth keeping. A story worth telling.**
 
-<p class="fm-document__badge">Version 1.0 · First release preview</p>
+Give a favorite photo a thoughtful frame and a story on the back. Make it yours with Framila.
 
-## A considered frame
+### In this first release
 
-Start with **Gallery**, **Keepsake**, or **Portrait**, all free. Choose portrait, square, or landscape; adjust the mat, choose a muted color palette, and fit or crop your photograph. Add a caption and date, or leave the front quietly simple.
+- **Frame it your way.** Choose a frame you love, then personalize colors, spacing, names and dates.
+- **Keep the story close.** Add a story, a place or your own handwriting to the back.
+- **Bring two moments together.** Pair two photos to tell a story across time.
+- **Share something personal.** Export the front and back as PNGs or a two-page PDF.
+- **Create offline.** Frame, write and save on your device, without ads or watermarks.
 
-## The story on the back
-
-Keep a place, a personal story of up to 1,200 characters, and real handwriting with your finger. The front and back stay together as one keepsake.
-
-## A collection of your own
-
-Save locally, mark favorites, search titles, stories, places and dates, and edit a keepsake whenever you want. Framila leaves the original photo in your Photos library unchanged.
-
-## Ready to share or print
-
-Export the front, the back, or both as watermark-free PNGs at 1,600 pixels wide. Export a two-page A4 PDF, with a side on each page, for printing through the system share sheet. Save images to Photos or share to Files and other apps.
-
-## More ways to remember with Premium
-
-Premium adds **Heirloom**, **Noir**, and **Linen**, **Then & now** two-photo compositions, and PNG exports at 3,200 pixels wide. Monthly and yearly subscription options and current prices appear in the app. Saved Premium work remains editable and exportable after expiry; new Premium designs require active access.
-
-## Personal, and offline
-
-Create, edit, save, and export without an internet connection. No account, ads, or app analytics. Photos stored only in iCloud must download first; purchases and restores connect to Apple.
-
-Framila supports iPhone with iOS 17 or later, in English, German, French, Italian, Japanese, Korean, and Norwegian Bokmål.
-
-This page previews the first release. Framila is being submitted for App Store review; downloading will be available after approval.
-
-Have an idea for what comes next? [Tell us](mailto:littoraart@gmail.com?subject=Framila%20Feedback).
+Begin with one photo that matters to you.
