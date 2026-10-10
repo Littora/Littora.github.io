@@ -76,9 +76,9 @@ Artwork is processed locally. Email providers, Apple and services you choose may
 
 We take reasonable measures to protect information we hold. The security of on-device content also depends on your device and settings; no storage or transmission method is completely secure.
 
-## 7) Age requirements
+## 7) Children's privacy
 
-Framila is not intended for individuals under 13, and we do not knowingly collect personal information directly from anyone under 13.
+Framila is a general-audience app. When children use the app, their photos, stories and handwriting are processed and stored on the device and are not uploaded to us.
 
 ## 8) Contact
 
