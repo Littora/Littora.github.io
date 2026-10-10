@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+<title id="title">A bright horizon in mint, sea green and warm ivory</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#D2F0E0"/><stop offset="1" stop-color="#F8EDCE"/></linearGradient></defs>
+<path fill="url(#sky)" d="M0 0h720v540H0z"/>
+<circle cx="514" cy="183" r="102" fill="#FFF3BC"/>
+<path d="M0 362C192 377 307 260 490 298S670 333 720 294V540H0Z" fill="#56A58F"/>
+<path d="M0 318C192 312 318 370 478 401S622 402 720 452V540H0Z" fill="#86C4A3"/>
+<path d="M0 452C201 388 288 415 432 471S636 527 720 505V540H0Z" fill="#C0DEB7"/>
+</svg>

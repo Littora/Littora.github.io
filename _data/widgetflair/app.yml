@@ -1,0 +1,30 @@
+name: WidgetFlair
+developer: Littora
+site_path: /apps/widgetflair/
+support_email: littoraart@gmail.com
+app_store_url: ""
+minimum_ios: "17"
+icon: /assets/widgetflair/widgetflair-icon.png
+web_icon: /assets/widgetflair/widgetflair-icon-web.png
+share_image: /assets/widgetflair/widgetflair-social.png
+languages: [English, Deutsch, Français, Italiano, 日本語, 한국어, Norsk bokmål]
+palettes:
+  - {id: butter, name: Butter, color: "#f2cf6e"}
+  - {id: cream, name: Cream, color: "#f5ebd6"}
+  - {id: lavender, name: Lavender, color: "#d4ceed"}
+  - {id: clay, name: Clay, color: "#c25438"}
+  - {id: forest, name: Forest, color: "#2e4d3d"}
+  - {id: midnight, name: Midnight, color: "#21293b"}
+templates:
+  - {id: studioClock, name: Studio clock, category: clocks, palette: butter, premium: false, description: "A familiar face with a fresh feeling."}
+  - {id: digitalClock, name: Soft digital, category: clocks, palette: cream, premium: false, description: "The time, beautifully uncomplicated."}
+  - {id: calendar, name: Calendar tile, category: everyday, palette: forest, premium: false, description: "Your whole month, a glance away."}
+  - {id: countdown, name: Something to anticipate, category: everyday, palette: clay, premium: false, description: "Keep your next good thing close."}
+  - {id: quote, name: Daily perspective, category: inspiration, palette: butter, premium: false, description: "A little thought to carry into your day."}
+  - {id: note, name: Little note, category: inspiration, palette: cream, premium: false, description: "Your words, right where you need them."}
+  - {id: hydration, name: Water ritual, category: everyday, palette: lavender, premium: false, description: "Log a glass, straight from your widget."}
+  - {id: dayProgress, name: A little more today, category: progress, palette: forest, premium: false, description: "Watch the day gently take shape."}
+  - {id: flipClock, name: Flip clock, category: clocks, palette: midnight, premium: true, description: "A little nostalgia. A lot of character."}
+  - {id: photo, name: Photo frame, category: inspiration, palette: cream, premium: true, description: "Keep a favorite photo in view."}
+  - {id: worldClock, name: Across time zones, category: clocks, palette: lavender, premium: true, description: "A little closer, wherever they are."}
+  - {id: yearProgress, name: Year in dots, category: progress, palette: butter, premium: true, description: "A year of possibilities, one dot at a time."}

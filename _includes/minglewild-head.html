@@ -1,0 +1,15 @@
+{% assign app = site.data.minglewild.app %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  {% seo %}
+  {% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
+  <link rel="icon" type="image/png" href="{{ '/assets/minglewild/minglewild-favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/minglewild/minglewild-touch-icon.png' | relative_url }}">
+  <link rel="preload" href="{{ '/assets/fonts/DMSans-Variable.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/BricolageGrotesque-Variable.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/minglewild.css' | relative_url }}">
+  <script src="{{ '/assets/minglewild-home.js' | relative_url }}" defer></script>
+  {% if page.minglewild_home %}{% include seo/minglewild-app-json-ld.html %}{% endif %}
+</head>

@@ -1,0 +1,17 @@
+{% assign app = site.data.widgetflair.app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ app.name | jsonify }},
+  "url": {{ app.site_path | absolute_url | jsonify }},
+  "image": {{ app.icon | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "iOS 17 or later",
+  "availableOnDevice": "iPhone",
+  "inLanguage": ["en", "de", "fr", "it", "ja", "ko", "nb"],
+  "author": {"@type": "Organization", "name": "Littora", "url": {{ '/' | absolute_url | jsonify }}},
+  "featureList": ["Offline widget creation and use", "Home Screen and compatible Lock Screen widgets", "Six color palettes", "Clocks, notes, calendar, countdown and water logging", "Eight free templates", "Four additional Premium templates"]
+}
+</script>

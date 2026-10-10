@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="minglewild-root">
+  {% include minglewild-head.html %}
+  <body class="mw-site{% unless page.minglewild_home %} mw-site--document{% endunless %}">
+    <a class="mw-skip" href="#main-content">Skip to content</a>
+    {% include minglewild-header.html %}
+    {% if page.minglewild_home %}
+      {{ content }}
+    {% else %}
+      <main id="main-content" class="mw-document mw-shell">
+        <a class="mw-back" href="{{ site.data.minglewild.app.site_path | relative_url }}">Back to Minglewild</a>
+        <article>{{ content }}</article>
+      </main>
+    {% endif %}
+    {% include minglewild-footer.html %}
+    {% include minglewild-download-dialog.html %}
+    {% if site.data.minglewild.app.app_store_url == '' %}
+      <noscript><aside id="minglewild-download-note" class="mw-shell mw-nojs">Minglewild is being prepared for App Store review. Downloads will open here after approval. Questions? <a href="mailto:{{ site.data.minglewild.app.support_email }}">Email support</a>.</aside></noscript>
+    {% endif %}
+  </body>
+</html>

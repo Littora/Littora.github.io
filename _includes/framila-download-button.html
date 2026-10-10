@@ -1,0 +1,7 @@
+{% assign app = site.data.framila.app %}
+{% capture button_content %}{% if include.compact %}Download <span aria-hidden="true">↗</span>{% else %}<svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5.5" y="2" width="13" height="20" rx="3"/><path d="M10 5h4M10 19h4"/></svg><span><small>Download for</small><strong>iPhone</strong></span><span class="fm-download__arrow" aria-hidden="true">↗</span>{% endif %}{% endcapture %}
+{% if app.app_store_url != '' %}
+  <a class="fm-download{% if include.compact %} fm-download--compact{% endif %}" href="{{ app.app_store_url | escape }}" target="_blank" rel="noopener" aria-label="Download Framila on the App Store">{{ button_content }}</a>
+{% else %}
+  <button class="fm-download{% if include.compact %} fm-download--compact{% endif %}" type="button" data-fm-download aria-label="Download Framila for iPhone">{{ button_content }}</button>
+{% endif %}

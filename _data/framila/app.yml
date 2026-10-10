@@ -1,0 +1,42 @@
+name: Framila
+developer: Littora
+site_path: /apps/framila/
+app_store_url: ""
+support_email: littoraart@gmail.com
+icon: /assets/framila/framila-icon.png
+web_icon: /assets/framila/framila-icon-web.png
+minimum_ios: "17"
+platform: iPhone
+languages: [English, German, French, Italian, Japanese, Korean, Norwegian Bokmål]
+styles:
+  - {id: gallery, name: Gallery, premium: false, description: "A fine, restrained frame. Generous ivory space. The photograph comes first."}
+  - {id: keepsake, name: Keepsake, premium: false, description: "Warm paper, a soft wooden edge, and room for a small, meaningful note."}
+  - {id: portrait, name: Portrait, premium: false, description: "A composed, formal setting for a name, a date, and a milestone worth remembering."}
+  - {id: heirloom, name: Heirloom, premium: true, description: "The quiet warmth of walnut."}
+  - {id: noir, name: Noir, premium: true, description: "Charcoal and a fine brass edge."}
+  - {id: linen, name: Linen, premium: true, description: "Soft, natural linen tones."}
+memories:
+  family:
+    label: Family
+    image: /assets/framila/memory-family.webp
+    alt: "A mother and daughter sharing a quiet afternoon together in a sunlit garden"
+    caption: "Sunday, with you"
+    date: May 2024
+    width: 900
+    height: 1125
+  companion:
+    label: Companion
+    image: /assets/framila/memory-companion.webp
+    alt: "A golden retriever resting at a sunlit kitchen doorway"
+    caption: "Milo, at home"
+    date: March 2024
+    width: 900
+    height: 1125
+  lake:
+    label: A place
+    image: /assets/framila/memory-autumn.webp
+    alt: "A wooden boat on a quiet alpine lake, with golden trees and mountains"
+    caption: "A day by the lake"
+    date: October 2024
+    width: 900
+    height: 1125

@@ -1,0 +1,12 @@
+name: Became
+developer: Littora
+site_path: /apps/became/
+app_store_url: ""
+support_email: littoraart@gmail.com
+icon: /assets/became/became-icon.png
+web_icon: /assets/became/became-icon-web.png
+platform: iPhone
+minimum_ios: "17"
+free_weekly_creations: 3
+premium_monthly_creations: 100
+languages: [English, German, French, Italian, Japanese, Korean, Norwegian Bokmål]

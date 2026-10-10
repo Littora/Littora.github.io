@@ -1,0 +1,14 @@
+{% assign app = site.data.minglewild.app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ app.name | jsonify }},
+  "url": {{ app.site_path | absolute_url | jsonify }},
+  "image": {{ app.share_image | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "operatingSystem": "iOS {{ app.minimum_ios }} or later",
+  "applicationCategory": "SocialNetworkingApplication",
+  "author": {"@type": "Organization", "name": "Littora", "url": {{ '/' | absolute_url | jsonify }}}
+}
+</script>

@@ -1,0 +1,9 @@
+name: Minglewild
+site_path: /apps/minglewild/
+app_store_url: ""
+support_email: littoraart@gmail.com
+icon: /assets/minglewild/minglewild-icon.webp
+share_image: /assets/minglewild/minglewild-icon.png
+platform: iPhone
+minimum_ios: "17"
+languages: [English, Français, Deutsch, Italiano, Norsk bokmål, 日本語, 한국어]

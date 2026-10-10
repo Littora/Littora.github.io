@@ -1,0 +1,7 @@
+{% assign app = site.data.widgetflair.app %}
+{% capture button_content %}{% if include.compact %}Download <span aria-hidden="true">↗</span>{% else %}<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M10 19h4"/></svg><span><small>Download for</small><strong>iPhone</strong></span><span class="wf-download__arrow" aria-hidden="true">↗</span>{% endif %}{% endcapture %}
+{% if app.app_store_url != '' %}
+  <a class="wf-download{% if include.compact %} wf-download--compact{% endif %}" href="{{ app.app_store_url | escape }}" target="_blank" rel="noopener" aria-label="Download WidgetFlair on the App Store">{{ button_content }}</a>
+{% else %}
+  <button class="wf-download{% if include.compact %} wf-download--compact{% endif %}" type="button" data-wf-download aria-label="Download WidgetFlair for iPhone">{{ button_content }}</button>
+{% endif %}

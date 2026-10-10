@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Framila</title>
+  <desc id="desc">An optically balanced forest-green frame and rounded F monogram surround an ivory mat, an apricot sun, gentle sage hills and a flowing ivory river.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="0" y2="1024" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F8F5EF"/><stop offset="1" stop-color="#F0EBE1"/></linearGradient>
+    <clipPath id="photo"><rect x="398" y="372" width="346" height="423" rx="62"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#background)"/>
+  <rect x="174.0" y="122.0" width="676.0" height="780.0" rx="154.0" fill="#385448"/>
+  <rect x="228.0" y="176.0" width="568.0" height="672.0" rx="100.0" fill="#FFF9EF"/>
+  <g clip-path="url(#photo)">
+    <rect x="398.0" y="372.0" width="346.0" height="423.0" rx="62.0" fill="#E5EBDF"/>
+    <circle cx="662" cy="446" r="48" fill="#D79370"/>
+    <path d="M350.0 574.0 C405.0 525.0 442.0 534.0 502.0 576.0 C555.0 613.0 590.0 623.0 648.0 603.0 C687.0 589.0 717.0 571.0 746.0 579.0 L790.0 817.0 L350.0 817.0 Z " fill="#A1B296"/>
+    <path d="M350.0 695.0 C425.0 681.0 480.0 643.0 542.0 627.0 C604.0 610.0 672.0 616.0 746.0 643.0 L790.0 817.0 L350.0 817.0 Z " fill="#6C8A70"/>
+    <path d="M746.0 638.0 C680.0 644.0 615.0 680.0 579.0 719.0 C556.0 744.0 550.0 771.0 538.0 795.0 L597.0 795.0 C604.0 766.0 616.0 735.0 635.0 712.0 C670.0 675.0 705.0 656.0 746.0 653.0 Z " fill="#F9F4E8"/>
+  </g>
+  <path d="M318.0 238.0 L712.0 238.0 C730.0 238.0 744.0 252.0 744.0 270.0 C744.0 288.0 730.0 302.0 712.0 302.0 L374.0 302.0 C361.0 302.0 350.0 313.0 350.0 326.0 L350.0 385.0 C350.0 398.0 361.0 409.0 374.0 409.0 L532.0 409.0 C550.0 409.0 564.0 423.0 564.0 441.0 C564.0 459.0 550.0 473.0 532.0 473.0 L374.0 473.0 C361.0 473.0 350.0 484.0 350.0 497.0 L350.0 763.0 C350.0 781.0 336.0 795.0 318.0 795.0 C300.0 795.0 286.0 781.0 286.0 763.0 L286.0 270.0 C286.0 252.0 300.0 238.0 318.0 238.0 Z " fill="#385448"/>
+</svg>

@@ -1,0 +1,9 @@
+{% assign copy = site.data.became.en.download_modal %}
+<dialog class="bc-dialog" data-bc-dialog aria-labelledby="bc-dialog-title" aria-describedby="bc-dialog-body">
+  <button class="bc-dialog__dismiss" type="button" data-bc-dialog-close aria-label="Close download message">×</button>
+  <img src="{{ site.data.became.app.web_icon | relative_url }}" width="72" height="72" alt="">
+  <h2 id="bc-dialog-title">{{ copy.title }}</h2>
+  <p id="bc-dialog-body">{{ copy.body }}</p>
+  <button class="bc-download bc-download--compact" type="button" data-bc-dialog-close autofocus>{{ copy.close }}</button>
+  <a class="bc-dialog__support" href="mailto:{{ site.data.became.app.support_email }}?subject=Became%20availability">Email support</a>
+</dialog>

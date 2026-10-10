@@ -1,0 +1,10 @@
+{% assign copy = site.data.framila.en.download_modal %}
+<dialog class="fm-dialog" data-fm-dialog aria-labelledby="fm-dialog-title" aria-describedby="fm-dialog-body">
+  <button class="fm-dialog__dismiss" type="button" data-fm-dialog-close aria-label="Close download message">×</button>
+  <img src="{{ site.data.framila.app.web_icon | relative_url }}" width="80" height="80" alt="">
+  <p class="fm-eyebrow">Framila for iPhone</p>
+  <h2 id="fm-dialog-title">{{ copy.title }}</h2>
+  <p id="fm-dialog-body">{{ copy.body }}</p>
+  <button class="fm-download fm-download--compact" type="button" data-fm-dialog-close autofocus>{{ copy.close }}</button>
+  <a class="fm-dialog__support" href="mailto:{{ site.data.framila.app.support_email }}?subject=Framila%20Availability">Questions? Email us</a>
+</dialog>

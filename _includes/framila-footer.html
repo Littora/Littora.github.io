@@ -1,0 +1,14 @@
+{% assign app = site.data.framila.app %}
+<footer class="fm-footer">
+  <div class="fm-shell">
+    <div class="fm-footer__top">
+      <div><a class="fm-brand__app" href="{{ app.site_path | relative_url }}"><img src="{{ app.web_icon | relative_url }}" width="40" height="40" alt="" loading="lazy"><span>Framila</span></a><p>A little care for what matters.</p></div>
+      <nav aria-label="Framila information">
+        <a href="{{ '/apps/framila/support/' | relative_url }}">Support</a>
+        <a href="{{ '/apps/framila/whats-new/' | relative_url }}">What’s New</a>
+        <a href="{{ '/apps/framila/privacy-policy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/apps/framila/terms-of-service/' | relative_url }}">Terms of Service</a>
+      </nav>
+    </div>
+  </div>
+</footer>

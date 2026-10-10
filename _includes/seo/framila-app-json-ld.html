@@ -1,0 +1,17 @@
+{% assign app = site.data.framila.app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ app.name | jsonify }},
+  "url": {{ app.site_path | absolute_url | jsonify }},
+  "image": {{ app.icon | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "iOS 17 or later",
+  "availableOnDevice": ["iPhone"],
+  "inLanguage": ["en", "de", "fr", "it", "ja", "ko", "nb"],
+  "author": {"@type": "Organization", "name": "Littora", "url": {{ '/' | absolute_url | jsonify }}},
+  "featureList": ["Offline photo framing", "Six frame collections", "Personal stories and handwriting on the back", "Two-photo Then & now compositions with Premium", "Local library, search and favorites", "Watermark-free PNG and two-page A4 PDF export"]
+}
+</script>

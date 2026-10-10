@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+<title id="title">Sunlight and rising architectural steps</title>
+<defs><linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5EDDB"/><stop offset="1" stop-color="#E6F1DC"/></linearGradient></defs>
+<path fill="url(#light)" d="M0 0h720v540H0z"/><circle cx="548" cy="124" r="75" fill="#F5C58A"/>
+<path d="M0 540V395h145v-65h145v-65h145v-65h145v-65h140v405Z" fill="#A2CEB7"/>
+<path d="M0 395h145v65H0zm145-65h145v65H145zm145-65h145v65H290zm145-65h145v65H435zm145-65h140v65H580z" fill="#D1E3C8"/>
+<path d="M0 460h145v80H0zm145-65h145v145H145zm145-65h145v210H290zm145-65h145v275H435zm145-65h140v340H580z" fill="#458C77"/>
+<path d="M145 395v145m145-210v210m145-275v275m145-340v340" stroke="#367963" stroke-width="2" opacity=".35"/>
+</svg>

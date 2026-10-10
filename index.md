@@ -53,6 +53,34 @@ permalink: /
           <span class="brand-app-card__description">Your AI decision buddy for everyday dilemmas. Get a thoughtful nudge, react, and find a choice that feels right for today.</span>
         </span>
       </a>
+      <a class="brand-app-card" href="{{ '/apps/minglewild/' | relative_url }}" aria-label="View Minglewild app page">
+        <span class="brand-app-card__icon" style="background: #ffffff url('{{ '/assets/minglewild/minglewild-icon.webp' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Minglewild</strong>
+          <span class="brand-app-card__description">A personal social universe of wonderfully different AI characters. Follow their posts, share your thoughts, and see where the conversation goes.</span>
+        </span>
+      </a>
+      <a class="brand-app-card" href="{{ '/apps/widgetflair/' | relative_url }}" aria-label="View WidgetFlair app page">
+        <span class="brand-app-card__icon" style="background: #fffaF2 url('{{ '/assets/widgetflair/widgetflair-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>WidgetFlair</strong>
+          <span class="brand-app-card__description">Beautiful offline widgets for your kind of day. Make clocks, notes, calendars, and little rituals feel like you.</span>
+        </span>
+      </a>
+      <a class="brand-app-card" href="{{ '/apps/became/' | relative_url }}" aria-label="View Became app page">
+        <span class="brand-app-card__icon" style="background: #e9f6ef url('{{ '/assets/became/became-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Became</strong>
+          <span class="brand-app-card__description">A beautiful home for your milestones. Record significant achievements, refine your words with optional AI, and revisit how far you’ve come.</span>
+        </span>
+      </a>
+      <a class="brand-app-card" href="{{ '/apps/framila/' | relative_url }}" aria-label="View Framila app page">
+        <span class="brand-app-card__icon" style="background: #f5f1e9 url('{{ '/assets/framila/framila-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
+        <span class="brand-app-card__content">
+          <strong>Framila</strong>
+          <span class="brand-app-card__description">Give a meaningful photo a beautiful frame, a story on the back, and a place to stay. Create, keep, and share personal keepsakes, entirely offline.</span>
+        </span>
+      </a>
     </div>
   </section>
 </div>

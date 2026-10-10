@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+  {% include widgetflair-head.html %}
+  <body class="wf-site{% unless page.widgetflair_home %} wf-site--document{% endunless %}">
+    <a class="wf-skip" href="#main-content">Skip to content</a>
+    {% include widgetflair-header.html %}
+    {% if page.widgetflair_home %}
+      {{ content }}
+    {% else %}
+      <main id="main-content" class="wf-document wf-shell">
+        <a class="wf-back" href="{{ site.data.widgetflair.app.site_path | relative_url }}">← WidgetFlair home</a>
+        <article>{{ content }}</article>
+      </main>
+    {% endif %}
+    {% include widgetflair-footer.html %}
+    {% include widgetflair-download-dialog.html %}
+    {% if site.data.widgetflair.app.app_store_url == '' %}
+      <noscript><p class="wf-nojs wf-shell">WidgetFlair is being prepared for App Store review. Downloads will open here after approval. For help, email <a href="mailto:{{ site.data.widgetflair.app.support_email }}">{{ site.data.widgetflair.app.support_email }}</a>.</p></noscript>
+    {% endif %}
+  </body>
+</html>
