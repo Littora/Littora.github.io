@@ -3,7 +3,7 @@ layout: widgetflair
 lang: en-US
 widgetflair_home: true
 title: "WidgetFlair — A little flair. Every day."
-description: "Beautiful offline widgets for iPhone. Make clocks, notes, calendars and everyday rituals feel like you. Start with eight free designs, no account required."
+description: "Beautiful offline widgets for iPhone. Discover clocks, reading shelves, pocket gardens and playful everyday rituals in a growing collection. Free designs to start, no account required."
 permalink: /apps/widgetflair/
 image:
   path: /assets/widgetflair/widgetflair-social.png

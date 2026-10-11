@@ -1,37 +1,45 @@
 hero:
   title: "A little flair."
   second_line: "Every day."
-  body: "Beautiful widgets for the things you look at most. Make time, little notes, and everyday rituals feel a little more like you."
+  body: "Beautiful offline widgets for your iPhone. From sunlit clocks to a pocket garden, a reading shelf, and little everyday rituals: make your screen feel like you."
   secondary: "Find your flair"
 gallery:
   title: "A small space. So many possibilities."
-  body: "A favorite moment, your next adventure, a thought worth keeping. There’s a widget for your kind of day."
+  body: "A favorite moment, your next adventure, a tiny companion. Here are a few favorites from a collection we’ll keep growing with new designs and ideas. Explore the full collection in the app."
+  status: "Selected favorites. Discover more in the app."
   filters:
-    - {id: all, label: All widgets}
-    - {id: clocks, label: Time}
-    - {id: everyday, label: Everyday}
-    - {id: inspiration, label: Little joys}
+    - {id: all, label: All previews}
+    - {id: clocks, label: Clocks}
+    - {id: dates, label: Dates}
+    - {id: productivity, label: Productivity}
+    - {id: wellbeing, label: Wellbeing}
+    - {id: playful, label: Playful}
+    - {id: inspiration, label: Inspiration}
     - {id: progress, label: Progress}
 how:
   title: "A few taps. A screen that’s yours."
   steps:
-    - {number: "01", title: "Find your favorite", body: "Explore the collection. Pick a clock, a little note, or something for your everyday rhythm."}
-    - {number: "02", title: "Give it your flair", body: "Choose a palette and size. Add your words, a date, or a time zone, then save your design."}
-    - {number: "03", title: "Make it at home", body: "Add WidgetFlair through your iPhone’s widget gallery, then select your saved design in Edit Widget."}
+    - {number: "01", title: "Find your favorite", body: "Explore designs by category or start with a curated set. Preview every design for free."}
+    - {number: "02", title: "Give it your flair", body: "Choose a palette and size. Add your words, a photo, a date, or a personal goal, then save your design."}
+    - {number: "03", title: "Make it at home", body: "Add WidgetFlair through your device’s widget gallery, then select your saved design in Edit Widget."}
 faq:
   - question: "Does WidgetFlair work offline?"
     answer: "Yes. Browsing, editing, saving, and using your widgets work offline. Purchasing or restoring Premium uses Apple’s App Store and needs an internet connection. An iCloud-only photo may also need to download before you can use it offline."
   - question: "What’s included for free?"
-    answer: "Studio clock, Soft digital, Calendar tile, Something to anticipate, Daily perspective, Little note, Water ritual, and A little more today. All six color palettes and Home Screen sizes are included."
+    answer: "Start with Studio clock, Soft digital, Calendar tile, Little note, Small victories, Water ritual, Gratitude jar, Pocket companion, Daily perspective, and A little more today. Every palette and Home Screen size is available, and you can preview the full collection for free."
+  - question: "What does Premium unlock?"
+    answer: "Create and customize every design in the full collection, including illustrated clocks, reading progress, playful choices, mood flowers, habit gardens, and more. Premium also includes new Premium designs added while your subscription is active. We’ll continue expanding the collection; we don’t promise a fixed release schedule."
   - question: "How do I put a widget on my Home Screen?"
     answer: "Save your design in WidgetFlair first. Touch and hold your Home Screen, tap Edit → Add Widget (or +), and choose WidgetFlair. Then touch and hold the added widget, tap Edit Widget, and choose your saved design. Saving inside the app does not add a widget automatically."
   - question: "Can I use widgets on my Lock Screen?"
-    answer: "Compatible designs support inline, circular, and rectangular Lock Screen widgets on iPhone. Available formats depend on the design. Calendar, notes, photos, and Year in dots are Home Screen designs."
+    answer: "Compatible designs support inline, circular, and rectangular Lock Screen formats. Available formats depend on the design and your device; the app’s setup guide shows which designs are compatible."
+  - question: "Can I interact with my widgets?"
+    answer: "Compatible designs let you log water, check off a priority, mark a habit, start a focus timer, record a mood, turn a reading page, or pick a little adventure. Some entries, such as writing a gratitude note, are edited inside the app. iOS controls widget refresh timing."
   - question: "What happens if I stop subscribing to Premium?"
-    answer: "Your saved designs stay in your library and keep working. You can still edit them. An active Premium subscription is needed to create new Premium designs."
+    answer: "Your saved designs stay in your library, keep working offline, and remain editable. An active Premium subscription is needed to create new Premium designs."
   - question: "Which devices and languages are supported?"
-    answer: "WidgetFlair supports iPhone with iOS 17 or later. The app follows your system language and supports English, German, French, Italian, Japanese, Korean, and Norwegian Bokmål."
+    answer: "WidgetFlair supports iPhone with iOS 17 or later. Choose English, German, French, Italian, Japanese, Korean, or Norwegian Bokmål in My widgets → Settings → App language, or follow your system language."
 download_modal:
   title: "Almost on your Home Screen."
-  body: "WidgetFlair is being prepared for App Store review. Downloads will open here after approval. Please check back soon."
+  body: "WidgetFlair is getting ready for its first App Store release. Downloads will open here when it’s available. Please check back soon."
   close: "Got it"
