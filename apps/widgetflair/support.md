@@ -25,7 +25,17 @@ iOS requires you to add widgets through its widget gallery. Saving a design insi
 
 ## Add a Lock Screen widget
 
-On iPhone, touch and hold your Lock Screen, tap **Customize**, and select the widget area. Add WidgetFlair and choose a compatible saved design. Clock, countdown, Daily perspective, Water ritual, and day-progress designs support Lock Screen formats; available sizes depend on the design.
+On a compatible iPhone, touch and hold your Lock Screen, tap **Customize**, and select the widget area. Add WidgetFlair and choose a compatible saved design. Compatible designs support Lock Screen formats; the app’s setup guide lists the supported designs, and available sizes depend on the design and device.
+
+## Use interactive designs
+
+Compatible Home Screen widgets can log water, complete a checklist item, mark a habit, start or reset a focus timer, record a mood, update reading progress, or pick from your own choices. These actions update the matching saved design. Write gratitude notes and set an exact reading page inside the app’s editor.
+
+Widgets with gardens, flowers, aquariums, and illustrated landscapes are creative ways to show your saved activity. They do not provide live weather, music playback, medical advice, or automatic health tracking.
+
+## Keep your favorites and share a design
+
+In **My widgets**, open a saved design’s menu to mark it as a favorite, share a picture, edit it, or delete it. The heart button filters your library to favorites. Sharing a picture does not transfer an editable widget or its activity records.
 
 ## My clock is not updating every second
 
@@ -37,17 +47,17 @@ Browsing, editing, saving, and displaying widgets work offline. Purchasing or re
 
 ## Restore or manage Premium
 
-Open the Premium page in WidgetFlair and choose **Restore purchases** while connected to the internet. Use the Apple Account associated with your purchase. To manage or cancel a subscription, open your device’s Apple subscription settings.
+Open **My widgets → Settings**, tap the Premium card, and choose **Restore purchases** while connected to the internet. Use the Apple Account associated with your purchase. The Premium page also offers **Manage subscription** to open Apple’s subscription settings.
 
 If Premium ends, saved designs remain editable and continue working. Creating a new Premium design requires an active subscription.
 
 ## Where are my saved designs?
 
-Your designs, notes, chosen photos, and water logs are stored locally for the app and widgets. There is no WidgetFlair cloud account or cross-device sync. Removing the app can remove the local library; iOS backups follow your device’s settings. Deleting a widget from the Home Screen does not delete its saved design from the app.
+Your designs, notes, chosen photos, water logs, habits, moods, reading progress, and gratitude notes are stored locally for the app and widgets. There is no WidgetFlair cloud account or cross-device sync. Removing the app can remove the local library; iOS backups follow your device’s settings. Deleting a widget from the Home Screen does not delete its saved design from the app.
 
 ## Which languages can I use?
 
-The app follows your system language and supports English, German, French, Italian, Japanese, Korean, and Norwegian Bokmål.
+Open **My widgets → Settings → App language** to choose English, German, French, Italian, Japanese, Korean, or Norwegian Bokmål. Choose **Follow system** to use your device’s language preference. The selection applies to the app and its widgets.
 
 ## Tell us what happened
 

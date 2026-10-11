@@ -4,27 +4,44 @@ site_path: /apps/widgetflair/
 support_email: littoraart@gmail.com
 app_store_url: ""
 minimum_ios: "17"
+supported_devices: [iPhone]
 icon: /assets/widgetflair/widgetflair-icon.png
 web_icon: /assets/widgetflair/widgetflair-icon-web.png
 share_image: /assets/widgetflair/widgetflair-social.png
 languages: [English, Deutsch, Français, Italiano, 日本語, 한국어, Norsk bokmål]
 palettes:
-  - {id: butter, name: Butter, color: "#f2cf6e"}
-  - {id: cream, name: Cream, color: "#f5ebd6"}
-  - {id: lavender, name: Lavender, color: "#d4ceed"}
-  - {id: clay, name: Clay, color: "#c25438"}
-  - {id: forest, name: Forest, color: "#2e4d3d"}
-  - {id: midnight, name: Midnight, color: "#21293b"}
-templates:
-  - {id: studioClock, name: Studio clock, category: clocks, palette: butter, premium: false, description: "A familiar face with a fresh feeling."}
-  - {id: digitalClock, name: Soft digital, category: clocks, palette: cream, premium: false, description: "The time, beautifully uncomplicated."}
-  - {id: calendar, name: Calendar tile, category: everyday, palette: forest, premium: false, description: "Your whole month, a glance away."}
-  - {id: countdown, name: Something to anticipate, category: everyday, palette: clay, premium: false, description: "Keep your next good thing close."}
-  - {id: quote, name: Daily perspective, category: inspiration, palette: butter, premium: false, description: "A little thought to carry into your day."}
-  - {id: note, name: Little note, category: inspiration, palette: cream, premium: false, description: "Your words, right where you need them."}
-  - {id: hydration, name: Water ritual, category: everyday, palette: lavender, premium: false, description: "Log a glass, straight from your widget."}
-  - {id: dayProgress, name: A little more today, category: progress, palette: forest, premium: false, description: "Watch the day gently take shape."}
-  - {id: flipClock, name: Flip clock, category: clocks, palette: midnight, premium: true, description: "A little nostalgia. A lot of character."}
-  - {id: photo, name: Photo frame, category: inspiration, palette: cream, premium: true, description: "Keep a favorite photo in view."}
-  - {id: worldClock, name: Across time zones, category: clocks, palette: lavender, premium: true, description: "A little closer, wherever they are."}
-  - {id: yearProgress, name: Year in dots, category: progress, palette: butter, premium: true, description: "A year of possibilities, one dot at a time."}
+  - {id: butter, name: Butter, color: "#ffe399"}
+  - {id: cream, name: Cream, color: "#f7f0de"}
+  - {id: lavender, name: Lavender, color: "#e3defa"}
+  - {id: clay, name: Clay, color: "#fca388"}
+  - {id: forest, name: Forest, color: "#26453b"}
+  - {id: midnight, name: Midnight, color: "#1f2b45"}
+  - {id: sky, name: Sky, color: "#dbedfa"}
+  - {id: peach, name: Peach, color: "#ffe0c4"}
+  - {id: rose, name: Rose, color: "#fae0e8"}
+# A selection of real app designs, not the complete catalog. Never derive product totals from this list.
+featured_templates:
+  - {"id": "studioClock", "name": "Studio clock", "category": "clocks", "palette": "clay", "premium": false, "description": "A timeless face, a fresh palette.", "preview": "/assets/widgetflair/previews/studioClock.png"}
+  - {"id": "digitalClock", "name": "Soft digital", "category": "clocks", "palette": "cream", "premium": false, "description": "The time, beautifully uncomplicated.", "preview": "/assets/widgetflair/previews/digitalClock.png"}
+  - {"id": "horizonClock", "name": "Golden hour", "category": "clocks", "palette": "sky", "premium": true, "description": "Your time above a sunlit, paper-cut landscape.", "preview": "/assets/widgetflair/previews/horizonClock.png"}
+  - {"id": "windowClock", "name": "Window hours", "category": "clocks", "palette": "cream", "premium": true, "description": "Live time inside a sunlit, illustrated window.", "preview": "/assets/widgetflair/previews/windowClock.png"}
+  - {"id": "worldClock", "name": "Across time zones", "category": "clocks", "palette": "midnight", "premium": true, "description": "Stay close, wherever they are.", "preview": "/assets/widgetflair/previews/worldClock.png"}
+  - {"id": "calendar", "name": "Calendar tile", "category": "dates", "palette": "forest", "premium": false, "description": "Your month at a glance.", "preview": "/assets/widgetflair/previews/calendar.png"}
+  - {"id": "countdown", "name": "Something to anticipate", "category": "dates", "palette": "clay", "premium": true, "description": "Keep your next good thing close.", "preview": "/assets/widgetflair/previews/countdown.png"}
+  - {"id": "travelTicket", "name": "Next stop", "category": "dates", "palette": "sky", "premium": true, "description": "Your next adventure, on a beautifully personal ticket.", "preview": "/assets/widgetflair/previews/travelTicket.png"}
+  - {"id": "note", "name": "Little note", "category": "productivity", "palette": "cream", "premium": false, "description": "Words you want to keep in view.", "preview": "/assets/widgetflair/previews/note.png"}
+  - {"id": "checklist", "name": "Small victories", "category": "productivity", "palette": "cream", "premium": false, "description": "A few priorities. A little more clarity.", "preview": "/assets/widgetflair/previews/checklist.png"}
+  - {"id": "readingShelf", "name": "Reading shelf", "category": "productivity", "palette": "cream", "premium": true, "description": "A bookmark that keeps your reading progress close.", "preview": "/assets/widgetflair/previews/readingShelf.png"}
+  - {"id": "hydration", "name": "Water ritual", "category": "wellbeing", "palette": "lavender", "premium": false, "description": "Small sips. A daily rhythm.", "preview": "/assets/widgetflair/previews/hydration.png"}
+  - {"id": "gratitudeJar", "name": "Gratitude jar", "category": "wellbeing", "palette": "peach", "premium": false, "description": "Keep one good little moment each day.", "preview": "/assets/widgetflair/previews/gratitudeJar.png"}
+  - {"id": "pocketGarden", "name": "Pocket garden", "category": "wellbeing", "palette": "cream", "premium": true, "description": "A small habit. A garden that grows with you.", "preview": "/assets/widgetflair/previews/pocketGarden.png"}
+  - {"id": "moodBloom", "name": "Mood bloom", "category": "wellbeing", "palette": "rose", "premium": true, "description": "Give today a color. Keep a week of feelings close.", "preview": "/assets/widgetflair/previews/moodBloom.png"}
+  - {"id": "pixelPet", "name": "Pocket companion", "category": "playful", "palette": "butter", "premium": false, "description": "A small pixel friend that reflects how you feel today.", "preview": "/assets/widgetflair/previews/pixelPet.png"}
+  - {"id": "decisionPebble", "name": "Pick a little adventure", "category": "playful", "palette": "peach", "premium": true, "description": "Your possibilities, with a playful little pick.", "preview": "/assets/widgetflair/previews/decisionPebble.png"}
+  - {"id": "fortuneCookie", "name": "A little fortune", "category": "playful", "palette": "butter", "premium": true, "description": "Open a small, kind thought for today.", "preview": "/assets/widgetflair/previews/fortuneCookie.png"}
+  - {"id": "quote", "name": "Daily perspective", "category": "inspiration", "palette": "butter", "premium": false, "description": "A quiet thought for every day.", "preview": "/assets/widgetflair/previews/quote.png"}
+  - {"id": "photo", "name": "Photo frame", "category": "inspiration", "palette": "cream", "premium": true, "description": "A favorite photo, always nearby.", "preview": "/assets/widgetflair/previews/photo.png"}
+  - {"id": "paperVoyage", "name": "Paper voyage", "category": "inspiration", "palette": "sky", "premium": true, "description": "A painted little escape, with words that travel with you.", "preview": "/assets/widgetflair/previews/paperVoyage.png"}
+  - {"id": "dayProgress", "name": "A little more today", "category": "progress", "palette": "forest", "premium": false, "description": "Make room for what matters.", "preview": "/assets/widgetflair/previews/dayProgress.png"}
+  - {"id": "yearProgress", "name": "Year in dots", "category": "progress", "palette": "butter", "premium": true, "description": "See the year take shape.", "preview": "/assets/widgetflair/previews/yearProgress.png"}
+  - {"id": "waffleDay", "name": "Waffle day", "category": "progress", "palette": "peach", "premium": true, "description": "Twenty-four little squares. A delicious view of your day.", "preview": "/assets/widgetflair/previews/waffleDay.png"}

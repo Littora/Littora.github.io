@@ -41,7 +41,7 @@
         if (!dialog.open) dialog.showModal();
         document.body.classList.add("wf-modal-open");
       } else {
-        window.alert(document.querySelector("#wf-dialog-body")?.textContent || "WidgetFlair is being prepared for App Store review. Please check back after approval.");
+        window.alert(document.querySelector("#wf-dialog-body")?.textContent || "WidgetFlair is getting ready for its first App Store release. Please check back when it’s available.");
       }
     });
   });
@@ -110,11 +110,10 @@
     const selected = event.target.closest("button[data-wf-filter]");
     if (!selected) return;
     filters.querySelectorAll("button[data-wf-filter]").forEach((button) => { button.setAttribute("aria-pressed", String(button === selected)); });
-    let visible = 0;
     cards.forEach((card) => {
       card.hidden = selected.dataset.wfFilter !== "all" && selected.dataset.wfFilter !== card.dataset.wfCategory;
-      if (!card.hidden) visible += 1;
     });
-    document.querySelector("[data-wf-filter-status]").textContent = `${visible} ${visible === 1 ? "design" : "designs"} to make your own`;
+    const status = document.querySelector("[data-wf-filter-status]");
+    if (status) status.textContent = selected.dataset.wfFilter === "all" ? status.dataset.wfAllStatus : `${selected.textContent.trim()} — selected previews. Discover more in the app.`;
   });
 })();
