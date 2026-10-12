@@ -11,6 +11,7 @@ image:
   alt: "Became — a beautiful home for your milestones"
 ---
 
+{% assign app = site.data.became.app %}
 
 # A beginning worth recording.
 
@@ -24,7 +25,7 @@ Describe an event, give it a date and category, and save a record you can edit a
 
 ## Your words, with optional AI
 
-Choose Reflective, Simple, or Poetic writing. Refine your description or generate an illustration with AI, then review and edit before saving. Manual writing and imported photos are always available.
+Choose Reflective, Simple, or Poetic writing. Refine your description or generate an illustration with AI, then review and edit before saving. AI is optional; manual writing and your own photos are supported within your plan’s milestone allowance.
 
 ## Three beautiful presentations
 
@@ -40,7 +41,11 @@ No account required. Your collection stays on your device, with backup export an
 
 ## More possibilities with Premium
 
-Free includes **3 AI creations each week**. Premium includes **100 each month**, with monthly and yearly subscription options in the app. Manual milestones, imported photos, and all three presentations are unlimited on every plan.
+Free includes your first **{{ app.free_lifetime_milestones }} finished milestones in total**, with full manual writing, your own photos, and all launch presentations. It also includes one-time gifts of **{{ app.free_lifetime_ai_text_creations }} AI text generations or refinements** and **{{ app.free_lifetime_ai_image_creations }} AI illustrations**.
+
+Premium supports **unlimited finished milestones**, with **{{ app.premium_monthly_ai_text_creations }} AI text generations or refinements** and **{{ app.premium_monthly_ai_image_creations }} AI illustrations per month**. Monthly and yearly subscription options are available in the app.
+
+On either plan, existing milestones always remain available to revisit, edit, use basic sharing, and export.
 
 This page previews the first release. Became is being submitted for App Store review; downloading will be available after approval.
 
