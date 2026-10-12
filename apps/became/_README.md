@@ -12,7 +12,7 @@ The visual direction follows the current iOS app: pale mint, sea green, warm ivo
 - assets/became.scss and assets/became-home.js are scoped to Became.
 - apps/became contains the official home, support, What's New, privacy-policy and terms-of-service pages.
 
-The site uses English, matching the existing app websites. It accurately describes the app's seven supported languages. No ratings, testimonials, download counts, prices or App Store IDs are invented. Manual records, photos and all three card presentations are unlimited. Free offers 3 successful AI creations per calendar week; Premium offers 100 per anchored subscription month. Imported photos are never uploaded for AI processing.
+The site uses English, matching the existing app websites. It accurately describes the app's seven supported languages. No ratings, testimonials, download counts, prices or App Store IDs are invented. Free includes the first 3 finished milestones in total, with full manual writing, personal photos and launch presentations, plus one-time gifts of 3 AI text generations or refinements and 3 AI illustrations. Premium supports unlimited finished milestones, with 100 AI text generations or refinements and 20 AI illustrations per month. Text and image allowances are separate. Existing milestones always remain available to revisit, edit, use basic sharing and export on either plan. All numeric allowances are maintained in _data/became/app.yml and reused by the homepage, support and release notes. Imported photos are never uploaded for AI processing.
 
 ## Downloads and official routes
 

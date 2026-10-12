@@ -11,37 +11,17 @@ image:
   alt: "Became — a beautiful home for your milestones"
 ---
 
+# What’s New
+## Version 1.0.0 — Introducing Became
 
-# A beginning worth recording.
+**Your milestones, beautifully preserved.**
 
-<p class="bc-document__lead">The first Became release brings a considered home to your significant achievements, turning points, and life events.</p>
+A graduation. A new role. A turning point. Meet Became, a place for the milestones that shape your life.
 
-<p class="bc-document__badge">Version 1.0 · First release preview</p>
+### In this first release
 
-## Make a meaningful record
+- **Find the right words.** Write your own description or let AI help you create and refine it.
+- **Make it yours.** Choose from three layouts, with your own photo or an AI illustration.
+- **See how far you’ve come.** Revisit your collection and share the milestones that matter to you.
 
-Describe an event, give it a date and category, and save a record you can edit and revisit. Five categories cover personal growth, career, relationships, experiences, and life events.
-
-## Your words, with optional AI
-
-Choose Reflective, Simple, or Poetic writing. Refine your description or generate an illustration with AI, then review and edit before saving. Manual writing and imported photos are always available.
-
-## Three beautiful presentations
-
-Choose **Gallery**, **Editorial**, or **Postcard**. Every style is included, and each milestone can have its own presentation.
-
-## A collection to return to
-
-Browse your milestones, search, filter by category, find favorites, and revisit anniversaries. Continue saved drafts, and share a description or milestone card.
-
-## Personal by design
-
-No account required. Your collection stays on your device, with backup export and import in Settings. Choose light, dark, or system appearance and one of seven app languages.
-
-## More possibilities with Premium
-
-Free includes **3 AI creations each week**. Premium includes **100 each month**, with monthly and yearly subscription options in the app. Manual milestones, imported photos, and all three presentations are unlimited on every plan.
-
-This page previews the first release. Became is being submitted for App Store review; downloading will be available after approval.
-
-Have an idea for what comes next? [Tell us](mailto:littoraart@gmail.com?subject=Became%20Feedback).
+Begin with a milestone worth keeping.
