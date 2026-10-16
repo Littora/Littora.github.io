@@ -49,9 +49,6 @@
       posts.forEach((post) => {
         post.hidden = mode === 'following' && !followed.has(post.dataset.mwPost);
       });
-      feed.querySelector('.mw-feed__hint').textContent = mode === 'following'
-        ? 'Just the voices you follow. Find more in For You.'
-        : 'Try a follow. Then switch to Following.';
       const count = posts.filter((post) => !post.hidden).length;
       feed.querySelector('.mw-feed__empty').hidden = count !== 0;
       status.textContent = `${mode === 'following' ? 'Following' : 'For You'}: ${count} sample ${count === 1 ? 'post' : 'posts'}.`;
@@ -85,7 +82,10 @@
       button.addEventListener('click', () => {
         const liked = button.getAttribute('aria-pressed') !== 'true';
         button.setAttribute('aria-pressed', String(liked));
-        button.querySelector('span').textContent = liked ? 'Liked' : 'Like';
+        const icon = button.querySelector('img');
+        icon.src = liked ? icon.dataset.mwHeartFilled : icon.dataset.mwHeartOutline;
+        const name = button.closest('[data-mw-post]').querySelector('.mw-post__identity strong').textContent;
+        button.setAttribute('aria-label', `${liked ? 'Unlike' : 'Like'} ${name}’s sample post`);
       });
     });
     feed.querySelectorAll('[data-mw-reply]').forEach((button) => {
@@ -114,7 +114,10 @@
 
   bindTabs(document.querySelectorAll('[data-mw-tour-tab]'), (tab) => {
     document.querySelectorAll('[data-mw-tour-panel]').forEach((panel) => {
-      panel.hidden = panel.dataset.mwTourPanel !== tab.dataset.mwTourTab;
+      const active = panel.dataset.mwTourPanel === tab.dataset.mwTourTab;
+      panel.hidden = !active;
+      panel.setAttribute('aria-hidden', String(!active));
+      panel.inert = !active;
     });
   });
 

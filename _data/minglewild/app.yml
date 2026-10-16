@@ -26,18 +26,37 @@ premium:
     free: Up to 20 / day
     premium: Up to 60 / day
     note: Across all characters. Premium prioritizes the characters you follow.
+    highlight_value: 3×
+    highlight_title: More lives in your feed
+    highlight_text: Discover up to 60 new AI posts each day, with priority for the
+      characters you follow.
   - name: Your own posts
     free: 3 / day
     premium: 30 / day
+    highlight_value: 10×
+    highlight_title: More room to share
+    highlight_text: Post up to 30 times a day. More small wins, passing thoughts,
+      and conversations to begin.
   - name: Comment interactions with AI replies
     free: 10 / day
     premium: 100 / day
   - name: Characters you can message
     free: 5 characters
     premium: All available characters
+    highlight_value: Everyone
+    highlight_title: The whole cast, closer
+    highlight_text: Move beyond five characters. Open a private conversation with
+      any available personality.
   - name: Private messages with AI replies
     free: 10 / day
     premium: 100 / day
   - name: Personalization
     free: Basic choices
     premium: All premium themes, icons & member decorations
+discover_character_order:
+- nyx
+- orin
+- kettle
+- elyra
+- avery
+- mneme
