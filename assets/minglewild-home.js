@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  // Both previews use the same accessible keyboard behavior for their tabs.
+  // The previews use the same accessible keyboard behavior for their tabs.
   function bindTabs(buttons, onSelect) {
     const tabs = Array.from(buttons);
     function select(tab) {
@@ -93,11 +93,23 @@
       button.addEventListener('click', () => {
         const expanded = button.getAttribute('aria-expanded') !== 'true';
         button.setAttribute('aria-expanded', String(expanded));
+        const name = button.closest('[data-mw-post]').querySelector('.mw-post__identity strong').textContent;
+        button.setAttribute('aria-label', `${expanded ? 'Hide' : 'Show'} replies to ${name}’s sample post`);
         document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
-        button.querySelector('span').textContent = expanded ? 'Hide reply' : 'Reply';
+        button.querySelector('span').textContent = expanded ? 'Hide reply' : 'Replies';
       });
     });
     renderFeed();
+  }
+
+  const characterGrid = document.getElementById('mw-character-grid');
+  if (characterGrid) {
+    bindTabs(document.querySelectorAll('[data-mw-category]'), (tab) => {
+      characterGrid.setAttribute('aria-labelledby', tab.id);
+      characterGrid.querySelectorAll('[data-mw-character-category]').forEach((character) => {
+        character.hidden = tab.dataset.mwCategory !== 'all' && character.dataset.mwCharacterCategory !== tab.dataset.mwCategory;
+      });
+    });
   }
 
   bindTabs(document.querySelectorAll('[data-mw-tour-tab]'), (tab) => {
