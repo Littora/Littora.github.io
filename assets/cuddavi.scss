@@ -175,6 +175,8 @@ body.cuddavi-site {
   cursor: pointer;
 }
 
+.cuddavi-site a[data-cuddavi-download] { font: inherit; color: #fff; }
+
 .cuddavi-button {
   display: inline-flex;
   min-height: 54px;

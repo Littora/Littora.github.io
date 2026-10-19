@@ -1,4 +1,4 @@
-<button class="{{ include.class | default: 'momentlet-button momentlet-button--primary' }}" type="button" data-momentlet-download>
+<a class="{{ include.class | default: 'momentlet-button momentlet-button--primary' }}" href="{{ site.data.momentlet.app.app_store_url | escape }}" rel="external" data-momentlet-download>
   {{ include.label | default: "Download for iPhone" }}
-</button>
+</a>
 

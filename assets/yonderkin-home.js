@@ -38,13 +38,6 @@
     });
   }
 
-  document.querySelectorAll("[data-coming-soon]").forEach((button) => {
-    button.addEventListener("click", () => {
-      closeMenu();
-      window.alert("Yonderkin is coming soon to the App Store for iPhone.");
-    });
-  });
-
   const updateHeader = () => {
     if (header) header.toggleAttribute("data-scrolled", window.scrollY > 12);
   };

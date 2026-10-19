@@ -183,6 +183,10 @@ body.momentlet-site {
   cursor: pointer;
 }
 
+.momentlet-site a[data-momentlet-download] { font: inherit; }
+.momentlet-site a[data-momentlet-download].momentlet-button--primary,
+.momentlet-site a[data-momentlet-download].momentlet-button--small { color: #fff; }
+
 .momentlet-button {
   display: inline-flex;
   min-height: 54px;
