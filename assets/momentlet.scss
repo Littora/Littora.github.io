@@ -1114,7 +1114,7 @@ body.momentlet-site {
   margin-top: 2rem;
 }
 
-.momentlet-closing .momentlet-button--primary {
+.momentlet-closing a[data-momentlet-download].momentlet-button--primary {
   color: var(--momentlet-indigo-deep);
   background: #fff;
   box-shadow: 0 15px 32px rgba(28, 28, 59, 0.18);
