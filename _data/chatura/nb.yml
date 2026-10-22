@@ -42,18 +42,16 @@ proof:
   body: "Feir en liten seier, løs opp i en tanke, formuler en rolig melding, lag en enkel plan eller legg igjen noe til ditt fremtidige jeg."
   app_store:
     label: "I App Store"
-    title: "Gratis · Kjøp i app"
-    body: "Utviklet for iPhone og tilgjengelig på engelsk og seks andre språk."
+    title: "Kom i gang gratis"
+    body: "Last ned og bruk grunnfunksjonene gratis. Et abonnement gir tilgang til flere funksjoner."
   privacy:
     label: "Personvernløfte"
     title: "Ingen konto. Ingen annonser. Ingen sporing på tvers av apper."
     body: "Ingen analyse-SDK-er fra tredjeparter. Slett samtaler eller eksporter chatdataene dine når som helst."
-  updates:
-    label: "Oppdatert med omtanke"
-    title: "Regelmessige, gjennomtenkte oppdateringer"
-    body: "Løpende forbedringer av hverdagsflyt, design, pålitelighet og Øyeblikk."
-    version_template: "Versjon {version}"
-    release_template: "Sist oppdatert {date}, med løpende forbedringer av hverdagsflyt, design, pålitelighet og Øyeblikk."
+  languages:
+    label: "Språkstøtte"
+    title: "7 språk"
+    body: "Norsk bokmål, engelsk, fransk, tysk, italiensk, japansk og koreansk."
 
 use_cases:
   title: "Begynn med det du allerede har i tankene."

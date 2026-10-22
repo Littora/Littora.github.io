@@ -42,18 +42,16 @@ proof:
   body: "Célébrez une petite victoire, démêlez une pensée, formulez un message avec calme, établissez un projet simple ou laissez quelque chose à votre futur vous."
   app_store:
     label: "Dans l’App Store"
-    title: "Gratuit · Achats intégrés"
-    body: "Conçu pour l’iPhone et disponible en anglais ainsi que dans six autres langues."
+    title: "Commencez gratuitement"
+    body: "Le téléchargement et les fonctionnalités de base sont gratuits. Un abonnement débloque des fonctionnalités supplémentaires."
   privacy:
     label: "Promesse de confidentialité"
     title: "Aucun compte. Aucune publicité. Aucun suivi entre les apps."
     body: "Aucun SDK d’analyse tiers. Supprimez vos conversations ou exportez vos données de chat à tout moment."
-  updates:
-    label: "Mis à jour avec soin"
-    title: "Des mises à jour régulières et réfléchies"
-    body: "Des améliorations continues du parcours quotidien, du design, de la fiabilité et de Moments."
-    version_template: "Version {version}"
-    release_template: "Dernière mise à jour le {date}, avec des améliorations continues du parcours quotidien, du design, de la fiabilité et de Moments."
+  languages:
+    label: "Langues disponibles"
+    title: "7 langues"
+    body: "Français, anglais, allemand, italien, norvégien bokmål, japonais et coréen."
 
 use_cases:
   title: "Commencez par ce que vous avez déjà en tête."

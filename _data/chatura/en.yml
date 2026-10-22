@@ -42,18 +42,16 @@ proof:
   body: "Celebrate a small win, untangle a thought, shape a calm message, make a simple plan, or leave something for your future self."
   app_store:
     label: "On the App Store"
-    title: "Free · In-App Purchases"
-    body: "Designed for iPhone and available in English plus six more languages."
+    title: "Free to get started"
+    body: "Download and use basic features for free. A subscription unlocks additional features."
   privacy:
     label: "Privacy promise"
     title: "No account. No ads. No cross-app tracking."
     body: "No third-party analytics SDKs. Delete conversations or export your chat data anytime."
-  updates:
-    label: "Updated with care"
-    title: "Regular, thoughtful updates"
-    body: "Continuing improvements to everyday flow, design, reliability, and Moments."
-    version_template: "Version {version}"
-    release_template: "Latest update {date}, with continuing improvements to everyday flow, design, reliability, and Moments."
+  languages:
+    label: "Language support"
+    title: "7 languages"
+    body: "English, French, German, Italian, Norwegian Bokmål, Japanese, and Korean."
 
 use_cases:
   title: "Begin with what is already on your mind."
