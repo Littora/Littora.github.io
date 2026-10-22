@@ -90,9 +90,9 @@
         <p>{{ copy.proof.privacy.body }}</p>
       </article>
       <article class="proof-item">
-        <span>{{ copy.proof.updates.label }}</span>
-        <strong data-app-version>{{ copy.proof.updates.title }}</strong>
-        <p data-app-release>{{ copy.proof.updates.body }}</p>
+        <span>{{ copy.proof.languages.label }}</span>
+        <strong>{{ copy.proof.languages.title }}</strong>
+        <p>{{ copy.proof.languages.body }}</p>
       </article>
     </div>
   </section>
@@ -419,10 +419,5 @@
   </footer>
 </div>
 
-<script
-  src="{{ '/assets/chatura-home.js' | relative_url }}"
-  data-version-template="{{ copy.proof.updates.version_template | escape }}"
-  data-release-template="{{ copy.proof.updates.release_template | escape }}"
-  defer
-></script>
+<script src="{{ '/assets/chatura-home.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/chatura-timeline.js' | relative_url }}" defer></script>

@@ -135,37 +135,4 @@
     }
   }
 
-  var version = document.querySelector("[data-app-version]");
-  var release = document.querySelector("[data-app-release]");
-  var script = document.currentScript;
-  if (!version || !release || !script || !window.fetch) return;
-
-  fetch("https://itunes.apple.com/lookup?id=6758027835&country=us")
-    .then(function (response) {
-      if (!response.ok) throw new Error("App Store lookup failed");
-      return response.json();
-    })
-    .then(function (data) {
-      var app = data && data.results && data.results[0];
-      if (!app || !app.version) return;
-
-      var versionTemplate = script.dataset.versionTemplate || "Version {version}";
-      version.textContent = versionTemplate.replace("{version}", app.version);
-
-      if (app.currentVersionReleaseDate) {
-        var date = new Date(app.currentVersionReleaseDate);
-        if (!Number.isNaN(date.getTime())) {
-          var formatted = new Intl.DateTimeFormat(document.documentElement.lang || "en", {
-            year: "numeric",
-            month: "short",
-            day: "numeric"
-          }).format(date);
-          var releaseTemplate = script.dataset.releaseTemplate || "Latest update {date}.";
-          release.textContent = releaseTemplate.replace("{date}", formatted);
-        }
-      }
-    })
-    .catch(function () {
-      // Evergreen fallback copy remains visible if the App Store is unavailable.
-    });
 })();

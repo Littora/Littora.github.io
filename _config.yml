@@ -17,6 +17,22 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
 
+# Jekyll 3 replaces its default exclusions when this list is set.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # Minglewild stays in the source tree but is not published.
+  # To restore it, remove these four entries and unwrap its comment in index.md.
+  - apps/minglewild
+  - assets/minglewild
+  - assets/minglewild.scss
+  - assets/minglewild-home.js
+
 defaults:
   - scope:
       path: ""

@@ -38,41 +38,6 @@
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 
-  const dialog = document.querySelector("[data-cuddavi-dialog]");
-  const downloadButtons = document.querySelectorAll("[data-cuddavi-download]");
-  const closeButtons = document.querySelectorAll("[data-cuddavi-dialog-close]");
-  let returnFocus = null;
-
-  const closeDialog = () => {
-    if (dialog instanceof HTMLDialogElement && dialog.open) dialog.close();
-  };
-
-  downloadButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      closeMenu();
-      returnFocus = button;
-      if (dialog instanceof HTMLDialogElement && typeof dialog.showModal === "function") {
-        dialog.showModal();
-        const firstClose = dialog.querySelector("[data-cuddavi-dialog-close]");
-        if (firstClose instanceof HTMLElement) firstClose.focus();
-      }
-    });
-  });
-  closeButtons.forEach((button) => button.addEventListener("click", closeDialog));
-
-  if (dialog instanceof HTMLDialogElement) {
-    dialog.addEventListener("click", (event) => {
-      const bounds = dialog.getBoundingClientRect();
-      const inside = event.clientX >= bounds.left && event.clientX <= bounds.right
-        && event.clientY >= bounds.top && event.clientY <= bounds.bottom;
-      if (!inside) closeDialog();
-    });
-    dialog.addEventListener("close", () => {
-      if (returnFocus instanceof HTMLElement) returnFocus.focus();
-      returnFocus = null;
-    });
-  }
-
   const careResponses = {
     feed: "A happy little nibble.",
     play: "That was fun!",

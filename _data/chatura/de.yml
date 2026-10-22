@@ -42,18 +42,16 @@ proof:
   body: "Feiere einen kleinen Erfolg, entwirre einen Gedanken, formuliere eine ruhige Nachricht, erstelle einen einfachen Plan oder hinterlasse deinem zukünftigen Ich etwas."
   app_store:
     label: "Im App Store"
-    title: "Kostenlos · In-App-Käufe"
-    body: "Für das iPhone entwickelt und auf Englisch sowie in sechs weiteren Sprachen verfügbar."
+    title: "Kostenlos einsteigen"
+    body: "Download und Basisfunktionen sind kostenlos. Ein Abonnement schaltet weitere Funktionen frei."
   privacy:
     label: "Datenschutzversprechen"
     title: "Kein Konto. Keine Werbung. Kein app-übergreifendes Tracking."
     body: "Keine Analyse-SDKs von Drittanbietern. Lösche Gespräche oder exportiere deine Chatdaten jederzeit."
-  updates:
-    label: "Mit Sorgfalt aktualisiert"
-    title: "Regelmässige, durchdachte Updates"
-    body: "Laufende Verbesserungen an der alltäglichen Nutzung, am Design, an der Zuverlässigkeit und an der Funktion «Momente»."
-    version_template: "Version {version}"
-    release_template: "Letztes Update am {date}, mit laufenden Verbesserungen an der alltäglichen Nutzung, am Design, an der Zuverlässigkeit und an der Funktion «Momente»."
+  languages:
+    label: "Sprachunterstützung"
+    title: "7 Sprachen"
+    body: "Deutsch, Englisch, Französisch, Italienisch, Norwegisch (Bokmål), Japanisch und Koreanisch."
 
 use_cases:
   title: "Beginne mit dem, was dich bereits beschäftigt."

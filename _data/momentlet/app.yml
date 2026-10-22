@@ -3,7 +3,7 @@ developer: Littora
 bundle_id: art.littora.momentlet
 site_path: /apps/momentlet/
 availability: pre_review
-app_store_url: ""
+app_store_url: "https://apps.apple.com/app/momentlet/id6811910504"
 support_email: littoraart@gmail.com
 platform: iPhone
 minimum_ios: "17.0"

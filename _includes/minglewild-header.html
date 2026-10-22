@@ -1,10 +1,15 @@
 {% assign app = site.data.minglewild.app %}
 <header class="mw-header">
   <div class="mw-shell mw-header__inner">
-    <a class="mw-brand" href="{{ app.site_path | relative_url }}" aria-label="Minglewild home"><img src="{{ app.icon | relative_url }}" width="40" height="40" alt=""><span>Minglewild</span></a>
+    <div class="mw-header__brand">
+      <a class="mw-maker" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora</a>
+      <span class="mw-brand-divider" aria-hidden="true"></span>
+      <a class="mw-brand" href="{{ app.site_path | relative_url }}" aria-label="Minglewild home"><img src="{{ app.icon | relative_url }}" width="40" height="40" alt=""><span>Minglewild</span></a>
+    </div>
     <nav class="mw-nav" aria-label="Minglewild navigation">
-      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#meet">Meet the characters</a>
-      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#inside">Inside Minglewild</a>
+      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#meet">The characters</a>
+      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#inside">How it feels</a>
+      <a class="mw-nav__section" href="{{ app.site_path | relative_url }}#premium">Premium</a>
       {% include minglewild-download-button.html compact=true %}
     </nav>
   </div>

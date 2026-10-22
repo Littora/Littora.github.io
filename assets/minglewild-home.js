@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  // Both previews use the same accessible keyboard behavior for their tabs.
+  // The previews use the same accessible keyboard behavior for their tabs.
   function bindTabs(buttons, onSelect) {
     const tabs = Array.from(buttons);
     function select(tab) {
@@ -49,9 +49,6 @@
       posts.forEach((post) => {
         post.hidden = mode === 'following' && !followed.has(post.dataset.mwPost);
       });
-      feed.querySelector('.mw-feed__hint').textContent = mode === 'following'
-        ? 'Just the voices you follow. Find more in For You.'
-        : 'Try a follow. Then switch to Following.';
       const count = posts.filter((post) => !post.hidden).length;
       feed.querySelector('.mw-feed__empty').hidden = count !== 0;
       status.textContent = `${mode === 'following' ? 'Following' : 'For You'}: ${count} sample ${count === 1 ? 'post' : 'posts'}.`;
@@ -85,7 +82,10 @@
       button.addEventListener('click', () => {
         const liked = button.getAttribute('aria-pressed') !== 'true';
         button.setAttribute('aria-pressed', String(liked));
-        button.querySelector('span').textContent = liked ? 'Liked' : 'Like';
+        const icon = button.querySelector('img');
+        icon.src = liked ? icon.dataset.mwHeartFilled : icon.dataset.mwHeartOutline;
+        const name = button.closest('[data-mw-post]').querySelector('.mw-post__identity strong').textContent;
+        button.setAttribute('aria-label', `${liked ? 'Unlike' : 'Like'} ${name}’s sample post`);
       });
     });
     feed.querySelectorAll('[data-mw-reply]').forEach((button) => {
@@ -93,16 +93,31 @@
       button.addEventListener('click', () => {
         const expanded = button.getAttribute('aria-expanded') !== 'true';
         button.setAttribute('aria-expanded', String(expanded));
+        const name = button.closest('[data-mw-post]').querySelector('.mw-post__identity strong').textContent;
+        button.setAttribute('aria-label', `${expanded ? 'Hide' : 'Show'} replies to ${name}’s sample post`);
         document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
-        button.querySelector('span').textContent = expanded ? 'Hide reply' : 'Reply';
+        button.querySelector('span').textContent = expanded ? 'Hide reply' : 'Replies';
       });
     });
     renderFeed();
   }
 
+  const characterGrid = document.getElementById('mw-character-grid');
+  if (characterGrid) {
+    bindTabs(document.querySelectorAll('[data-mw-category]'), (tab) => {
+      characterGrid.setAttribute('aria-labelledby', tab.id);
+      characterGrid.querySelectorAll('[data-mw-character-category]').forEach((character) => {
+        character.hidden = tab.dataset.mwCategory !== 'all' && character.dataset.mwCharacterCategory !== tab.dataset.mwCategory;
+      });
+    });
+  }
+
   bindTabs(document.querySelectorAll('[data-mw-tour-tab]'), (tab) => {
     document.querySelectorAll('[data-mw-tour-panel]').forEach((panel) => {
-      panel.hidden = panel.dataset.mwTourPanel !== tab.dataset.mwTourTab;
+      const active = panel.dataset.mwTourPanel === tab.dataset.mwTourTab;
+      panel.hidden = !active;
+      panel.setAttribute('aria-hidden', String(!active));
+      panel.inert = !active;
     });
   });
 

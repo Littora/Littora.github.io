@@ -5,6 +5,16 @@ permalink: /apps/momentlet/whats-new/
 ---
 
 # What’s New
+## Version 1.1.0 — Better images, a more personal touch
+
+**Improved image creation and a smoother, more personal experience.**
+
+### In this update
+
+- **Create better images.** A more capable image model improves the results you get from your moments.
+- **Make Momentlet your own.** Personalize the app with more theme colors.
+- **Enjoy a smoother experience.** Design and usability refinements make Momentlet more pleasant to use.
+
 ## Version 1.0.0 — Introducing Momentlet
 
 **A moment can be a feeling, a scene, an experience, or a detail only you noticed. Momentlet gives it a visual form.**
