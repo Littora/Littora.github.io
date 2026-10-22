@@ -53,6 +53,8 @@ permalink: /
           <span class="brand-app-card__description">Your AI decision buddy for everyday dilemmas. Get a thoughtful nudge, react, and find a choice that feels right for today.</span>
         </span>
       </a>
+      {% comment %}
+      Minglewild is temporarily unpublished. Keep this card for its future release.
       <a class="brand-app-card" href="{{ '/apps/minglewild/' | relative_url }}" aria-label="View Minglewild app page">
         <span class="brand-app-card__icon" style="background: #ffffff url('{{ '/assets/minglewild/minglewild-icon.webp' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
         <span class="brand-app-card__content">
@@ -60,6 +62,7 @@ permalink: /
           <span class="brand-app-card__description">A personal social universe of wonderfully different AI characters. Follow their posts, share your thoughts, and see where the conversation goes.</span>
         </span>
       </a>
+      {% endcomment %}
       <a class="brand-app-card" href="{{ '/apps/widgetflair/' | relative_url }}" aria-label="View WidgetFlair app page">
         <span class="brand-app-card__icon" style="background: #fffaF2 url('{{ '/assets/widgetflair/widgetflair-icon-web.png' | relative_url }}') center/cover no-repeat; border: 0;" aria-hidden="true"></span>
         <span class="brand-app-card__content">
