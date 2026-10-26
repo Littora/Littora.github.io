@@ -8,6 +8,20 @@ whats_new_heading: "What’s New"
 permalink: /apps/chatura/whats-new/
 ---
 
+## Version 1.3.0 — More natural conversations, more ways to make Chatura yours
+
+This update refines character replies, adds more themes, and polishes image display, app design, and the subscription screen—with improvements for different iPhone sizes to make everyday use feel more comfortable.
+
+### What’s improved in 1.3.0
+
+- **More natural character replies**: we refined character responses so conversations can feel smoother and more comfortable.
+- **More themes to make Chatura yours**: new themes give you more ways to choose a look that feels right for you.
+- **A more comfortable experience on your iPhone**: we refined the app’s design and display across different iPhone sizes for a more polished everyday experience.
+- **More polished image viewing**: we improved how images are displayed for a more comfortable viewing experience.
+- **A more welcoming subscription screen**: we refined the subscription screen’s design for a more polished, comfortable experience.
+
+Thank you for being here — we’re continuing to refine Chatura with care, so conversations and everyday details can feel a little smoother, clearer, and more personal.
+
 ## Version 1.2.5 — A clearer way back to Chatura, with smoother conversations
 
 This update refines character replies, adds a way to show onboarding again, and polishes parts of the app’s design—so Chatura feels smoother, clearer, and more comfortable to return to.

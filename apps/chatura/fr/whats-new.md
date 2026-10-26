@@ -8,6 +8,20 @@ whats_new_heading: "Nouveautés"
 permalink: /apps/chatura/fr/whats-new/
 ---
 
+## Version 1.3.0 — Des conversations plus naturelles, plus de façons de personnaliser Chatura
+
+Cette mise à jour affine les réponses des personnages, ajoute de nouveaux thèmes et améliore l’affichage des images, le design de l’app et l’écran d’abonnement — avec des ajustements pour différentes tailles d’iPhone, pour une utilisation plus agréable au quotidien.
+
+### Améliorations de la version 1.3.0
+
+- **Des réponses plus naturelles** : nous avons affiné les réponses des personnages afin que les conversations soient plus fluides et plus agréables.
+- **Plus de thèmes pour personnaliser Chatura** : de nouveaux thèmes vous donnent plus de choix pour trouver un style qui vous correspond.
+- **Une expérience plus agréable sur votre iPhone** : nous avons affiné le design de l’app et son affichage sur différentes tailles d’iPhone, pour une expérience quotidienne plus soignée.
+- **Un affichage des images plus soigné** : nous avons amélioré la façon dont les images s’affichent pour une expérience visuelle plus agréable.
+- **Un écran d’abonnement plus accueillant** : nous avons affiné le design de l’écran d’abonnement pour une expérience plus soignée et plus agréable.
+
+Merci d’être là — nous continuons à peaufiner Chatura avec soin, afin que les conversations et les détails du quotidien soient un peu plus fluides, plus clairs et plus personnels.
+
 ## Version 1.2.5 — Revenir à Chatura plus facilement, avec des conversations plus fluides
 
 Cette mise à jour affine les réponses des personnages, ajoute une façon de revoir l’introduction et améliore certains éléments du design de l’app — pour que Chatura soit plus fluide, plus clair et plus agréable à retrouver.
