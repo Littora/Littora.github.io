@@ -13,9 +13,5 @@
       </main>
     {% endif %}
     {% include framila-footer.html %}
-    {% include framila-download-dialog.html %}
-    {% if site.data.framila.app.app_store_url == '' %}
-      <noscript><p class="fm-nojs fm-shell">Framila is being submitted for App Store review. Downloading will be available here after approval. Questions? <a href="mailto:{{ site.data.framila.app.support_email }}">Email support.</a></p></noscript>
-    {% endif %}
   </body>
 </html>

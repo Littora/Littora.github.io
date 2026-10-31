@@ -189,17 +189,6 @@
 .fm-footer nav { display:flex; flex-wrap:wrap; gap:9px 27px; font-size:12px; margin-top:6px; }
 .fm-footer nav a { display:inline-flex; align-items:center; min-height:44px; }
 
-.fm-dialog { width:min(480px,calc(100% - 36px)); border:1px solid #dfdfd0; background:#faf7ef; color:var(--fm-ink); border-radius:18px; padding:38px; text-align:center; box-shadow:0 32px 80px rgba(16,29,21,.2); max-height:calc(100dvh - 48px); overflow-y:auto; }
-.fm-dialog::backdrop { background:rgba(24,37,28,.48); backdrop-filter:blur(4px); }
-.fm-dialog > img { border-radius:20px; margin:0 auto 22px; }
-.fm-dialog h2 { font-size:33px; line-height:1.2; margin-top:13px; }
-.fm-dialog > p:not(.fm-eyebrow) { color:var(--fm-muted); font-size:15px; margin-top:19px; }
-.fm-dialog .fm-download { margin-top:25px; padding-inline:35px; }
-.fm-dialog__dismiss { position:absolute; right:9px; top:8px; width:44px; height:44px; border:0; background:transparent; font-size:26px !important; }
-.fm-dialog__support { display:block; font-size:12px; margin-top:13px; text-decoration:underline !important; text-underline-offset:4px; padding:9px 0; }
-.fm-modal-open { overflow:hidden; }
-.fm-nojs { padding-block:24px; color:var(--fm-muted); font-size:14px; }
-.fm-nojs a { text-decoration:underline; }
 .fm-document { padding-block:55px 100px; }
 .fm-document article { max-width:790px; margin:42px auto 0; }
 .fm-document h1 { font-size:clamp(2.5rem,5vw,4rem); margin-bottom:25px; }
@@ -265,7 +254,7 @@
  .fm-plan { padding:28px; } .fm-plan .fm-feature-list { min-height:0; font-size:13px; } .fm-faq { padding-top:0; } .fm-faq summary { font-size:14px; }
  .fm-closing__panel { padding:42px 19px; } .fm-closing__panel > .fm-eyebrow { font-size:9px; } .fm-closing h2 { font-size:33px; }
  .fm-closing img { width:72px; height:72px; border-radius:18px; }
- .fm-dialog { padding:35px 27px; } .fm-dialog h2 { font-size:30px; } .fm-document h1 { font-size:41px; }
+ .fm-document h1 { font-size:41px; }
  .fm-document article h2 { font-size:26px; } .fm-document article .fm-document__lead { font-size:20px; }
 }
 @media (max-width:350px) {
