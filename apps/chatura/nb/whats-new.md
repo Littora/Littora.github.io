@@ -8,6 +8,19 @@ whats_new_heading: "Hva er nytt"
 permalink: /apps/chatura/nb/whats-new/
 ---
 
+## Versjon 1.3.1 — Mer naturlige samtaler, delt innhold nærmere for hånden
+
+Denne oppdateringen finpusser karakterenes svar, legger til kort for delt innhold og et hurtigredigeringsvalg i chatten, og forbedrer delt innhold og appens design for en smidigere opplevelse i hverdagen.
+
+### Forbedringer i versjon 1.3.1
+
+- **Mer naturlige svar fra karakterene**: Vi har gjort grundigere forbedringer av karakterenes svar, slik at samtalene kan føles smidigere og mer behagelige.
+- **Delt innhold nærmere for hånden**: Nye kort i chatten viser innhold du deler med karakteren din, med et hurtigredigeringsvalg som gjør det enklere å oppdatere.
+- **En mer gjennomført opplevelse med delt innhold**: Vi har forbedret visningen og funksjonene for delt innhold for en mer behagelig opplevelse.
+- **En mer gjennomført appopplevelse**: Vi har finpusset deler av appens design for å gjøre den daglige bruken mer behagelig.
+
+Takk for at du er her — vi fortsetter å finpusse Chatura med omtanke, slik at samtaler og delt innhold kan føles litt smidigere og mer personlige.
+
 ## Versjon 1.3.0 — Mer naturlige samtaler, flere måter å gjøre Chatura til din egen på
 
 Denne oppdateringen finpusser karakterenes svar, legger til flere temaer og forbedrer bildevisningen, appens design og abonnementsskjermen — med tilpasninger for ulike iPhone-størrelser som gjør den daglige bruken mer behagelig.

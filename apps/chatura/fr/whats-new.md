@@ -8,6 +8,19 @@ whats_new_heading: "Nouveautés"
 permalink: /apps/chatura/fr/whats-new/
 ---
 
+## Version 1.3.1 — Des conversations plus naturelles, vos contenus partagés à portée de main
+
+Cette mise à jour affine les réponses des personnages, ajoute des cartes de contenus partagés et une option de modification rapide dans les conversations, et améliore les contenus partagés et le design de l’app pour une expérience quotidienne plus fluide.
+
+### Améliorations de la version 1.3.1
+
+- **Des réponses plus naturelles** : nous avons approfondi les améliorations apportées aux réponses des personnages afin que les conversations soient plus fluides et plus agréables.
+- **Vos contenus partagés à portée de main** : de nouvelles cartes dans les conversations affichent les contenus partagés avec votre personnage, avec une option de modification rapide pour faciliter leur mise à jour.
+- **Une expérience plus soignée pour vos contenus partagés** : nous avons amélioré l’affichage et les fonctionnalités des contenus partagés pour une expérience plus agréable.
+- **Une expérience plus soignée dans l’app** : nous avons affiné certains éléments du design de l’app pour rendre son utilisation quotidienne plus agréable.
+
+Merci d’être là — nous continuons à peaufiner Chatura avec soin, afin que les conversations et les contenus partagés soient un peu plus fluides et plus personnels.
+
 ## Version 1.3.0 — Des conversations plus naturelles, plus de façons de personnaliser Chatura
 
 Cette mise à jour affine les réponses des personnages, ajoute de nouveaux thèmes et améliore l’affichage des images, le design de l’app et l’écran d’abonnement — avec des ajustements pour différentes tailles d’iPhone, pour une utilisation plus agréable au quotidien.
