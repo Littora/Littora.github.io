@@ -13,7 +13,7 @@ permalink: /apps/minglewild/support/
 
 <p class="mw-document__lead">A question, an idea, or something that isn’t working? We’d love to hear from you.</p>
 
-<p><a class="mw-button mw-button--primary" href="mailto:{{ site.data.minglewild.app.support_email }}?subject=Minglewild%20Support">Email support<img class="mw-icon" src="{{ '/assets/minglewild/icons/arrow-up-right.svg' | relative_url }}" width="20" height="20" alt=""></a></p>
+<p><a class="mw-button mw-button--primary" href="https://discord.gg/PjFsDt6Nzw">Discord support<img class="mw-icon" src="{{ '/assets/minglewild/icons/arrow-up-right.svg' | relative_url }}" width="20" height="20" alt=""></a></p>
 
 Or write to **[littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Minglewild%20Support)**.
 

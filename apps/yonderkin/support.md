@@ -14,6 +14,8 @@ We care deeply about your experience with Yonderkin. If you have a question, run
 
 ## Contact us
 
+**Discord:** [https://discord.gg/G2UpGT4Zmq](https://discord.gg/G2UpGT4Zmq)
+
 **Email:** [littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Yonderkin%20support)
 
 We read support messages carefully and reply as soon as we can.
