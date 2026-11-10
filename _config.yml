@@ -41,8 +41,8 @@ defaults:
       favicon: /assets/icons/littora-icon.png
       apple_touch_icon: /assets/icons/littora-icon.png
       share_image: /assets/icons/littora-icon.png
-      share_image_width: 1254
-      share_image_height: 1254
+      share_image_width: 1024
+      share_image_height: 1024
       share_image_alt: Littora icon
   - scope:
       path: "apps/chatura"

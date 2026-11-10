@@ -26,7 +26,7 @@ description: A small collection of original browser games. Six different worlds,
 <body class="collection-page">
   <a class="skip-link" href="#collection">Skip to games</a>
   <header class="collection-header">
-    <a class="littora-wordmark" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora<span>.</span></a>
+    <a class="littora-wordmark" href="{{ '/' | relative_url }}" aria-label="Littora home">{% include littora-logo.html weight="regular" %}</a>
   </header>
   <main class="collection-main">
     <section class="collection-intro" aria-labelledby="collection-title">
@@ -63,6 +63,6 @@ description: A small collection of original browser games. Six different worlds,
     </section>
     <div class="collection-afterword"><span aria-hidden="true">✳</span><p>A small detour can be a lovely thing.</p><span class="afterword-caption">MADE WITH CARE. PLAYED AT YOUR PACE.</span></div>
   </main>
-  <footer class="collection-footer"><a href="{{ '/' | relative_url }}">Littora</a><span>Little worlds. Human feeling.</span><span>Your progress stays in this browser.</span></footer>
+  <footer class="collection-footer"><a href="{{ '/' | relative_url }}">{% include littora-logo.html %}</a><span>Little worlds. Human feeling.</span><span>Your progress stays in this browser.</span></footer>
 </body>
 </html>

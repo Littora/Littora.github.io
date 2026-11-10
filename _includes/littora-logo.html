@@ -1,0 +1,6 @@
+{%- assign littora_logo_variant = include.color | default: 'original-charcoal' -%}
+{%- unless include.weight == 'regular' -%}
+  {%- assign littora_logo_variant = littora_logo_variant | append: '-bold' -%}
+{%- endunless -%}
+{%- assign littora_logo_path = '/assets/littora/logo-' | append: littora_logo_variant | append: '.svg' -%}
+<img class="littora-logo" src="{{ littora_logo_path | relative_url }}" alt="Littora" width="2201" height="704" style="display:inline-block;width:3.05em;height:1em;max-width:100%;object-fit:contain;object-position:left center;vertical-align:middle;border-radius:0;box-shadow:none;">
