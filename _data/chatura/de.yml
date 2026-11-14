@@ -209,13 +209,18 @@ faq:
     - question: "Ist Chatura privat und einfach zu kontrollieren?"
       answer: "Chatura hat keine Werbung im Chat, kein app-übergreifendes Tracking und keine Analyse-SDKs von Drittanbietern. Du kannst Gespräche löschen oder deine Chatdaten exportieren. KI-Antworten werden über Backend- und Modelldienste erzeugt. Deshalb kann der notwendige Gesprächskontext verarbeitet werden, wenn du eine Antwort anforderst."
 
+support:
+  subscriptions_title: "Abonnements und Anbieterinformationen"
+  chat_safety_title: "Sicherheit im Chat"
+  chat_safety_body: "Die Sicherheitsanweisungen für den Chat von Chatura sollen Äusserungen über Suizidgedanken oder Selbstverletzung erkennen und Antworten verhindern, die schädigendes Verhalten fördern oder erleichtern. Werden solche Äusserungen erkannt, soll die Chatantwort die betroffene Person an geeignete Krisenhilfsdienste verweisen."
+
 footer:
   label: "Chatura Fusszeile"
   product: "Produkt"
   whats_new: "Neuigkeiten"
   legal_support: "Rechtliches & Support"
-  privacy: "Datenschutzerklärung (Englisch)"
-  terms: "Nutzungsbedingungen (Englisch)"
+  privacy: "Datenschutzerklärung"
+  terms: "Nutzungsbedingungen"
   support: "Hilfe & Support"
   social: "Social Media"
   social_label: "Social-Media-Kanäle von Chatura"

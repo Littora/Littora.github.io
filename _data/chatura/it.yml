@@ -209,13 +209,18 @@ faq:
     - question: "Chatura tutela la privacy ed è facile da controllare?"
       answer: "Chatura non mostra pubblicità nella chat, non effettua tracciamento tra app e non usa SDK di analisi di terze parti. Puoi eliminare le conversazioni o esportare i dati della chat. Le risposte IA vengono generate tramite servizi backend e modelli, quindi il contesto necessario della conversazione può essere elaborato quando chiedi una risposta."
 
+support:
+  subscriptions_title: "Abbonamenti e informazioni sul fornitore"
+  chat_safety_title: "Sicurezza della chat"
+  chat_safety_body: "Le istruzioni di sicurezza della chat di Chatura sono progettate per riconoscere espressioni di pensieri suicidi o autolesionismo e impedire risposte che incoraggino o facilitino comportamenti dannosi. Quando vengono riconosciute espressioni di questo tipo, la risposta della chat è orientata a indirizzare la persona verso servizi di assistenza in caso di crisi adeguati."
+
 footer:
   label: "Piè di pagina di Chatura"
   product: "Prodotto"
   whats_new: "Novità"
   legal_support: "Note legali e supporto"
-  privacy: "Informativa sulla privacy (in inglese)"
-  terms: "Termini di servizio (in inglese)"
+  privacy: "Informativa sulla privacy"
+  terms: "Termini di servizio"
   support: "Supporto"
   social: "Social"
   social_label: "Canali social di Chatura"

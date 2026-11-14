@@ -209,13 +209,18 @@ faq:
     - question: "Chatura는 개인정보를 보호하고 직접 관리하기 쉬운가요?"
       answer: "Chatura에는 채팅 광고, 앱 간 추적, 타사 분석 SDK가 없습니다. 대화를 삭제하거나 채팅 데이터를 내보낼 수 있습니다. AI 답변은 백엔드와 모델 서비스를 통해 생성되므로, 답변을 요청할 때 필요한 대화 맥락이 처리될 수 있습니다."
 
+support:
+  subscriptions_title: "구독 및 사업자 정보"
+  chat_safety_title: "채팅 안전"
+  chat_safety_body: "Chatura의 채팅 안전 지침은 자살 생각이나 자해를 나타내는 표현을 인식하고, 위해를 조장하거나 쉽게 만드는 답변을 방지하도록 설계되었습니다. 이러한 표현이 인식되면 채팅 답변은 이용자가 적절한 위기 지원 서비스를 이용할 수 있도록 안내하는 방향으로 유도됩니다."
+
 footer:
   label: "Chatura 바닥글"
   product: "제품"
   whats_new: "새로운 소식"
   legal_support: "법적 고지 및 지원"
-  privacy: "개인정보 처리방침(영어)"
-  terms: "서비스 약관(영어)"
+  privacy: "개인정보 처리방침"
+  terms: "서비스 약관"
   support: "지원"
   social: "소셜"
   social_label: "Chatura 소셜 채널"

@@ -2,101 +2,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% assign chatura_language = page.lang | default: site.lang | split: "-" | first %}
   {% if page.app_home or page.chatura_subpage %}
     {% capture chatura_i18n_suffix %}{% if page.chatura_subpage %}{{ page.chatura_subpage }}/{% endif %}{% endcapture %}
-    <link rel="alternate" hreflang="en" href="{{ '/apps/chatura/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="fr" href="{{ '/apps/chatura/fr/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="fr-CA" href="{{ '/apps/chatura/fr/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="fr-CH" href="{{ '/apps/chatura/fr/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="de" href="{{ '/apps/chatura/de/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="de-CH" href="{{ '/apps/chatura/de/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="it" href="{{ '/apps/chatura/it/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="it-CH" href="{{ '/apps/chatura/it/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="nb" href="{{ '/apps/chatura/nb/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="nb-NO" href="{{ '/apps/chatura/nb/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="ja" href="{{ '/apps/chatura/ja/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="ko" href="{{ '/apps/chatura/ko/' | append: chatura_i18n_suffix | absolute_url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ '/apps/chatura/' | append: chatura_i18n_suffix | absolute_url }}">
+    {% for language in site.data.chatura.locales %}
+      {% assign code = language[0] %}
+      {% capture chatura_locale_path %}/apps/chatura/{% unless code == "en" %}{{ code }}/{% endunless %}{{ chatura_i18n_suffix }}{% endcapture %}
+      {% assign chatura_locale_url = chatura_locale_path | absolute_url %}
+      <link rel="alternate" hreflang="{{ code }}" href="{{ chatura_locale_url }}">
+      {% for alternate in language[1].alternates %}
+        <link rel="alternate" hreflang="{{ alternate }}" href="{{ chatura_locale_url }}">
+      {% endfor %}
+      {% if code == "en" %}
+        <link rel="alternate" hreflang="x-default" href="{{ chatura_locale_url }}">
+      {% endif %}
+    {% endfor %}
   {% endif %}
-  {% if page.app_home and chatura_language == "en" %}
-    <script>
-      (function () {
-        var routes = {
-          fr: "{{ '/apps/chatura/fr/' | relative_url }}",
-          de: "{{ '/apps/chatura/de/' | relative_url }}",
-          it: "{{ '/apps/chatura/it/' | relative_url }}",
-          nb: "{{ '/apps/chatura/nb/' | relative_url }}",
-          ja: "{{ '/apps/chatura/ja/' | relative_url }}",
-          ko: "{{ '/apps/chatura/ko/' | relative_url }}"
-        };
-        var normalizeLanguage = function (value) {
-          var language = String(value || "").toLowerCase().split("-")[0];
-          return language === "no" ? "nb" : language;
-        };
-        var preferredLanguage = null;
-        var requestedLanguage = null;
-
-        try {
-          requestedLanguage = normalizeLanguage(
-            new URLSearchParams(window.location.search).get("lang")
-          );
-        } catch (error) {
-          requestedLanguage = null;
-        }
-
-        if (requestedLanguage === "en") {
-          try {
-            window.localStorage.setItem("chatura-language", "en");
-          } catch (error) {
-            // The URL still preserves the user's manual English choice.
-          }
-          return;
-        }
-
-        if (routes[requestedLanguage]) {
-          preferredLanguage = requestedLanguage;
-          try {
-            window.localStorage.setItem("chatura-language", requestedLanguage);
-          } catch (error) {
-            // Continue with the requested language even without browser storage.
-          }
-        }
-
-        if (!preferredLanguage) {
-          try {
-            preferredLanguage = normalizeLanguage(
-              window.localStorage.getItem("chatura-language")
-            );
-          } catch (error) {
-            preferredLanguage = null;
-          }
-        }
-
-        if (preferredLanguage && preferredLanguage !== "en" && !routes[preferredLanguage]) {
-          preferredLanguage = null;
-        }
-
-        if (!preferredLanguage) {
-          var browserLanguages = navigator.languages && navigator.languages.length
-            ? navigator.languages
-            : [navigator.language || "en"];
-
-          for (var index = 0; index < browserLanguages.length; index += 1) {
-            var language = normalizeLanguage(browserLanguages[index]);
-            if (language === "en") break;
-            if (routes[language]) {
-              preferredLanguage = language;
-              break;
-            }
-          }
-        }
-
-        if (routes[preferredLanguage]) {
-          window.location.replace(routes[preferredLanguage] + window.location.search + window.location.hash);
-        }
-      })();
-    </script>
+  {% if page.app_home or page.layout == "chatura-legal" or page.layout == "chatura-support" %}
+    <script src="{{ '/assets/chatura/language.js' | relative_url }}"{% if page.layout == "chatura-support" %} data-manual-only{% endif %}></script>
   {% endif %}
   {% seo %}
   {% if page.app_home %}
@@ -112,9 +34,9 @@
     {% include seo/cuddavi-app-json-ld.html %}
   {% endif %}
   {% if page.app_home or page.chatura_subpage %}
-    {% assign chatura_og_locales = "en_US,fr_FR,de_DE,it_IT,nb_NO,ja_JP,ko_KR" | split: "," %}
     {% assign current_og_locale = page.lang | default: site.lang | replace: "-", "_" %}
-    {% for alternate_og_locale in chatura_og_locales %}
+    {% for language in site.data.chatura.locales %}
+      {% assign alternate_og_locale = language[1].og %}
       {% unless alternate_og_locale == current_og_locale %}
         <meta property="og:locale:alternate" content="{{ alternate_og_locale }}">
       {% endunless %}
@@ -155,6 +77,9 @@
     <link rel="preload" href="{{ "/assets/fonts/DMSans-Variable.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
   {% endif %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% if page.app_home or page.layout == "chatura-legal" or page.layout == "chatura-support" %}
+    <link rel="stylesheet" href="{{ '/assets/chatura/information.css' | relative_url }}">
+  {% endif %}
   {% if page.yonderkin_page %}
     <link rel="stylesheet" href="{{ "/assets/yonderkin.css?v=20260824-1" | relative_url }}">
     <script src="{{ '/assets/yonderkin-home.js?v=20260824-1' | relative_url }}" defer></script>

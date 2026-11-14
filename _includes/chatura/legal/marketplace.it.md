@@ -1,0 +1,5 @@
+Il prezzo, la periodicità di fatturazione, le funzioni, i limiti e le condizioni delle offerte mostrati prima dell’acquisto fanno parte delle condizioni di acquisto. L’abbonamento a rinnovo automatico si rinnova con addebito sull’account dello store, salvo disdetta prima della scadenza prevista per il rinnovo. Se offerta, una prova o un’offerta iniziale passa alle condizioni a pagamento mostrate, salvo disdetta tempestiva.
+
+Gestisci rinnovo, disdetta e ripristino tramite l’account usato per l’acquisto. La disdetta normalmente impedisce il rinnovo successivo. La schermata di acquisto e le regole dello store spiegano l’accesso per il periodo residuo ed eventuali differenze per le prove. **Eliminare l’app o i dati locali non annulla l’abbonamento.**
+
+Gli acquisti seguono le procedure di fatturazione e rimborso dello store. Restano i diritti inderogabili di disdetta, rimborso e garanzia del consumatore. Le variazioni di prezzo seguono le regole dello store e del diritto applicabile su preavviso e consenso. Funzioni o limiti di un piano a pagamento non danno diritto a piani futuri o a un utilizzo illimitato.

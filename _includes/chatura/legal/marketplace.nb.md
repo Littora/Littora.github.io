@@ -1,0 +1,5 @@
+Pris, betalingsperiode, funksjoner, grenser og tilbudsvilkår som vises før kjøp, er en del av kjøpsvilkårene. Et abonnement med automatisk fornyelse fornyes og belastes appbutikkontoen med mindre det sies opp før den gjeldende fornyelsesfristen. En eventuell prøveperiode eller et introduksjonstilbud går over til de viste betalingsvilkårene hvis du ikke sier opp i tide.
+
+Administrer fornyelse, oppsigelse og gjenoppretting gjennom kontoen du brukte til kjøpet. Oppsigelse stopper som regel neste fornyelse. Kjøpsskjermen og appbutikkreglene forklarer tilgangen i gjenstående periode og eventuelle avvik for prøveperioder. **Sletting av appen eller lokale data avslutter ikke abonnementet.**
+
+Kjøp følger appbutikkens betalings- og refusjonsprosesser. Ufravikelige rettigheter til oppsigelse, refusjon og forbrukervern består. Prisendringer følger appbutikkens og lovens krav til varsel og samtykke. Funksjoner eller grenser i ett betalt abonnement gir ikke krav på fremtidige abonnementer eller ubegrenset bruk.

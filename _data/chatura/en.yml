@@ -209,6 +209,11 @@ faq:
     - question: "Is Chatura private and easy to control?"
       answer: "Chatura has no ads in chat, no cross-app tracking, and no third-party analytics SDKs. You can delete conversations or export your chat data. AI replies are generated through backend and model services, so necessary conversation context may be processed when you ask for a response."
 
+support:
+  subscriptions_title: "Subscriptions and operator information"
+  chat_safety_title: "Chat safety"
+  chat_safety_body: "Chatura's chat safety instructions are designed to recognize expressions of suicidal thoughts or self-harm and prevent responses that encourage or facilitate harm. When such expressions are recognized, the chat response is directed to guide the user to appropriate crisis services."
+
 footer:
   label: "Chatura footer"
   product: "Product"

@@ -2,21 +2,6 @@
 {% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
 {% assign timeline_copy = site.data.chatura.timeline[locale] | default: site.data.chatura.timeline.en %}
 {% capture localized_chatura_path %}/apps/chatura/{% if locale != "en" %}{{ locale }}/{% endif %}{% endcapture %}
-{% assign current_language = "English" %}
-{% case locale %}
-  {% when "fr" %}
-    {% assign current_language = "Français" %}
-  {% when "de" %}
-    {% assign current_language = "Deutsch" %}
-  {% when "it" %}
-    {% assign current_language = "Italiano" %}
-  {% when "nb" %}
-    {% assign current_language = "Norsk bokmål" %}
-  {% when "ja" %}
-    {% assign current_language = "日本語" %}
-  {% when "ko" %}
-    {% assign current_language = "한국어" %}
-{% endcase %}
 
 <div class="chatura-home" data-chatura-home data-locale="{{ locale }}">
   <section class="content-section content-section--hero">
@@ -27,6 +12,9 @@
         <p>{{ copy.hero.intro }}</p>
         <p>{{ copy.hero.details }}</p>
         <a class="hero-download-link" href="https://apps.apple.com/app/chatura/id6758027835/" target="_blank" rel="noopener">{{ copy.common.download_app_store }}</a>
+        <div class="chatura-purchase-link">
+          <a href="{{ localized_chatura_path | append: 'support/' | relative_url }}#subscriptions-and-operator-information">{{ copy.support.subscriptions_title }}</a>
+        </div>
         <div class="download-panel__meta hero-meta" aria-label="{{ copy.hero.highlights_label }}">
           {% for highlight in copy.hero.highlights %}
             <span>{{ highlight }}</span>
@@ -380,8 +368,8 @@
       <div class="product-footer__group">
         <h2>{{ copy.footer.legal_support }}</h2>
         <ul>
-          <li><a href="{{ '/apps/chatura/privacy-policy/' | relative_url }}" hreflang="en">{{ copy.footer.privacy }}</a></li>
-          <li><a href="{{ '/apps/chatura/terms-of-service/' | relative_url }}" hreflang="en">{{ copy.footer.terms }}</a></li>
+          <li><a href="{{ localized_chatura_path | append: 'privacy-policy/' | relative_url }}" hreflang="{{ locale }}">{{ copy.footer.privacy }}</a></li>
+          <li><a href="{{ localized_chatura_path | append: 'terms-of-service/' | relative_url }}" hreflang="{{ locale }}">{{ copy.footer.terms }}</a></li>
           <li><a href="{{ localized_chatura_path | append: 'support/' | relative_url }}" hreflang="{{ locale }}">{{ copy.footer.support }}</a></li>
         </ul>
       </div>
@@ -397,24 +385,7 @@
       </div>
     </div>
 
-    <details class="language-menu" data-language-menu>
-      <summary class="language-menu__trigger" aria-label="{{ copy.nav.language }}: {{ current_language }}">
-        <span class="language-menu__globe" aria-hidden="true"></span>
-        <span class="language-menu__current">{{ current_language }}</span>
-        <span class="language-menu__chevron" aria-hidden="true"></span>
-      </summary>
-      <div class="language-menu__popover">
-        <ul class="language-menu__list" aria-label="{{ copy.nav.language }}">
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/' | relative_url }}?lang=en" hreflang="en" data-language-option data-locale="en"{% if locale == "en" %} aria-current="page"{% endif %}>English</a></li>
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/fr/' | relative_url }}" hreflang="fr" data-language-option data-locale="fr"{% if locale == "fr" %} aria-current="page"{% endif %}>Français</a></li>
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/de/' | relative_url }}" hreflang="de" data-language-option data-locale="de"{% if locale == "de" %} aria-current="page"{% endif %}>Deutsch</a></li>
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/it/' | relative_url }}" hreflang="it" data-language-option data-locale="it"{% if locale == "it" %} aria-current="page"{% endif %}>Italiano</a></li>
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/nb/' | relative_url }}" hreflang="nb" data-language-option data-locale="nb"{% if locale == "nb" %} aria-current="page"{% endif %}>Norsk bokmål</a></li>
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/ja/' | relative_url }}" hreflang="ja" data-language-option data-locale="ja"{% if locale == "ja" %} aria-current="page"{% endif %}>日本語</a></li>
-          <li><a class="language-menu__option" href="{{ '/apps/chatura/ko/' | relative_url }}" hreflang="ko" data-language-option data-locale="ko"{% if locale == "ko" %} aria-current="page"{% endif %}>한국어</a></li>
-        </ul>
-      </div>
-    </details>
+    {% include chatura/language-menu.html %}
   </footer>
 </div>
 

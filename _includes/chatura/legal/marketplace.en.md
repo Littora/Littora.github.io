@@ -1,0 +1,5 @@
+The price, billing period, features, limits and any offer conditions displayed before purchase form part of the purchase terms. An auto-renewing subscription renews and is charged through your marketplace account unless cancelled before the applicable renewal deadline. A trial or introductory offer, if offered, converts to the displayed paid terms unless cancelled in time.
+
+Manage renewal, cancellation and purchase restoration through the marketplace account used to buy. Cancellation generally stops the next renewal; the purchase screen and marketplace rules explain access during the remaining period and any different treatment of trials. **Deleting the App or local data does not cancel a subscription.**
+
+Marketplace purchases use that marketplace's billing and refund procedures. Mandatory cancellation, refund and consumer guarantee rights remain available. Price changes follow the marketplace's notice and consent requirements and applicable law. Features or limits shown for one paid plan do not create an entitlement to future plans or to unlimited use.

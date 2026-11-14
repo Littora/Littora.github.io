@@ -1,0 +1,25 @@
+en:
+  name: English
+  og: en_US
+fr:
+  name: Français
+  og: fr_FR
+  alternates: [fr-CA, fr-CH]
+de:
+  name: Deutsch
+  og: de_DE
+  alternates: [de-CH]
+it:
+  name: Italiano
+  og: it_IT
+  alternates: [it-CH]
+nb:
+  name: Norsk bokmål
+  og: nb_NO
+  alternates: [nb-NO]
+ja:
+  name: 日本語
+  og: ja_JP
+ko:
+  name: 한국어
+  og: ko_KR

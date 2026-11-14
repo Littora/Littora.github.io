@@ -15,6 +15,10 @@ layout: default
       <h1 id="support-title">{{ page.support_heading }}</h1>
       <p class="support-hero__lede">{{ page.support_intro }}</p>
       <p class="support-hero__body">{{ page.support_body }}</p>
+      <nav class="support-hero__section-links" aria-labelledby="support-title">
+        <a href="#subscriptions-and-operator-information">{{ copy.support.subscriptions_title }}</a>
+        <a href="#chat-safety">{{ copy.support.chat_safety_title }}</a>
+      </nav>
     </div>
 
     <aside class="support-email" aria-label="{{ page.support_contact_heading }}">
@@ -38,4 +42,24 @@ layout: default
     </div>
     <a href="mailto:littoraart@gmail.com">{{ page.support_email_label }}</a>
   </section>
+
+  <section class="chatura-support-info" id="subscriptions-and-operator-information" aria-labelledby="subscription-information-title">
+    <h2 id="subscription-information-title">{{ copy.support.subscriptions_title }}</h2>
+    {% capture marketplace_source %}chatura/legal/marketplace.{{ locale }}.md{% endcapture %}
+    {% capture marketplace_copy %}{% include {{ marketplace_source }} %}{% endcapture %}
+    {{ marketplace_copy | markdownify }}
+
+    <section class="chatura-support-info__japan" id="japan-disclosure" lang="ja" aria-labelledby="japan-disclosure-title">
+      <h3 id="japan-disclosure-title">特定商取引法に基づく表記（日本のアプリストアでの購入）</h3>
+      {% capture japan_copy %}{% include chatura/legal/japan.ja.md support=true %}{% endcapture %}
+      {{ japan_copy | remove: '**' | markdownify }}
+    </section>
+  </section>
+
+  <section class="chatura-support-info" id="chat-safety" aria-labelledby="chat-safety-title">
+    <h2 id="chat-safety-title">{{ copy.support.chat_safety_title }}</h2>
+    <p>{{ copy.support.chat_safety_body }}</p>
+  </section>
+
+  {% include chatura/language-menu.html inline=true %}
 </div>

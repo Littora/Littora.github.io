@@ -1,38 +1,6 @@
 (function () {
   "use strict";
 
-  var languageMenu = document.querySelector("[data-language-menu]");
-  if (languageMenu) {
-    var languageTrigger = languageMenu.querySelector(".language-menu__trigger");
-    var languageOptions = languageMenu.querySelectorAll("[data-language-option]");
-
-    languageOptions.forEach(function (option) {
-      option.addEventListener("click", function () {
-        try {
-          window.localStorage.setItem("chatura-language", option.dataset.locale || "en");
-        } catch (error) {
-          // Language switching still works when browser storage is unavailable.
-        }
-
-        languageMenu.open = false;
-      });
-    });
-
-    document.addEventListener("click", function (event) {
-      if (languageMenu.open && !languageMenu.contains(event.target)) {
-        languageMenu.open = false;
-      }
-    });
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key !== "Escape" || !languageMenu.open) return;
-      languageMenu.open = false;
-      if (languageTrigger) {
-        languageTrigger.focus();
-      }
-    });
-  }
-
   var carousel = document.querySelector("[data-carousel]");
   if (carousel) {
     var track = carousel.querySelector(".product-preview__shot-track");
