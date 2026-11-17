@@ -15,18 +15,33 @@
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
-  font-size: 1rem;
-  font-weight: 650;
+  transform: translateY(1.5px);
+  font-family: var(--chatura-font-brand);
+  font-size: 1.1875rem;
+  font-weight: 720;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
 .chatura-header-brand__app,
 .chatura-header-brand__app:visited {
-  color: var(--chatura-muted);
+  color: #b54e77;
+}
+
+@supports (background-clip: text) {
+  @media (forced-colors: none) {
+    .chatura-header-brand__app {
+      background-image: linear-gradient(90deg, currentColor, #8061b3);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 .chatura-header-brand__app:hover,
 .chatura-header-brand__app:focus-visible {
   text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .chatura-legal {
