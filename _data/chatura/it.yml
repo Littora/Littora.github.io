@@ -207,7 +207,7 @@ faq:
     - question: "Posso iniziare a usare Chatura gratuitamente?"
       answer: "Sì. Puoi iniziare senza creare un account e provare gratuitamente il personaggio principale di Chatura. Nell’app sono disponibili funzionalità opzionali in abbonamento."
     - question: "Chatura tutela la privacy ed è facile da controllare?"
-      answer: "Chatura non mostra pubblicità nella chat, non effettua tracciamento tra app e non usa SDK di analisi di terze parti. Puoi eliminare le conversazioni o esportare i dati della chat. Le risposte IA vengono generate tramite servizi backend e modelli, quindi il contesto necessario della conversazione può essere elaborato quando chiedi una risposta."
+      answer: "Chatura non mostra pubblicità nella chat, non effettua tracciamento tra app e non usa SDK di analisi di terze parti. Puoi eliminare le conversazioni o esportare i dati della chat. Con il tuo consenso, Chatura invia il contesto pertinente delle conversazioni ai fornitori di IA tramite i propri server per generare risposte e aggiornare ricordi e personaggi in background. Questi aggiornamenti possono avvenire anche se usi l’app senza inviare nuovi messaggi. Per revocare il consenso, apri Profilo → Dati e privacy e disattiva Elaborazione IA di terze parti. Chatura blocca le nuove richieste di IA e annulla quelle in corso sul tuo dispositivo."
 
 support:
   subscriptions_title: "Abbonamenti e informazioni sul fornitore"

@@ -1,0 +1,6 @@
+{% assign chatura_app = site.data.chatura.app %}
+<div class="chatura-header-brand">
+  <a class="site-title site-header__brand" rel="author" href="{{ chatura_app.publisher.url | relative_url }}">{% include littora-logo.html color="original-blue" %}</a>
+  <span class="chatura-header-brand__divider" aria-hidden="true"></span>
+  <a class="chatura-header-brand__app" href="{{ include.home_path | relative_url }}">{{ chatura_app.name }}</a>
+</div>

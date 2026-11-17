@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign locale = page.lang | default: site.lang | split: "-" | first %}
 {% assign copy = site.data.chatura[locale] | default: site.data.chatura.en %}
+{% assign discord_url = site.data.chatura.app.discord_url %}
 {% capture localized_chatura_path %}/apps/chatura/{% if locale != "en" %}{{ locale }}/{% endif %}{% endcapture %}
 
 <div class="support-page" data-locale="{{ locale }}">
@@ -23,9 +24,9 @@ layout: default
 
     <aside class="support-email" aria-label="{{ page.support_contact_heading }}">
       <span class="support-email__label">{{ page.support_contact_heading }}</span>
-      <a class="support-email__action" href="https://discord.gg/fMDNZyMJBk" target="_blank" rel="noopener">
+      <a class="support-email__action" href="{{ discord_url }}" target="_blank" rel="noopener">
         <span>Discord</span>
-        <strong>discord.gg/fMDNZyMJBk</strong>
+        <strong>{{ discord_url | remove_first: 'https://' }}</strong>
       </a>
       <a class="support-email__action" href="mailto:littoraart@gmail.com">
         <span>{{ page.support_email_label }}</span>

@@ -207,7 +207,7 @@ faq:
     - question: "Kann ich Chatura kostenlos nutzen?"
       answer: "Ja. Du kannst ohne Konto starten und die zentrale Figur von Chatura kostenlos ausprobieren. Optionale Funktionen im Abonnement sind in der App verfügbar."
     - question: "Ist Chatura privat und einfach zu kontrollieren?"
-      answer: "Chatura hat keine Werbung im Chat, kein app-übergreifendes Tracking und keine Analyse-SDKs von Drittanbietern. Du kannst Gespräche löschen oder deine Chatdaten exportieren. KI-Antworten werden über Backend- und Modelldienste erzeugt. Deshalb kann der notwendige Gesprächskontext verarbeitet werden, wenn du eine Antwort anforderst."
+      answer: "Chatura hat keine Werbung im Chat, kein app-übergreifendes Tracking und keine Analyse-SDKs von Drittanbietern. Du kannst Gespräche löschen oder deine Chatdaten exportieren. Mit deiner Einwilligung sendet Chatura relevanten Gesprächskontext über seine Server an KI-Anbieter, um Antworten zu erzeugen und Erinnerungen und Figuren im Hintergrund zu aktualisieren. Solche Aktualisierungen können auch stattfinden, wenn du die App nutzt, ohne eine neue Nachricht zu senden. Um deine Einwilligung zu widerrufen, öffne Profil → Daten & Datenschutz und schalte KI-Verarbeitung durch Drittanbieter aus. Chatura blockiert neue KI-Anfragen und bricht laufende Anfragen auf deinem Gerät ab."
 
 support:
   subscriptions_title: "Abonnements und Anbieterinformationen"

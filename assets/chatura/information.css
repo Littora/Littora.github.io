@@ -1,3 +1,34 @@
+.chatura-header-brand {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chatura-header-brand__divider {
+  width: 1px;
+  height: 1.25rem;
+  background: rgba(130, 128, 142, 0.24);
+}
+
+.chatura-header-brand__app {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.chatura-header-brand__app,
+.chatura-header-brand__app:visited {
+  color: var(--chatura-muted);
+}
+
+.chatura-header-brand__app:hover,
+.chatura-header-brand__app:focus-visible {
+  text-decoration: underline;
+}
+
 .chatura-legal {
   max-width: 72ch;
   margin: 2rem auto 0;
