@@ -8,6 +8,26 @@ whats_new_heading: "Hva er nytt"
 permalink: /apps/chatura/nb/whats-new/
 ---
 
+## Versjon 1.4.0 — Smidigere chatter, mer innbydende Moments
+
+Denne oppdateringen knytter Moments og chatter tettere sammen, med Moments sitert i chatten, mer varierte bilder og et fornyet uttrykk i hele Chatura. Du får også flere valg for meldinger og data, tydeligere veiledning og forbedringer som gjør hverdagsbruken mer pålitelig.
+
+### Forbedringer i versjon 1.4.0
+
+- **Ta et Moment med inn i samtalen**: Når du åpner en chat fra et Moment, vises innholdet nå som et sitat, slik at du har det lett tilgjengelig. Vi har også finpusset chatopplevelsen for smidigere samtaler.
+- **En mer innbydende Moments-opplevelse**: Vi har finpusset karakterenes Moments-innhold, gjort uleste svar lettere å oppdage og forbedret visningen av Moments på karakterprofilene, slik at det blir mer behagelig å bla gjennom dem.
+- **Mer varierte og bedre tilpassede bilder**: Vi har forbedret bildegenereringen og bildevisningen for å redusere forekomsten av like bilder og tilpasse dem bedre til innholdet de hører til.
+- **En mer behagelig appopplevelse**: Vi har finpusset temafargene, gjort indikatorene for uleste varsler tydeligere og forbedret designet i hele appen for en mer gjennomført opplevelse i hverdagen.
+- **En tydeligere start**: Vi har finpusset designet og innholdet i introduksjonen og gjort funksjonsbeskrivelsene tydeligere, slik at det blir enklere å bli kjent med Chatura.
+- **Mer kontroll over meldinger**: En ny innstilling for proaktive meldinger og bekreftelser når du slår av viktige varsler, hjelper deg å styre hvordan Chatura tar kontakt.
+- **Flere valg for dataene dine**: Slå av databehandling hos tredjeparts KI-tjenester når du vil, og velg om du vil dele analysedata om appbruken med en ny innstilling som er slått av som standard.
+- **Mer fullstendig eksport av chattedata**: Vi har forbedret informasjonen og innholdet som følger med når du eksporterer chattedataene dine.
+- **Tydeligere håndtering av lagring og hurtigbuffer**: Mer nøyaktig størrelsesinformasjon og forbedret opprydding i hurtigbufferen gjør det enklere å håndtere nedlastede bilder.
+- **Tydeligere veiledning og støtte**: Nye hjelpekort for vanskelige stunder, merknader om KI-svar og alderskontroll gir veiledning på viktige steder i appen.
+- **En mer stabil hverdagsopplevelse**: Vi har rettet problemer med varsler fra dempede chatter og med å åpne detaljer om planer eller Tidskapsler fra påminnelser når appen ikke kjørte. Andre feilrettinger gjør den daglige bruken mer pålitelig.
+
+Takk for at du er her — vi fortsetter å finpusse Chatura med omtanke, slik at samtaler, delte øyeblikk og hverdagens detaljer kan føles litt smidigere og mer personlige.
+
 ## Versjon 1.3.1 — Mer naturlige samtaler, delt innhold nærmere for hånden
 
 Denne oppdateringen finpusser karakterenes svar, legger til kort for delt innhold og et hurtigredigeringsvalg i chatten, og forbedrer delt innhold og appens design for en smidigere opplevelse i hverdagen.

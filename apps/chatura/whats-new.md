@@ -8,6 +8,26 @@ whats_new_heading: "What’s New"
 permalink: /apps/chatura/whats-new/
 ---
 
+## Version 1.4.0 — Smoother chats, more inviting Moments
+
+This update brings Moments and chats closer together, with quoted Moments in chat, more varied images, and a refreshed feel throughout Chatura. You’ll also find more choice over messages and data, clearer guidance, and everyday reliability improvements.
+
+### What’s improved in 1.4.0
+
+- **Bring a Moment into the conversation**: when you open a chat from a Moment, its content now appears as a quote to keep the context close at hand. We also refined the chat experience for smoother conversations.
+- **A more inviting Moments experience**: we refined character Moments content, made unread replies easier to spot, and improved how Moments appear on character profiles for more comfortable browsing.
+- **More varied, better-matched images**: we improved image generation and display to reduce similar images and better match them to their content.
+- **A more comfortable look and feel**: refined theme colors, clearer unread notification badges, and design improvements throughout the app make everyday use feel more polished.
+- **A clearer welcome**: refined onboarding design and content, along with clearer feature descriptions, make it easier to get familiar with Chatura.
+- **More control over messages**: a new proactive messages setting and confirmation prompts when turning off important notifications help you manage how Chatura reaches you.
+- **More choice over your data**: turn off third-party AI data processing at any time, and choose whether to share product analytics data with a new switch that is off by default.
+- **More complete chat exports**: we improved the information and content included when you export your chat data.
+- **Clearer storage and cache management**: more accurate size information and improved cache cleanup make it easier to manage downloaded images.
+- **Clearer guidance and support**: new help cards for difficult moments, AI reply notices, and age verification add guidance at key points in the app.
+- **A steadier everyday experience**: fixed issues with alerts from muted chats and with opening plan or Time Capsule details from reminders when the app wasn’t running. Other fixes help make daily use more reliable.
+
+Thank you for being here — we’re continuing to refine Chatura with care, so conversations, shared moments, and everyday details can feel a little smoother and more personal.
+
 ## Version 1.3.1 — More natural conversations, shared content closer at hand
 
 This update refines character replies, brings shared content cards and quick editing to chat, and improves shared content and app design for a smoother everyday experience.

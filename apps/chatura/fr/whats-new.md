@@ -8,6 +8,26 @@ whats_new_heading: "Nouveautés"
 permalink: /apps/chatura/fr/whats-new/
 ---
 
+## Version 1.4.0 — Des conversations plus fluides, des Moments plus agréables
+
+Cette mise à jour rapproche les Moments et les conversations, avec des Moments cités dans le chat, des images plus variées et un design rafraîchi dans toute l’app. Vous trouverez aussi plus de choix pour vos messages et vos données, des repères plus clairs et une meilleure fiabilité au quotidien.
+
+### Améliorations de la version 1.4.0
+
+- **Un Moment au cœur de la conversation** : lorsque vous ouvrez un chat depuis un Moment, son contenu y apparaît désormais sous forme de citation pour garder le contexte à portée de main. Nous avons aussi affiné le chat pour des échanges plus fluides.
+- **Des Moments plus agréables à parcourir** : nous avons affiné les contenus des personnages dans Moments, rendu les réponses non lues plus visibles et amélioré l’affichage des Moments sur les profils pour une consultation plus confortable.
+- **Des images plus variées et mieux adaptées** : nous avons amélioré la génération et l’affichage des images pour réduire les ressemblances et mieux les adapter aux contenus qu’elles accompagnent.
+- **Un design plus agréable au quotidien** : des couleurs de thèmes affinées, des pastilles de notifications non lues plus claires et des améliorations du design dans toute l’app rendent l’utilisation quotidienne plus soignée.
+- **Un accueil plus clair** : le design et le contenu du parcours de découverte ont été affinés, et les descriptions des fonctionnalités clarifiées, pour vous aider à prendre vos repères dans Chatura.
+- **Plus de contrôle sur les messages** : un nouveau réglage pour les messages spontanés et des demandes de confirmation lors de la désactivation des notifications importantes vous aident à gérer la façon dont Chatura vous contacte.
+- **Plus de choix pour vos données** : désactivez à tout moment le traitement des données par des services d’IA tiers et choisissez de partager ou non des données d’analyse de l’app grâce à une nouvelle option désactivée par défaut.
+- **Des exports de conversations plus complets** : nous avons amélioré les informations et les contenus inclus dans l’export de vos données de chat.
+- **Une gestion plus claire du stockage et du cache** : des tailles affichées plus précisément et un nettoyage du cache amélioré facilitent la gestion des images téléchargées.
+- **Des repères et une aide plus clairs** : de nouvelles cartes d’aide pour les moments difficiles, des indications sur les réponses de l’IA et une vérification de l’âge apportent des repères à des étapes clés dans l’app.
+- **Une expérience quotidienne plus stable** : nous avons corrigé des problèmes liés aux alertes de conversations en sourdine et à l’ouverture des détails de projets ou de Capsules temporelles depuis un rappel lorsque l’app était fermée. D’autres corrections rendent l’utilisation quotidienne plus fiable.
+
+Merci d’être là — nous continuons à peaufiner Chatura avec soin, afin que les conversations, les moments partagés et les détails du quotidien soient un peu plus fluides et plus personnels.
+
 ## Version 1.3.1 — Des conversations plus naturelles, vos contenus partagés à portée de main
 
 Cette mise à jour affine les réponses des personnages, ajoute des cartes de contenus partagés et une option de modification rapide dans les conversations, et améliore les contenus partagés et le design de l’app pour une expérience quotidienne plus fluide.
