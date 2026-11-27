@@ -8,7 +8,7 @@ permalink: /apps/chatura/nb/privacy-policy/
 
 # Personvernerklæring for Chatura
 
-Ikrafttredelsesdato: 2026-11-11
+Ikrafttredelsesdato: 2026-11-27
 
 Denne erklæringen forklarer hvordan Chatura og de tilhørende tjenestene (samlet **Tjenesten**) behandler personopplysninger.
 

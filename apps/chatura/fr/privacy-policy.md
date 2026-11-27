@@ -8,7 +8,7 @@ permalink: /apps/chatura/fr/privacy-policy/
 
 # Politique de confidentialité de Chatura
 
-Date d’entrée en vigueur : 2026-11-11
+Date d’entrée en vigueur : 2026-11-27
 
 La présente politique explique comment Chatura et ses services connexes (le **Service**) traitent les données personnelles.
 

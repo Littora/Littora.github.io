@@ -8,7 +8,7 @@ permalink: /apps/chatura/it/privacy-policy/
 
 # Informativa sulla privacy di Chatura
 
-Data di efficacia: 2026-11-11
+Data di efficacia: 2026-11-27
 
 Questa informativa spiega come Chatura e i suoi servizi connessi (il **Servizio**) trattano i dati personali.
 
