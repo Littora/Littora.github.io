@@ -6,7 +6,9 @@ permalink: /apps/momentlet/support/
 
 # Momentlet Support
 
-If you have a question, encounter a problem, or want to share feedback about Momentlet, email us at [littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Momentlet%20Support).
+If you have a question, encounter a problem, or want to share feedback about Momentlet, get support on [Discord](https://discord.gg/T9XsSHU6jz).
+
+You can also email us at [littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Momentlet%20Support).
 
 ## Helpful information to include
 

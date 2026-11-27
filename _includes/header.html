@@ -16,7 +16,11 @@
     {% assign header_brand_path = chatura_home_path %}
   {% endif %}
   <div class="wrapper site-header__inner">
-    <a class="site-title site-header__brand" rel="author" href="{{ header_brand_path | relative_url }}">{{ header_brand_title | escape }}</a>
+    {%- if page.app_home %}
+      {% include chatura/header-brand.html home_path=chatura_home_path %}
+    {%- else %}
+    <a class="site-title site-header__brand" rel="author" href="{{ header_brand_path | relative_url }}">{% if header_brand_title == site.title %}{% if page.url == "/" %}{% include littora-logo.html color="black" %}{% else %}{% include littora-logo.html color="original-blue" %}{% endif %}{% else %}{{ header_brand_title | escape }}{% endif %}</a>
+    {%- endif %}
     {% if page.url == "/" or page.app_home %}
       <button class="site-nav__toggle" type="button" aria-label="{% if page.app_home %}{{ chatura_copy.nav.toggle }}{% else %}Toggle navigation{% endif %}" aria-controls="site-nav-menu" aria-expanded="false">
         <span class="site-nav__toggle-icon" aria-hidden="true"></span>

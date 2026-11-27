@@ -6,7 +6,9 @@ permalink: /apps/cuddavi/support/
 
 # Cuddavi Support
 
-Questions, feedback, or something not working as expected? Email [littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Cuddavi%20Support).
+Questions, feedback, or something not working as expected? Get support on [Discord](https://discord.gg/KnKyRcR2dx).
+
+You can also email [littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Cuddavi%20Support).
 
 When reporting a problem, include your iPhone model, iOS version, Cuddavi version, and a short description of what happened. Please do not include private conversation content or credentials.
 

@@ -1,0 +1,20 @@
+{% assign language_locale = page.lang | default: site.lang | split: "-" | first %}
+{% assign language_label = site.data.chatura[language_locale].nav.language %}
+{% assign current_language = site.data.chatura.locales[language_locale].name %}
+{% capture language_suffix %}{% if page.chatura_subpage %}{{ page.chatura_subpage }}/{% endif %}{% endcapture %}
+<details class="language-menu{% if include.inline %} language-menu--inline{% endif %}" data-language-menu>
+  <summary class="language-menu__trigger" aria-label="{{ language_label }}: {{ current_language }}">
+    <span class="language-menu__globe" aria-hidden="true"></span>
+    <span class="language-menu__current" lang="{{ language_locale }}">{{ current_language }}</span>
+    <span class="language-menu__chevron" aria-hidden="true"></span>
+  </summary>
+  <div class="language-menu__popover">
+    <ul class="language-menu__list" aria-label="{{ language_label }}">
+      {% for language in site.data.chatura.locales %}
+        {% assign code = language[0] %}
+        {% capture language_path %}/apps/chatura/{% unless code == "en" %}{{ code }}/{% endunless %}{{ language_suffix }}{% endcapture %}
+        <li><a class="language-menu__option" href="{{ language_path | relative_url }}?lang={{ code }}" lang="{{ code }}" hreflang="{{ code }}"{% if code == language_locale %} aria-current="page"{% endif %}>{{ language[1].name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</details>

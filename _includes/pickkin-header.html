@@ -2,7 +2,7 @@
 <header class="pickkin-header" data-pickkin-header>
   <div class="pickkin-shell pickkin-header__inner">
     <div class="pickkin-header__brand">
-      <a class="pickkin-maker" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora</a>
+      <a class="pickkin-maker" href="{{ '/' | relative_url }}" aria-label="Littora home">{% include littora-logo.html color="pine" %}</a>
       <span class="pickkin-brand-divider" aria-hidden="true"></span>
       <a class="pickkin-brand" href="{{ app.site_path | relative_url }}" aria-label="Pickkin home">
         <img src="{{ app.icon | relative_url }}" width="36" height="36" alt="">

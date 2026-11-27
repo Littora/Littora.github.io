@@ -17,7 +17,7 @@ image:
 
 <p class="bc-document__lead">A question, an idea, or something that isn’t working? We’re here to help.</p>
 
-<p><a class="bc-download bc-download--compact" href="mailto:littoraart@gmail.com?subject=Became%20Support">Email support <span aria-hidden="true">↗</span></a></p>
+<p><a class="bc-download bc-download--compact" href="https://discord.gg/AtNErHKHnW">Discord support <span aria-hidden="true">↗</span></a></p>
 
 You can also write to **[littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Became%20Support)**.
 

@@ -207,15 +207,20 @@ faq:
     - question: "Posso iniziare a usare Chatura gratuitamente?"
       answer: "Sì. Puoi iniziare senza creare un account e provare gratuitamente il personaggio principale di Chatura. Nell’app sono disponibili funzionalità opzionali in abbonamento."
     - question: "Chatura tutela la privacy ed è facile da controllare?"
-      answer: "Chatura non mostra pubblicità nella chat, non effettua tracciamento tra app e non usa SDK di analisi di terze parti. Puoi eliminare le conversazioni o esportare i dati della chat. Le risposte IA vengono generate tramite servizi backend e modelli, quindi il contesto necessario della conversazione può essere elaborato quando chiedi una risposta."
+      answer: "Chatura non mostra pubblicità nella chat, non effettua tracciamento tra app e non usa SDK di analisi di terze parti. Puoi eliminare le conversazioni o esportare i dati della chat. Con il tuo consenso, Chatura invia il contesto pertinente delle conversazioni ai fornitori di IA tramite i propri server per generare risposte e aggiornare ricordi e personaggi in background. Questi aggiornamenti possono avvenire anche se usi l’app senza inviare nuovi messaggi. Per revocare il consenso, apri Profilo → Dati e privacy e disattiva Elaborazione IA di terze parti. Chatura blocca le nuove richieste di IA e annulla quelle in corso sul tuo dispositivo."
+
+support:
+  subscriptions_title: "Abbonamenti e informazioni sul fornitore"
+  chat_safety_title: "Sicurezza della chat"
+  chat_safety_body: "Le istruzioni di sicurezza della chat di Chatura sono progettate per riconoscere espressioni di pensieri suicidi o autolesionismo e impedire risposte che incoraggino o facilitino comportamenti dannosi. Quando vengono riconosciute espressioni di questo tipo, la risposta della chat è orientata a indirizzare la persona verso servizi di assistenza in caso di crisi adeguati."
 
 footer:
   label: "Piè di pagina di Chatura"
   product: "Prodotto"
   whats_new: "Novità"
   legal_support: "Note legali e supporto"
-  privacy: "Informativa sulla privacy (in inglese)"
-  terms: "Termini di servizio (in inglese)"
+  privacy: "Informativa sulla privacy"
+  terms: "Termini di servizio"
   support: "Supporto"
   social: "Social"
   social_label: "Canali social di Chatura"

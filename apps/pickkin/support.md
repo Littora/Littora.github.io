@@ -10,7 +10,7 @@ permalink: /apps/pickkin/support/
 
 <p class="pickkin-document__lead">Questions, feedback, or something that isn’t working? We’d love to hear from you.</p>
 
-<p><a class="pickkin-action pickkin-action--primary" href="mailto:{{ site.data.pickkin.app.support_email }}?subject=Pickkin%20Support">Email support ↗</a></p>
+<p><a class="pickkin-action pickkin-action--primary" href="https://discord.gg/fqMEskwgnx">Discord support ↗</a></p>
 
 Or write to **[littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Pickkin%20Support)**.
 

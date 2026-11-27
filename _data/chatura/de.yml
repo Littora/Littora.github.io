@@ -207,15 +207,20 @@ faq:
     - question: "Kann ich Chatura kostenlos nutzen?"
       answer: "Ja. Du kannst ohne Konto starten und die zentrale Figur von Chatura kostenlos ausprobieren. Optionale Funktionen im Abonnement sind in der App verfügbar."
     - question: "Ist Chatura privat und einfach zu kontrollieren?"
-      answer: "Chatura hat keine Werbung im Chat, kein app-übergreifendes Tracking und keine Analyse-SDKs von Drittanbietern. Du kannst Gespräche löschen oder deine Chatdaten exportieren. KI-Antworten werden über Backend- und Modelldienste erzeugt. Deshalb kann der notwendige Gesprächskontext verarbeitet werden, wenn du eine Antwort anforderst."
+      answer: "Chatura hat keine Werbung im Chat, kein app-übergreifendes Tracking und keine Analyse-SDKs von Drittanbietern. Du kannst Gespräche löschen oder deine Chatdaten exportieren. Mit deiner Einwilligung sendet Chatura relevanten Gesprächskontext über seine Server an KI-Anbieter, um Antworten zu erzeugen und Erinnerungen und Figuren im Hintergrund zu aktualisieren. Solche Aktualisierungen können auch stattfinden, wenn du die App nutzt, ohne eine neue Nachricht zu senden. Um deine Einwilligung zu widerrufen, öffne Profil → Daten & Datenschutz und schalte KI-Verarbeitung durch Drittanbieter aus. Chatura blockiert neue KI-Anfragen und bricht laufende Anfragen auf deinem Gerät ab."
+
+support:
+  subscriptions_title: "Abonnements und Anbieterinformationen"
+  chat_safety_title: "Sicherheit im Chat"
+  chat_safety_body: "Die Sicherheitsanweisungen für den Chat von Chatura sollen Äusserungen über Suizidgedanken oder Selbstverletzung erkennen und Antworten verhindern, die schädigendes Verhalten fördern oder erleichtern. Werden solche Äusserungen erkannt, soll die Chatantwort die betroffene Person an geeignete Krisenhilfsdienste verweisen."
 
 footer:
   label: "Chatura Fusszeile"
   product: "Produkt"
   whats_new: "Neuigkeiten"
   legal_support: "Rechtliches & Support"
-  privacy: "Datenschutzerklärung (Englisch)"
-  terms: "Nutzungsbedingungen (Englisch)"
+  privacy: "Datenschutzerklärung"
+  terms: "Nutzungsbedingungen"
   support: "Hilfe & Support"
   social: "Social Media"
   social_label: "Social-Media-Kanäle von Chatura"

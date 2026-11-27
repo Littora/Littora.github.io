@@ -3,7 +3,7 @@
 <header class="cuddavi-header" data-cuddavi-header>
   <div class="cuddavi-shell cuddavi-header__inner">
     <div class="cuddavi-brand">
-      <a class="cuddavi-brand__maker" href="{{ '/' | relative_url }}" aria-label="Littora home">Littora</a>
+      <a class="cuddavi-brand__maker" href="{{ '/' | relative_url }}" aria-label="Littora home">{% include littora-logo.html color="original-blue" %}</a>
       <span class="cuddavi-brand__divider" aria-hidden="true"></span>
       <a class="cuddavi-brand__home" href="{{ app.site_path | relative_url }}" aria-label="Cuddavi home">
         <img src="{{ '/assets/cuddavi/cuddavi-icon.png' | relative_url }}" width="36" height="36" alt="">

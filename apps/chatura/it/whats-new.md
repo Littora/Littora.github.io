@@ -8,6 +8,53 @@ whats_new_heading: "Novità"
 permalink: /apps/chatura/it/whats-new/
 ---
 
+## Versione 1.4.0 — Chat più fluide, Moments più piacevoli
+
+Questo aggiornamento avvicina Moments e chat, con i Moments citati nelle conversazioni, immagini più varie e un aspetto rinnovato in tutta Chatura. Troverai anche più scelta sui messaggi e sui dati, indicazioni più chiare e miglioramenti per un’esperienza quotidiana più affidabile.
+
+### Miglioramenti nella versione 1.4.0
+
+- **Porta un Moment nella conversazione**: quando apri una chat da un Moment, il suo contenuto appare ora come citazione per tenere il contesto a portata di mano. Abbiamo anche perfezionato l’esperienza di chat per conversazioni più fluide.
+- **Un’esperienza Moments più piacevole**: abbiamo perfezionato i contenuti dei personaggi in Moments, reso più visibili le risposte non lette e migliorato la visualizzazione dei Moments nei profili per una consultazione più piacevole.
+- **Immagini più varie e pertinenti**: abbiamo migliorato la generazione e la visualizzazione delle immagini per ridurre quelle simili e renderle più adatte ai contenuti che accompagnano.
+- **Un aspetto e un’esperienza d’uso più piacevoli**: colori dei temi perfezionati, indicatori delle notifiche non lette più chiari e miglioramenti al design in tutta l’app rendono più curato l’uso quotidiano.
+- **Un primo approccio più chiaro**: il design e i contenuti del percorso introduttivo sono stati perfezionati e le descrizioni delle funzionalità sono più chiare, per aiutarti a familiarizzare con Chatura.
+- **Più controllo sui messaggi**: una nuova impostazione per i messaggi proattivi e richieste di conferma quando disattivi le notifiche importanti ti aiutano a gestire il modo in cui Chatura ti contatta.
+- **Più scelta sui tuoi dati**: disattiva in qualsiasi momento il trattamento dei dati da parte di servizi di IA di terze parti e scegli se condividere dati di analisi sull’uso dell’app con una nuova opzione disattivata per impostazione predefinita.
+- **Esportazioni delle chat più complete**: abbiamo migliorato le informazioni e i contenuti inclusi quando esporti i dati delle tue chat.
+- **Una gestione più chiara di spazio e cache**: informazioni più precise sulle dimensioni e una migliore pulizia della cache semplificano la gestione delle immagini scaricate.
+- **Indicazioni e supporto più chiari**: nuove schede di aiuto per i momenti difficili, avvisi sulle risposte dell’IA e la verifica dell’età offrono indicazioni nei passaggi chiave dell’app.
+- **Un’esperienza quotidiana più stabile**: abbiamo risolto problemi con gli avvisi delle chat silenziate e con l’apertura dei dettagli di piani o Capsule del tempo dai promemoria quando l’app non era già in esecuzione. Altre correzioni rendono più affidabile l’uso quotidiano.
+
+Grazie di essere qui — continuiamo a perfezionare Chatura con cura, affinché le conversazioni, i momenti condivisi e i dettagli quotidiani siano un po’ più fluidi e personali.
+
+## Versione 1.3.1 — Conversazioni più naturali, contenuti condivisi più a portata di mano
+
+Questo aggiornamento perfeziona le risposte dei personaggi, aggiunge nella chat schede dei contenuti condivisi e un’opzione di modifica rapida, e migliora i contenuti condivisi e il design dell’app per un’esperienza quotidiana più fluida.
+
+### Miglioramenti nella versione 1.3.1
+
+- **Risposte dei personaggi più naturali**: abbiamo perfezionato più a fondo le risposte dei personaggi per rendere le conversazioni più fluide e piacevoli.
+- **Contenuti condivisi più a portata di mano**: nuove schede nella chat mostrano i contenuti condivisi con il tuo personaggio, con un’opzione di modifica rapida per aggiornarli più facilmente.
+- **Un’esperienza più curata per i contenuti condivisi**: abbiamo migliorato la visualizzazione e le funzionalità dei contenuti condivisi per un’esperienza più piacevole.
+- **Un’esperienza più curata nell’app**: abbiamo perfezionato alcuni elementi del design dell’app per renderne più piacevole l’uso quotidiano.
+
+Grazie di essere qui — continuiamo a perfezionare Chatura con cura, affinché le conversazioni e i contenuti condivisi siano un po’ più fluidi e personali.
+
+## Versione 1.3.0 — Conversazioni più naturali, più modi per personalizzare Chatura
+
+Questo aggiornamento perfeziona le risposte dei personaggi, aggiunge nuovi temi e migliora la visualizzazione delle immagini, il design dell’app e la schermata di abbonamento — con ottimizzazioni per iPhone di diverse dimensioni, per un’esperienza quotidiana più piacevole.
+
+### Miglioramenti nella versione 1.3.0
+
+- **Risposte dei personaggi più naturali**: abbiamo perfezionato le risposte dei personaggi per rendere le conversazioni più fluide e piacevoli.
+- **Più temi per personalizzare Chatura**: i nuovi temi ti offrono più possibilità di scegliere uno stile che ti rispecchi.
+- **Un’esperienza più piacevole sul tuo iPhone**: abbiamo perfezionato il design dell’app e la visualizzazione su iPhone di diverse dimensioni, per un’esperienza quotidiana più curata.
+- **Una visualizzazione delle immagini più curata**: abbiamo migliorato il modo in cui vengono mostrate le immagini, per renderle più piacevoli da guardare.
+- **Una schermata di abbonamento più accogliente**: abbiamo perfezionato il design della schermata di abbonamento per un’esperienza più curata e piacevole.
+
+Grazie di essere qui — continuiamo a perfezionare Chatura con cura, affinché le conversazioni e i dettagli quotidiani siano un po’ più fluidi, chiari e personali.
+
 ## Versione 1.2.5 — Tornare a Chatura più facilmente, con conversazioni più fluide
 
 Questo aggiornamento perfeziona le risposte dei personaggi, aggiunge un modo per rivedere l’onboarding e migliora alcuni elementi del design dell’app — per rendere Chatura più fluida, chiara e piacevole da ritrovare.

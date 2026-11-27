@@ -1,3 +1,5 @@
+import { LITTORA_LOGO } from './littora-logo.mjs';
+
 // Original generative artwork. No requests, visitor fingerprinting or stored identity.
 export const PALETTES = [
   {id:'sea-glass',name:'Sea glass',paper:'#fffaf0',sky:'#e1eadc',skyLight:'#fff0d6',water:'#76a9a2',seaLight:'#c7ded0',ink:'#416359',sun:'#edbb76',rule:'#c6cebb',land:'#b8c9a4',cliff:'#d6b396',foliage:'#728c67',accent:'#c98269',roof:'#627b6d'},
@@ -177,7 +179,7 @@ export function renderKeepsake(visit,{name='',palette=visit.palette}={}){
     circle(0,0,7,p.accent));
   const text=(x,y,size,value,extra={})=>node('text',{x,y,'font-size':size,fill:p.ink,...extra},xml(value));
   const brand=group({'font-family':"Georgia, 'Times New Roman', serif"},
-    text(205,263,65,'Littora.',{'letter-spacing':-2}));
+    node('svg',{x:200,y:208,width:200,height:64,viewBox:'0 0 2201 704',role:'img','aria-label':'Littora'},LITTORA_LOGO));
   const footer=group({'font-family':'Arial, sans-serif','font-size':22,fill:p.ink,'letter-spacing':2},
     text(210,3019,22,'EDITION '+visit.edition)+text(2190,3019,22,'LITTORA.ART',{'text-anchor':'end'}));
   const contents=node('title',{id:'print-title'},xml(visit.title+' — a Littora visit keepsake'+(signature?' for '+signature:'')))+

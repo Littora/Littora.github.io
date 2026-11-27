@@ -15,7 +15,7 @@ image:
 
 <p class="fm-document__lead">A question, an idea, or something that isn’t working? We’re here to help.</p>
 
-<p><a class="fm-download fm-download--compact" href="mailto:{{ site.data.framila.app.support_email }}?subject=Framila%20Support">Email support <span aria-hidden="true">↗</span></a></p>
+<p><a class="fm-download fm-download--compact" href="https://discord.gg/Z5RcnY5U9J">Discord support <span aria-hidden="true">↗</span></a></p>
 
 You can also write to **[littoraart@gmail.com](mailto:littoraart@gmail.com?subject=Framila%20Support)**.
 

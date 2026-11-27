@@ -27,9 +27,7 @@ Support: littoraart@gmail.com.
 
 ## Downloads
 
-All download actions use `_includes/framila-download-button.html`. While `app_store_url` in `_data/framila/app.yml` is empty, buttons open the shared native review-status dialog. Close, backdrop click, Escape, focus confinement, and focus return are supported. Older browsers receive a simple alert. A noscript explanation remains available.
-
-After approval, put the real HTTPS App Store URL into `app_store_url`. Every download button then renders as an App Store link without modifying JavaScript or the pages. Buttons retain a normal Download label throughout.
+All download actions use `_includes/framila-download-button.html` and link directly to the App Store URL in `_data/framila/app.yml`: https://apps.apple.com/app/framila/id6820848454. Buttons retain a normal Download label throughout.
 
 Privacy and terms are explicitly marked placeholders, with `noindex: true` and `sitemap: false`. Publish finalized documents and remove those flags before App Store release. What's New is clearly a first-release preview.
 

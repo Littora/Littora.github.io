@@ -1,5 +1,6 @@
 name: Chatura
 app_store_url: "https://apps.apple.com/app/chatura/id6758027835/"
+discord_url: "https://discord.gg/fMDNZyMJBk"
 application_category: EntertainmentApplication
 operating_system: iOS
 available_on_device: iPhone
@@ -16,8 +17,8 @@ publisher:
   url: /
   logo:
     path: /assets/icons/littora-icon.png
-    width: 1254
-    height: 1254
+    width: 1024
+    height: 1024
 
 screenshots:
   - /assets/AppStoreScreenshot/Screenshot1.png

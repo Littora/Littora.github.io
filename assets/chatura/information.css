@@ -1,0 +1,138 @@
+.chatura-header-brand {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chatura-header-brand__divider {
+  width: 1px;
+  height: 1.25rem;
+  background: rgba(130, 128, 142, 0.24);
+}
+
+.chatura-header-brand__app {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  transform: translateY(1.5px);
+  font-family: var(--chatura-font-brand);
+  font-size: 1.1875rem;
+  font-weight: 720;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.chatura-header-brand__app,
+.chatura-header-brand__app:visited {
+  color: #b54e77;
+}
+
+@supports (background-clip: text) {
+  @media (forced-colors: none) {
+    .chatura-header-brand__app {
+      background-image: linear-gradient(90deg, currentColor, #8061b3);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.chatura-header-brand__app:hover,
+.chatura-header-brand__app:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.chatura-legal {
+  max-width: 72ch;
+  margin: 2rem auto 0;
+  padding: clamp(1.15rem, 4vw, 3rem);
+  overflow-wrap: anywhere;
+}
+
+.chatura-legal .language-menu {
+  margin-bottom: 1.5rem;
+}
+
+.language-menu--inline {
+  position: relative;
+  inset: auto;
+}
+
+.language-menu--inline .language-menu__trigger {
+  border-color: #d0d5e3;
+  color: #344058;
+  background: #f3f5fa;
+}
+
+.language-menu--inline .language-menu__trigger:hover,
+.language-menu--inline[open] .language-menu__trigger {
+  border-color: #a9b4cf;
+  color: #29344b;
+  background: #e9edf6;
+}
+
+.language-menu--inline .language-menu__globe,
+.language-menu--inline .language-menu__chevron {
+  color: inherit;
+}
+
+.chatura-legal .language-menu__popover {
+  top: calc(100% + 0.5rem);
+  bottom: auto;
+}
+
+.chatura-legal [id],
+.chatura-support-info[id],
+.chatura-support-info__japan[id] {
+  scroll-margin-top: 6rem;
+}
+
+.chatura-home .chatura-purchase-link {
+  margin: -0.5rem 0 1.25rem;
+  font-size: 0.88rem;
+}
+
+.support-hero__section-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.85rem;
+  font-size: 0.98rem;
+}
+
+.support-page > .language-menu {
+  margin-top: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.chatura-support-info {
+  max-width: 76ch;
+  margin: clamp(2.75rem, 5vw, 4rem) 0 0;
+}
+
+.chatura-support-info h2 {
+  font-family: var(--chatura-font-brand);
+  font-size: clamp(1.55rem, 2.7vw, 2.15rem);
+}
+
+.chatura-support-info p {
+  line-height: 1.65;
+}
+
+.chatura-support-info__japan {
+  margin-top: 1.5rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid rgba(148, 145, 156, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.chatura-support-info__japan h3 {
+  font-size: 1.18rem;
+}
+
+.chatura-support-info__japan p:last-child {
+  margin-bottom: 0;
+}

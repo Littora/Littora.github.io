@@ -207,7 +207,12 @@ faq:
     - question: "Can I start using Chatura for free?"
       answer: "Yes. You can start without creating an account and try Chatura's core character for free. Optional subscription features are available in the app."
     - question: "Is Chatura private and easy to control?"
-      answer: "Chatura has no ads in chat, no cross-app tracking, and no third-party analytics SDKs. You can delete conversations or export your chat data. AI replies are generated through backend and model services, so necessary conversation context may be processed when you ask for a response."
+      answer: "Chatura has no ads in chat, no cross-app tracking, and no third-party analytics SDKs. You can delete conversations or export your chat data. With your permission, Chatura sends relevant conversation context through its servers to AI providers for replies and for background memory and character updates. These updates can happen while you use the app without sending a new message. To withdraw consent, open Profile → Data & Privacy and turn off Third-party AI Processing. Chatura blocks new AI requests and cancels in-progress requests on your device."
+
+support:
+  subscriptions_title: "Subscriptions and operator information"
+  chat_safety_title: "Chat safety"
+  chat_safety_body: "Chatura's chat safety instructions are designed to recognize expressions of suicidal thoughts or self-harm and prevent responses that encourage or facilitate harm. When such expressions are recognized, the chat response is directed to guide the user to appropriate crisis services."
 
 footer:
   label: "Chatura footer"

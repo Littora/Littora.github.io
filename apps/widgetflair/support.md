@@ -10,7 +10,7 @@ permalink: /apps/widgetflair/support/
 
 <p class="wf-document__lead">Have a question, an idea, or something that isn’t working? We’re here to help.</p>
 
-<p><a class="wf-download wf-download--compact" href="mailto:{{ site.data.widgetflair.app.support_email }}?subject=WidgetFlair%20Support">Email support <span aria-hidden="true">↗</span></a></p>
+<p><a class="wf-download wf-download--compact" href="https://discord.gg/4pewa6Avse">Discord support <span aria-hidden="true">↗</span></a></p>
 
 You can also write to **[littoraart@gmail.com](mailto:littoraart@gmail.com?subject=WidgetFlair%20Support)**.
 

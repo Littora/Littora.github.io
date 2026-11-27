@@ -207,15 +207,20 @@ faq:
     - question: "Kan jeg begynne å bruke Chatura gratis?"
       answer: "Ja. Du kan starte uten å opprette en konto og prøve hovedfiguren i Chatura gratis. Valgfrie abonnementsfunksjoner er tilgjengelige i appen."
     - question: "Er Chatura privat og lett å kontrollere?"
-      answer: "Chatura har ingen annonser i chatten, ingen sporing på tvers av apper og ingen analyse-SDK-er fra tredjeparter. Du kan slette samtaler eller eksportere chatdataene dine. KI-svar genereres gjennom backend- og modelltjenester, så nødvendig samtalekontekst kan bli behandlet når du ber om et svar."
+      answer: "Chatura har ingen annonser i chatten, ingen sporing på tvers av apper og ingen analyse-SDK-er fra tredjeparter. Du kan slette samtaler eller eksportere chatdataene dine. Med ditt samtykke sender Chatura relevant samtalekontekst via sine servere til KI-leverandører for å lage svar og oppdatere minner og figurer i bakgrunnen. Slike oppdateringer kan skje når du bruker appen uten å sende en ny melding. For å trekke tilbake samtykket åpner du Profil → Data og personvern og slår av Databehandling med ekstern KI. Chatura blokkerer nye KI-forespørsler og avbryter pågående forespørsler på enheten din."
+
+support:
+  subscriptions_title: "Abonnementer og opplysninger om tjenesteleverandøren"
+  chat_safety_title: "Sikkerhet i chatten"
+  chat_safety_body: "Sikkerhetsinstruksjonene for chatten i Chatura er utformet for å gjenkjenne utsagn om selvmordstanker eller selvskading og hindre svar som oppmuntrer til eller legger til rette for skade. Når slike utsagn gjenkjennes, styres svaret i chatten mot å henvise brukeren til egnede krisetjenester."
 
 footer:
   label: "Chatura-bunntekst"
   product: "Produkt"
   whats_new: "Hva er nytt"
   legal_support: "Juridisk og støtte"
-  privacy: "Personvernerklæring (engelsk)"
-  terms: "Vilkår for bruk (engelsk)"
+  privacy: "Personvernerklæring"
+  terms: "Vilkår for bruk"
   support: "Brukerstøtte"
   social: "Sosiale medier"
   social_label: "Chaturas kanaler i sosiale medier"
