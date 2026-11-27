@@ -8,7 +8,7 @@ permalink: /apps/chatura/ja/privacy-policy/
 
 # Chatura プライバシーポリシー
 
-発効日：2026-11-11
+発効日：2026-11-27
 
 本ポリシーは、Chatura および関連サービス（以下「**本サービス**」）における個人情報の取扱いについて説明します。
 

@@ -8,7 +8,7 @@ permalink: /apps/chatura/de/terms-of-service/
 
 # Nutzungsbedingungen für Chatura
 
-Gültig ab: 2026-11-11
+Gültig ab: 2026-11-27
 
 Diese Bedingungen gelten für Chatura und die nachstehend beschriebenen zugehörigen Dienste (den **Dienst**) von **YOUGEN NAN** (**wir**, **uns**, **unser**). Sie müssen den Bedingungen zustimmen, um den Dienst zu nutzen. Wenn Sie nicht zustimmen, nutzen Sie den Dienst nicht.
 

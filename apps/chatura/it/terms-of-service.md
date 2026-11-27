@@ -8,7 +8,7 @@ permalink: /apps/chatura/it/terms-of-service/
 
 # Condizioni di servizio di Chatura
 
-Data di efficacia: 2026-11-11
+Data di efficacia: 2026-11-27
 
 Queste Condizioni disciplinano Chatura e i servizi associati descritti di seguito (il **Servizio**), forniti da **YOUGEN NAN** (**noi**, **ci**, **nostro**). Per usare il Servizio devi accettare queste Condizioni. Se non le accetti, non usare il Servizio.
 

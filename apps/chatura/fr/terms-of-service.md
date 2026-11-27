@@ -8,7 +8,7 @@ permalink: /apps/chatura/fr/terms-of-service/
 
 # Conditions d’utilisation de Chatura
 
-Date d’entrée en vigueur : 2026-11-11
+Date d’entrée en vigueur : 2026-11-27
 
 Les présentes Conditions régissent Chatura et les services associés décrits ci-dessous (le **Service**), fournis par **YOUGEN NAN** (**nous**). Vous devez accepter les Conditions pour utiliser le Service. Si vous ne les acceptez pas, n’utilisez pas le Service.
 

@@ -8,7 +8,7 @@ permalink: /apps/chatura/nb/terms-of-service/
 
 # Bruksvilkår for Chatura
 
-Ikrafttredelsesdato: 2026-11-11
+Ikrafttredelsesdato: 2026-11-27
 
 Disse vilkårene gjelder Chatura og de tilhørende tjenestene beskrevet nedenfor (**Tjenesten**), levert av **YOUGEN NAN** (**vi**, **oss**, **vår**). Du må godta vilkårene for å bruke Tjenesten. Hvis du ikke godtar dem, skal du ikke bruke Tjenesten.
 

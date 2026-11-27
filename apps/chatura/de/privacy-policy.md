@@ -8,7 +8,7 @@ permalink: /apps/chatura/de/privacy-policy/
 
 # Datenschutzerklärung für Chatura
 
-Gültig ab: 2026-11-11
+Gültig ab: 2026-11-27
 
 Diese Datenschutzerklärung erläutert, wie Chatura und die zugehörigen Dienste (zusammen der **Dienst**) personenbezogene Daten verarbeiten.
 

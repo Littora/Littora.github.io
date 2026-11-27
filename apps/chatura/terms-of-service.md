@@ -9,7 +9,7 @@ permalink: /apps/chatura/terms-of-service/
 
 # Chatura Terms of Service
 
-Effective date: 2026-11-11
+Effective date: 2026-11-27
 
 These Terms govern Chatura and the associated services described below (the **Service**), provided by **YOUGEN NAN** (**we**, **us**, **our**). You must agree to these Terms to use the Service. If you do not agree, do not use it.
 

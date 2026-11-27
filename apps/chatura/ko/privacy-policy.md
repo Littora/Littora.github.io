@@ -8,7 +8,7 @@ permalink: /apps/chatura/ko/privacy-policy/
 
 # Chatura 개인정보 처리방침
 
-시행일: 2026-11-11
+시행일: 2026-11-27
 
 이 방침은 Chatura 및 관련 서비스(이하 **서비스**)의 개인정보 처리 방식을 설명합니다.
 

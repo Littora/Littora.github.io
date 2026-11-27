@@ -9,7 +9,7 @@ permalink: /apps/chatura/privacy-policy/
 
 # Chatura Privacy Policy
 
-Effective date: 2026-11-11
+Effective date: 2026-11-27
 
 This policy explains how Chatura and its related services (the **Service**) handle personal information.
 
